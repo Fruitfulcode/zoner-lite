@@ -723,9 +723,13 @@ ul.list-links li a:hover, .widget ul li a:hover {
 
 .navbar-brand.nav > h1.site-title {
  border: 0 none;
- font-size: 22px;
  margin: 0;
  padding: 0;
+ color: #000;
+ font-family: Roboto;
+ font-size: 19px;
+ font-weight: bold;
+ text-transform: uppercase;
 }
 
 .navbar-brand.nav >  h2.site-description {
