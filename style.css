@@ -529,10 +529,15 @@ blockquote .cite {
   padding-left: 30px;
 }
 blockquote .cite p,
-.blog-post.quote p {
+.blog-post.quote p,
+.blog-post.quote blockquote p cite, 
+.blog-post.standart  blockquote p, 
+.comments-area.comments  blockquote p, 
+.page.type-page blockquote  p {
   font-family: Georgia, serif;
   font-size: 24px;
   font-style: italic;
+  line-height: 30px;
 }
 .blog-post.sticky header .sticky-wrapper {
   padding:0 5px 0 0;
@@ -544,10 +549,7 @@ blockquote .cite p,
   padding: 20px 0;
 }
 
-.blog-post.quote blockquote p cite, 
-.blog-post.standart  blockquote p, 
-.comments-area.comments  blockquote p, 
-.page.type-page blockquote  p {
+.blog-post.quote blockquote p cite {
   color: #073855;
   display: block;
   font-size: 14px;
