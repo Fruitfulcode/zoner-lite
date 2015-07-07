@@ -2588,6 +2588,7 @@ form label.error:before {
   }
   #footer-copyright span {
     float: none !important;
+	display: inline-block;
   }
 
   .navigation {
@@ -2775,6 +2776,10 @@ form label.error:before {
 
   .wrapper {
     display: block;
+  }
+  #page-footer {
+    display: block;
+	width: 100%;
   }
   
   .navbar .navbar-header .navbar-brand.nav.logo.retina {
