@@ -103,16 +103,32 @@ label {
  * -----------------------------------------------------------------------------
  */
 
-.site-title {
+.site-title,
+.site-description {
 	float: right;
+	clear: right;
 }
 
 .navigation .navbar .navbar-nav > li .child-navigation {
 	margin-right:0;
 }
+.navigation .navbar .navbar-nav {
+    float: left;
+}
+.navigation .navbar-collapse {
+	padding-right: 15px;
+	padding-left: 0;
+}
+.navigation .secondary-navigation .contact {
+    float: right;
+}
+.navigation .secondary-navigation .user-area {
+    float: left;
+}
 
 .navigation .secondary-navigation a {
 	display:inline-block;
+	margin: 0 10px 0 0;
 }
 
 /**
@@ -706,6 +722,13 @@ blockquote .cite {
 
 	.footer-sidebar .widget {
 		float: right;
+	}
+	#page-footer .inner #footer-copyright .social.pull-right,
+	#page-footer .inner #footer-copyright .go-to-top.pull-right	{
+		float: left !important;
+	}
+	#page-footer .inner #footer-copyright .copyright.pull-left {
+		float: right !important;
 	}
 
 	.featured-content {
