@@ -37,8 +37,6 @@ function zoner_setup() {
 	set_post_thumbnail_size( 750, 750, true );
 
 	add_image_size( 'zoner-avatar-ceo', 190, 190, true );
-	add_image_size( 'zoner-footer-thumbnails', 440, 330, true );
-	add_image_size( 'zoner-home-slider', 1920, 780, true );
 	
 	register_nav_menus( array(
 		'primary'   => __( 'Top primary menu', 'zoner' )
