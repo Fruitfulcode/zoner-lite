@@ -77,9 +77,7 @@ if (!class_exists('zoner_config')) {
 		function remove_ads() {
 		?>
 			<style type="text/css">
-			.rAds {
-			display: none !important;
-			}
+				.rAds, .rAds span { display: none !important; }
 			</style>
 		<?php
 		}
