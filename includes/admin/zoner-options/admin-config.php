@@ -176,15 +176,6 @@ if (!class_exists('zoner_config')) {
 						),
 						
 						array(
-							'id'        => 'tracking-code',
-							'type'      => 'text',
-							'title'     => __('Google Analytics ID', 'zoner-framework'),
-							'subtitle'  => __("Paste your web analytics tracking id here (UA-XXXXX-X).", 'zoner-framework'),
-							'validate'  => 'no_html',
-							'default'   => ''
-						),
-						
-						array(
 							'id'        => 'smoothscroll',
 							'type'      => 'checkbox',
 							'title'     => __('Enhanced scrolling', 'zoner-framework'),
