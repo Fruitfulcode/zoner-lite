@@ -62,6 +62,11 @@ Files: zoner.pot, ru_Ru.po, ru_Ru.mo, nl_BE.mo, nl_BE.po icluded. Default langua
     Changelog
 -------------------------------------------------------
 
+= 1.0.1 =
+11.08.2015
+
+- Redux framework is not required and now recommended.
+
 = 1.0 =
 07.07.2015
 
