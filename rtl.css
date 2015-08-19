@@ -465,10 +465,6 @@ blockquote .cite {
  * 9.0 Media Queries
  * -----------------------------------------------------------------------------
  */
- 
-.breadcrumb {
-	margin: 0 0 10px;
-}
 
 @media screen and (min-width: 401px) {
 	.site-content .entry-meta > span {

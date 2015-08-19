@@ -10,9 +10,10 @@
 get_header(); ?>
 <?php 
 	global $zoner_config;
-	$bg_404 = $zoner_config['404-image'];
-	$text_404 = __('404', 'zoner');
-	if (isset($zoner_config['404-text'])) $text_404 = $zoner_config['404-text'];
+	$bg_404 	= esc_url($zoner_config['404-image']);
+	$text_404 	= __('404', 'zoner');
+	if (isset($zoner_config['404-text'])) 
+		$text_404 = esc_attr($zoner_config['404-text']);
 ?>
 
 	<div class="container">

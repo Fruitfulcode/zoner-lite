@@ -30,7 +30,7 @@
 				the_content(); 
 			} else {
 			?>
-				<section class="wpb_row vc_row-fluid">
+				<section class="block">
 					<div class="container">
 						<div class="vc_span12 wpb_column column_container">
 							<div class="wpb_wrapper">

@@ -33,8 +33,6 @@ Use it to make something cool, have fun, and share what you've learned with othe
 	10.0 - Form elements	
 	11.0 - Error Pages & Info message
 	12.0 - Custom Paginations
-		12.1 - Breadcrumbs
-		12.2 - Pagination
 	13.0 - Custom Animation
 	14.0 - Footer
 	15.0 - Media Queries
@@ -145,12 +143,6 @@ section.no-padding-column .wpb_column {
   padding-left: 0 !important;
   padding-right: 0 !important;
   float:none !important;
-}
-
-section.wpb_row .container .row section.wpb_row .container {
-  padding-left:  0 !important;
-  padding-right: 0 !important;
-  width:100%;
 }
 
 section.block {
@@ -2192,26 +2184,6 @@ form label.error:before {
 	[12.0 Custom Paginations]
 */
 
-/*------------------------------------------------------------------
-	[12.1 Breadcrumbs]
-*/
-
-.breadcrumb {
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
-  opacity: 0.6;
-  background-color: transparent;
-  padding: 8px 0;
-  font-size: 12px;
-  margin-bottom: 10px;
-}
-.breadcrumb a {
-  color: #5a5a5a;
-}
-
-/*------------------------------------------------------------------
-	[12.2 Pagination]
-*/
-
 .pagination li:first-child a, .pagination li:last-child a {
   -moz-border-radius: 0px;
   -webkit-border-radius: 0px;
@@ -2792,7 +2764,7 @@ form label.error:before {
 */
 
 @media print {
-  #page-footer, .breadcrumb {
+  #page-footer {
     display: none;
   }
 }

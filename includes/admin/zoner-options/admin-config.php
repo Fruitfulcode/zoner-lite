@@ -158,32 +158,15 @@ if (!class_exists('zoner_config')) {
                 'icon'      => $sample_patterns_url . 'images/icons/general.png',
 				'icon_type'	=> 'image',
                 'fields'    => array (
-					
-						array(
-							'id'        => 'adminbar-displayed',
-							'type'      => 'select',
-							'title'     => __('Admin bar display', 'zoner-framework'),
-							'subtitle'  => __('Choose options for admin bar displaying.', 'zoner-framework'),
-							'std'		=> '1',
-							'options' 	=> array(
-												'1' => __('Display for all', 'zoner-framework'),
-												'2' => __('For admin only', 'zoner-framework'),
-												'3' => __('Off', 'zoner-framework'),
-									
-											),
-							'default'   => '1',
-							'placeholder' => __('Select admin bar options', 'zoner-framework')
-						),
-						
-						array(
-							'id'        => 'smoothscroll',
-							'type'      => 'checkbox',
-							'title'     => __('Enhanced scrolling', 'zoner-framework'),
-							'subtitle'  => __('Select to enable scrolling library.', 'zoner-framework'),
-							'desc'      => __('Yes', 'zoner-framework'),
-							'class'		=> 'icheck',
-							'default'   => '1'
-						),
+					array(
+						'id'        => 'smoothscroll',
+						'type'      => 'checkbox',
+						'title'     => __('Enhanced scrolling', 'zoner-framework'),
+						'subtitle'  => __('Select to enable scrolling library.', 'zoner-framework'),
+						'desc'      => __('Yes', 'zoner-framework'),
+						'class'		=> 'icheck',
+						'default'   => '1'
+					),
 				)
 			);
 			
@@ -224,51 +207,6 @@ if (!class_exists('zoner_config')) {
 									'height'    => 22,
 								)
 							),
-							
-							array(
-								'id'        => 'favicon',
-								'type'      => 'media',
-								'url'       => false,
-								'title'     => __('Favicon', 'zoner-framework'),
-								'subtitle'  => __('A favicon is a 16x16 pixel icon that represents your site; upload your custom Favicon here.', 'zoner-framework'),
-								'default'   => array('url' => $sample_patterns_url . 'favicon/favicon-16x16.png'),
-							),
-							
-							array(
-								'id'        => 'favicon-iphone',
-								'type'      => 'media',
-								'url'       => false,
-								'title'     => __('Favicon iPhone', 'zoner-framework'),
-								'subtitle'  => __('Upload a custom favicon for iPhone (57x57 pixel png).', 'zoner-framework'),
-								'default'   => array('url' => $sample_patterns_url . 'favicon/favicon-57x57.png'),
-							),
-							
-							array(
-								'id'        => 'favicon-iphone-retina',
-								'type'      => 'media',
-								'url'       => false,
-								'title'     => __('Favicon iPhone Retina', 'zoner-framework'),
-								'subtitle'  => __('Upload a custom favicon for iPhone retina (114x114 pixel png).', 'zoner-framework'),
-								'default'   => array('url' => $sample_patterns_url . 'favicon/favicon-114x114.png'),
-							),
-							
-							array(
-								'id'        => 'favicon-ipad',
-								'type'      => 'media',
-								'url'       => false,
-								'title'     => __('Favicon iPad', 'zoner-framework'),
-								'subtitle'  => __('Upload a custom favicon for iPad (72x72 pixel png).', 'zoner-framework'),
-								'default'   => array('url' => $sample_patterns_url . 'favicon/favicon-72x72.png'),
-							),
-							
-							array(
-								'id'        => 'favicon-ipad-retina',
-								'type'      => 'media',
-								'url'       => false,
-								'title'     => __('Favicon iPad Retina', 'zoner-framework'),
-								'subtitle'  => __('Upload a custom favicon for iPhone retina (144x144 pixel png).', 'zoner-framework'),
-								'default'   => array('url' => $sample_patterns_url . 'favicon/favicon-144x144.png'),
-							),
 				)
 			);	
 			
@@ -293,16 +231,7 @@ if (!class_exists('zoner_config')) {
 							'none'	=> __('Hide all', 'zoner-framework'), 
                         ),
                         'default'   => 'post'
-                    ),
-					array(
-                        'id'        => 'pp-breadcrumbs',
-                        'type'      => 'checkbox',
-                        'title'     => __('Display Breadcrumbs', 'zoner-framework'),
-                        'subtitle'  => __('Display dynamic breadcrumbs on each page of your website.', 'zoner-framework'),
-                        'desc'      => __('Yes', 'zoner-framework'),
-						'class'		=> 'icheck',
-                        'default'   => '1'
-                    ),		
+                    ),	
 					array(
                         'id'        => 'pp-post',
                         'type'      => 'image_select',

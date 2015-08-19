@@ -1,12 +1,7 @@
 <?php
-	//add_action( 'init', 'zoner_prevent_admin_access', 0 );
-	
 	add_action( 'after_setup_theme',  'zoner_setup' );
 	add_filter( 'nav_menu_css_class', 'zoner_nav_parent_class', 10, 2 );
 	add_filter( 'nav_menu_css_class', 'zoner_add_parent_url_menu_class', 10, 3 );
-	
-	/*Remove Admin Bar*/
-	add_action('init', 'zoner_options_admin_bar');
 	
 	/*Main Content Part*/
 	add_action('zoner_before_content', 'zoner_before_content');
@@ -30,7 +25,6 @@
 	add_action( 'zoner_comments_template', 'zoner_visibilty_comments');
 	add_filter( 'the_password_form', 'zoner_password_protect_form' );
 	add_filter( 'the_content', 'zoner_post_chat', 99);
-	add_action( 'wp_head', 'zoner_add_favicon', 100);
 	add_filter( 'img_caption_shortcode', 'zoner_img_caption', 10, 3 );
 	
 	add_filter('pre_get_posts','zoner_ExludeSearchFilter');

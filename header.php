@@ -48,4 +48,3 @@
 		</div><!-- /.navigation -->
 		<!-- end Navigation -->
 		<div id="page-content" class="site-main">
-			<?php zoner_add_breadcrumbs(); ?>
