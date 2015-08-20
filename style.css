@@ -1126,7 +1126,7 @@ img.size-full, img.size-large, .wp-post-image, .post-thumbnail img {
   display: inline-block;
   float: right;
 }
-.blog-post .meta .tags .tag {
+.blog-post .meta .tags .tag, .blog-post .meta .tags.article-tags a {
   margin-left: 5px;
 }
 .post-author {
@@ -1392,7 +1392,7 @@ img.size-full, img.size-large, .wp-post-image, .post-thumbnail img {
 .is-reset-password {
   display:none;
 }
-#page .tag, .widget_tag_cloud .tagcloud a {
+#page .tag, .widget_tag_cloud .tagcloud a, #page .tags.article-tags a {
   -moz-border-radius: 2px;
   -webkit-border-radius: 2px;
   border-radius: 2px;
@@ -1404,7 +1404,7 @@ img.size-full, img.size-large, .wp-post-image, .post-thumbnail img {
   padding: 3px 8px;
 }
 
-#page .tag.article, .widget_tag_cloud .tagcloud a {
+#page .tag.article, .widget_tag_cloud .tagcloud a, #page .tags.article-tags a {
   background-color: #f3f3f3;
   border-left: 3px solid #c7c7c7;
   color: #2a2a2a;
@@ -2529,10 +2529,10 @@ form label.error:before {
   .blog-post .tags {
     float: none !important;
   }
-  .blog-post .tags .tag {
+  .blog-post .tags .tag, .blog-post .tags.article-tags a {
     margin: 20px 0;
   }
-  .blog-post .tags .tag:first-child {
+  .blog-post .tags .tag:first-child, .blog-post .meta .tags.article-tags a:first-child {
     margin-left: 0 !important;
   }
 

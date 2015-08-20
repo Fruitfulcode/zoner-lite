@@ -1171,18 +1171,7 @@ if ( ! function_exists( 'zoner_get_post_meta' ) ) {
 					</a>
 				<?php } ?>
 				<?php edit_post_link( '<i title="' . __("Edit", 'zoner') . '" class="fa fa-pencil-square-o"></i>'.__("Edit", 'zoner'), '', '' ); ?>
-				<?php 
-					 $tags = wp_get_post_tags( $post->ID);
-					 if (!empty($tags) && ($zoner_config['pp-tags'])) {
-				?>
-					<div class="tags">
-						<?php foreach($tags as $tag) {  ?>
-							<a class="tag article" href="<?php echo get_tag_link($tag->term_id)?>"><?php echo $tag->name; ?></a>
-						<?php } ?>
-					</div>
-				
-				<?php } ?>
-
+				<?php if ($zoner_config['pp-tags']) the_tags('<div class="tags article-tags">', ' ', '</div>');	?>
 			</figure>
 		<?php
 	}
