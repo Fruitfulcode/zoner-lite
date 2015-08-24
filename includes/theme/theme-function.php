@@ -132,19 +132,6 @@ class Zoner_Page_Walker extends Walker_page {
 /*Customize*/
 if ( ! function_exists( 'zoner_customize_register' ) ) :
 	function zoner_customize_register( $wp_customize ) {
-		class Zoner_Theme_Options_Button_Control extends WP_Customize_Control {
-			public $type = 'button_link_control';
-	 
-			public function render_content() {
-				?>
-					<label>
-						<span class="customize-control-title"><?php echo esc_html( $this->label ); ?></span>
-						<input class="button button-primary save link_to_options" type="button" value="<?php _e('Zoner Options', 'zoner'); ?>" onclick="javascript:location.href='<?php echo esc_url(admin_url('admin.php?page=zoner_options')); ?>'"/>
-					</label>
-				<?php
-			}
-		}
-		
 		$wp_customize->get_setting( 'blogname' )->transport         = 'postMessage';
 		$wp_customize->get_setting( 'blogdescription' )->transport  = 'postMessage';
 		$wp_customize->get_setting( 'header_textcolor' )->transport = 'postMessage';
@@ -153,28 +140,6 @@ if ( ! function_exists( 'zoner_customize_register' ) ) :
 		$wp_customize->remove_section( 'colors');
 		$wp_customize->remove_section( 'header_image');
 		$wp_customize->remove_section( 'background_image');
-		$wp_customize->add_section('zoner_themeoptions_link', array(
-								   'title' => __('Zoner Options', 'zoner'),
-								   'priority' => 10,
-								));
-		
-		
-		$wp_customize->add_setting( 'themeoptions_button_control', array('sanitize_callback' => 'themeoptions_button_control_sanitize_func',) );
-	 
-		$wp_customize->add_control(
-			new Zoner_Theme_Options_Button_Control (
-				$wp_customize,
-				'button_link_control',
-				array(
-					'label' 	=> __('Advanced theme settings', 'zoner'),
-					'section' 	=> 'zoner_themeoptions_link',
-					'settings' 	=> 'themeoptions_button_control'
-					)
-				)
-			);
-	}
-	function themeoptions_button_control_sanitize_func ( $value ) {
-		return $value;
 	}
 endif; // zoner_customize_register
 

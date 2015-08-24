@@ -25,7 +25,8 @@ if (!class_exists('zoner_config')) {
             $this->setSections();
             if (!isset($this->args['opt_name'])) return;
             add_action( 'zoner/loaded', array( $this, 'remove_demo' ) );
-			add_action('admin_head', array( $this, 'remove_ads'));
+			add_action( 'admin_head', array( $this, 'remove_ads' ) );
+			add_action( 'customize_controls_print_styles', array( $this, 'remove_ads'), 999 );
 			
 			$this->ReduxFramework = new ReduxFramework($this->sections, $this->args);
         }
@@ -77,7 +78,7 @@ if (!class_exists('zoner_config')) {
 		function remove_ads() {
 		?>
 			<style type="text/css">
-				.rAds, .rAds span { display: none !important; }
+				.rAds, .rAds span, #redux_rAds { display: none !important; }
 			</style>
 		<?php
 		}
