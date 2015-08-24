@@ -1188,7 +1188,8 @@ img.size-full, img.size-large, .wp-post-image, .post-thumbnail img {
   border-right: 3px solid transparent;
   margin-bottom: 5px;
   position: relative;
-  padding-left: 10px;
+  padding: 10px 0 10px 10px;
+  color: #2a2a2a;
 }
 #sidebar .sidebar-navigation li:hover {
   border-color: #1396e2;
@@ -1230,11 +1231,6 @@ img.size-full, img.size-large, .wp-post-image, .post-thumbnail img {
 }
 #sidebar .sidebar-navigation li.active i {
   display: inline-block;
-}
-#sidebar .sidebar-navigation li a {
-  color: #2a2a2a;
-  display: block;
-  padding: 10px 0;
 }
 #sidebar .sidebar-navigation li i {
   color: #1396e2;

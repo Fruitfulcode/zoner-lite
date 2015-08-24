@@ -710,7 +710,7 @@ if ( ! function_exists( 'zoner_seconadry_navigation' ) ) {
 				<div class="user-area">
 					<div class="actions">
 						<?php if ( is_user_logged_in() ) { ?>
-							<a class="promoted" href="<?php echo add_query_arg(array('profile-page' => 'my_profile'), get_author_posts_url($current_user->ID)); ?>"><i class="fa fa-user"></i> <strong><?php echo $current_user->display_name; ?></strong></a>
+							<a class="promoted" href="<?php echo get_author_posts_url($current_user->ID); ?>"><i class="fa fa-user"></i> <strong><?php echo $current_user->display_name; ?></strong></a>
 							<a class="promoted logout" href="<?php echo wp_logout_url(esc_url($site_url)); ?>" title="<?php _e('Sign Out', 'zoner'); ?>"><?php _e('Sign Out', 'zoner'); ?></a>
 						<?php } ?>
 					</div>
@@ -1038,45 +1038,6 @@ if ( ! function_exists( 'zoner_curPageURL' ) ) {
 		}
 	 return $pageURL;
 	}
-}
-
-if ( ! function_exists( 'zoner_add_query_var' ) ) {				
-	function zoner_add_query_var($public_query_vars) {
-		$public_query_vars[] = 'profile-page';
-		
-		$public_query_vars[] = 'invitehash';
-		
-		$public_query_vars[] = 'created_user';
-		
-		return apply_filters('zoner_query_vars', $public_query_vars);
-	}
-}	
-
-if ( ! function_exists( 'zoner_add_rewrite_rules' ) ) {				
-	function zoner_add_rewrite_rules() {
-		 add_rewrite_tag ('%invitehash%', '([^/]*)/?');
-		 add_rewrite_rule('^invitehash/([^/]*)/?', 'index.php?invitehash=$matches[1]', 'top' );
-		 
-		 add_rewrite_tag ('%created_user%', '([^/]*)/?');
-		 add_rewrite_rule('^created_user/([^/]*)/?', 'index.php?created_user=$matches[1]', 'top' );
-		
-		 flush_rewrite_rules();
-	}
-}
-
-if ( ! function_exists( 'zoner_insert_attachment' ) ) {				
-	function zoner_insert_attachment($file_handler, $post_id, $setthumb = false) {
-		if ($_FILES[$file_handler]['error'] !== UPLOAD_ERR_OK) __return_false();
- 
-		require_once(ABSPATH . "wp-admin" . '/includes/image.php');
-		require_once(ABSPATH . "wp-admin" . '/includes/file.php');
-		require_once(ABSPATH . "wp-admin" . '/includes/media.php');
- 
-		$attach_id = media_handle_upload( $file_handler, $post_id );
-		if ($setthumb) set_post_thumbnail($post_id, $attach_id);
-		return $attach_id;
-	}
-	
 }
 
 if ( ! function_exists( 'zoner_get_author_information' ) ) {				

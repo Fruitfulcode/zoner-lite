@@ -34,9 +34,6 @@
 	add_action('after_setup_theme', 'zoner_remove_admin_bar');
 	add_action('wp', 'zoner_process_save_profile', 300);
 	
-	add_filter('query_vars', 'zoner_add_query_var');
-	add_action('init', 'zoner_add_rewrite_rules', 10);
-	
 	
 	/*Footer*/
 	add_action('zoner_footer_elements', 'zoner_get_footer_area_sidebars', 1);

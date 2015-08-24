@@ -9,41 +9,19 @@ if ( ! function_exists( 'zoner_remove_admin_bar' ) ) {
 if ( ! function_exists( 'zoner_generate_profile_tabs' ) ) {				
 	function zoner_generate_profile_tabs() {
 		global $zoner_config, $zoner;
-
-		$array_profile_tabs = apply_filters('zoner_profile_tabs', array(
-									'my_profile' 	 => array('name' => __( 'Profile', 		'zoner' ), 'icon' => 'fa-user'),
-		));
 		
-		$profile_page = 'my_profile';
+		$tab_val = array('name' => __( 'Profile', 		'zoner' ), 'icon' => 'fa-user');
 		
-		foreach ( $_GET as $key => $val ) {
-			if ( 'profile-page' == $key) $profile_page = $val;
-		}
-		
-		
-	?>
+		?>
 		<div class="col-md-3 col-sm-2">
 			<section id="sidebar" class="sidebar">
 				<header><h3 class="widget-title"><?php _e('Account', 'zoner'); ?></h3></header>
 					<aside>
 						<ul class="sidebar-navigation">
-							<?php 
-							
-								foreach ($array_profile_tabs as $key => $val) { 
-										 $arr_params = array( 'profile-page' => $key);
-								
-							?>
-								<li class="<?php if ($key == $profile_page) echo 'active'; ?>">
-									<a href="<?php echo esc_url(add_query_arg($arr_params)); ?>">
-										<i class="fa <?php echo $val['icon']; ?>"></i>
-										<span><?php echo $val['name']; ?></span>
-									</a>
-								</li>		
-							<?php 
-								
-								} 
-							
-							?>
+							<li class="active">
+								<i class="fa <?php echo $tab_val['icon']; ?>"></i>
+								<span><?php echo $tab_val['name']; ?></span>
+							</li>		
 						</ul>
 					</aside>
 			</section>
@@ -106,7 +84,7 @@ if ( ! function_exists( 'zoner_get_author_content' ) ) {
 		
 		if (is_author() && is_user_logged_in() && ($curr_user_id == $query_user_id)) {	
 			zoner_generate_profile_tabs();
-			zoner_get_profile_page_data();
+			zoner_generate_profile_info();
 		} elseif (is_author() || ($curr_user_id != $query_user_id)) {
 			zoner_get_author_information();
 		}
@@ -293,8 +271,14 @@ if ( ! function_exists( 'zoner_process_save_profile' ) ) {
 		}
 		
 		if (!empty($_FILES['form-account-avatar-file']['name'])) {
+			
+			require_once(ABSPATH . "wp-admin" . '/includes/image.php');
+			require_once(ABSPATH . "wp-admin" . '/includes/file.php');
+			require_once(ABSPATH . "wp-admin" . '/includes/media.php');
+			
 			foreach ($_FILES as $file => $array) {
-				$attach_id = zoner_insert_attachment( $file, 0 );
+				if ($_FILES[$file]['error'] !== UPLOAD_ERR_OK) __return_false();
+				$attach_id = media_handle_upload( $file, 0 );
 			}   
 			
 			if ($attach_id != -1) {
@@ -306,21 +290,6 @@ if ( ! function_exists( 'zoner_process_save_profile' ) ) {
 		if (!empty($_POST) && isset($_POST['save_profile'])) wp_safe_redirect( zoner_curPageURL() );
 	}
 }
-
-if ( ! function_exists( 'zoner_get_profile_page_data' ) ) {				
-	function zoner_get_profile_page_data() {
-		$sort = 'my_profile';
-		if (!empty($_GET)) {
-			foreach ( $_GET as $key => $val ) {
-				if ( 'profile-page' === $key) {
-					  $sort = $val;
-				}
-			}	
-		}
-		
-		if ($sort == 'my_profile') 	  zoner_generate_profile_info();
-	}
-}	
 
 
 /*Actions*/
