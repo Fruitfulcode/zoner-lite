@@ -101,7 +101,7 @@ if ( post_password_required() ) {
 											</div><!-- /.row -->
 					',					
 				);	
-		zoner_comment_form($args); 	
+		comment_form($args); 	
 	?>
 
 </section><!-- #comments -->

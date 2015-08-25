@@ -38,7 +38,6 @@ global $zoner;
 locate_template('/includes/admin/zoner-options/admin-config.php', true);
 
 
-locate_template('/includes/theme/theme-comment-form.php', true);
 locate_template('/includes/theme/theme-comments.php', true);
 locate_template('/includes/admin/libs/execute-libs.php', true);
 

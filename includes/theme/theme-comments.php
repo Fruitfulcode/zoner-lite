@@ -4,7 +4,7 @@
 			global $zoner_config, $prefix;
 			$GLOBALS['comment'] = $comment; 
 			?>
-			<li <?php comment_class(); ?>>
+			<li id="comment-<?php echo $comment->comment_ID; ?>" <?php comment_class(); ?>>
 				<?php 
 					$avatar_img = $avatar = '';
 					if (!zoner_validate_gravatar($comment->comment_author_email)) {
