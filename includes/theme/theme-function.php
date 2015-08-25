@@ -2,11 +2,13 @@
 
 global 	$inc_theme_url, 
 		$admin_theme_url, 
-		$prefix;
+		$prefix,
+		$is_redux_active;
 		
 		$inc_theme_url   = get_template_directory_uri() . '/includes/theme/';
 		$admin_theme_url = get_template_directory_uri() . '/includes/admin/';
 		$prefix = '_zoner_';
+		$is_redux_active = class_exists('ReduxFramework');
 		
 add_theme_support( 'zoner' );
 if ( ! isset( $content_width ) ) $content_width = 950;
@@ -570,22 +572,24 @@ if ( ! function_exists( 'zoner_get_footer_area_sidebars' ) ) {
 
 if ( ! function_exists( 'zoner_get_social' ) ) {
 	function zoner_get_social() {
-		global $zoner_config;
+		global $zoner_config, $is_redux_active;
 		$ftext = $fsocial = $out_ftext = ''; 
 		$out_ = '';
 		
 		if (!empty($zoner_config['footer-text'])) {
 			$ftext = zoner_kses_data(stripslashes($zoner_config['footer-text']));
+		} elseif (!$is_redux_active) {
+			$ftext = '&#169; <a target="_blank" title="WordPress Development" href="http://fruitfulcode.com/">Fruitful Code</a>, Powered by <a target="_blank" href="http://wordpress.org/">WordPress</a>';
+		}
 			
-			if (is_home() || is_front_page()) {
+		if (is_home() || is_front_page()) {
+			$out_ftext .= $ftext;
+		} else {
+			$out_ftext .= '<nofollow>';
 				$out_ftext .= $ftext;
-			} else {
-				$out_ftext .= '<nofollow>';
-					$out_ftext .= $ftext;
-				$out_ftext .= '</nofollow>';
-				
-			}
-		}	
+			$out_ftext .= '</nofollow>';
+			
+		}
 		
 		if (!empty($zoner_config['footer-issocial'])) {
 			if ($zoner_config['footer-issocial']) {
@@ -636,16 +640,16 @@ if ( ! function_exists( 'zoner_get_social' ) ) {
 
 if ( ! function_exists( 'zoner_visibilty_comments' ) ) {
 	function zoner_visibilty_comments() {
-		global $zoner_config, $post;
+		global $zoner_config, $post, $is_redux_active;
 		
-		if (!empty($zoner_config['pp-comments'])) {
+		if (!empty($zoner_config['pp-comments']) || !$is_redux_active) {
 			$is_comment = $zoner_config['pp-comments'];
 			$post_type = get_post_type();
-			if ( ( $is_comment == $post_type || $is_comment == 'both' ) && is_page() ) { 
+			if ( ( $is_comment == $post_type || $is_comment == 'both' || !$is_redux_active ) && is_page() ) { 
 				if ( ! post_password_required() && ( comments_open() || get_comments_number() ) ) { comments_template(); }
 			}	
 			
-			if ( ( $is_comment == $post_type || $is_comment == 'both' ) && is_single() ) { 
+			if ( ( $is_comment == $post_type || $is_comment == 'both' || !$is_redux_active ) && is_single() ) { 
 				if ( ! post_password_required() && ( comments_open() || get_comments_number() ) ) { comments_template(); }
 			}	
 		}	
@@ -1040,7 +1044,7 @@ if ( ! function_exists( 'zoner_get_post_thumbnail' ) ) {
 	function zoner_get_post_thumbnail() {
 		global $zoner_config, $prefix, $zoner, $post;
 		
-		if ( has_post_thumbnail() && ($zoner_config['pp-thumbnail'])) {
+		if ( has_post_thumbnail() && ($zoner_config['pp-thumbnail'] || !$is_redux_active)) {
 			$attachment_id = get_post_thumbnail_id( $post->ID );
 			$post_thumbnail = wp_get_attachment_image_src( $attachment_id, 'full');
 		?> 
@@ -1076,28 +1080,28 @@ if ( ! function_exists( 'zoner_get_post_title' ) ) {
 /*Meta*/
 if ( ! function_exists( 'zoner_get_post_meta' ) ) {				
 	function zoner_get_post_meta() {
-		global $zoner_config, $prefix, $zoner, $post;
+		global $zoner_config, $prefix, $zoner, $post, $is_redux_active;
 		
 			$archive_year  = get_the_time('Y'); 
 			$archive_month = get_the_time('m'); 
 					
 		?>
 			<figure class="meta">
-				<?php if ($zoner_config['pp-authors']) { ?>
+				<?php if ($zoner_config['pp-authors'] || !$is_redux_active) { ?>
 					<a class="link-icon" href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' )); ?>">
 						<i class="fa fa-user"></i>
 						<?php the_author(); ?>
 					</a>
 				<?php } ?>
 				
-				<?php if ($zoner_config['pp-date']) { ?>
+				<?php if ($zoner_config['pp-date'] || !$is_redux_active) { ?>
 					<a class="link-icon" href="<?php echo get_month_link( $archive_year, $archive_month ); ?>">
 						<i class="fa fa-calendar"></i>
 						<?php the_time('d/m/Y'); ?>
 					</a>
 				<?php } ?>
 				<?php edit_post_link( '<i title="' . __("Edit", 'zoner') . '" class="fa fa-pencil-square-o"></i>'.__("Edit", 'zoner'), '', '' ); ?>
-				<?php if ($zoner_config['pp-tags']) the_tags('<div class="tags article-tags">', ' ', '</div>');	?>
+				<?php if ($zoner_config['pp-tags'] || !$is_redux_active) the_tags('<div class="tags article-tags">', ' ', '</div>');	?>
 			</figure>
 		<?php
 	}

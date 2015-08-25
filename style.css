@@ -35,14 +35,17 @@ Use it to make something cool, have fun, and share what you've learned with othe
 	12.0 - Custom Paginations
 	13.0 - Custom Animation
 	14.0 - Footer
-	15.0 - Media Queries
-	16.0 - Print
+	15.0 - Redux default styles
+	16.0 - Media Queries
+	17.0 - Print
 	
 -------------------------------------------------------------------*/
 
 /*------------------------------------------------------------------
 	[1.0 Body]
 */
+
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,300);
 
 body {
   background-color: #fff;
@@ -2480,8 +2483,157 @@ form label.error:before {
 	filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false) !important;
 }
 
+
 /*------------------------------------------------------------------
-	[15.0 Media Queries]
+	[15.0 Redux default styles]
+*/
+
+body {
+    background-attachment: inherit;
+    background-color: #ffffff;
+    background-position: center top;
+    background-repeat: inherit;
+    background-size: inherit;
+}
+body {
+    color: #5a5a5a;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+}
+h1 {
+    color: #5a5a5a;
+    font-family: Roboto;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 300;
+}
+h2 {
+    color: #5a5a5a;
+    font-family: Roboto;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 300;
+}
+h3 {
+    color: #5a5a5a;
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+}
+h4 {
+    color: #5a5a5a;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+}
+h5 {
+    color: #5a5a5a;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+}
+h6 {
+    color: #5a5a5a;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+}
+p {
+    color: #5a5a5a;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: inherit;
+}
+a {
+    color: #1396e2;
+}
+a:hover {
+    color: #2a6496;
+}
+a:active {
+    color: #2a6496;
+}
+
+a {
+    color: #1396e2;
+}
+a:hover {
+    color: #2a6496;
+}
+a:active {
+    color: #2a6496;
+}
+@media not all, not all, only screen and (min-resolution: 2dppx) {
+.navbar .navbar-header .navbar-brand.nav.logo {
+    display: none;
+}
+.navbar .navbar-header .navbar-brand.nav.logo.retina {
+    display: inline-block;
+    width: 50%;
+}
+}
+.page-sub-page #page-content::after {
+    background: rgba(0, 0, 0, 0) linear-gradient(to bottom, #f1f1f1 0%, #ffffff 80%) repeat scroll 0 0;
+}
+.navigation {
+    background-color: #ffffff;
+}
+.navigation .navbar .navbar-nav > li a {
+    color: #2a2a2a;
+}
+.navigation .navbar .navbar-nav > li:hover > a {
+    color: #2a2a2a;
+}
+.navigation .navbar .navbar-nav > li.current_page_item > a, .navigation .navbar .navbar-nav > li.current-menu-item > a, .navigation .navbar .navbar-nav > li.current-menu-parent > a, .navigation .navbar .navbar-nav > li.current_page_parent > a, .navigation .navbar .navbar-nav > li.current-menu-ancestor > a, .navigation .navbar .navbar-nav > li.active a {
+    color: #2a2a2a;
+}
+.navigation .navbar .navbar-nav > li .child-navigation a {
+    color: #5a5a5a;
+}
+.navigation .navbar .navbar-nav > li .child-navigation li a:hover {
+    background-color: #1396e2;
+    color: #ffffff;
+}
+.navigation .navbar .navbar-nav > li .child-navigation > li:hover > a, .navigation .navbar .navbar-nav > li .child-navigation > li.current-menu-ancestor > a, .navigation .navbar .navbar-nav > li .child-navigation > li .child-navigation > li.current-menu-item > a, .navigation .navbar .navbar-nav > li.current-menu-ancestor > .child-navigation li.current-menu-item > a {
+    background-color: #1396e2;
+    color: #ffffff;
+}
+.navigation .navbar .navbar-nav > li .child-navigation {
+    background-color: #f3f3f3;
+}
+.navigation .navbar .navbar-nav > li > .child-navigation > li:first-child a::after {
+    border-color: transparent transparent #f3f3f3;
+}
+.navigation .navbar .navbar-nav > li .child-navigation li a {
+    border-color: rgba(0, 0, 0, 0.1);
+}
+.navigation .navbar .navbar-nav > li a::after {
+    background-color: #1396e2;
+}
+.blog-posts .blog-post .blog-post-content p, .container p {
+    opacity: 0.7;
+}
+#page-footer .inner #footer-copyright {
+    color: #ffffff;
+}
+#page-footer .inner #footer-copyright {
+    background-color: #073855;
+}
+
+
+/* End of redux default settings */
+
+/*------------------------------------------------------------------
+	[16.0 Media Queries]
 */
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -2756,7 +2908,7 @@ form label.error:before {
 }
 
 /*------------------------------------------------------------------
-	[16.0 Print]
+	[17.0 Print]
 */
 
 @media print {
