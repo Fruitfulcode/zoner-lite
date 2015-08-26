@@ -23,7 +23,6 @@
 	add_filter( 'edit_post_link', 'zoner_edit_post_link');
 	
 	add_action( 'zoner_comments_template', 'zoner_visibilty_comments');
-	add_filter( 'the_password_form', 'zoner_password_protect_form' );
 	add_filter( 'the_content', 'zoner_post_chat', 99);
 	add_filter( 'img_caption_shortcode', 'zoner_img_caption', 10, 3 );
 	

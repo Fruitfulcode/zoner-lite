@@ -2119,6 +2119,55 @@ form label.error:before {
 .jslider .jslider-label {
   color: #fff;
 }
+form.post-password-form {
+	background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+    margin-bottom: 20px;
+}
+form.post-password-form :before,
+form.post-password-form :after {
+	content: " ";
+	display: table;
+	clear: both;
+}
+form.post-password-form p {
+	font-family: Roboto;
+	opacity: 1;
+	margin-bottom: 0;
+}
+form.post-password-form > p:first-child {
+	border-bottom: 1px solid #ddd;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    padding: 10px 15px;
+	background-color: #f5f5f5;
+	color: #333;
+}
+form.post-password-form label {
+	font-weight: normal;
+	padding: 15px;
+	display: block;
+}
+form.post-password-form label input {
+	margin-top: 30px;
+}
+form.post-password-form input[type="submit"] {
+	float: right;
+	background-color: #1396e2;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    transition: all 0.2s ease 0s;
+	margin: 0 15px 15px;
+	border: medium none;
+    border-radius: 0;
+    font-size: 14px;
+    outline: medium none !important;
+    padding: 10px 9px 9px;
+}
+
+
 
 /*------------------------------------------------------------------
 	[11.0 Error Pages & Info message]

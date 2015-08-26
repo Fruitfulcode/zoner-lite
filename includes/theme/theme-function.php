@@ -900,36 +900,6 @@ if ( ! function_exists( 'zoner_set_excerpt_length' ) ) {
 	}
 }
 
-/*Post password protected*/
-if ( ! function_exists( 'zoner_password_protect_form' ) ) {				
-	function zoner_password_protect_form() {
-		global $post;
-		$out = '';
-		$label = 'pwbox-'.( empty( $post->ID ) ? rand() : $post->ID );
-		
-		$out .= '<form role="form" class="protected-form" action="' . esc_url( site_url( 'wp-login.php?action=postpass', 'login_post' ) ) . '" method="post">';
-			
-			$out .= '<div class="panel panel-default">';
-				$out .= '<div class="panel-heading">' . __('This is password protected post', 'zoner') . '</div>';
-				$out .= '<div class="panel-body">'  . __("This content is password protected. To view it please enter your password below:", 'zoner' ) . '</div>';
-				$out .= '<div class="panel-body">';
-					$out .= '<input name="post_password" id="'. $label .'" type="password" size="20" maxlength="20" placeholder="'.__('Password', 'zoner').'"/>';
-				$out .= '</div>';
-	  
-				$out .= '<div class="form-group clearfix">';
-					$out .= '<div class="col-md-12">';
-						$out .= '<input type="submit" name="Submit" class="btn pull-right btn-default" value="' . esc_attr__( "Submit", 'zoner' ) . '" />';
-					$out .= '</div>';
-				$out .= '</div>';	
-			$out .= '</div>';
-
-		$out .= '</form>';
-		
-		return $out;
-	}
-}
-
-
 if ( ! function_exists( 'zoner_post_chat' ) ) {				
 	function zoner_post_chat($content = null) {
 		global $post;

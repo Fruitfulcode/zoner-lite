@@ -1095,7 +1095,6 @@ if (!class_exists('zoner_config')) {
 			
 			$this->sections[] = array(
                 'title'     => __('Extended version', 'zoner-framework'),
-                'desc'      => __('', 'zoner-framework'),
                 'icon'      => $sample_patterns_url . 'images/icons/zoner.png',
 				'icon_type' => 'image',
                 'fields'    => array(
