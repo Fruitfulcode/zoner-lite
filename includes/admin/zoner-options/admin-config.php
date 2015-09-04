@@ -112,10 +112,10 @@ if (!class_exists('zoner_config')) {
             <?php if ($screenshot) : ?>
                 <?php if (current_user_can('edit_theme_options')) : ?>
                         <a href="<?php echo wp_customize_url(); ?>" class="load-customize hide-if-no-customize" title="<?php echo esc_attr($customize_title); ?>">
-                            <img src="<?php echo esc_url($screenshot); ?>" alt="<?php esc_attr_e('Current theme preview'); ?>" />
+                            <img src="<?php echo esc_url($screenshot); ?>" alt="<?php esc_attr_e('Current theme preview', 'zoner-framework'); ?>" />
                         </a>
                 <?php endif; ?>
-                    <img class="hide-if-customize" src="<?php echo esc_url($screenshot); ?>" alt="<?php esc_attr_e('Current theme preview'); ?>" />
+                    <img class="hide-if-customize" src="<?php echo esc_url($screenshot); ?>" alt="<?php esc_attr_e('Current theme preview', 'zoner-framework'); ?>" />
                 <?php endif; ?>
 
                 <h4><?php echo $this->theme->display('Name'); ?></h4>
@@ -129,7 +129,7 @@ if (!class_exists('zoner_config')) {
                     <p class="theme-description"><?php echo $this->theme->display('Description'); ?></p>
             <?php
             if ($this->theme->parent()) {
-                printf(' <p class="howto">' . __('This <a href="%1$s">child theme</a> requires its parent theme, %2$s.') . '</p>', __('http://codex.wordpress.org/Child_Themes', 'zoner-framework'), $this->theme->parent()->display('Name'));
+                printf(' <p class="howto">' . __('This <a href="%1$s">child theme</a> requires its parent theme, %2$s.', 'zoner-framework') . '</p>', __('http://codex.wordpress.org/Child_Themes', 'zoner-framework'), $this->theme->parent()->display('Name'));
             }
             ?>
 
