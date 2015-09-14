@@ -11,19 +11,19 @@ function zoner_custom_layout_sidebars( $field, $meta ) {
 		<ul class="list-layouts">
 			<li>
 				<input type="radio" id="remove-all-wrappers" value="-1" name="<?php echo $field['id'];?>" <?php checked( $layout, '-1' ); ?>/>
-				<img title="<?php _e('Without container (Only with Visual Composer)','zoner'); ?>" src="<?php echo CMB_META_BOX_URL . 'images/without-container.png'; ?>" alt="" />
+				<img title="<?php _e('Without container (Only with Visual Composer)','zoner-lite'); ?>" src="<?php echo CMB_META_BOX_URL . 'images/without-container.png'; ?>" alt="" />
 			</li>
 			<li>
 				<input type="radio" id="full-width" value="1" name="<?php echo $field['id'];?>" <?php checked( $layout, '1' ); ?>/>
-				<img title="<?php _e('Full width','zoner'); ?>" src="<?php echo CMB_META_BOX_URL . 'images/full.png'; ?>" alt="" />
+				<img title="<?php _e('Full width','zoner-lite'); ?>" src="<?php echo CMB_META_BOX_URL . 'images/full.png'; ?>" alt="" />
 			</li>
 			<li>
 				<input type="radio" id="right-sidebar" value="2" name="<?php echo $field['id'];?>" <?php checked( $layout, '2' ); ?>/>
-				<img title="<?php _e('Content Right','zoner'); ?>" src="<?php echo CMB_META_BOX_URL . 'images/right.png'; ?>" alt="" />
+				<img title="<?php _e('Content Right','zoner-lite'); ?>" src="<?php echo CMB_META_BOX_URL . 'images/right.png'; ?>" alt="" />
 			</li>
 			<li>
 				<input type="radio" id="left-sidebar" value="3" name="<?php echo $field['id'];?>" <?php checked( $layout, '3' ); ?>/>
-				<img title="<?php _e('Content Left','zoner'); ?>" src="<?php echo CMB_META_BOX_URL . 'images/left.png'; ?>" alt="" />
+				<img title="<?php _e('Content Left','zoner-lite'); ?>" src="<?php echo CMB_META_BOX_URL . 'images/left.png'; ?>" alt="" />
 			</li>
 		</ul>
 		<p class="cmb_metabox_description"><?php echo esc_attr($field['desc']); ?></p>

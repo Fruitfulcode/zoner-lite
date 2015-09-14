@@ -250,7 +250,7 @@ class cmb_Meta_Box_types {
 			</tbody>
 		</table>
 		<p class="add-row">
-			<a data-selector="<?php echo $table_id; ?>" class="add-row-button button" href="#"><?php _e( 'Add Row', 'zoner' ); ?></a>
+			<a data-selector="<?php echo $table_id; ?>" class="add-row-button button" href="#"><?php _e( 'Add Row', 'zoner-lite' ); ?></a>
 		</p>
 
 		<?php
@@ -306,7 +306,7 @@ class cmb_Meta_Box_types {
 				<?php $this->_render(); ?>
 			</td>
 			<td class="remove-row">
-				<a class="button remove-row-button" href="#"><?php _e( 'Remove', 'zoner' ); ?></a>
+				<a class="button remove-row-button" href="#"><?php _e( 'Remove', 'zoner-lite' ); ?></a>
 			</td>
 		</tr>
 
@@ -622,7 +622,7 @@ class cmb_Meta_Box_types {
 		$options    = ''; $i = 1;
 
 		if ( ! $terms ) {
-			$options .= '<li><label>'. __( 'No terms', 'zoner' ) .'</label></li>';
+			$options .= '<li><label>'. __( 'No terms', 'zoner-lite' ) .'</label></li>';
 		} else {
 			foreach ( $terms as $term ) {
 				$args = array(
@@ -656,7 +656,7 @@ class cmb_Meta_Box_types {
 		$options = ''; $i = 1;
 
 		if ( ! $terms ) {
-			$options .= '<li><label>'. __( 'No terms', 'zoner' ) .'</label></li>';
+			$options .= '<li><label>'. __( 'No terms', 'zoner-lite' ) .'</label></li>';
 		} else {
 
 			foreach ( $terms as $term ) {
@@ -695,7 +695,7 @@ class cmb_Meta_Box_types {
 		$this->input( array(
 			'type'  => 'button',
 			'class' => 'cmb_upload_button button cmb_upload_list',
-			'value'  => __( 'Add or Upload File', 'zoner' ),
+			'value'  => __( 'Add or Upload File', 'zoner-lite' ),
 			'name'  => '', 'id'  => '',
 		) );
 
@@ -716,7 +716,7 @@ class cmb_Meta_Box_types {
 					echo
 					'<li class="img_status">',
 						wp_get_attachment_image( $id, $this->field->args( 'preview_size' ) ),
-						'<p class="cmb_remove_wrapper"><a href="#" class="cmb_remove_file_button">'. __( 'Remove Image', 'zoner' ) .'</a></p>
+						'<p class="cmb_remove_wrapper"><a href="#" class="cmb_remove_file_button">'. __( 'Remove Image', 'zoner-lite' ) .'</a></p>
 						'. $id_input .'
 					</li>';
 
@@ -727,7 +727,7 @@ class cmb_Meta_Box_types {
 					}
 					echo
 					'<li>',
-						__( 'File:', 'zoner' ), ' <strong>', $title, '</strong>&nbsp;&nbsp;&nbsp; (<a href="', $fullurl, '" target="_blank" rel="external">'. __( 'Download', 'zoner' ) .'</a> / <a href="#" class="cmb_remove_file_button">'. __( 'Remove', 'zoner' ) .'</a>)
+						__( 'File:', 'zoner-lite' ), ' <strong>', $title, '</strong>&nbsp;&nbsp;&nbsp; (<a href="', $fullurl, '" target="_blank" rel="external">'. __( 'Download', 'zoner-lite' ) .'</a> / <a href="#" class="cmb_remove_file_button">'. __( 'Remove', 'zoner-lite' ) .'</a>)
 						'. $id_input .'
 					</li>';
 				}
@@ -749,7 +749,7 @@ class cmb_Meta_Box_types {
 			'size'  => 45,
 			'desc'  => '',
 		) ),
-		'<input class="cmb_upload_button button" type="button" value="'. __( 'Add or Upload File', 'zoner' ) .'" />',
+		'<input class="cmb_upload_button button" type="button" value="'. __( 'Add or Upload File', 'zoner-lite' ) .'" />',
 		$this->_desc( true );
 
 		$cached_id = $this->_id();
@@ -781,7 +781,7 @@ class cmb_Meta_Box_types {
 				if ( $this->is_valid_img_ext( $meta_value ) ) {
 					echo '<div class="img_status">';
 					echo '<img style="max-width: 350px; width: 100%; height: auto;" src="', $meta_value, '" alt="" />';
-					echo '<p class="cmb_remove_wrapper"><a href="#" class="cmb_remove_file_button" rel="', $cached_id, '">'. __( 'Remove Image', 'zoner' ) .'</a></p>';
+					echo '<p class="cmb_remove_wrapper"><a href="#" class="cmb_remove_file_button" rel="', $cached_id, '">'. __( 'Remove Image', 'zoner-lite' ) .'</a></p>';
 					echo '</div>';
 				} else {
 					// $file_ext = $this->get_file_ext( $meta_value );
@@ -789,7 +789,7 @@ class cmb_Meta_Box_types {
 					for ( $i = 0; $i < count( $parts ); ++$i ) {
 						$title = $parts[$i];
 					}
-					echo __( 'File:', 'zoner' ), ' <strong>', $title, '</strong>&nbsp;&nbsp;&nbsp; (<a href="', $meta_value, '" target="_blank" rel="external">'. __( 'Download', 'zoner' ) .'</a> / <a href="#" class="cmb_remove_file_button" rel="', $cached_id, '">'. __( 'Remove', 'zoner' ) .'</a>)';
+					echo __( 'File:', 'zoner-lite' ), ' <strong>', $title, '</strong>&nbsp;&nbsp;&nbsp; (<a href="', $meta_value, '" target="_blank" rel="external">'. __( 'Download', 'zoner-lite' ) .'</a> / <a href="#" class="cmb_remove_file_button" rel="', $cached_id, '">'. __( 'Remove', 'zoner-lite' ) .'</a>)';
 				}
 			}
 		echo '</div>';

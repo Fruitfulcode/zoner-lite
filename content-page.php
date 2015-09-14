@@ -36,7 +36,7 @@
 							<div class="wpb_wrapper">
 								<?php the_content(); ?>
 								<?php wp_link_pages( array(
-																'before'      => '<div class="page-links"><span class="page-links-title">' . __( 'Pages:', 'zoner' ) . '</span>',
+																'before'      => '<div class="page-links"><span class="page-links-title">' . __( 'Pages:', 'zoner-lite' ) . '</span>',
 																'after'       => '</div>',
 																'link_before' => '<span>',
 																'link_after'  => '</span>',
@@ -56,7 +56,7 @@
 		?>
 		
 		<?php 
-			edit_post_link( '<i title="' . __("Edit", 'zoner') . '" class="fa fa-pencil-square-o"></i><span class="edit-link-text">'.__("Edit", 'zoner') .'</span>', '<div class="'.implode(' ', $class_page).'">', '</div>' ); 
+			edit_post_link( '<i title="' . __("Edit", 'zoner-lite') . '" class="fa fa-pencil-square-o"></i><span class="edit-link-text">'.__("Edit", 'zoner-lite') .'</span>', '<div class="'.implode(' ', $class_page).'">', '</div>' ); 
 		?>
 		
 		</section><!-- .legal -->

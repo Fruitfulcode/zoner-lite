@@ -21,7 +21,7 @@ function zoner_pages_mtb( array $meta_boxes ) {
 	
 	$meta_boxes[] = array(
 		'id'         => 'pages_layout',
-		'title'      => __( 'Layout', 'zoner' ),
+		'title'      => __( 'Layout', 'zoner-lite' ),
 		'pages'      => array( 'page'), 
 		
 		'context'    => 'side',
@@ -29,7 +29,7 @@ function zoner_pages_mtb( array $meta_boxes ) {
 		'show_names' => true, 
 		'fields'     => array(
 			array(
-				'name'    	 => __( 'Page layout', 'zoner' ),
+				'name'    	 => __( 'Page layout', 'zoner-lite' ),
 				'id' 		 => $prefix . 'pages_layout',
 				'type' 		 => 'custom_layout_sidebars',
 				'default'	 => 1

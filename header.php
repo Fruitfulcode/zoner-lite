@@ -35,7 +35,7 @@
 				<header class="navbar" id="top" role="banner">
 					<div class="navbar-header">
 						<button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
-							<span class="sr-only"><?php _e('Toggle navigation', 'zoner'); ?></span>
+							<span class="sr-only"><?php _e('Toggle navigation', 'zoner-lite'); ?></span>
 							<span class="icon-bar"></span>
 							<span class="icon-bar"></span>
 							<span class="icon-bar"></span>

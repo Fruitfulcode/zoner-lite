@@ -19,7 +19,7 @@
 					}
 					
 					if (!$has_valid_avatar) {
-						 $avatar_img = '<img width="100%" class="img-responsive" data-src="holder.js/86x86?text='. __('Author', 'zoner') .'" alt="" />';
+						 $avatar_img = '<img width="100%" class="img-responsive" data-src="holder.js/86x86?text='. __('Author', 'zoner-lite') .'" alt="" />';
 					} else {
 						 $all_meta_for_user = get_user_meta( $comment->user_id );
 						 if (!empty($all_meta_for_user[$prefix.'avatar']))
@@ -42,15 +42,15 @@
 				</figure>
 				<div class="comment-wrapper">
 					<div class="name"><?php comment_author_link(); ?></div>
-					<span class="date"><span class="fa fa-calendar"></span><?php echo get_comment_date(get_option( 'date_format' )) ?> <?php _e('at', 'zoner'); ?> <?php echo get_comment_time(get_option( 'time_format' )); ?></span>
+					<span class="date"><span class="fa fa-calendar"></span><?php echo get_comment_date(get_option( 'date_format' )) ?> <?php _e('at', 'zoner-lite'); ?> <?php echo get_comment_time(get_option( 'time_format' )); ?></span>
 					
 					<?php comment_text() ?>
 					<?php $myclass = 'reply';
-						  echo preg_replace( '/comment-reply-link/', 'comment-reply-link ' . $myclass, get_comment_reply_link(array_merge( $args, array('depth' => $depth, 'max_depth' => $args['max_depth'], 'reply_text' => '<span class="fa fa-reply"></span>' . __('Reply', 'zoner')))), 1 );
+						  echo preg_replace( '/comment-reply-link/', 'comment-reply-link ' . $myclass, get_comment_reply_link(array_merge( $args, array('depth' => $depth, 'max_depth' => $args['max_depth'], 'reply_text' => '<span class="fa fa-reply"></span>' . __('Reply', 'zoner-lite')))), 1 );
 					?>	  
-					<?php edit_comment_link(__('Edit this comment', 'zoner'), '', ''); ?>
+					<?php edit_comment_link(__('Edit this comment', 'zoner-lite'), '', ''); ?>
 					<?php if ($comment->comment_approved == '0') { ?>
-						<p class='unapproved'><?php _e('Your comment is awaiting moderation.', 'zoner'); ?></p>
+						<p class='unapproved'><?php _e('Your comment is awaiting moderation.', 'zoner-lite'); ?></p>
 					<?php } ?>
 					<hr>
 				</div><!-- /.comment-content -->

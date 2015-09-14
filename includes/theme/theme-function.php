@@ -10,7 +10,6 @@ global 	$inc_theme_url,
 		$prefix = '_zoner_';
 		$is_redux_active = class_exists('ReduxFramework');
 		
-add_theme_support( 'zoner' );
 if ( ! isset( $content_width ) ) $content_width = 950;
 		
 if ( ! function_exists( 'zoner_setup' ) ) :
@@ -29,19 +28,20 @@ function zoner_setup() {
 	 *
 	 * Translations can be added to the /languages/ directory.
 	 * If you're building a theme based on Zoner Theme, use a find and
-	 * replace to change 'zoner' to the name of your theme in all
+	 * replace to change 'zoner-lite' to the name of your theme in all
 	 * template files.
 	 */
 	 
-	load_theme_textdomain( 'zoner', get_template_directory() . '/languages' );
+	load_theme_textdomain( 'zoner-lite', get_template_directory() . '/languages' );
 	add_theme_support( 'automatic-feed-links' );
 	add_theme_support( 'post-thumbnails' );
+	add_theme_support( 'title-tag' );
 	set_post_thumbnail_size( 750, 750, true );
 
 	add_image_size( 'zoner-avatar-ceo', 190, 190, true );
 	
 	register_nav_menus( array(
-		'primary'   => __( 'Top primary menu', 'zoner' )
+		'primary'   => __( 'Top primary menu', 'zoner-lite' )
 	) );
 
 	add_theme_support( 'post-formats', array( 'aside', 'image', 'video', 'audio', 'quote', 'link', 'gallery', 'chat'));
@@ -157,16 +157,6 @@ function zoner_content_width() {
 	}
 }
 endif; //zoner_content_width
-
-/*Compress code*/
-if ( ! function_exists( 'zoner_compress_code' ) ) {				
-	function zoner_compress_code($code) {
-		$code = preg_replace('!/\*[^*]*\*+([^/][^*]*\*+)*/!', '', $code);
-		$code = str_replace(array("\r\n", "\r", "\n", "\t", '  ', '    ', '    '), '', $code);
-    
-		return $code;
-	}
-}  
 
 /**
  * Enqueue scripts and styles for the front end.
@@ -313,38 +303,6 @@ function zoner_post_classes( $classes ) {
 }
 endif; //zoner_post_classes
 
-
-/**
- * Create a nicely formatted and more specific title element text for output
- * in head of document, based on current view.
- *
- * @since Zoner Theme 1.0
- *
- * @param string $title Default title text for current view.
- * @param string $sep Optional separator.
- * @return string The filtered title.
- */
-if ( ! function_exists( 'zoner_wp_title' ) ) :
-function zoner_wp_title( $title, $sep ) {
-	global $paged, $page;
-	if ( is_feed() ) {
-		return $title;
-	}
-	$title .= get_bloginfo( 'name' );
-	$site_description = get_bloginfo( 'description', 'display' );
-	if ( $site_description && ( is_home() || is_front_page() ) ) {
-		$title = "$title $sep $site_description";
-	}
-	
-	if ( $paged >= 2 || $page >= 2 ) {
-		$title = "$title $sep " . sprintf( __( 'Page %s', 'zoner' ), max( $paged, $page ) );
-	}
-
-	return $title;
-}
-endif; //zoner_wp_title
-
-
 if ( ! function_exists( 'zoner_list_authors' ) ) :
 /**
  * Print a list of all site contributors who published at least one post.
@@ -377,7 +335,7 @@ function zoner_list_authors() {
 					<?php echo get_the_author_meta( 'description', $contributor_id ); ?>
 				</p>
 				<a class="contributor-posts-link" href="<?php echo esc_url( get_author_posts_url( $contributor_id ) ); ?>">
-					<?php printf( _n( '%d Article', '%d Articles', $post_count, 'zoner' ), $post_count ); ?>
+					<?php printf( _n( '%d Article', '%d Articles', $post_count, 'zoner-lite' ), $post_count ); ?>
 				</a>
 			</div><!-- .contributor-summary -->
 		</div><!-- .contributor-info -->
@@ -473,22 +431,13 @@ if ( ! function_exists( 'zoner_search_form' ) ) {
 							
 		$form .= '<form role="search" method="get" id="searchform" class="searchform" action="' . home_url( '/' ) . '" >';
 			$form .= '<div class="input-group">';
-				$form .= '<input type="search" class="form-control" value="' . get_search_query() . '" name="s" id="s" placeholder="'.__('Enter Keyword', 'zoner').'"/>';
+				$form .= '<input type="search" class="form-control" value="' . get_search_query() . '" name="s" id="s" placeholder="'.__('Enter Keyword', 'zoner-lite').'"/>';
 				$form .= '<span class="input-group-btn"><button class="btn btn-default search" type="button"><i class="fa fa-search"></i></button></span>';
 			$form .= '</div><!-- /input-group -->';
 		$form .= '</form>';
 		return $form;
 	}
 } //zoner_search_form
-
-if ( ! function_exists( 'zoner_ExludeSearchFilter' ) ) {
-	function zoner_ExludeSearchFilter($query) {
-		if ( !$query->is_admin && $query->is_search) {
-			$query->set('post_type', 'post');
-		}
-		return $query;
-	}
-}	
 
 if ( ! function_exists( 'zoner_kses_data' ) ) {
 	function zoner_kses_data($text = null) {
@@ -505,7 +454,7 @@ if ( ! function_exists( 'zoner_change_excerpt_more' ) ) {
 
 if ( ! function_exists( 'zoner_modify_read_more_link' ) ) {
 	function zoner_modify_read_more_link() {
-		return '<a class="link-arrow" href="' . get_permalink() . '">'.__('Read More', 'zoner').'</a>';
+		return '<a class="link-arrow" href="' . get_permalink() . '">'.__('Read More', 'zoner-lite').'</a>';
 	}
 }	
 
@@ -579,7 +528,7 @@ if ( ! function_exists( 'zoner_get_social' ) ) {
 		if (!empty($zoner_config['footer-text'])) {
 			$ftext = zoner_kses_data(stripslashes($zoner_config['footer-text']));
 		} elseif (!$is_redux_active) {
-			$ftext = '&#169; <a target="_blank" title="WordPress Development" href="http://fruitfulcode.com/">Fruitful Code</a>, Powered by <a target="_blank" href="http://wordpress.org/">WordPress</a>';
+			$ftext = __('&#169; <a target="_blank" title="WordPress Development" href="http://fruitfulcode.com/">Fruitful Code</a>, Powered by <a target="_blank" href="http://wordpress.org/">WordPress</a>', 'zoner-lite');
 		}
 			
 		if (is_home() || is_front_page()) {
@@ -628,7 +577,7 @@ if ( ! function_exists( 'zoner_get_social' ) ) {
 				}
 				
 				if ($fsocial != '') $out_ .= $fsocial;
-				$out_ .='<span class="go-to-top pull-right"><a href="#page-top" class="roll">' . __('Go to top', 'zoner') . '</a></span>';
+				$out_ .='<span class="go-to-top pull-right"><a href="#page-top" class="roll">' . __('Go to top', 'zoner-lite') . '</a></span>';
 				
 			$out_ .= '</div><!-- /.container -->';
 		$out_ .= '</section>';
@@ -670,17 +619,17 @@ if ( ! function_exists( 'zoner_seconadry_navigation' ) ) {
 			<div class="container">
 				<div class="contact">
 					<?php if (!empty($zoner_config['header-phone'])) { ?>	
-						<figure><strong><?php _e('Phone', 'zoner'); ?>:</strong><?php echo esc_attr($zoner_config['header-phone']); ?></figure>
+						<figure><strong><?php _e('Phone', 'zoner-lite'); ?>:</strong><?php echo esc_attr($zoner_config['header-phone']); ?></figure>
 					<?php } ?>
 					<?php if (!empty($zoner_config['header-email'])) { ?>	
-						<figure><strong><?php _e('Email', 'zoner'); ?>:</strong><a href="mailto:<?php echo esc_attr($zoner_config['header-email']); ?>"><?php echo esc_attr($zoner_config['header-email']); ?></a></figure>
+						<figure><strong><?php _e('Email', 'zoner-lite'); ?>:</strong><a href="mailto:<?php echo esc_attr($zoner_config['header-email']); ?>"><?php echo esc_attr($zoner_config['header-email']); ?></a></figure>
 					<?php } ?>
 				</div>
 				<div class="user-area">
 					<div class="actions">
 						<?php if ( is_user_logged_in() ) { ?>
 							<a class="promoted" href="<?php echo get_author_posts_url($current_user->ID); ?>"><i class="fa fa-user"></i> <strong><?php echo $current_user->display_name; ?></strong></a>
-							<a class="promoted logout" href="<?php echo wp_logout_url(esc_url($site_url)); ?>" title="<?php _e('Sign Out', 'zoner'); ?>"><?php _e('Sign Out', 'zoner'); ?></a>
+							<a class="promoted logout" href="<?php echo wp_logout_url(esc_url($site_url)); ?>" title="<?php _e('Sign Out', 'zoner-lite'); ?>"><?php _e('Sign Out', 'zoner-lite'); ?></a>
 						<?php } ?>
 					</div>
 					<?php 
@@ -766,26 +715,26 @@ if ( ! function_exists( 'zoner_get_content_part' ) ) {
 			if (is_home() && !empty($page_for_posts)) { 
 				echo '<header><h1>'.get_the_title($page_for_posts).'</h1></header>'; 
 			}  elseif (is_front_page() && empty($page_for_posts) && empty($page_on_front)) {
-				echo '<header><h1>'.__('Latest posts', 'zoner').'</h1></header>'; 
+				echo '<header><h1>'.__('Latest posts', 'zoner-lite').'</h1></header>'; 
 			}
 			
 			if (is_archive()) {
 				if ( is_day() ) :
-					$title = sprintf( __( 'Daily Archives: %s', 'zoner' ),   get_the_date() );
+					$title = sprintf( __( 'Daily Archives: %s', 'zoner-lite' ),   get_the_date() );
 				elseif ( is_month() ) :
-					$title = sprintf( __( 'Monthly Archives: %s', 'zoner' ), get_the_date( _x( 'F Y', 'monthly archives date format', 'zoner' ) ) );
+					$title = sprintf( __( 'Monthly Archives: %s', 'zoner-lite' ), get_the_date( _x( 'F Y', 'monthly archives date format', 'zoner-lite' ) ) );
 				elseif ( is_year() ) :
-					$title = sprintf( __( 'Yearly Archives: %s', 'zoner' ),  get_the_date( _x( 'Y', 'yearly archives date format', 'zoner' ) ) );
+					$title = sprintf( __( 'Yearly Archives: %s', 'zoner-lite' ),  get_the_date( _x( 'Y', 'yearly archives date format', 'zoner-lite' ) ) );
 				else :
-					$title = __( 'Archives', 'zoner' );
+					$title = __( 'Archives', 'zoner-lite' );
 				endif;
 			}
 			
 			
 			
-			if (is_category()) $title = sprintf( __( 'Category: %s', 'zoner' ), single_cat_title( '', false ) );
-			if (is_search()) $title = sprintf( __( 'Search Results for: %s', 'zoner' ), get_search_query() );
-			if (is_tag()) $title = sprintf( __( 'Tag Archives: %s', 'zoner' ), single_tag_title( '', false ) );
+			if (is_category()) $title = sprintf( __( 'Category: %s', 'zoner-lite' ), single_cat_title( '', false ) );
+			if (is_search()) $title = sprintf( __( 'Search Results for: %s', 'zoner-lite' ), get_search_query() );
+			if (is_tag()) $title = sprintf( __( 'Tag Archives: %s', 'zoner-lite' ), single_tag_title( '', false ) );
 			
 			if ($title != '') echo '<header><h1>'.$title.'</h1></header>';
 			
@@ -801,7 +750,7 @@ if ( ! function_exists( 'zoner_get_content_part' ) ) {
 				
 			if ($type_in == 'post') zoner_paging_nav(); 
 		} else {
-			echo '<header><h1>'. __('Nothing Found', 'zoner').'</h1></header>';
+			echo '<header><h1>'. __('Nothing Found', 'zoner-lite').'</h1></header>';
 			get_template_part( 'content', 'none' );
 		}
 	}
@@ -937,17 +886,6 @@ if ( ! function_exists( 'zoner_post_chat' ) ) {
 	}
 }
 
-if ( ! function_exists( 'zoner_get_delay_interval' ) ) {				
-	function zoner_get_delay_interval($interval = 0) {
-		$time_class = '';		
-		if ($interval > 0) {
-			$time_class = 'after '.$interval.'s';
-		}
-		return $time_class;		
-	}
-}
-
-
 if ( ! function_exists( 'zoner_img_caption' ) ) {				
 	function zoner_img_caption( $empty_string, $attributes, $content ){
 		extract(shortcode_atts(array(
@@ -986,7 +924,7 @@ if ( ! function_exists( 'zoner_get_author_information' ) ) {
 		<?php if ( have_posts() ) : ?>
 			<?php the_post(); ?>
 			<section id="author-detail" class="author-detail">
-				<header><h1><?php printf( __( 'All posts by "%s"', 'zoner' ), get_the_author()); ?></h1></header>
+				<header><h1><?php printf( __( 'All posts by "%s"', 'zoner-lite' ), get_the_author()); ?></h1></header>
 			</section>	
 				
 			<?php if ( get_the_author_meta( 'description' ) ) : ?>
@@ -1012,9 +950,9 @@ if ( ! function_exists( 'zoner_get_author_information' ) ) {
 /*Get Post Thumbnail*/
 if ( ! function_exists( 'zoner_get_post_thumbnail' ) ) {				
 	function zoner_get_post_thumbnail() {
-		global $zoner_config, $prefix, $zoner, $post;
+		global $zoner_config, $prefix, $zoner, $post, $is_redux_active;
 		
-		if ( has_post_thumbnail() && ($zoner_config['pp-thumbnail'] || !$is_redux_active)) {
+		if ( has_post_thumbnail() && ($zoner_config['pp-thumbnail'] || ! $is_redux_active)) {
 			$attachment_id = get_post_thumbnail_id( $post->ID );
 			$post_thumbnail = wp_get_attachment_image_src( $attachment_id, 'full');
 		?> 
@@ -1070,7 +1008,7 @@ if ( ! function_exists( 'zoner_get_post_meta' ) ) {
 						<?php the_time('d/m/Y'); ?>
 					</a>
 				<?php } ?>
-				<?php edit_post_link( '<i title="' . __("Edit", 'zoner') . '" class="fa fa-pencil-square-o"></i>'.__("Edit", 'zoner'), '', '' ); ?>
+				<?php edit_post_link( '<i title="' . __("Edit", 'zoner-lite') . '" class="fa fa-pencil-square-o"></i>'.__("Edit", 'zoner-lite'), '', '' ); ?>
 				<?php if ($zoner_config['pp-tags'] || !$is_redux_active) the_tags('<div class="tags article-tags">', ' ', '</div>');	?>
 			</figure>
 		<?php
@@ -1082,12 +1020,12 @@ if ( ! function_exists( 'zoner_get_post_none_content' ) ) {
 	function zoner_get_post_none_content() {
 	?>
 		<?php if ( is_home() && current_user_can( 'publish_posts' ) ) : ?>
-				<p><?php printf( __( 'Ready to publish your first post? <a href="%1$s">Get started here</a>.', 'zoner' ), admin_url( 'post-new.php' ) ); ?></p>
+				<p><?php printf( __( 'Ready to publish your first post? <a href="%1$s">Get started here</a>.', 'zoner-lite' ), admin_url( 'post-new.php' ) ); ?></p>
 			<?php elseif ( is_search() ) : ?>
-				<p><?php _e( 'Sorry, but nothing matched your search terms. Please try again with some different keywords.', 'zoner' ); ?></p>
+				<p><?php _e( 'Sorry, but nothing matched your search terms. Please try again with some different keywords.', 'zoner-lite' ); ?></p>
 			<?php get_search_form(); ?>
 			<?php else : ?>
-				<p><?php _e( 'It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help.', 'zoner' ); ?></p>
+				<p><?php _e( 'It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help.', 'zoner-lite' ); ?></p>
 			<?php get_search_form(); ?>
 		<?php endif; ?>
 	<?php	
@@ -1102,7 +1040,7 @@ if ( ! function_exists( 'zoner_get_post_about_author' ) ) {
 	?>
 		
 		<section id="about-author">
-			<header><h3><?php _e('About the Author', 'zoner'); ?></h3></header>
+			<header><h3><?php _e('About the Author', 'zoner-lite'); ?></h3></header>
 			<div class="post-author">
 				<?php echo zoner_get_profile_avartar(get_the_author_meta( 'ID')); ?>
 				<div class="wrapper">
@@ -1121,7 +1059,7 @@ if ( ! function_exists( 'zoner_get_readmore_link' ) ) {
 	function zoner_get_readmore_link() {
 		global $zoner_config, $prefix, $zoner, $post;
 		?> 
-			<a class="link-arrow" href="<?php the_permalink();?>"><?php _e('Read More', 'zoner'); ?></a>
+			<a class="link-arrow" href="<?php the_permalink();?>"><?php _e('Read More', 'zoner-lite'); ?></a>
 		<?php	
 	}
 }

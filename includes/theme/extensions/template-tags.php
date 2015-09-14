@@ -24,8 +24,8 @@ function zoner_paging_nav() {
 	$max = 0;
 	if ( $wp_query->max_num_pages <= 1 ) return;
 	
-	$previous_post_label = __('Previous', 'zoner');
-	$next_post_label = __('Next', 'zoner');
+	$previous_post_label = __('Previous', 'zoner-lite');
+	$next_post_label = __('Next', 'zoner-lite');
 	
 	if 	   ( get_query_var('paged') ) { $paged = get_query_var('paged'); }
 	elseif ( get_query_var('page') )  { $paged = get_query_var('page');  }
@@ -95,14 +95,14 @@ function zoner_post_nav() {
 
 	?>
 	<nav class="navigation post-navigation" role="navigation">
-		<h1 class="screen-reader-text"><?php _e( 'Post navigation', 'zoner' ); ?></h1>
+		<h1 class="screen-reader-text"><?php _e( 'Post navigation', 'zoner-lite' ); ?></h1>
 		<div class="nav-links">
 			<?php
 			if ( is_attachment() ) :
-				previous_post_link( '%link', __( '<span class="meta-nav">Published In</span>%title', 'zoner' ) );
+				previous_post_link( '%link', __( '<span class="meta-nav">Published In</span>%title', 'zoner-lite' ) );
 			else :
-				previous_post_link( '%link', __( '<span class="meta-nav">Previous Post</span>%title', 'zoner' ) );
-				next_post_link( '%link', __( '<span class="meta-nav">Next Post</span>%title', 'zoner' ) );
+				previous_post_link( '%link', __( '<span class="meta-nav">Previous Post</span>%title', 'zoner-lite' ) );
+				next_post_link( '%link', __( '<span class="meta-nav">Next Post</span>%title', 'zoner-lite' ) );
 			endif;
 			?>
 		</div><!-- .nav-links -->

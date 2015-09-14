@@ -9,9 +9,9 @@ if ( ! function_exists( 'zoner_widgets_init' ) ) {
 		global $zoner_config;
 	
 		register_sidebar( array(
-			'name'          => __( 'Blog sidebar', 'zoner' ),
+			'name'          => __( 'Blog sidebar', 'zoner-lite' ),
 			'id'            => 'primary',
-			'description'   => __( 'Blog sidebar area.', 'zoner' ),
+			'description'   => __( 'Blog sidebar area.', 'zoner-lite' ),
 			'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 			'after_widget'  => '</aside>',
 			'before_title'  => '<h3 class="widget-title">',
@@ -19,9 +19,9 @@ if ( ! function_exists( 'zoner_widgets_init' ) ) {
 		) );
 	
 		register_sidebar( array(
-			'name'          => __( 'Page sidebar', 'zoner' ),
+			'name'          => __( 'Page sidebar', 'zoner-lite' ),
 			'id'            => 'secondary',
-			'description'   => __( 'Page sidebar area.', 'zoner' ),
+			'description'   => __( 'Page sidebar area.', 'zoner-lite' ),
 			'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 			'after_widget'  => '</aside>',
 			'before_title'  => '<h3 class="widget-title">',
@@ -38,9 +38,9 @@ if ( ! function_exists( 'zoner_widgets_init' ) ) {
 	
 		for ( $i = 1; $i <= intval( $total_sidebars_count ); $i++ ) {
 			register_sidebar( 
-				array( 'name' 			=> sprintf( __( 'Footer area %d', 'zoner' ), $i ), 
+				array( 'name' 			=> sprintf( __( 'Footer area %d', 'zoner-lite' ), $i ), 
 					   'id'   			=> sprintf( 'footer-%d', $i ), 
-					   'description' 	=> sprintf( __( 'Widgetized footer area %d.', 'zoner' ), $i ), 
+					   'description' 	=> sprintf( __( 'Widgetized footer area %d.', 'zoner-lite' ), $i ), 
 					   'before_widget'  => '<aside id="%1$s" class="widget %2$s">',
 					   'after_widget'   => '</aside>',
 					   'before_title' 	=> '<h3 class="widget-title">',

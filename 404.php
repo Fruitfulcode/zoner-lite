@@ -10,8 +10,8 @@
 get_header(); ?>
 <?php 
 	global $zoner_config;
-	$bg_404 	= esc_url($zoner_config['404-image']);
-	$text_404 	= __('404', 'zoner');
+	$bg_404 	= esc_url($zoner_config['404-image']['url']);
+	$text_404 	= __('404', 'zoner-lite');
 	if (isset($zoner_config['404-text'])) 
 		$text_404 = esc_attr($zoner_config['404-text']);
 ?>
@@ -20,12 +20,12 @@ get_header(); ?>
 		<section id="404">
 			<div class="error-page">
 				<div class="title">
-					<img alt="<?php echo $text_404; ?>" src="<?php echo $bg_404['url']; ?>" class="top">
+					<img alt="<?php echo $text_404; ?>" src="<?php echo $bg_404; ?>" class="top">
                     <header><?php echo $text_404; ?></header>
-                    <img alt="" src="<?php echo $bg_404['url']; ?>" class="bottom">
+                    <img alt="" src="<?php echo $bg_404; ?>" class="bottom">
                  </div>
-                 <h2 class="no-border"><?php _e('Page not found', 'zoner'); ?></h2>
-                 <a href="<?php echo home_url(''); ?>" class="link-arrow back" onclick="history.back(-1)"><?php _e('Go Back', 'zoner'); ?></a>
+                 <h2 class="no-border"><?php _e('Page not found', 'zoner-lite'); ?></h2>
+                 <a href="<?php echo home_url(''); ?>" class="link-arrow back" onclick="history.back(-1)"><?php _e('Go Back', 'zoner-lite'); ?></a>
 			</div>
 		</section>
 	</div><!-- /.container -->

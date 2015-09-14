@@ -22,14 +22,14 @@ if ( post_password_required() ) {
 	<?php if ( have_comments() ) : ?>
 	
 	<header>
-		<h2 class="no-border"><?php printf( _n( 'One comment', '%1$s comments', get_comments_number(), 'zoner' ), number_format_i18n(get_comments_number())); ?></h2>
+		<h2 class="no-border"><?php printf( _n( 'One comment', '%1$s comments', get_comments_number(), 'zoner-lite' ), number_format_i18n(get_comments_number())); ?></h2>
 	</header>
 
 	<?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : ?>
 	<nav id="comment-nav-above" class="navigation comment-navigation" role="navigation">
-		<h1 class="screen-reader-text"><?php _e( 'Comment navigation', 'zoner' ); ?></h1>
-		<div class="nav-previous"><?php previous_comments_link( __( '&larr; Older Comments', 'zoner' ) ); ?></div>
-		<div class="nav-next"><?php next_comments_link( __( 'Newer Comments &rarr;', 'zoner' ) ); ?></div>
+		<h1 class="screen-reader-text"><?php _e( 'Comment navigation', 'zoner-lite' ); ?></h1>
+		<div class="nav-previous"><?php previous_comments_link( __( '&larr; Older Comments', 'zoner-lite' ) ); ?></div>
+		<div class="nav-next"><?php next_comments_link( __( 'Newer Comments &rarr;', 'zoner-lite' ) ); ?></div>
 	</nav><!-- #comment-nav-above -->
 	<?php endif; // Check for comment navigation. ?>
 	
@@ -46,13 +46,13 @@ if ( post_password_required() ) {
 
 	<?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : ?>
 		<nav id="comment-nav-below" class="navigation comment-navigation" role="navigation">
-			<div class="nav-previous"><?php previous_comments_link( __( 'Older Comments', 'zoner' ) ); ?></div>
-			<div class="nav-next"><?php next_comments_link( __( 'Newer Comments', 'zoner' ) ); ?></div>
+			<div class="nav-previous"><?php previous_comments_link( __( 'Older Comments', 'zoner-lite' ) ); ?></div>
+			<div class="nav-next"><?php next_comments_link( __( 'Newer Comments', 'zoner-lite' ) ); ?></div>
 		</nav><!-- #comment-nav-below -->
 	<?php endif; // Check for comment navigation. ?>
 
 	<?php if ( ! comments_open() ) : ?>
-		<p class="no-comments"><?php _e( 'Comments are closed.', 'zoner' ); ?></p>
+		<p class="no-comments"><?php _e( 'Comments are closed.', 'zoner-lite' ); ?></p>
 	<?php endif; ?>
 
 	<?php endif; // have_comments() ?>
@@ -64,7 +64,7 @@ if ( post_password_required() ) {
   
 		$args = array(
 					'id_form' => 'form-blog-reply',
-					'label_submit' => __( 'Leave a Reply', 'zoner' ),
+					'label_submit' => __( 'Leave a Reply', 'zoner-lite' ),
 					'class_submit' => 'btn pull-right btn-default',
 					'fields'  => apply_filters( 'comment_form_default_fields', 
 						 array(
@@ -72,7 +72,7 @@ if ( post_password_required() ) {
 											<div class="row">
 												<div class="col-md-6">
 													<div class="form-group">
-														<label for="author">'. __('Your Name', 'zoner') .'<em>*</em></label>
+														<label for="author">'. __('Your Name', 'zoner-lite') .'<em>*</em></label>
 														<input type="text" class="form-control" id="author" name="author" value="' . esc_attr( $commenter['comment_author'] ) . '" size="30"' . $aria_req . ' />
 													</div><!-- /.form-group -->
 												</div><!-- /.col-md-6 -->
@@ -80,7 +80,7 @@ if ( post_password_required() ) {
 							'email'   => '
 												<div class="col-md-6">
 													<div class="form-group">
-														<label for="email">' . __('Your Email', 'zoner') .'<em>*</em></label>
+														<label for="email">' . __('Your Email', 'zoner-lite') .'<em>*</em></label>
 														<input type="email" class="form-control" id="email" name="email" ' . esc_attr(  $commenter['comment_author_email'] ) . '" size="30" '. $aria_req .' />
 													</div><!-- /.form-group -->
 												</div><!-- /.col-md-6 -->
@@ -94,7 +94,7 @@ if ( post_password_required() ) {
 											<div class="row">
 												<div class="col-md-12">
 													<div class="form-group">
-														<label for="comment">'. __('Your Message', 'zoner') .'<em>*</em></label>
+														<label for="comment">'. __('Your Message', 'zoner-lite') .'<em>*</em></label>
 														<textarea class="form-control" id="comment" cols="45" rows="8" name="comment" '. $aria_req .'></textarea>
 													</div><!-- /.form-group -->
 												</div><!-- /.col-md-12 -->

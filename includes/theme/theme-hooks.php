@@ -15,7 +15,6 @@
 	
 	add_filter( 'body_class', 'zoner_body_classes' );
 	add_filter( 'post_class', 'zoner_post_classes' );
-	add_filter( 'wp_title', 'zoner_wp_title', 10, 2 );
 	add_filter( 'get_search_form', 'zoner_search_form' );
 	add_filter( 'excerpt_more', 'zoner_change_excerpt_more');
 	add_filter( 'excerpt_length', 'zoner_set_excerpt_length', 999 );	
@@ -26,11 +25,8 @@
 	add_filter( 'the_content', 'zoner_post_chat', 99);
 	add_filter( 'img_caption_shortcode', 'zoner_img_caption', 10, 3 );
 	
-	add_filter('pre_get_posts','zoner_ExludeSearchFilter');
-	
 	
 	/*Profile*/
-	add_action('after_setup_theme', 'zoner_remove_admin_bar');
 	add_action('wp', 'zoner_process_save_profile', 300);
 	
 	

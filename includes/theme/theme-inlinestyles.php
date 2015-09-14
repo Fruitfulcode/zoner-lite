@@ -282,7 +282,7 @@ if ( ! function_exists( 'zoner_get_inline_styles' ) ) {
 		}
 		
 		if (!empty($style)) 	
-			wp_add_inline_style( 'zoner-style', zoner_compress_code($style)); 
+			wp_add_inline_style( 'zoner-style', $style); 
 		
 	}
 	add_action('wp_enqueue_scripts', 'zoner_get_inline_styles', 99);

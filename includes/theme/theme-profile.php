@@ -1,21 +1,14 @@
 <?php 
-
-if ( ! function_exists( 'zoner_remove_admin_bar' ) ) {				
-	function zoner_remove_admin_bar() {
-		show_admin_bar((current_user_can('administrator') || current_user_can('editor')));	
-	}
-}	
-
 if ( ! function_exists( 'zoner_generate_profile_tabs' ) ) {				
 	function zoner_generate_profile_tabs() {
 		global $zoner_config, $zoner;
 		
-		$tab_val = array('name' => __( 'Profile', 		'zoner' ), 'icon' => 'fa-user');
+		$tab_val = array('name' => __( 'Profile', 		'zoner-lite' ), 'icon' => 'fa-user');
 		
 		?>
 		<div class="col-md-3 col-sm-2">
 			<section id="sidebar" class="sidebar">
-				<header><h3 class="widget-title"><?php _e('Account', 'zoner'); ?></h3></header>
+				<header><h3 class="widget-title"><?php _e('Account', 'zoner-lite'); ?></h3></header>
 					<aside>
 						<ul class="sidebar-navigation">
 							<li class="active">
@@ -119,7 +112,7 @@ if ( ! function_exists( 'zoner_generate_profile_info' ) ) {
 	?>
 		<div class="col-md-9 col-sm-10">
 			<section id="profile">
-				<header><h1><?php _e('Profile', 'zoner'); ?></h1></header>
+				<header><h1><?php _e('Profile', 'zoner-lite'); ?></h1></header>
 					<div class="account-profile">
 						<div class="row">
 							<form role="form" id="form-account-profile" class="form-account-profile" method="post" action="" enctype="multipart/form-data">
@@ -134,53 +127,53 @@ if ( ! function_exists( 'zoner_generate_profile_info' ) ) {
 										<?php } ?>
 										<?php echo zoner_get_profile_avartar($userID); ?>
 									</div>
-									<div class="form-group tool-tip-info"  data-original-title="<?php _e('image size has to be less than 1 MB', 'zoner'); ?>">
-										<input id="form-account-avatar-file" name="form-account-avatar-file" class="file-inputs" type="file" title="<?php _e('Upload Avatar', 'zoner'); ?>" data-filename-placement="inside" value="">
+									<div class="form-group tool-tip-info"  data-original-title="<?php _e('image size has to be less than 1 MB', 'zoner-lite'); ?>">
+										<input id="form-account-avatar-file" name="form-account-avatar-file" class="file-inputs" type="file" title="<?php _e('Upload Avatar', 'zoner-lite'); ?>" data-filename-placement="inside" value="">
 									</div>
 								</div>
 								
 								<div class="col-md-9 col-sm-9">
 									<section id="contact">
-										<h3><?php _e('Contact', 'zoner'); ?></h3>
+										<h3><?php _e('Contact', 'zoner-lite'); ?></h3>
 										<dl class="contact-fields">
-											<dt><label for="form-account-fname"><?php _e('First Name', 'zoner'); ?>:</label></dt>
+											<dt><label for="form-account-fname"><?php _e('First Name', 'zoner-lite'); ?>:</label></dt>
 											<dd><div class="form-group">
 												<input type="text" class="form-control" id="form-account-fname" name="form-account-fname" required value="<?php the_author_meta( 'first_name', $userID ); ?>">
 											</div><!-- /.form-group --></dd>
 											
-											<dt><label for="form-account-lname"><?php _e('Last Name', 'zoner'); ?>:</label></dt>
+											<dt><label for="form-account-lname"><?php _e('Last Name', 'zoner-lite'); ?>:</label></dt>
 											<dd><div class="form-group">
 												<input type="text" class="form-control" id="form-account-lname" name="form-account-lname" required value="<?php the_author_meta( 'last_name', $userID ); ?>">
 											</div><!-- /.form-group --></dd>
 											
-											<dt><label for="form-account-phone"><?php _e('Phone', 'zoner'); ?>:</label></dt>
+											<dt><label for="form-account-phone"><?php _e('Phone', 'zoner-lite'); ?>:</label></dt>
 											<dd><div class="form-group">
 												<input type="text" class="form-control" id="form-account-phone" name="form-account-phone" value="<?php the_author_meta( $prefix.'tel', $userID ); ?>">
 											</div><!-- /.form-group --></dd>
 											
-											<dt><label for="form-account-mobile"><?php _e('Mobile', 'zoner'); ?>:</label></dt>
+											<dt><label for="form-account-mobile"><?php _e('Mobile', 'zoner-lite'); ?>:</label></dt>
 											<dd><div class="form-group">
 												<input type="text" class="form-control" id="form-account-mobile" name="form-account-mobile" value="<?php the_author_meta( $prefix.'mob', $userID ); ?>">
 											</div><!-- /.form-group --></dd>
 											
-											<dt><label for="form-account-email"><?php _e('Email', 'zoner');?>:</label></dt>
+											<dt><label for="form-account-email"><?php _e('Email', 'zoner-lite');?>:</label></dt>
 											<dd><div class="form-group">
 												<input type="text" class="form-control" id="form-account-email" name="form-account-email" value="<?php the_author_meta( 'user_email', $userID ); ?>" disabled="disabled">
 											</div><!-- /.form-group --></dd>
-											<dt><label for="form-account-skype"><?php _e('Skype', 'zoner');?>:</label></dt>
+											<dt><label for="form-account-skype"><?php _e('Skype', 'zoner-lite');?>:</label></dt>
 											<dd><div class="form-group">
 												<input type="text" class="form-control" id="form-account-skype" name="form-account-skype" value="<?php the_author_meta( $prefix.'skype', $userID ); ?>">
 											</div><!-- /.form-group --></dd>
 										</dl>
 									</section>
 									<section id="about-me">
-										<h3><?php _e('About Me', 'zoner'); ?></h3>
+										<h3><?php _e('About Me', 'zoner-lite'); ?></h3>
 										<div class="form-group">
 											<textarea class="form-control" id="form-contact-agent-message" rows="5" name="form-contact-agent-message"><?php the_author_meta( 'description', $userID ); ?></textarea>
 										</div><!-- /.form-group -->
 									</section>
 									<section id="social">
-										<h3><?php _e('My Social Network', 'zoner'); ?></h3>
+										<h3><?php _e('My Social Network', 'zoner-lite'); ?></h3>
 										<?php 
 											foreach ($social_arr as $key => $values) {
 										?>
@@ -196,7 +189,7 @@ if ( ! function_exists( 'zoner_generate_profile_info' ) ) {
 										?>
 										
 										<div class="form-group clearfix">
-											<button type="submit" class="btn pull-right btn-default" id="account-submit"><?php _e('Save Changes', 'zoner'); ?></button>
+											<button type="submit" class="btn pull-right btn-default" id="account-submit"><?php _e('Save Changes', 'zoner-lite'); ?></button>
 										</div><!-- /.form-group -->
 									</section>
 								</div>
@@ -205,33 +198,33 @@ if ( ! function_exists( 'zoner_generate_profile_info' ) ) {
 						
 						<div class="col-md-offset-3 col-md-9 col-sm-10">			
 							<section id="change-password">
-								<header><h2><?php _e('Change Your Password', 'zoner'); ?></h2></header>
+								<header><h2><?php _e('Change Your Password', 'zoner-lite'); ?></h2></header>
 								<div class="row">
 									<div class="col-md-6 col-sm-6">
 										<form role="form" id="form-account-password" class="form-account-password" method="post" action="">
 											<?php wp_nonce_field( 'zoner_change_password', 'change_password', true, true ); ?>
 											<div class="form-group">
-												<label for="form-account-password-current"><?php _e('Current Password', 'zoner'); ?></label>
+												<label for="form-account-password-current"><?php _e('Current Password', 'zoner-lite'); ?></label>
 												<input type="password" class="form-control" id="form-account-password-current" name="form-account-password-current" required>
 											</div><!-- /.form-group -->
 											<div class="form-group">
-												<label for="form-account-password-new"><?php _e('New Password','zoner'); ?> </label>
+												<label for="form-account-password-new"><?php _e('New Password','zoner-lite'); ?> </label>
 												<input type="password" class="form-control" id="form-account-password-new" name="form-account-password-new" required>
 											</div><!-- /.form-group -->
 											<div class="form-group">
-												<label for="form-account-password-confirm-new"><?php _e('Confirm New Password', 'zoner'); ?></label>
+												<label for="form-account-password-confirm-new"><?php _e('Confirm New Password', 'zoner-lite'); ?></label>
 												<input type="password" class="form-control" id="form-account-password-confirm-new" name="form-account-password-confirm-new" required>
 											</div><!-- /.form-group -->
 											<div class="form-group clearfix">
-												<button type="submit" class="btn btn-default" id="form-account-password-submit"><?php _e('Change Password', 'zoner');?></button>
+												<button type="submit" class="btn btn-default" id="form-account-password-submit"><?php _e('Change Password', 'zoner-lite');?></button>
 											</div><!-- /.form-group -->
 										</form><!-- /#form-account-password -->
 									</div>
 									
 									<div class="col-md-6 col-sm-6">
-										<strong><?php _e('Hint', 'zoner'); ?>:</strong>
-										<p><?php _e('Be careful. After you change the password, the password is automatically applied.', 'zoner'); ?></p>
-										<p><?php _e("If you don't have a current password you can sign out and reset your password at sign in page.", 'zoner'); ?></p>
+										<strong><?php _e('Hint', 'zoner-lite'); ?>:</strong>
+										<p><?php _e('Be careful. After you change the password, the password is automatically applied.', 'zoner-lite'); ?></p>
+										<p><?php _e("If you don't have a current password you can sign out and reset your password at sign in page.", 'zoner-lite'); ?></p>
 									</div>
 								</div>
 							</section>

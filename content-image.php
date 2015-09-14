@@ -21,7 +21,7 @@
 		<?php zoner_get_post_meta(); ?>
 		<?php the_content(); ?>
 		<?php wp_link_pages( array(
-				'before'      => '<div class="page-links"><span class="page-links-title">' . __( 'Pages:', 'zoner' ) . '</span>',
+				'before'      => '<div class="page-links"><span class="page-links-title">' . __( 'Pages:', 'zoner-lite' ) . '</span>',
 				'after'       => '</div>',
 				'link_before' => '<span>',
 				'link_after'  => '</span>',

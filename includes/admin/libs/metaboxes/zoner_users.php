@@ -23,21 +23,21 @@ function zoner_users_mtb( array $meta_boxes ) {
 	
 	$meta_boxes[] = array(
 		'id'            => 'user_edit',
-		'title'         => __( 'User Profile', 'zoner' ),
+		'title'         => __( 'User Profile', 'zoner-lite' ),
 		'pages'         => array( 'user' ), 
 		'show_names'    => true,
 		'zoner_styles' 	=> true, 
 		'class'			=> 'user-profiles',
 		'fields'        => array(
 			array(
-				'name'     => __( 'Extra User Info', 'zoner' ),
+				'name'     => __( 'Extra User Info', 'zoner-lite' ),
 				'id'       => $prefix . 'extra_info',
 				'type'     => 'title',
 				'on_front' => false,
 			),
 			
 			array(
-				'name'    => __( 'Avatar', 'zoner' ),
+				'name'    => __( 'Avatar', 'zoner-lite' ),
 				'id'      => $prefix . 'avatar',
 				'type'    => 'file',
 				'save_id' => true,
@@ -45,49 +45,49 @@ function zoner_users_mtb( array $meta_boxes ) {
 			),
 			
 			array(
-				'name' => __( 'Facebook URL', 'zoner' ),
+				'name' => __( 'Facebook URL', 'zoner-lite' ),
 				'id'   => $prefix . 'facebookurl',
 				'type' => 'text_url',
 			),
 			
 			array(
-				'name' => __( 'Twitter URL', 'zoner' ),
+				'name' => __( 'Twitter URL', 'zoner-lite' ),
 				'id'   => $prefix . 'twitterurl',
 				'type' => 'text_url',
 			),
 			
 			array(
-				'name' => __( 'Google+ URL', 'zoner' ),
+				'name' => __( 'Google+ URL', 'zoner-lite' ),
 				'id'   => $prefix . 'googleplusurl',
 				'type' => 'text_url',
 			),
 			
 			array(
-				'name' => __( 'Linkedin URL', 'zoner' ),
+				'name' => __( 'Linkedin URL', 'zoner-lite' ),
 				'id'   => $prefix . 'linkedinurl',
 				'type' => 'text_url',
 			),
 			
 			array(
-				'name' => __( 'Pinterest URL', 'zoner' ),
+				'name' => __( 'Pinterest URL', 'zoner-lite' ),
 				'id'   => $prefix . 'pinteresturl',
 				'type' => 'text_url',
 			),
 			
 			array(
-				'name' => __( 'Phone', 'zoner' ),
+				'name' => __( 'Phone', 'zoner-lite' ),
 				'id'   => $prefix . 'tel',
 				'type' => 'text_medium',
 			),
 			
 			array(
-				'name' => __( 'Mobile', 'zoner' ),
+				'name' => __( 'Mobile', 'zoner-lite' ),
 				'id'   => $prefix . 'mob',
 				'type' => 'text_medium',
 			),
 			
 			array(
-				'name' => __( 'Skype', 'zoner' ),
+				'name' => __( 'Skype', 'zoner-lite' ),
 				'id'   => $prefix . 'skype',
 				'type' => 'text_medium',
 			),
