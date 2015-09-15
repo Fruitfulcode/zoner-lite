@@ -12,8 +12,8 @@
  */
 
 get_header(); ?>
-	<?php 	global $prefix;
-			$page_layout = get_post_meta(get_the_ID(), $prefix.'pages_layout', true); 
+	<?php 	global $zoner_prefix;
+			$page_layout = get_post_meta(get_the_ID(), $zoner_prefix.'pages_layout', true); 
 	?>
 	<?php if ($page_layout != -1) do_action('zoner_before_content') ?>
 		<?php do_action('the_main_content'); ?>

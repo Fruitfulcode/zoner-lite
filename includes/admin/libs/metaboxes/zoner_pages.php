@@ -17,7 +17,7 @@ add_filter( 'cmb_meta_boxes', 'zoner_pages_mtb');
  */
 function zoner_pages_mtb( array $meta_boxes ) {
 	// Start with an underscore to hide fields from custom fields list
-	$prefix = '_zoner_';
+	$zoner_prefix = '_zoner_';
 	
 	$meta_boxes[] = array(
 		'id'         => 'pages_layout',
@@ -30,7 +30,7 @@ function zoner_pages_mtb( array $meta_boxes ) {
 		'fields'     => array(
 			array(
 				'name'    	 => __( 'Page layout', 'zoner-lite' ),
-				'id' 		 => $prefix . 'pages_layout',
+				'id' 		 => $zoner_prefix . 'pages_layout',
 				'type' 		 => 'custom_layout_sidebars',
 				'default'	 => 1
 			),

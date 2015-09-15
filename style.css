@@ -1542,6 +1542,7 @@ img.size-full, img.size-large, .wp-post-image, .post-thumbnail img {
 }
 .comment-list .comment figure .image img {
   height: 100%;
+  width: 70px;
 }
 .comment-list .comment .date {
   font-size: 12px;

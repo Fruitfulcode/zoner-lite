@@ -8,9 +8,9 @@
  */
 ?>
 <?php 
-	global $prefix;
+	global $zoner_prefix;
 		$class_page = array();
-		$page_layout = get_post_meta(get_the_ID(), $prefix.'pages_layout', true); 
+		$page_layout = get_post_meta(get_the_ID(), $zoner_prefix.'pages_layout', true); 
 		if ($page_layout == -1)
 		$class_page[] = 'container';
 ?>

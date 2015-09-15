@@ -1,7 +1,6 @@
 <?php
 	add_action( 'after_setup_theme',  'zoner_setup' );
 	add_filter( 'nav_menu_css_class', 'zoner_nav_parent_class', 10, 2 );
-	add_filter( 'nav_menu_css_class', 'zoner_add_parent_url_menu_class', 10, 3 );
 	
 	/*Main Content Part*/
 	add_action('zoner_before_content', 'zoner_before_content');

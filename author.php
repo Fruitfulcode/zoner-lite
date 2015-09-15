@@ -12,7 +12,7 @@
 <?php do_action('zoner_before_content'); ?>	
 	
 	<?php 
-		global $zoner_config, $prefix;
+		global $zoner_config, $zoner_prefix;
 		$layout = 1;
 		
 		$query_author  = get_queried_object();

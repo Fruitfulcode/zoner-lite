@@ -8,7 +8,6 @@ function zoner_initialize_cmb_meta_boxes() {
 
 require dirname(__FILE__) . '/metaboxes/zoner_fields_for_metaboxes.php';
 require dirname(__FILE__) . '/metaboxes/zoner_pages.php';
-require dirname(__FILE__) . '/metaboxes/zoner_users.php';
 
 /*Tgm activation*/
 require_once dirname(__FILE__) . '/tgm/class-tgm-init.php';

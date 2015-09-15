@@ -25,7 +25,7 @@ if ( ! function_exists( 'zoner_generate_profile_tabs' ) ) {
 
 if ( ! function_exists( 'zoner_get_profile_avartar' ) ) {				
 	function zoner_get_profile_avartar($userID = '') {
-		global $zoner_config, $prefix, $zoner;
+		global $zoner_config, $zoner_prefix, $zoner;
 		if ($userID == '') $userID = get_current_user_id();
 		
 		$all_meta_for_user = get_user_meta( $userID );
@@ -33,10 +33,10 @@ if ( ! function_exists( 'zoner_get_profile_avartar' ) ) {
 		
 		$img_url = get_template_directory_uri() . '/includes/theme/profile/res/avatar.jpg';
 
-		if (!empty($all_meta_for_user[$prefix.'avatar']))
-			$avatar = $all_meta_for_user[$prefix.'avatar'];
-		if (!empty($all_meta_for_user[$prefix.'avatar_id']))
-			$avatar_id = $all_meta_for_user[$prefix.'avatar_id'];
+		if (!empty($all_meta_for_user[$zoner_prefix.'avatar']))
+			$avatar = $all_meta_for_user[$zoner_prefix.'avatar'];
+		if (!empty($all_meta_for_user[$zoner_prefix.'avatar_id']))
+			$avatar_id = $all_meta_for_user[$zoner_prefix.'avatar_id'];
 			
 		if (is_array($avatar)) { 
 				$avatar = array_filter($avatar);
@@ -55,7 +55,7 @@ if ( ! function_exists( 'zoner_get_profile_avartar' ) ) {
 
 if ( ! function_exists( 'zoner_get_user_id' ) ) {				
 	function zoner_get_user_id() {
-		global $zoner_config, $prefix, $wp_query, $zoner;
+		global $zoner_config, $zoner_prefix, $wp_query, $zoner;
 				
 		$user_id = get_current_user_id();
 		if( array_key_exists('author_name', $wp_query->query_vars) && !empty($wp_query->query_vars['author_name'])) {
@@ -69,7 +69,7 @@ if ( ! function_exists( 'zoner_get_user_id' ) ) {
 
 if ( ! function_exists( 'zoner_get_author_content' ) ) {				
 	function zoner_get_author_content() {
-		global $zoner_config, $zoner, $prefix;
+		global $zoner_config, $zoner, $zoner_prefix;
 		
 		$query_author  = get_queried_object();
 		$query_user_id = $query_author->ID;
@@ -86,28 +86,19 @@ if ( ! function_exists( 'zoner_get_author_content' ) ) {
 
 if ( ! function_exists( 'zoner_generate_profile_info' ) ) {				
 	function zoner_generate_profile_info() {
-		global $zoner_config, $prefix, $zoner;
+		global $zoner_config, $zoner_prefix, $zoner;
 		
 		$avatar = '';
 		$avatar_id = -1;
 		$userID = zoner_get_user_id();
 		$all_meta_for_user = get_user_meta( $userID );
 		
-		if (!empty($all_meta_for_user[$prefix.'avatar']))
-		$avatar    = current($all_meta_for_user[$prefix.'avatar']);
+		if (!empty($all_meta_for_user[$zoner_prefix.'avatar']))
+		$avatar    = current($all_meta_for_user[$zoner_prefix.'avatar']);
 		
-		if (!empty($all_meta_for_user[$prefix.'avatar_id']))
-		$avatar_id = current($all_meta_for_user[$prefix.'avatar_id']);
+		if (!empty($all_meta_for_user[$zoner_prefix.'avatar_id']))
+		$avatar_id = current($all_meta_for_user[$zoner_prefix.'avatar_id']);
 		
-		$social_arr	 = apply_filters('zoner_profile_social', array(
-									 'facebookurl'   => array('icon' => 'fa-facebook', 		'class'=>'facebook'),
-									 'twitterurl'    => array('icon' => 'fa-twitter',   	'class'=>'twitter'),
-									 'googleplusurl'  => array('icon' => 'fa-google-plus',  'class'=>'googleplus'),
-									 'linkedinurl'   => array('icon' => 'fa-linkedin',   	'class'=>'linkedin'),
-									 'pinteresturl'	 => array('icon' => 'fa-pinterest', 	'class'=>'pinterest'),
-										
-												
-						));
 		
 	?>
 		<div class="col-md-9 col-sm-10">
@@ -146,23 +137,9 @@ if ( ! function_exists( 'zoner_generate_profile_info' ) ) {
 												<input type="text" class="form-control" id="form-account-lname" name="form-account-lname" required value="<?php the_author_meta( 'last_name', $userID ); ?>">
 											</div><!-- /.form-group --></dd>
 											
-											<dt><label for="form-account-phone"><?php _e('Phone', 'zoner-lite'); ?>:</label></dt>
-											<dd><div class="form-group">
-												<input type="text" class="form-control" id="form-account-phone" name="form-account-phone" value="<?php the_author_meta( $prefix.'tel', $userID ); ?>">
-											</div><!-- /.form-group --></dd>
-											
-											<dt><label for="form-account-mobile"><?php _e('Mobile', 'zoner-lite'); ?>:</label></dt>
-											<dd><div class="form-group">
-												<input type="text" class="form-control" id="form-account-mobile" name="form-account-mobile" value="<?php the_author_meta( $prefix.'mob', $userID ); ?>">
-											</div><!-- /.form-group --></dd>
-											
 											<dt><label for="form-account-email"><?php _e('Email', 'zoner-lite');?>:</label></dt>
 											<dd><div class="form-group">
 												<input type="text" class="form-control" id="form-account-email" name="form-account-email" value="<?php the_author_meta( 'user_email', $userID ); ?>" disabled="disabled">
-											</div><!-- /.form-group --></dd>
-											<dt><label for="form-account-skype"><?php _e('Skype', 'zoner-lite');?>:</label></dt>
-											<dd><div class="form-group">
-												<input type="text" class="form-control" id="form-account-skype" name="form-account-skype" value="<?php the_author_meta( $prefix.'skype', $userID ); ?>">
 											</div><!-- /.form-group --></dd>
 										</dl>
 									</section>
@@ -171,23 +148,6 @@ if ( ! function_exists( 'zoner_generate_profile_info' ) ) {
 										<div class="form-group">
 											<textarea class="form-control" id="form-contact-agent-message" rows="5" name="form-contact-agent-message"><?php the_author_meta( 'description', $userID ); ?></textarea>
 										</div><!-- /.form-group -->
-									</section>
-									<section id="social">
-										<h3><?php _e('My Social Network', 'zoner-lite'); ?></h3>
-										<?php 
-											foreach ($social_arr as $key => $values) {
-										?>
-										
-											<div class="form-group">
-												<div class="input-group">
-													<span class="input-group-addon"><i class="fa <?php echo $values['icon']; ?>"></i></span>
-													<input type="text" class="form-control" id="account-social-<?php echo $values['class']; ?>" name="account-social-<?php echo $values['class']; ?>" value="<?php the_author_meta( $prefix.$key, $userID ); ?>"> 
-												</div>
-											</div><!-- /.form-group -->
-										<?php 
-											}
-										?>
-										
 										<div class="form-group clearfix">
 											<button type="submit" class="btn pull-right btn-default" id="account-submit"><?php _e('Save Changes', 'zoner-lite'); ?></button>
 										</div><!-- /.form-group -->
@@ -239,27 +199,19 @@ if ( ! function_exists( 'zoner_generate_profile_info' ) ) {
 
 if ( ! function_exists( 'zoner_process_save_profile' ) ) {				
 	function zoner_process_save_profile() {
-		global $zoner_config, $prefix, $zoner;
+		global $zoner_config, $zoner_prefix, $zoner;
 			   $userID = zoner_get_user_id();
 			   $attach_id = -1;
 
 		if ( is_author()  && isset($_POST['save_profile']) && wp_verify_nonce($_POST['save_profile'], 'zoner_save_profile')) {
 			update_user_meta( $userID, 'first_name', 			 $_POST['form-account-fname']);
 			update_user_meta( $userID, 'last_name',  			 $_POST['form-account-lname']);
-			update_user_meta( $userID, $prefix.'tel', 			 esc_attr($_POST['form-account-phone']));
-			update_user_meta( $userID, $prefix.'mob', 			 esc_attr($_POST['form-account-mobile']));
 			update_user_meta( $userID, 'user_email', 			 sanitize_email($_POST['form-account-email']));
 			update_user_meta( $userID, 'description', 			 $_POST['form-contact-agent-message']);
-			update_user_meta( $userID,  $prefix.'skype', 		 esc_attr($_POST['form-account-skype']));
-			update_user_meta( $userID,  $prefix.'facebookurl', 	 esc_url($_POST['account-social-facebook']));
-			update_user_meta( $userID,  $prefix.'twitterurl', 	 esc_url($_POST['account-social-twitter']));
-			update_user_meta( $userID,  $prefix.'googleplusurl', esc_url($_POST['account-social-googleplus']));
-			update_user_meta( $userID,  $prefix.'linkedinurl', 	 esc_url($_POST['account-social-linkedin']));
-			update_user_meta( $userID,  $prefix.'pinteresturl',  esc_url($_POST['account-social-pinterest']));
 			
 			if (empty($_POST['form-account-avatar-id']) && empty($_POST['form-account-avatar'])) {
-				delete_user_meta( $userID,  $prefix.'avatar' );
-				delete_user_meta( $userID,  $prefix.'avatar_id');
+				delete_user_meta( $userID,  $zoner_prefix.'avatar' );
+				delete_user_meta( $userID,  $zoner_prefix.'avatar_id');
 			}
 		}
 		
@@ -275,12 +227,12 @@ if ( ! function_exists( 'zoner_process_save_profile' ) ) {
 			}   
 			
 			if ($attach_id != -1) {
-				update_user_meta( $userID,  $prefix.'avatar', 	 wp_get_attachment_url( $attach_id ));
-				update_user_meta( $userID,  $prefix.'avatar_id', $attach_id);
+				update_user_meta( $userID,  $zoner_prefix.'avatar', 	 wp_get_attachment_url( $attach_id ));
+				update_user_meta( $userID,  $zoner_prefix.'avatar_id', $attach_id);
 			}	
 		} 
 		
-		if (!empty($_POST) && isset($_POST['save_profile'])) wp_safe_redirect( zoner_curPageURL() );
+		if (!empty($_POST) && isset($_POST['save_profile'])) wp_safe_redirect( get_author_posts_url($userID) );
 	}
 }
 
@@ -313,6 +265,6 @@ if ( ! function_exists( 'zoner_change_user_pass_act' ) ) {
 			  
 		}
 		
-		if (!empty($_POST) && isset($_POST['change_password'])) wp_safe_redirect( zoner_curPageURL() );
+		if (!empty($_POST) && isset($_POST['change_password'])) wp_safe_redirect( get_author_posts_url($user_id) );
 	}
 }

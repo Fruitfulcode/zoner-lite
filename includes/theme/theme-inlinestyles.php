@@ -287,21 +287,3 @@ if ( ! function_exists( 'zoner_get_inline_styles' ) ) {
 	}
 	add_action('wp_enqueue_scripts', 'zoner_get_inline_styles', 99);
 }	
-  
-if ( ! function_exists( 'zoner_get_inline_scripts' ) ) {				
-	function zoner_get_inline_scripts () {
-		global $zoner_config;
-		if (!empty($zoner_config['custom-js'])) {
-			if ( wp_script_is( 'jquery', 'done' ) ) { 
-				if (trim($zoner_config['custom-js']) != null) {
-				?>
-					<script type="text/javascript">
-						<?php echo wp_kses_stripslashes($zoner_config['custom-js']); ?>
-					</script>
-				<?php
-				}
-			}
-		}	
-	}
-	add_action( 'wp_footer', 'zoner_get_inline_scripts', 99 );
-}	

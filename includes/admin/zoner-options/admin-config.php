@@ -1058,17 +1058,7 @@ if (!class_exists('zoner_config')) {
                         'theme'     => 'chrome',
                         'desc'      => '',
                         'default'   => ""
-                    ),
-					array(
-                        'id'        => 'custom-js',
-                        'type'      => 'ace_editor',
-                        'title'     => __('JS Code', 'zoner-lite'),
-                        'subtitle'  => __('Paste your JS code here.', 'zoner-lite'),
-                        'mode'      => 'javascript',
-                        'theme'     => 'chrome',
-                        'desc'      => '',
-                        'default'   => ""
-                    ),
+                    )
 				)
 			);
 			

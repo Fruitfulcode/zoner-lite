@@ -1,14 +1,12 @@
 <?php
 
-global 	$inc_theme_url, 
-		$admin_theme_url, 
-		$prefix,
-		$is_redux_active;
+global 	$zoner_inc_theme_url, 
+		$zoner_prefix,
+		$zoner_is_redux_active;
 		
-		$inc_theme_url   = get_template_directory_uri() . '/includes/theme/';
-		$admin_theme_url = get_template_directory_uri() . '/includes/admin/';
-		$prefix = '_zoner_';
-		$is_redux_active = class_exists('ReduxFramework');
+		$zoner_inc_theme_url   = get_template_directory_uri() . '/includes/theme/';
+		$zoner_prefix = '_zoner_';
+		$zoner_is_redux_active = class_exists('ReduxFramework');
 		
 if ( ! isset( $content_width ) ) $content_width = 950;
 		
@@ -101,19 +99,6 @@ class Zoner_Submenu_Class extends Walker_Nav_Menu {
 	}
 }
 
-if ( ! function_exists( 'zoner_add_parent_url_menu_class' ) ) {
-	function zoner_add_parent_url_menu_class( $classes = array(), $item = false ) {
-  
-		$curr_url = zoner_curPageURL();
-		$home_url = trailingslashit( home_url() );
-	
-		if( is_404() or $item->url == $home_url ) return $classes;
-		
-		return $classes;
-	}
-}	
-
-
 if ( ! function_exists( 'zoner_add_page_parent_class' ) ) {
 	function zoner_add_page_parent_class( $css_class, $page, $depth, $args ) {
 		if ( ! empty( $args['has_children'] ) )
@@ -165,7 +150,7 @@ endif; //zoner_content_width
  */
 if ( ! function_exists( 'zoner_scripts' ) ) {
 	function zoner_scripts() {
-		global 	$inc_theme_url, $zoner_config, $post, $prefix, $zoner;
+		global 	$zoner_inc_theme_url, $zoner_config, $post, $zoner_prefix, $zoner;
 		$is_rtl = 0;
 		
 		$is_mobile = false;
@@ -177,44 +162,44 @@ if ( ! function_exists( 'zoner_scripts' ) ) {
 		if ( is_singular()) wp_enqueue_script( 'comment-reply' );
 		
 		
-		wp_register_script( 'zoner-mainJs',	 $inc_theme_url . 'assets/js/custom.js',	 array( 'jquery' ), '20142807', true );
+		wp_register_script( 'zoner-mainJs',	 $zoner_inc_theme_url . 'assets/js/custom.js',	 array( 'jquery' ), '20142807', true );
 		wp_localize_script( 'zoner-mainJs', 'ZonerGlobal', 	array( 	'ajaxurl' 		=> admin_url( 'admin-ajax.php' ) ) );  
 		
 		/*Custom Css*/
-		wp_enqueue_style( 'zoner-fontAwesom', 		$inc_theme_url . 'assets/fonts/font-awesome.min.css');
-		wp_enqueue_style( 'zoner-fontElegantIcons', $inc_theme_url . 'assets/fonts/ElegantIcons.css');
-		wp_enqueue_style( 'zoner-bootsrap', 	 	$inc_theme_url . 'assets/bootstrap/css/bootstrap.min.css');
+		wp_enqueue_style( 'zoner-fontAwesom', 		$zoner_inc_theme_url . 'assets/fonts/font-awesome.min.css');
+		wp_enqueue_style( 'zoner-fontElegantIcons', $zoner_inc_theme_url . 'assets/fonts/ElegantIcons.css');
+		wp_enqueue_style( 'zoner-bootsrap', 	 	$zoner_inc_theme_url . 'assets/bootstrap/css/bootstrap.min.css');
 		
 		if (is_rtl())
-		wp_enqueue_style( 'zoner-bootsrap-rtl', 	$inc_theme_url . 'assets/bootstrap/css/bootstrap-rtl.min.css');
-		wp_enqueue_style( 'zoner-bootsrap-social', 	$inc_theme_url . 'assets/bootstrap/css/bootstrap-social-buttons.css');
-		wp_enqueue_style( 'zoner-bootsrap-select', 	$inc_theme_url . 'assets/css/bootstrap-select.min.css');
+		wp_enqueue_style( 'zoner-bootsrap-rtl', 	$zoner_inc_theme_url . 'assets/bootstrap/css/bootstrap-rtl.min.css');
+		wp_enqueue_style( 'zoner-bootsrap-social', 	$zoner_inc_theme_url . 'assets/bootstrap/css/bootstrap-social-buttons.css');
+		wp_enqueue_style( 'zoner-bootsrap-select', 	$zoner_inc_theme_url . 'assets/css/bootstrap-select.min.css');
 		
-		wp_enqueue_style( 'zoner-magnific-css', 	$inc_theme_url . 'assets/css/magnific-popup.css');
+		wp_enqueue_style( 'zoner-magnific-css', 	$zoner_inc_theme_url . 'assets/css/magnific-popup.css');
 		
 		
 		wp_enqueue_style( 'zoner-style', get_stylesheet_uri() );
 		
 		/*Custom Js*/
-		wp_enqueue_script( 'zoner-bootsrap', 		 $inc_theme_url . 'assets/bootstrap/js/bootstrap.min.js', array( 'jquery' ), '20142807', true );
-		wp_enqueue_script( 'zoner-bootstrap-select', $inc_theme_url . 'assets/js/bootstrap-select.min.js',	  array( 'jquery' ), '20142807', true );
-		wp_enqueue_script( 'zoner-bootsrap-holder',	 $inc_theme_url . 'assets/js/holder.js', array( 'jquery' ), '20142807', true ); 
+		wp_enqueue_script( 'zoner-bootsrap', 		 $zoner_inc_theme_url . 'assets/bootstrap/js/bootstrap.min.js', array( 'jquery' ), '20142807', true );
+		wp_enqueue_script( 'zoner-bootstrap-select', $zoner_inc_theme_url . 'assets/js/bootstrap-select.min.js',	  array( 'jquery' ), '20142807', true );
+		wp_enqueue_script( 'zoner-bootsrap-holder',	 $zoner_inc_theme_url . 'assets/js/holder.js', array( 'jquery' ), '20142807', true ); 
 		
 		if (is_user_logged_in()) {
-			wp_enqueue_script( 'zoner-bootsrap-filei',	$inc_theme_url . 'assets/bootstrap/js/bootstrap.file-input.js', array( 'jquery' ), '20142807', true );
+			wp_enqueue_script( 'zoner-bootsrap-filei',	$zoner_inc_theme_url . 'assets/bootstrap/js/bootstrap.file-input.js', array( 'jquery' ), '20142807', true );
 		}
 		
-		wp_enqueue_script( 'zoner-ichek', $inc_theme_url . 'assets/js/icheck.min.js',	 array( 'jquery' ), '20142807', true );
+		wp_enqueue_script( 'zoner-ichek', $zoner_inc_theme_url . 'assets/js/icheck.min.js',	 array( 'jquery' ), '20142807', true );
 		if (is_user_logged_in())
-		wp_enqueue_script( 'zoner-bootsrap-filea',	$inc_theme_url . 'assets/js/fileinput.min.js', array( 'jquery' ), '20142807', true );
+		wp_enqueue_script( 'zoner-bootsrap-filea',	$zoner_inc_theme_url . 'assets/js/fileinput.min.js', array( 'jquery' ), '20142807', true );
 		if (!empty($zoner_config['smoothscroll']))
-	    wp_enqueue_script( 'zoner-smoothscroll', 	$inc_theme_url . 'assets/js/smoothscroll.js', array( 'jquery' ), '20142807', true );
+	    wp_enqueue_script( 'zoner-smoothscroll', 	$zoner_inc_theme_url . 'assets/js/smoothscroll.js', array( 'jquery' ), '20142807', true );
 		
-		wp_enqueue_script( 'zoner-validate', 	$inc_theme_url . 'assets/js/jquery.validate.min.js',	 array( 'jquery' ), '20142807', true );
-		wp_enqueue_script( 'zoner-placeholder',	$inc_theme_url . 'assets/js/jquery.placeholder.js',	 array( 'jquery' ), '20142807', true );
+		wp_enqueue_script( 'zoner-validate', 	$zoner_inc_theme_url . 'assets/js/jquery.validate.min.js',	 array( 'jquery' ), '20142807', true );
+		wp_enqueue_script( 'zoner-placeholder',	$zoner_inc_theme_url . 'assets/js/jquery.placeholder.js',	 array( 'jquery' ), '20142807', true );
 		
 		if (is_page() || is_single() || is_home() || is_author() || is_archive() || is_search())
-			wp_enqueue_script( 'zoner-popup',$inc_theme_url	. 'assets/js/jquery.magnific-popup.min.js',	 array( 'jquery' ), '20142807', true );
+			wp_enqueue_script( 'zoner-popup',$zoner_inc_theme_url	. 'assets/js/jquery.magnific-popup.min.js',	 array( 'jquery' ), '20142807', true );
 		
 		
 		/*Custom scripts*/
@@ -246,7 +231,7 @@ if ( ! function_exists( 'zoner_scripts' ) ) {
  */
 if ( ! function_exists( 'zoner_body_classes' ) ) :
 function zoner_body_classes( $classes ) {
-	global $prefix, $zoner, $zoner_config;
+	global $zoner_prefix, $zoner, $zoner_config;
 	$posts_page = get_option( 'page_for_posts' );	
 	
 	if ( is_multi_author() ) {
@@ -521,13 +506,13 @@ if ( ! function_exists( 'zoner_get_footer_area_sidebars' ) ) {
 
 if ( ! function_exists( 'zoner_get_social' ) ) {
 	function zoner_get_social() {
-		global $zoner_config, $is_redux_active;
+		global $zoner_config, $zoner_is_redux_active;
 		$ftext = $fsocial = $out_ftext = ''; 
 		$out_ = '';
 		
 		if (!empty($zoner_config['footer-text'])) {
 			$ftext = zoner_kses_data(stripslashes($zoner_config['footer-text']));
-		} elseif (!$is_redux_active) {
+		} elseif (!$zoner_is_redux_active) {
 			$ftext = __('&#169; <a target="_blank" title="WordPress Development" href="http://fruitfulcode.com/">Fruitful Code</a>, Powered by <a target="_blank" href="http://wordpress.org/">WordPress</a>', 'zoner-lite');
 		}
 			
@@ -589,16 +574,16 @@ if ( ! function_exists( 'zoner_get_social' ) ) {
 
 if ( ! function_exists( 'zoner_visibilty_comments' ) ) {
 	function zoner_visibilty_comments() {
-		global $zoner_config, $post, $is_redux_active;
+		global $zoner_config, $post, $zoner_is_redux_active;
 		
-		if (!empty($zoner_config['pp-comments']) || !$is_redux_active) {
+		if (!empty($zoner_config['pp-comments']) || !$zoner_is_redux_active) {
 			$is_comment = $zoner_config['pp-comments'];
 			$post_type = get_post_type();
-			if ( ( $is_comment == $post_type || $is_comment == 'both' || !$is_redux_active ) && is_page() ) { 
+			if ( ( $is_comment == $post_type || $is_comment == 'both' || !$zoner_is_redux_active ) && is_page() ) { 
 				if ( ! post_password_required() && ( comments_open() || get_comments_number() ) ) { comments_template(); }
 			}	
 			
-			if ( ( $is_comment == $post_type || $is_comment == 'both' || !$is_redux_active ) && is_single() ) { 
+			if ( ( $is_comment == $post_type || $is_comment == 'both' || !$zoner_is_redux_active ) && is_single() ) { 
 				if ( ! post_password_required() && ( comments_open() || get_comments_number() ) ) { comments_template(); }
 			}	
 		}	
@@ -695,7 +680,7 @@ if ( ! function_exists( 'zoner_after_content' ) ) {
 
 if ( ! function_exists( 'zoner_zoner_get_sidebar_part' ) ) {
 	function zoner_get_sidebar_part($sidebar) {
-		global $zoner_config, $zoner, $prefix;
+		global $zoner_config, $zoner, $zoner_prefix;
 	?>
 		<div id="sidebar" class="sidebar">
 			<?php if (zoner_active_sidebar($sidebar)) zoner_sidebar($sidebar); ?>	
@@ -758,7 +743,7 @@ if ( ! function_exists( 'zoner_get_content_part' ) ) {
 	
 if ( ! function_exists( 'zoner_the_main_content' ) ) {
 	function zoner_the_main_content () {
-		global $zoner_config, $prefix, $post;
+		global $zoner_config, $zoner_prefix, $post;
 		$layout = 3;
 		$sidebar = 'secondary';
 		$add_wrapper = true;
@@ -766,7 +751,7 @@ if ( ! function_exists( 'zoner_the_main_content' ) ) {
 		$type   = get_post_type( $post );
 		
 		if ($type == 'page') {
-				$page_layout = get_post_meta($post->ID, $prefix.'pages_layout', true);
+				$page_layout = get_post_meta($post->ID, $zoner_prefix.'pages_layout', true);
 			if ($page_layout) $layout = $page_layout;
 			$sidebar = 'secondary';
 		} else {
@@ -776,7 +761,7 @@ if ( ! function_exists( 'zoner_the_main_content' ) ) {
 		
 		$page_on_front = get_option('page_on_front');
 		if (is_front_page() && !empty($page_on_front)) {
-			$page_layout = get_post_meta($post->ID, $prefix.'pages_layout', true);
+			$page_layout = get_post_meta($post->ID, $zoner_prefix.'pages_layout', true);
 			
 			if ($page_layout) $layout  = $page_layout;
 			
@@ -828,7 +813,7 @@ if ( ! function_exists( 'zoner_the_main_content' ) ) {
 
 if ( ! function_exists( 'zoner_nav_parent_class' ) ) {			
 	function zoner_nav_parent_class( $classes, $item ) {
-		global $wpdb, $zoner, $zoner_config, $prefix;
+		global $wpdb, $zoner, $zoner_config, $zoner_prefix;
 		$cpt_name = array('');
 		if ( in_array(get_post_type(), $cpt_name) && ! is_admin() ) {
 
@@ -901,25 +886,9 @@ if ( ! function_exists( 'zoner_img_caption' ) ) {
 	}
 }
 
-
-
-if ( ! function_exists( 'zoner_curPageURL' ) ) {				
-	function zoner_curPageURL() {
-		$pageURL = 'http';
-		if (isset($_SERVER["HTTPS"])) {$pageURL .= "s";}
-			$pageURL .= "://";
-		if ($_SERVER["SERVER_PORT"] != "80") {
-			$pageURL .= $_SERVER["SERVER_NAME"].":".$_SERVER["SERVER_PORT"].$_SERVER["REQUEST_URI"];
-		} else {
-			$pageURL .= $_SERVER["SERVER_NAME"].$_SERVER["REQUEST_URI"];
-		}
-	 return $pageURL;
-	}
-}
-
 if ( ! function_exists( 'zoner_get_author_information' ) ) {				
 	function zoner_get_author_information() {	
-		global $zoner_config, $prefix, $zoner;
+		global $zoner_config, $zoner_prefix, $zoner;
 		?>
 		<?php if ( have_posts() ) : ?>
 			<?php the_post(); ?>
@@ -950,9 +919,9 @@ if ( ! function_exists( 'zoner_get_author_information' ) ) {
 /*Get Post Thumbnail*/
 if ( ! function_exists( 'zoner_get_post_thumbnail' ) ) {				
 	function zoner_get_post_thumbnail() {
-		global $zoner_config, $prefix, $zoner, $post, $is_redux_active;
+		global $zoner_config, $zoner_prefix, $zoner, $post, $zoner_is_redux_active;
 		
-		if ( has_post_thumbnail() && ($zoner_config['pp-thumbnail'] || ! $is_redux_active)) {
+		if ( has_post_thumbnail() && ($zoner_config['pp-thumbnail'] || ! $zoner_is_redux_active)) {
 			$attachment_id = get_post_thumbnail_id( $post->ID );
 			$post_thumbnail = wp_get_attachment_image_src( $attachment_id, 'full');
 		?> 
@@ -971,7 +940,7 @@ if ( ! function_exists( 'zoner_get_post_thumbnail' ) ) {
 /*Get title*/
 if ( ! function_exists( 'zoner_get_post_title' ) ) {				
 	function zoner_get_post_title() {
-		global $zoner_config, $prefix, $zoner;
+		global $zoner_config, $zoner_prefix, $zoner;
 		
 		$sticky_icon = '';
 		
@@ -988,28 +957,28 @@ if ( ! function_exists( 'zoner_get_post_title' ) ) {
 /*Meta*/
 if ( ! function_exists( 'zoner_get_post_meta' ) ) {				
 	function zoner_get_post_meta() {
-		global $zoner_config, $prefix, $zoner, $post, $is_redux_active;
+		global $zoner_config, $zoner_prefix, $zoner, $post, $zoner_is_redux_active;
 		
 			$archive_year  = get_the_time('Y'); 
 			$archive_month = get_the_time('m'); 
 					
 		?>
 			<figure class="meta">
-				<?php if ($zoner_config['pp-authors'] || !$is_redux_active) { ?>
+				<?php if ($zoner_config['pp-authors'] || !$zoner_is_redux_active) { ?>
 					<a class="link-icon" href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' )); ?>">
 						<i class="fa fa-user"></i>
 						<?php the_author(); ?>
 					</a>
 				<?php } ?>
 				
-				<?php if ($zoner_config['pp-date'] || !$is_redux_active) { ?>
+				<?php if ($zoner_config['pp-date'] || !$zoner_is_redux_active) { ?>
 					<a class="link-icon" href="<?php echo get_month_link( $archive_year, $archive_month ); ?>">
 						<i class="fa fa-calendar"></i>
 						<?php the_time('d/m/Y'); ?>
 					</a>
 				<?php } ?>
 				<?php edit_post_link( '<i title="' . __("Edit", 'zoner-lite') . '" class="fa fa-pencil-square-o"></i>'.__("Edit", 'zoner-lite'), '', '' ); ?>
-				<?php if ($zoner_config['pp-tags'] || !$is_redux_active) the_tags('<div class="tags article-tags">', ' ', '</div>');	?>
+				<?php if ($zoner_config['pp-tags'] || !$zoner_is_redux_active) the_tags('<div class="tags article-tags">', ' ', '</div>');	?>
 			</figure>
 		<?php
 	}
@@ -1035,7 +1004,7 @@ if ( ! function_exists( 'zoner_get_post_none_content' ) ) {
 /*Single About The Author*/	
 if ( ! function_exists( 'zoner_get_post_about_author' ) ) {				
 	function zoner_get_post_about_author() {
-		global $zoner_config, $prefix, $zoner, $post;
+		global $zoner_config, $zoner_prefix, $zoner, $post;
 	
 	?>
 		
@@ -1057,7 +1026,7 @@ if ( ! function_exists( 'zoner_get_post_about_author' ) ) {
 /*Read More*/
 if ( ! function_exists( 'zoner_get_readmore_link' ) ) {				
 	function zoner_get_readmore_link() {
-		global $zoner_config, $prefix, $zoner, $post;
+		global $zoner_config, $zoner_prefix, $zoner, $post;
 		?> 
 			<a class="link-arrow" href="<?php the_permalink();?>"><?php _e('Read More', 'zoner-lite'); ?></a>
 		<?php	
