@@ -1,15 +1,15 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zoner\n"
-"POT-Creation-Date: 2015-08-26 15:20+0300\n"
-"PO-Revision-Date: 2015-08-26 15:20+0300\n"
+"POT-Creation-Date: 2015-09-25 11:15+0300\n"
+"PO-Revision-Date: 2015-09-25 11:15+0300\n"
 "Last-Translator: Vadim <vadimvas85@gmail.com>\n"
 "Language-Team: Fruitfulcode\n"
 "Language: ru_RU\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.8.4\n"
+"X-Generator: Poedit 1.8.5\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
@@ -85,11 +85,11 @@ msgstr "Сообщение"
 msgid "Pages:"
 msgstr "Страницы:"
 
-#: content-page.php:59 includes/theme/theme-function.php:1073
+#: content-page.php:59 includes/theme/theme-function.php:980
 msgid "Edit"
 msgstr "Редактировать"
 
-#: header.php:38
+#: header.php:37
 msgid "Toggle navigation"
 msgstr "Переключить навигацию"
 
@@ -197,77 +197,28 @@ msgstr "Макет"
 msgid "Page layout"
 msgstr "Разметка страницы"
 
-#: includes/admin/libs/metaboxes/zoner_users.php:26
-msgid "User Profile"
-msgstr "Профиль пользователя"
-
-#: includes/admin/libs/metaboxes/zoner_users.php:33
-msgid "Extra User Info"
-msgstr "Информация Extra User"
-
-#: includes/admin/libs/metaboxes/zoner_users.php:40
-msgid "Avatar"
-msgstr "Аватар"
-
-#: includes/admin/libs/metaboxes/zoner_users.php:48
-msgid "Facebook URL"
-msgstr "Facebook URL"
-
-#: includes/admin/libs/metaboxes/zoner_users.php:54
-msgid "Twitter URL"
-msgstr "Twitter URL"
-
-#: includes/admin/libs/metaboxes/zoner_users.php:60
-msgid "Google+ URL"
-msgstr "Google+ Ссылка"
-
-#: includes/admin/libs/metaboxes/zoner_users.php:66
-msgid "Linkedin URL"
-msgstr "Ссылка Linkedin"
-
-#: includes/admin/libs/metaboxes/zoner_users.php:72
-msgid "Pinterest URL"
-msgstr "Ссылка Pinterest"
-
-#: includes/admin/libs/metaboxes/zoner_users.php:78
-#: includes/admin/zoner-options/admin-config.php:496
-#: includes/theme/theme-function.php:673 includes/theme/theme-profile.php:156
-msgid "Phone"
-msgstr "Телефон"
-
-#: includes/admin/libs/metaboxes/zoner_users.php:84
-#: includes/theme/theme-profile.php:161
-msgid "Mobile"
-msgstr "Мобильный"
-
-#: includes/admin/libs/metaboxes/zoner_users.php:90
-#: includes/admin/zoner-options/admin-config.php:946
-#: includes/theme/theme-profile.php:170
-msgid "Skype"
-msgstr "Skype"
-
-#: includes/admin/libs/tgm/class-tgm-init.php:72
+#: includes/admin/libs/tgm/class-tgm-init.php:70
 #: includes/admin/libs/tgm/class-tgm-plugin-activation.php:333
 msgid "Install Required Plugins"
 msgstr "Установите необходимые плагины"
 
-#: includes/admin/libs/tgm/class-tgm-init.php:73
+#: includes/admin/libs/tgm/class-tgm-init.php:71
 #: includes/admin/libs/tgm/class-tgm-plugin-activation.php:334
 msgid "Install Plugins"
 msgstr "Установить плагины"
 
-#: includes/admin/libs/tgm/class-tgm-init.php:74
+#: includes/admin/libs/tgm/class-tgm-init.php:72
 #: includes/admin/libs/tgm/class-tgm-plugin-activation.php:335
 #, php-format
 msgid "Installing Plugin: %s"
 msgstr "Установка плагина: %s"
 
-#: includes/admin/libs/tgm/class-tgm-init.php:75
+#: includes/admin/libs/tgm/class-tgm-init.php:73
 #: includes/admin/libs/tgm/class-tgm-plugin-activation.php:336
 msgid "Something went wrong with the plugin API."
 msgstr "Что-то пошло не так с API плагина."
 
-#: includes/admin/libs/tgm/class-tgm-init.php:76
+#: includes/admin/libs/tgm/class-tgm-init.php:74
 #: includes/admin/libs/tgm/class-tgm-plugin-activation.php:338
 #, php-format
 msgid "This theme requires the following plugin: %1$s."
@@ -276,7 +227,7 @@ msgstr[0] "Эта тема требует следующий плагин: %1$s.
 msgstr[1] "Эта тема требует следующий плагин: %1$s."
 msgstr[2] "Эта тема требует следующий плагин: %1$s."
 
-#: includes/admin/libs/tgm/class-tgm-init.php:77
+#: includes/admin/libs/tgm/class-tgm-init.php:75
 #: includes/admin/libs/tgm/class-tgm-plugin-activation.php:343
 #, php-format
 msgid "This theme recommends the following plugin: %1$s."
@@ -285,7 +236,7 @@ msgstr[0] "Эта тема рекомендует следующий плаги�
 msgstr[1] "Эта тема рекомендует следующий плагин: %1$s."
 msgstr[2] "Эта тема рекомендует следующий плагин: %1$s."
 
-#: includes/admin/libs/tgm/class-tgm-init.php:78
+#: includes/admin/libs/tgm/class-tgm-init.php:76
 #, php-format
 msgid ""
 "Sorry, but you do not have the correct permissions to install the %s plugin. "
@@ -307,7 +258,7 @@ msgstr[2] ""
 "помощью для получения установки плагина , обратитесь к администратору этого "
 "сайта."
 
-#: includes/admin/libs/tgm/class-tgm-init.php:79
+#: includes/admin/libs/tgm/class-tgm-init.php:77
 #: includes/admin/libs/tgm/class-tgm-plugin-activation.php:368
 #, php-format
 msgid "The following required plugin is currently inactive: %1$s."
@@ -316,7 +267,7 @@ msgstr[0] "Следующий необходимый плагин сейчас �
 msgstr[1] "Следующий необходимый плагин сейчас неактивен: %1$s."
 msgstr[2] "Следующий необходимый плагин сейчас неактивен: %1$s."
 
-#: includes/admin/libs/tgm/class-tgm-init.php:80
+#: includes/admin/libs/tgm/class-tgm-init.php:78
 #: includes/admin/libs/tgm/class-tgm-plugin-activation.php:373
 #, php-format
 msgid "The following recommended plugin is currently inactive: %1$s."
@@ -325,7 +276,7 @@ msgstr[0] "Следующий рекомендуемый плагин сейча
 msgstr[1] "Следующий рекомендуемый плагин сейчас неактивен: %1$s."
 msgstr[2] "Следующий рекомендуемый плагин сейчас неактивен: %1$s."
 
-#: includes/admin/libs/tgm/class-tgm-init.php:81
+#: includes/admin/libs/tgm/class-tgm-init.php:79
 #, php-format
 msgid ""
 "Sorry, but you do not have the correct permissions to activate the %s "
@@ -346,7 +297,7 @@ msgstr[2] ""
 "Извините, но у вас нет необходимых разрешений для активации плагина %s. За "
 "помощью в активации плагина, свяжитесь с администратором этого сайта."
 
-#: includes/admin/libs/tgm/class-tgm-init.php:82
+#: includes/admin/libs/tgm/class-tgm-init.php:80
 #: includes/admin/libs/tgm/class-tgm-plugin-activation.php:353
 #, php-format
 msgid ""
@@ -365,7 +316,7 @@ msgstr[2] ""
 "Этот плагин должен быть обновлен до последней версии, чтобы обеспечить "
 "максимальную совместимость с данной темой: %1$s."
 
-#: includes/admin/libs/tgm/class-tgm-init.php:83
+#: includes/admin/libs/tgm/class-tgm-init.php:81
 #, php-format
 msgid ""
 "Sorry, but you do not have the correct permissions to update the %s plugin. "
@@ -385,7 +336,7 @@ msgstr[2] ""
 "Извините, но у вас нет необходимых разрешений для обновления плагина %s. За "
 "помощью в обновлении плагина, свяжитесь с администратором этого сайта."
 
-#: includes/admin/libs/tgm/class-tgm-init.php:84
+#: includes/admin/libs/tgm/class-tgm-init.php:82
 #: includes/admin/libs/tgm/class-tgm-plugin-activation.php:383
 msgid "Begin installing plugin"
 msgid_plural "Begin installing plugins"
@@ -393,7 +344,7 @@ msgstr[0] "Начать установку плагина"
 msgstr[1] "Начать установку плагина"
 msgstr[2] "Начать установку плагина"
 
-#: includes/admin/libs/tgm/class-tgm-init.php:85
+#: includes/admin/libs/tgm/class-tgm-init.php:83
 #: includes/admin/libs/tgm/class-tgm-plugin-activation.php:393
 msgid "Begin activating plugin"
 msgid_plural "Begin activating plugins"
@@ -401,18 +352,18 @@ msgstr[0] "Начните активацию плагина"
 msgstr[1] "Начните активации плагина"
 msgstr[2] "Начните активацию плагина"
 
-#: includes/admin/libs/tgm/class-tgm-init.php:86
+#: includes/admin/libs/tgm/class-tgm-init.php:84
 #: includes/admin/libs/tgm/class-tgm-plugin-activation.php:397
 msgid "Return to Required Plugins Installer"
 msgstr "Вернуться к установке необходимых плагинов"
 
-#: includes/admin/libs/tgm/class-tgm-init.php:87
+#: includes/admin/libs/tgm/class-tgm-init.php:85
 #: includes/admin/libs/tgm/class-tgm-plugin-activation.php:399
-#: includes/admin/libs/tgm/class-tgm-plugin-activation.php:3034
+#: includes/admin/libs/tgm/class-tgm-plugin-activation.php:3029
 msgid "Plugin activated successfully."
 msgstr "Плагин успешно активирован."
 
-#: includes/admin/libs/tgm/class-tgm-init.php:88
+#: includes/admin/libs/tgm/class-tgm-init.php:86
 #, php-format
 msgid "All plugins installed and activated successfully. %s"
 msgstr "Все плагины установлены и активированы успешно. %s"
@@ -472,7 +423,7 @@ msgid "Return to the dashboard"
 msgstr "Вернуться к приборной панели"
 
 #: includes/admin/libs/tgm/class-tgm-plugin-activation.php:400
-#: includes/admin/libs/tgm/class-tgm-plugin-activation.php:2837
+#: includes/admin/libs/tgm/class-tgm-plugin-activation.php:2832
 msgid "The following plugin was activated successfully:"
 msgid_plural "The following plugins were activated successfully:"
 msgstr[0] "Этот плагин успешно активирован:"
@@ -516,93 +467,93 @@ msgstr ""
 msgid "Set the parent_slug config variable instead."
 msgstr ""
 
-#: includes/admin/libs/tgm/class-tgm-plugin-activation.php:833
-#: includes/admin/libs/tgm/class-tgm-plugin-activation.php:3443
+#: includes/admin/libs/tgm/class-tgm-plugin-activation.php:828
+#: includes/admin/libs/tgm/class-tgm-plugin-activation.php:3438
 msgid "Return to the Dashboard"
 msgstr "Вернуться к панели "
 
-#: includes/admin/libs/tgm/class-tgm-plugin-activation.php:940
+#: includes/admin/libs/tgm/class-tgm-plugin-activation.php:935
 msgid ""
 "The remote plugin package does not contain a folder with the desired slug "
 "and renaming did not work."
 msgstr ""
 
-#: includes/admin/libs/tgm/class-tgm-plugin-activation.php:940
-#: includes/admin/libs/tgm/class-tgm-plugin-activation.php:943
+#: includes/admin/libs/tgm/class-tgm-plugin-activation.php:935
+#: includes/admin/libs/tgm/class-tgm-plugin-activation.php:938
 msgid ""
 "Please contact the plugin provider and ask them to package their plugin "
 "according to the WordPress guidelines."
 msgstr ""
 
-#: includes/admin/libs/tgm/class-tgm-plugin-activation.php:943
+#: includes/admin/libs/tgm/class-tgm-plugin-activation.php:938
 msgid ""
 "The remote plugin package consists of more than one file, but the files are "
 "not packaged in a folder."
 msgstr ""
 
-#: includes/admin/libs/tgm/class-tgm-plugin-activation.php:1121
-#: includes/admin/libs/tgm/class-tgm-plugin-activation.php:2833
+#: includes/admin/libs/tgm/class-tgm-plugin-activation.php:1116
+#: includes/admin/libs/tgm/class-tgm-plugin-activation.php:2828
 msgctxt "plugin A *and* plugin B"
 msgid "and"
 msgstr ""
 
-#: includes/admin/libs/tgm/class-tgm-plugin-activation.php:1886
+#: includes/admin/libs/tgm/class-tgm-plugin-activation.php:1881
 #, php-format
 msgctxt "%s = version number"
 msgid "TGMPA v%s"
 msgstr ""
 
-#: includes/admin/libs/tgm/class-tgm-plugin-activation.php:2172
+#: includes/admin/libs/tgm/class-tgm-plugin-activation.php:2167
 msgid "Required"
 msgstr "Обязательное поле"
 
-#: includes/admin/libs/tgm/class-tgm-plugin-activation.php:2175
+#: includes/admin/libs/tgm/class-tgm-plugin-activation.php:2170
 msgid "Recommended"
 msgstr "Рекомендовано"
 
-#: includes/admin/libs/tgm/class-tgm-plugin-activation.php:2191
+#: includes/admin/libs/tgm/class-tgm-plugin-activation.php:2186
 msgid "WordPress Repository"
 msgstr "база WordPress"
 
-#: includes/admin/libs/tgm/class-tgm-plugin-activation.php:2194
+#: includes/admin/libs/tgm/class-tgm-plugin-activation.php:2189
 msgid "External Source"
 msgstr ""
 
-#: includes/admin/libs/tgm/class-tgm-plugin-activation.php:2197
+#: includes/admin/libs/tgm/class-tgm-plugin-activation.php:2192
 msgid "Pre-Packaged"
 msgstr "Предварително Упакованный"
 
-#: includes/admin/libs/tgm/class-tgm-plugin-activation.php:2214
+#: includes/admin/libs/tgm/class-tgm-plugin-activation.php:2209
 msgid "Not Installed"
 msgstr "Не установлен"
 
-#: includes/admin/libs/tgm/class-tgm-plugin-activation.php:2218
+#: includes/admin/libs/tgm/class-tgm-plugin-activation.php:2213
 msgid "Installed But Not Activated"
 msgstr "Установлены, но не активированы"
 
-#: includes/admin/libs/tgm/class-tgm-plugin-activation.php:2220
+#: includes/admin/libs/tgm/class-tgm-plugin-activation.php:2215
 msgid "Active"
 msgstr "Активен"
 
-#: includes/admin/libs/tgm/class-tgm-plugin-activation.php:2226
+#: includes/admin/libs/tgm/class-tgm-plugin-activation.php:2221
 msgid "Required Update not Available"
 msgstr ""
 
-#: includes/admin/libs/tgm/class-tgm-plugin-activation.php:2229
+#: includes/admin/libs/tgm/class-tgm-plugin-activation.php:2224
 msgid "Requires Update"
 msgstr ""
 
-#: includes/admin/libs/tgm/class-tgm-plugin-activation.php:2232
+#: includes/admin/libs/tgm/class-tgm-plugin-activation.php:2227
 msgid "Update recommended"
 msgstr ""
 
-#: includes/admin/libs/tgm/class-tgm-plugin-activation.php:2240
+#: includes/admin/libs/tgm/class-tgm-plugin-activation.php:2235
 #, php-format
 msgctxt "%1$s = install status, %2$s = update status"
 msgid "%1$s, %2$s"
 msgstr ""
 
-#: includes/admin/libs/tgm/class-tgm-plugin-activation.php:2285
+#: includes/admin/libs/tgm/class-tgm-plugin-activation.php:2280
 #, php-format
 msgctxt "plugins"
 msgid "All <span class=\"count\">(%s)</span>"
@@ -611,7 +562,7 @@ msgstr[0] ""
 msgstr[1] ""
 msgstr[2] ""
 
-#: includes/admin/libs/tgm/class-tgm-plugin-activation.php:2288
+#: includes/admin/libs/tgm/class-tgm-plugin-activation.php:2283
 #, php-format
 msgid "To Install <span class=\"count\">(%s)</span>"
 msgid_plural "To Install <span class=\"count\">(%s)</span>"
@@ -619,7 +570,7 @@ msgstr[0] ""
 msgstr[1] ""
 msgstr[2] ""
 
-#: includes/admin/libs/tgm/class-tgm-plugin-activation.php:2291
+#: includes/admin/libs/tgm/class-tgm-plugin-activation.php:2286
 #, php-format
 msgid "Update Available <span class=\"count\">(%s)</span>"
 msgid_plural "Update Available <span class=\"count\">(%s)</span>"
@@ -627,7 +578,7 @@ msgstr[0] ""
 msgstr[1] ""
 msgstr[2] ""
 
-#: includes/admin/libs/tgm/class-tgm-plugin-activation.php:2294
+#: includes/admin/libs/tgm/class-tgm-plugin-activation.php:2289
 #, php-format
 msgid "To Activate <span class=\"count\">(%s)</span>"
 msgid_plural "To Activate <span class=\"count\">(%s)</span>"
@@ -635,128 +586,128 @@ msgstr[0] ""
 msgstr[1] ""
 msgstr[2] ""
 
-#: includes/admin/libs/tgm/class-tgm-plugin-activation.php:2376
+#: includes/admin/libs/tgm/class-tgm-plugin-activation.php:2371
 msgctxt "as in: \"version nr unknown\""
 msgid "unknown"
 msgstr ""
 
-#: includes/admin/libs/tgm/class-tgm-plugin-activation.php:2384
+#: includes/admin/libs/tgm/class-tgm-plugin-activation.php:2379
 msgid "Installed version:"
 msgstr ""
 
-#: includes/admin/libs/tgm/class-tgm-plugin-activation.php:2392
+#: includes/admin/libs/tgm/class-tgm-plugin-activation.php:2387
 msgid "Minimum required version:"
 msgstr ""
 
-#: includes/admin/libs/tgm/class-tgm-plugin-activation.php:2404
+#: includes/admin/libs/tgm/class-tgm-plugin-activation.php:2399
 msgid "Available version:"
 msgstr ""
 
-#: includes/admin/libs/tgm/class-tgm-plugin-activation.php:2427
+#: includes/admin/libs/tgm/class-tgm-plugin-activation.php:2422
 #, php-format
 msgid ""
 "No plugins to install, update or activate. <a href=\"%1$s\">Return to the "
 "Dashboard</a>"
 msgstr ""
 
-#: includes/admin/libs/tgm/class-tgm-plugin-activation.php:2441
+#: includes/admin/libs/tgm/class-tgm-plugin-activation.php:2436
 msgid "Plugin"
 msgstr "Плагин"
 
-#: includes/admin/libs/tgm/class-tgm-plugin-activation.php:2442
+#: includes/admin/libs/tgm/class-tgm-plugin-activation.php:2437
 msgid "Source"
 msgstr "Источник"
 
-#: includes/admin/libs/tgm/class-tgm-plugin-activation.php:2443
+#: includes/admin/libs/tgm/class-tgm-plugin-activation.php:2438
 msgid "Type"
 msgstr "Тип"
 
-#: includes/admin/libs/tgm/class-tgm-plugin-activation.php:2447
+#: includes/admin/libs/tgm/class-tgm-plugin-activation.php:2442
 msgid "Version"
 msgstr ""
 
-#: includes/admin/libs/tgm/class-tgm-plugin-activation.php:2448
+#: includes/admin/libs/tgm/class-tgm-plugin-activation.php:2443
 msgid "Status"
 msgstr "Статус"
 
-#: includes/admin/libs/tgm/class-tgm-plugin-activation.php:2496
+#: includes/admin/libs/tgm/class-tgm-plugin-activation.php:2491
 #, php-format
 msgctxt "%2$s = plugin name in screen reader markup"
 msgid "Install %2$s"
 msgstr ""
 
-#: includes/admin/libs/tgm/class-tgm-plugin-activation.php:2500
+#: includes/admin/libs/tgm/class-tgm-plugin-activation.php:2495
 #, php-format
 msgctxt "%2$s = plugin name in screen reader markup"
 msgid "Update %2$s"
 msgstr ""
 
-#: includes/admin/libs/tgm/class-tgm-plugin-activation.php:2505
+#: includes/admin/libs/tgm/class-tgm-plugin-activation.php:2500
 #, php-format
 msgctxt "%2$s = plugin name in screen reader markup"
 msgid "Activate %2$s"
 msgstr ""
 
-#: includes/admin/libs/tgm/class-tgm-plugin-activation.php:2575
+#: includes/admin/libs/tgm/class-tgm-plugin-activation.php:2570
 msgid "Upgrade message from the plugin author:"
 msgstr ""
 
-#: includes/admin/libs/tgm/class-tgm-plugin-activation.php:2608
+#: includes/admin/libs/tgm/class-tgm-plugin-activation.php:2603
 msgid "Install"
 msgstr "Установить"
 
-#: includes/admin/libs/tgm/class-tgm-plugin-activation.php:2614
+#: includes/admin/libs/tgm/class-tgm-plugin-activation.php:2609
 msgid "Update"
 msgstr ""
 
-#: includes/admin/libs/tgm/class-tgm-plugin-activation.php:2617
+#: includes/admin/libs/tgm/class-tgm-plugin-activation.php:2612
 msgid "Activate"
 msgstr "Активировать"
 
-#: includes/admin/libs/tgm/class-tgm-plugin-activation.php:2648
+#: includes/admin/libs/tgm/class-tgm-plugin-activation.php:2643
 msgid "No plugins were selected to be installed. No action taken."
 msgstr ""
 
-#: includes/admin/libs/tgm/class-tgm-plugin-activation.php:2650
+#: includes/admin/libs/tgm/class-tgm-plugin-activation.php:2645
 msgid "No plugins were selected to be updated. No action taken."
 msgstr ""
 
-#: includes/admin/libs/tgm/class-tgm-plugin-activation.php:2686
+#: includes/admin/libs/tgm/class-tgm-plugin-activation.php:2681
 msgid "No plugins are available to be installed at this time."
 msgstr ""
 
-#: includes/admin/libs/tgm/class-tgm-plugin-activation.php:2688
+#: includes/admin/libs/tgm/class-tgm-plugin-activation.php:2683
 msgid "No plugins are available to be updated at this time."
 msgstr ""
 
-#: includes/admin/libs/tgm/class-tgm-plugin-activation.php:2793
+#: includes/admin/libs/tgm/class-tgm-plugin-activation.php:2788
 msgid "No plugins were selected to be activated. No action taken."
 msgstr ""
 
-#: includes/admin/libs/tgm/class-tgm-plugin-activation.php:2819
+#: includes/admin/libs/tgm/class-tgm-plugin-activation.php:2814
 msgid "No plugins are available to be activated at this time."
 msgstr ""
 
-#: includes/admin/libs/tgm/class-tgm-plugin-activation.php:3033
+#: includes/admin/libs/tgm/class-tgm-plugin-activation.php:3028
 msgid "Plugin activation failed."
 msgstr "Активация плагина не удалась."
 
-#: includes/admin/libs/tgm/class-tgm-plugin-activation.php:3367
+#: includes/admin/libs/tgm/class-tgm-plugin-activation.php:3362
 #, php-format
 msgid "Updating Plugin %1$s (%2$d/%3$d)"
 msgstr ""
 
-#: includes/admin/libs/tgm/class-tgm-plugin-activation.php:3369
+#: includes/admin/libs/tgm/class-tgm-plugin-activation.php:3364
 #, php-format
 msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
 msgstr "Произошла ошибка при установке %1$s: <strong>%2$s</strong>."
 
-#: includes/admin/libs/tgm/class-tgm-plugin-activation.php:3370
+#: includes/admin/libs/tgm/class-tgm-plugin-activation.php:3365
 #, php-format
 msgid "The installation of %1$s failed."
 msgstr "Установка %1$s не удалась."
 
-#: includes/admin/libs/tgm/class-tgm-plugin-activation.php:3374
+#: includes/admin/libs/tgm/class-tgm-plugin-activation.php:3369
 msgid ""
 "The installation and activation process is starting. This process may take a "
 "while on some hosts, so please be patient."
@@ -764,31 +715,31 @@ msgstr ""
 "Процесс установки и активации начат. Этот процесс может занять какое-то "
 "время на некоторых хостах, поэтому, пожалуйста, подождите немного."
 
-#: includes/admin/libs/tgm/class-tgm-plugin-activation.php:3375
+#: includes/admin/libs/tgm/class-tgm-plugin-activation.php:3370
 #, php-format
 msgid "%1$s installed and activated successfully."
 msgstr "%1$s установлен ​​и успешно активирован."
 
-#: includes/admin/libs/tgm/class-tgm-plugin-activation.php:3375
-#: includes/admin/libs/tgm/class-tgm-plugin-activation.php:3381
+#: includes/admin/libs/tgm/class-tgm-plugin-activation.php:3370
+#: includes/admin/libs/tgm/class-tgm-plugin-activation.php:3376
 msgid "Show Details"
 msgstr "Показать сведения"
 
-#: includes/admin/libs/tgm/class-tgm-plugin-activation.php:3375
-#: includes/admin/libs/tgm/class-tgm-plugin-activation.php:3381
+#: includes/admin/libs/tgm/class-tgm-plugin-activation.php:3370
+#: includes/admin/libs/tgm/class-tgm-plugin-activation.php:3376
 msgid "Hide Details"
 msgstr "Скрыть сведения"
 
-#: includes/admin/libs/tgm/class-tgm-plugin-activation.php:3376
+#: includes/admin/libs/tgm/class-tgm-plugin-activation.php:3371
 msgid "All installations and activations have been completed."
 msgstr "Все установки и активации завершены."
 
-#: includes/admin/libs/tgm/class-tgm-plugin-activation.php:3377
+#: includes/admin/libs/tgm/class-tgm-plugin-activation.php:3372
 #, php-format
 msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
 msgstr "Установка и активация плагина %1$s (%2$d/%3$d)"
 
-#: includes/admin/libs/tgm/class-tgm-plugin-activation.php:3380
+#: includes/admin/libs/tgm/class-tgm-plugin-activation.php:3375
 msgid ""
 "The installation process is starting. This process may take a while on some "
 "hosts, so please be patient."
@@ -796,16 +747,16 @@ msgstr ""
 "Процесс установки начат. Этот процесс может занять какое-то время на "
 "некоторых хостах, поэтому, пожалуйста, подождите немного."
 
-#: includes/admin/libs/tgm/class-tgm-plugin-activation.php:3381
+#: includes/admin/libs/tgm/class-tgm-plugin-activation.php:3376
 #, php-format
 msgid "%1$s installed successfully."
 msgstr "%1$s установлен успешно."
 
-#: includes/admin/libs/tgm/class-tgm-plugin-activation.php:3382
+#: includes/admin/libs/tgm/class-tgm-plugin-activation.php:3377
 msgid "All installations have been completed."
 msgstr "Все процессы установки были завершены."
 
-#: includes/admin/libs/tgm/class-tgm-plugin-activation.php:3383
+#: includes/admin/libs/tgm/class-tgm-plugin-activation.php:3378
 #, php-format
 msgid "Installing Plugin %1$s (%2$d/%3$d)"
 msgstr "Установка плагина %1$s (%2$d/%3$d)"
@@ -824,77 +775,77 @@ msgstr ""
 "массиве секций. Может использоваться дочерние темы для добавления / удаления "
 "разделов из вариантов. </p>"
 
-#: includes/admin/zoner-options/admin-config.php:107
+#: includes/admin/zoner-options/admin-config.php:102
 #, php-format
 msgid "Customize &#8220;%s&#8221;"
 msgstr "Настройка и # 8220; %s & # 8221;"
 
-#: includes/admin/zoner-options/admin-config.php:115
-#: includes/admin/zoner-options/admin-config.php:118
+#: includes/admin/zoner-options/admin-config.php:110
+#: includes/admin/zoner-options/admin-config.php:113
 msgid "Current theme preview"
 msgstr "Текущий просмотр темы"
 
-#: includes/admin/zoner-options/admin-config.php:125
+#: includes/admin/zoner-options/admin-config.php:120
 #, php-format
 msgid "By %s"
 msgstr "По %s"
 
-#: includes/admin/zoner-options/admin-config.php:126
+#: includes/admin/zoner-options/admin-config.php:121
 #, php-format
 msgid "Version %s"
 msgstr "Версия: %s"
 
-#: includes/admin/zoner-options/admin-config.php:127
+#: includes/admin/zoner-options/admin-config.php:122
 msgid "Tags"
 msgstr "Тэги"
 
-#: includes/admin/zoner-options/admin-config.php:132
+#: includes/admin/zoner-options/admin-config.php:127
 #, php-format
 msgid "This <a href=\"%1$s\">child theme</a> requires its parent theme, %2$s."
 msgstr ""
 "Это <a href=\"%1$s\">child theme </a> требует родительской темы, %2$s ."
 
-#: includes/admin/zoner-options/admin-config.php:132
+#: includes/admin/zoner-options/admin-config.php:127
 msgid "http://codex.wordpress.org/Child_Themes"
 msgstr "http://codex.wordpress.org/Child_Themes"
 
-#: includes/admin/zoner-options/admin-config.php:158
+#: includes/admin/zoner-options/admin-config.php:153
 msgid "General"
 msgstr "Основное"
 
-#: includes/admin/zoner-options/admin-config.php:165
+#: includes/admin/zoner-options/admin-config.php:160
 msgid "Enhanced scrolling"
 msgstr "Улучшенная прокрутка"
 
-#: includes/admin/zoner-options/admin-config.php:166
+#: includes/admin/zoner-options/admin-config.php:161
 msgid "Select to enable scrolling library."
 msgstr "Выберите библиотеку для включения прокрутки."
 
-#: includes/admin/zoner-options/admin-config.php:167
-#: includes/admin/zoner-options/admin-config.php:254
-#: includes/admin/zoner-options/admin-config.php:262
-#: includes/admin/zoner-options/admin-config.php:270
-#: includes/admin/zoner-options/admin-config.php:278
-#: includes/admin/zoner-options/admin-config.php:517
+#: includes/admin/zoner-options/admin-config.php:162
+#: includes/admin/zoner-options/admin-config.php:249
+#: includes/admin/zoner-options/admin-config.php:257
+#: includes/admin/zoner-options/admin-config.php:265
+#: includes/admin/zoner-options/admin-config.php:273
+#: includes/admin/zoner-options/admin-config.php:512
 msgid "Yes"
 msgstr "Да "
 
-#: includes/admin/zoner-options/admin-config.php:176
-#: includes/admin/zoner-options/admin-config.php:184
+#: includes/admin/zoner-options/admin-config.php:171
+#: includes/admin/zoner-options/admin-config.php:179
 msgid "Logo"
 msgstr "Логотип"
 
-#: includes/admin/zoner-options/admin-config.php:185
+#: includes/admin/zoner-options/admin-config.php:180
 msgid "Change your Logo here, upload or enter the URL to your logo image."
 msgstr ""
 "Измените свой логотип здесь, загрузите или введите адрес ссылки своего "
 "логотипа."
 
-#: includes/admin/zoner-options/admin-config.php:194
+#: includes/admin/zoner-options/admin-config.php:189
 msgid "Logo Retina "
 msgstr "Логотип Retina "
 
-#: includes/admin/zoner-options/admin-config.php:195
+#: includes/admin/zoner-options/admin-config.php:190
 msgid ""
 "Upload your Retina Logo. This should be your Logo in double size (If your "
 "logo is 100 x 20px, it should be 200 x 40px)"
@@ -902,11 +853,11 @@ msgstr ""
 "Загрузить Retina Логотип. Это должен быть ваш логотип в двойном размере "
 "(Если ваш логотип 100 х 20 пикселей, он должен быть 200 х 40px)"
 
-#: includes/admin/zoner-options/admin-config.php:204
+#: includes/admin/zoner-options/admin-config.php:199
 msgid "Original Logo (Width/Height)"
 msgstr "Оригинальный логотип (ширина / высота)"
 
-#: includes/admin/zoner-options/admin-config.php:205
+#: includes/admin/zoner-options/admin-config.php:200
 msgid ""
 "If Retina Logo uploaded, please enter the (width/height) of the Standard "
 "Logo you've uploaded (not the Retina Logo)"
@@ -914,258 +865,263 @@ msgstr ""
 "Если Retina Логотип загружен, пожалуйста, введите (ширину / высоту) "
 "стандартного логотипа который вы загрузили (не Retina Логотип)"
 
-#: includes/admin/zoner-options/admin-config.php:217
+#: includes/admin/zoner-options/admin-config.php:212
 msgid "Blog options"
 msgstr "Опции блога"
 
-#: includes/admin/zoner-options/admin-config.php:224
+#: includes/admin/zoner-options/admin-config.php:219
 msgid "Display Comments"
 msgstr "Показать комментарии"
 
-#: includes/admin/zoner-options/admin-config.php:225
+#: includes/admin/zoner-options/admin-config.php:220
 msgid "Choose where users are allowed to post comment in your website."
 msgstr ""
 "Выберите, где пользователи смогут оставлять комментарии на вашем веб-сайте."
 
-#: includes/admin/zoner-options/admin-config.php:229
+#: includes/admin/zoner-options/admin-config.php:224
 msgid "Posts Only"
 msgstr "Только сообщения"
 
-#: includes/admin/zoner-options/admin-config.php:230
+#: includes/admin/zoner-options/admin-config.php:225
 msgid "Pages Only"
 msgstr "Только страницы"
 
-#: includes/admin/zoner-options/admin-config.php:231
+#: includes/admin/zoner-options/admin-config.php:226
 msgid "Posts/Pages show"
 msgstr "Сообщения / Страницы шоу"
 
-#: includes/admin/zoner-options/admin-config.php:232
+#: includes/admin/zoner-options/admin-config.php:227
 msgid "Hide all"
 msgstr "Скрыть все"
 
-#: includes/admin/zoner-options/admin-config.php:239
+#: includes/admin/zoner-options/admin-config.php:234
 msgid "Single post layout"
 msgstr "Одноместный пост макет"
 
-#: includes/admin/zoner-options/admin-config.php:240
-#: includes/admin/zoner-options/admin-config.php:963
+#: includes/admin/zoner-options/admin-config.php:235
+#: includes/admin/zoner-options/admin-config.php:958
 msgid "Select main content and sidebar alignment."
 msgstr "Выберите основное содержание и выравнивание боковой панели."
 
-#: includes/admin/zoner-options/admin-config.php:251
+#: includes/admin/zoner-options/admin-config.php:246
 msgid "Display date for posts"
 msgstr "Отображать дату для записей"
 
-#: includes/admin/zoner-options/admin-config.php:259
+#: includes/admin/zoner-options/admin-config.php:254
 msgid "Display thumbnails for posts"
 msgstr "Отображать миниатюры для записей"
 
-#: includes/admin/zoner-options/admin-config.php:267
+#: includes/admin/zoner-options/admin-config.php:262
 msgid "Display tags for posts"
 msgstr "Отображать тэги для записей"
 
-#: includes/admin/zoner-options/admin-config.php:275
+#: includes/admin/zoner-options/admin-config.php:270
 msgid "Display authors for posts"
 msgstr "Отображать авторов для записей"
 
-#: includes/admin/zoner-options/admin-config.php:285
+#: includes/admin/zoner-options/admin-config.php:280
 msgid "Styling"
 msgstr "Дизайн"
 
-#: includes/admin/zoner-options/admin-config.php:293
+#: includes/admin/zoner-options/admin-config.php:288
 msgid "Body Background"
 msgstr "Фон"
 
-#: includes/admin/zoner-options/admin-config.php:294
+#: includes/admin/zoner-options/admin-config.php:289
 msgid "Body background with image, color, etc."
 msgstr "Фон с изображением, цветом и т.д."
 
-#: includes/admin/zoner-options/admin-config.php:309
+#: includes/admin/zoner-options/admin-config.php:304
 msgid "Color Scheme"
 msgstr "Цветовая схема"
 
-#: includes/admin/zoner-options/admin-config.php:310
+#: includes/admin/zoner-options/admin-config.php:305
 msgid "Choose main color scheme."
 msgstr "Изменить главную цветовую схему"
 
-#: includes/admin/zoner-options/admin-config.php:315
+#: includes/admin/zoner-options/admin-config.php:310
 msgid "Blue"
 msgstr "Голубой"
 
-#: includes/admin/zoner-options/admin-config.php:335
+#: includes/admin/zoner-options/admin-config.php:330
 msgid "Brown"
 msgstr "Коричневый"
 
-#: includes/admin/zoner-options/admin-config.php:355
+#: includes/admin/zoner-options/admin-config.php:350
 msgid "Green"
 msgstr "Зеленый"
 
-#: includes/admin/zoner-options/admin-config.php:374
+#: includes/admin/zoner-options/admin-config.php:369
 msgid "Grey"
 msgstr "Серый"
 
-#: includes/admin/zoner-options/admin-config.php:394
+#: includes/admin/zoner-options/admin-config.php:389
 msgid "Magenta"
 msgstr "Пурпурный"
 
-#: includes/admin/zoner-options/admin-config.php:414
+#: includes/admin/zoner-options/admin-config.php:409
 msgid "Orange"
 msgstr "Оранжевый"
 
-#: includes/admin/zoner-options/admin-config.php:434
+#: includes/admin/zoner-options/admin-config.php:429
 msgid "Red"
 msgstr "Красный"
 
-#: includes/admin/zoner-options/admin-config.php:454
+#: includes/admin/zoner-options/admin-config.php:449
 msgid "Violet"
 msgstr "Фиолетовый"
 
-#: includes/admin/zoner-options/admin-config.php:487
+#: includes/admin/zoner-options/admin-config.php:482
 msgid "Header background color"
 msgstr "Цвет фона шапки"
 
-#: includes/admin/zoner-options/admin-config.php:497
+#: includes/admin/zoner-options/admin-config.php:491
+#: includes/theme/theme-function.php:607
+msgid "Phone"
+msgstr "Телефон"
+
+#: includes/admin/zoner-options/admin-config.php:492
 msgid "Edit phone"
 msgstr "Редактировать телефон"
 
-#: includes/admin/zoner-options/admin-config.php:504
-#: includes/theme/theme-function.php:676 includes/theme/theme-profile.php:166
+#: includes/admin/zoner-options/admin-config.php:499
+#: includes/theme/theme-function.php:610 includes/theme/theme-profile.php:140
 msgid "Email"
 msgstr "email"
 
-#: includes/admin/zoner-options/admin-config.php:505
+#: includes/admin/zoner-options/admin-config.php:500
 msgid "Edit email"
 msgstr "Редактировать email"
 
-#: includes/admin/zoner-options/admin-config.php:515
+#: includes/admin/zoner-options/admin-config.php:510
 msgid "WPML box"
 msgstr "WPML окно"
 
-#: includes/admin/zoner-options/admin-config.php:516
+#: includes/admin/zoner-options/admin-config.php:511
 msgid "Select to enable WPML box."
 msgstr "Выберите для включения WPML окно."
 
-#: includes/admin/zoner-options/admin-config.php:528
+#: includes/admin/zoner-options/admin-config.php:523
 msgid "Header"
 msgstr "Шапка"
 
-#: includes/admin/zoner-options/admin-config.php:538
+#: includes/admin/zoner-options/admin-config.php:533
 msgid "Menu"
 msgstr "Меню"
 
-#: includes/admin/zoner-options/admin-config.php:546
+#: includes/admin/zoner-options/admin-config.php:541
 msgid "Menu item color"
 msgstr "Цвет меню"
 
-#: includes/admin/zoner-options/admin-config.php:556
+#: includes/admin/zoner-options/admin-config.php:551
 msgid "Submenu item color"
 msgstr "Цвет подменю"
 
-#: includes/admin/zoner-options/admin-config.php:567
+#: includes/admin/zoner-options/admin-config.php:562
 msgid "Submenu item background color"
 msgstr "Цвет фона подменю"
 
-#: includes/admin/zoner-options/admin-config.php:578
+#: includes/admin/zoner-options/admin-config.php:573
 msgid "Submenu background color"
 msgstr "Цвет фона подменю"
 
-#: includes/admin/zoner-options/admin-config.php:587
+#: includes/admin/zoner-options/admin-config.php:582
 msgid "Submenu item border color"
 msgstr "Цвет границы подменю"
 
-#: includes/admin/zoner-options/admin-config.php:597
+#: includes/admin/zoner-options/admin-config.php:592
 msgid "Menu underline item color."
 msgstr "Цвет подчеркивания меню."
 
-#: includes/admin/zoner-options/admin-config.php:607
+#: includes/admin/zoner-options/admin-config.php:602
 msgid "Font styles"
 msgstr "Стили шрифтов"
 
-#: includes/admin/zoner-options/admin-config.php:614
+#: includes/admin/zoner-options/admin-config.php:609
 msgid "General Text Font Style"
 msgstr "Генеральный Текст Стиль шрифта"
 
-#: includes/admin/zoner-options/admin-config.php:622
+#: includes/admin/zoner-options/admin-config.php:617
 msgid "Select typography for general text."
 msgstr "Выберите типографики для общего текста."
 
-#: includes/admin/zoner-options/admin-config.php:635
+#: includes/admin/zoner-options/admin-config.php:630
 msgid "H1 Font Style."
 msgstr "H1 стиль."
 
-#: includes/admin/zoner-options/admin-config.php:643
+#: includes/admin/zoner-options/admin-config.php:638
 msgid "Select the typography you want for header H1."
 msgstr "Выберите шрифт для заголовка H1."
 
-#: includes/admin/zoner-options/admin-config.php:656
+#: includes/admin/zoner-options/admin-config.php:651
 msgid "H2 Font Style."
 msgstr "H2 стиль."
 
-#: includes/admin/zoner-options/admin-config.php:664
+#: includes/admin/zoner-options/admin-config.php:659
 msgid "Select the typography you want for header H2."
 msgstr "Выберите шрифт для заголовка H2."
 
-#: includes/admin/zoner-options/admin-config.php:677
+#: includes/admin/zoner-options/admin-config.php:672
 msgid "H3 Font Style."
 msgstr "H3 стиль."
 
-#: includes/admin/zoner-options/admin-config.php:685
+#: includes/admin/zoner-options/admin-config.php:680
 msgid "Select the typography you want for header H3."
 msgstr "Выберите шрифт для заголовка H3."
 
-#: includes/admin/zoner-options/admin-config.php:699
+#: includes/admin/zoner-options/admin-config.php:694
 msgid "H4 Font Style."
 msgstr "H4 стиль."
 
-#: includes/admin/zoner-options/admin-config.php:707
+#: includes/admin/zoner-options/admin-config.php:702
 msgid "Select the typography you want for header H4."
 msgstr "Выберите шрифт для заголовка H4."
 
-#: includes/admin/zoner-options/admin-config.php:720
+#: includes/admin/zoner-options/admin-config.php:715
 msgid "H5 Font Style."
 msgstr "H5 стиль."
 
-#: includes/admin/zoner-options/admin-config.php:728
+#: includes/admin/zoner-options/admin-config.php:723
 msgid "Select the typography you want for header H5."
 msgstr "Выберите шрифт для заголовка H5."
 
-#: includes/admin/zoner-options/admin-config.php:742
+#: includes/admin/zoner-options/admin-config.php:737
 msgid "H6 Font Style."
 msgstr "H6 стиль."
 
-#: includes/admin/zoner-options/admin-config.php:750
+#: includes/admin/zoner-options/admin-config.php:745
 msgid "Select the typography you want for header H6."
 msgstr "Выберите шрифт для заголовка H6."
 
-#: includes/admin/zoner-options/admin-config.php:764
+#: includes/admin/zoner-options/admin-config.php:759
 msgid "\"p\" Font Style."
 msgstr "\"p\" Стиль шрифта."
 
-#: includes/admin/zoner-options/admin-config.php:772
+#: includes/admin/zoner-options/admin-config.php:767
 msgid "Select the typography you want for tag \"p\"."
 msgstr "Выберите тип для тега \"p\"."
 
-#: includes/admin/zoner-options/admin-config.php:789
+#: includes/admin/zoner-options/admin-config.php:784
 msgid "Transparency for content"
 msgstr "Прозрачность для содержания"
 
-#: includes/admin/zoner-options/admin-config.php:790
+#: includes/admin/zoner-options/admin-config.php:785
 msgid "Set the opacity for the content part"
 msgstr "Установите прозрачность для содержимого"
 
-#: includes/admin/zoner-options/admin-config.php:802
+#: includes/admin/zoner-options/admin-config.php:797
 msgid "Link style."
 msgstr "Стиль ссылки."
 
-#: includes/admin/zoner-options/admin-config.php:803
+#: includes/admin/zoner-options/admin-config.php:798
 msgid "Select the typography you want for tag \"a\"."
 msgstr "Выберите тип для тега \"a\"."
 
-#: includes/admin/zoner-options/admin-config.php:818
+#: includes/admin/zoner-options/admin-config.php:813
 msgid "Social Links"
 msgstr "Социальные ссылки"
 
-#: includes/admin/zoner-options/admin-config.php:819
+#: includes/admin/zoner-options/admin-config.php:814
 msgid ""
 "Add link to your social media profiles. Icons with link will be display in "
 "header or footer."
@@ -1173,177 +1129,185 @@ msgstr ""
 "Добавить социалную ссылку. Иконки с ссылкой будет отображаться в верхнем или "
 "нижнем колонтитуле."
 
-#: includes/admin/zoner-options/admin-config.php:826
+#: includes/admin/zoner-options/admin-config.php:821
 msgid "Facebook"
 msgstr "Фэйсбук"
 
-#: includes/admin/zoner-options/admin-config.php:833
+#: includes/admin/zoner-options/admin-config.php:828
 msgid "Twitter"
 msgstr "Twitter"
 
-#: includes/admin/zoner-options/admin-config.php:840
+#: includes/admin/zoner-options/admin-config.php:835
 msgid "LinkedIn"
 msgstr "LinkedIn"
 
-#: includes/admin/zoner-options/admin-config.php:847
+#: includes/admin/zoner-options/admin-config.php:842
 msgid "MySpace"
 msgstr "MySpace"
 
-#: includes/admin/zoner-options/admin-config.php:854
+#: includes/admin/zoner-options/admin-config.php:849
 msgid "Google Plus+"
 msgstr "Google Plus +"
 
-#: includes/admin/zoner-options/admin-config.php:861
+#: includes/admin/zoner-options/admin-config.php:856
 msgid "Dribbble"
 msgstr "Dribbble"
 
-#: includes/admin/zoner-options/admin-config.php:868
+#: includes/admin/zoner-options/admin-config.php:863
 msgid "Flickr"
 msgstr "Flickr"
 
-#: includes/admin/zoner-options/admin-config.php:875
+#: includes/admin/zoner-options/admin-config.php:870
 msgid "You Tube"
 msgstr "You Tube"
 
-#: includes/admin/zoner-options/admin-config.php:882
+#: includes/admin/zoner-options/admin-config.php:877
 msgid "Delicious"
 msgstr "Вкусные"
 
-#: includes/admin/zoner-options/admin-config.php:889
+#: includes/admin/zoner-options/admin-config.php:884
 msgid "Deviantart"
 msgstr "Deviantart"
 
-#: includes/admin/zoner-options/admin-config.php:896
+#: includes/admin/zoner-options/admin-config.php:891
 msgid "RSS"
 msgstr "RSS"
 
-#: includes/admin/zoner-options/admin-config.php:903
+#: includes/admin/zoner-options/admin-config.php:898
 msgid "Instagram"
 msgstr "Instagram"
 
-#: includes/admin/zoner-options/admin-config.php:910
+#: includes/admin/zoner-options/admin-config.php:905
 msgid "Pinterest"
 msgstr "Pinterest"
 
-#: includes/admin/zoner-options/admin-config.php:917
+#: includes/admin/zoner-options/admin-config.php:912
 msgid "Vimeo"
 msgstr "Vimeo"
 
-#: includes/admin/zoner-options/admin-config.php:924
+#: includes/admin/zoner-options/admin-config.php:919
 msgid "Picassa"
 msgstr "Picassa"
 
-#: includes/admin/zoner-options/admin-config.php:931
+#: includes/admin/zoner-options/admin-config.php:926
 msgid "Tumblr"
 msgstr "Tumblr"
 
-#: includes/admin/zoner-options/admin-config.php:938
+#: includes/admin/zoner-options/admin-config.php:933
 msgid "E-mail"
 msgstr "Электронная почта"
 
-#: includes/admin/zoner-options/admin-config.php:955
+#: includes/admin/zoner-options/admin-config.php:941
+msgid "Skype"
+msgstr "Skype"
+
+#: includes/admin/zoner-options/admin-config.php:950
 msgid "Default pages"
 msgstr "Страницы по умолчанию"
 
-#: includes/admin/zoner-options/admin-config.php:962
+#: includes/admin/zoner-options/admin-config.php:957
 msgid "Author layout"
 msgstr ""
 
-#: includes/admin/zoner-options/admin-config.php:976
+#: includes/admin/zoner-options/admin-config.php:971
 msgid "404 background."
 msgstr "404 фон."
 
-#: includes/admin/zoner-options/admin-config.php:977
+#: includes/admin/zoner-options/admin-config.php:972
 msgid "Upload a background for your 404 page."
 msgstr "Загрузить фон для страницы 404."
 
-#: includes/admin/zoner-options/admin-config.php:984
+#: includes/admin/zoner-options/admin-config.php:979
 msgid "404 text"
 msgstr "404 текст."
 
-#: includes/admin/zoner-options/admin-config.php:994
+#: includes/admin/zoner-options/admin-config.php:989
 msgid "Footer"
 msgstr "Нижний колонтитул"
 
-#: includes/admin/zoner-options/admin-config.php:1002
+#: includes/admin/zoner-options/admin-config.php:997
 msgid "Copyright section"
 msgstr "Раздел Copyright"
 
-#: includes/admin/zoner-options/admin-config.php:1003
+#: includes/admin/zoner-options/admin-config.php:998
 msgid "Replace default theme copyright information and links"
 msgstr "Заменить информацию и ссылки по умолчанию"
 
-#: includes/admin/zoner-options/admin-config.php:1010
+#: includes/admin/zoner-options/admin-config.php:999
+#: includes/theme/theme-function.php:516
+msgid ""
+"&#169; <a target=\"_blank\" title=\"WordPress Development\" href=\"http://"
+"fruitfulcode.com/\">Fruitful Code</a>, Powered by <a target=\"_blank\" href="
+"\"http://wordpress.org/\">WordPress</a>"
+msgstr ""
+
+#: includes/admin/zoner-options/admin-config.php:1005
 msgid "Social icons"
 msgstr "Социальные иконки"
 
-#: includes/admin/zoner-options/admin-config.php:1011
+#: includes/admin/zoner-options/admin-config.php:1006
 msgid "Enable social icons."
 msgstr "Включить отображение соц. иконок"
 
-#: includes/admin/zoner-options/admin-config.php:1019
+#: includes/admin/zoner-options/admin-config.php:1014
 msgid "Footer column areas"
 msgstr "Колонки для футера"
 
-#: includes/admin/zoner-options/admin-config.php:1033
+#: includes/admin/zoner-options/admin-config.php:1028
 msgid "Footer copyright part font color"
 msgstr "Цвет шрифта нижнего колонтитула"
 
-#: includes/admin/zoner-options/admin-config.php:1042
+#: includes/admin/zoner-options/admin-config.php:1037
 msgid "Footer copyright part background color"
 msgstr "Фоновый цвет нижнего колонтитула"
 
-#: includes/admin/zoner-options/admin-config.php:1053
+#: includes/admin/zoner-options/admin-config.php:1048
 msgid "Custom Code"
 msgstr "Код Клиента"
 
-#: includes/admin/zoner-options/admin-config.php:1060
+#: includes/admin/zoner-options/admin-config.php:1055
 msgid "CSS Code"
 msgstr "CSS код"
 
-#: includes/admin/zoner-options/admin-config.php:1061
+#: includes/admin/zoner-options/admin-config.php:1056
 msgid "Paste your CSS code here."
 msgstr "Вставить код CSS здесь."
 
-#: includes/admin/zoner-options/admin-config.php:1070
-msgid "JS Code"
-msgstr "JS код"
-
-#: includes/admin/zoner-options/admin-config.php:1071
-msgid "Paste your JS code here."
-msgstr "Вставить код JS здесь."
-
-#: includes/admin/zoner-options/admin-config.php:1081
+#: includes/admin/zoner-options/admin-config.php:1066
 msgid "Import / Export"
 msgstr "Импорт / Экспорт"
 
-#: includes/admin/zoner-options/admin-config.php:1082
+#: includes/admin/zoner-options/admin-config.php:1067
 msgid "Import and Export your zoner Framework settings from file, text or URL."
 msgstr ""
 "Импорт и экспорт ваших Framework настроек Zoner из файла, текста или URL."
 
-#: includes/admin/zoner-options/admin-config.php:1097
+#: includes/admin/zoner-options/admin-config.php:1082
 msgid "Extended version"
 msgstr ""
 
-#: includes/admin/zoner-options/admin-config.php:1126
-#: includes/admin/zoner-options/admin-config.php:1127
+#: includes/admin/zoner-options/admin-config.php:1089
+msgid "Zoner - Real Estate WordPress theme"
+msgstr ""
+
+#: includes/admin/zoner-options/admin-config.php:1111
+#: includes/admin/zoner-options/admin-config.php:1112
 msgid "Zoner options"
 msgstr "Опции Zoner"
 
-#: includes/admin/zoner-options/admin-config.php:1158
+#: includes/admin/zoner-options/admin-config.php:1143
 msgid "Zoner Options panel created using \"Reduxe Framework\"."
 msgstr "Zoner опции панели созданы при помощи  \"Reduxe Framework\"."
 
-#: includes/admin/zoner-options/admin-config.php:1166
+#: includes/admin/zoner-options/admin-config.php:1151
 msgid "Contact Support"
 msgstr "Контакты службы поддержки"
 
-#: includes/admin/zoner-options/admin-config.php:1167
+#: includes/admin/zoner-options/admin-config.php:1152
 msgid "Documentation"
 msgstr "Документация"
 
-#: includes/admin/zoner-options/admin-config.php:1168
+#: includes/admin/zoner-options/admin-config.php:1153
 msgid "Faq"
 msgstr "Faq"
 
@@ -1371,7 +1335,7 @@ msgstr "<span class=\"meta-nav\">Предыдущий пост</span>%title"
 msgid "<span class=\"meta-nav\">Next Post</span>%title"
 msgstr "<span class=\"meta-nav\">Начать </span>%title"
 
-#: includes/theme/theme-comments.php:22
+#: includes/theme/theme-comments.php:31
 msgid "Author"
 msgstr "Автор"
 
@@ -1391,16 +1355,11 @@ msgstr "Редактировать коменнтарий"
 msgid "Your comment is awaiting moderation."
 msgstr "Ваш комментарий ожидает модерации."
 
-#: includes/theme/theme-function.php:44
+#: includes/theme/theme-function.php:42
 msgid "Top primary menu"
 msgstr "Топ главного меню"
 
-#: includes/theme/theme-function.php:340
-#, php-format
-msgid "Page %s"
-msgstr "Страница %s"
-
-#: includes/theme/theme-function.php:380
+#: includes/theme/theme-function.php:323
 #, php-format
 msgid "%d Article"
 msgid_plural "%d Articles"
@@ -1408,87 +1367,87 @@ msgstr[0] "%d Статья"
 msgstr[1] "%d Статья"
 msgstr[2] "%d Статья"
 
-#: includes/theme/theme-function.php:476
+#: includes/theme/theme-function.php:419
 msgid "Enter Keyword"
 msgstr "Введите ключевое слово"
 
-#: includes/theme/theme-function.php:508 includes/theme/theme-function.php:1124
+#: includes/theme/theme-function.php:442 includes/theme/theme-function.php:1031
 msgid "Read More"
 msgstr "Прочитайте больше"
 
-#: includes/theme/theme-function.php:631
+#: includes/theme/theme-function.php:565
 msgid "Go to top"
 msgstr "Вверх"
 
-#: includes/theme/theme-function.php:683
+#: includes/theme/theme-function.php:617
 msgid "Sign Out"
 msgstr "Выйти из системы"
 
-#: includes/theme/theme-function.php:769
+#: includes/theme/theme-function.php:703
 msgid "Latest posts"
 msgstr "Последняя добавленная новость"
 
-#: includes/theme/theme-function.php:774
+#: includes/theme/theme-function.php:708
 #, php-format
 msgid "Daily Archives: %s"
 msgstr "Ежедневные aрхивы: %s"
 
-#: includes/theme/theme-function.php:776
+#: includes/theme/theme-function.php:710
 #, php-format
 msgid "Monthly Archives: %s"
 msgstr "Архив за месяц: %s"
 
-#: includes/theme/theme-function.php:776
+#: includes/theme/theme-function.php:710
 msgctxt "monthly archives date format"
 msgid "F Y"
 msgstr "F Y"
 
-#: includes/theme/theme-function.php:778
+#: includes/theme/theme-function.php:712
 #, php-format
 msgid "Yearly Archives: %s"
 msgstr "Архив за год: %s"
 
-#: includes/theme/theme-function.php:778
+#: includes/theme/theme-function.php:712
 msgctxt "yearly archives date format"
 msgid "Y"
 msgstr "Г"
 
-#: includes/theme/theme-function.php:780
+#: includes/theme/theme-function.php:714
 msgid "Archives"
 msgstr "Архив"
 
-#: includes/theme/theme-function.php:786
+#: includes/theme/theme-function.php:720
 #, php-format
 msgid "Category: %s"
 msgstr "Категория: %s"
 
-#: includes/theme/theme-function.php:787
+#: includes/theme/theme-function.php:721
 #, php-format
 msgid "Search Results for: %s"
 msgstr "Результаты поиска: %s"
 
-#: includes/theme/theme-function.php:788
+#: includes/theme/theme-function.php:722
 #, php-format
 msgid "Tag Archives: %s"
 msgstr "Архивы тегов: %s"
 
-#: includes/theme/theme-function.php:804
+#: includes/theme/theme-function.php:738
 msgid "Nothing Found"
 msgstr "Ничего не найдено"
 
-#: includes/theme/theme-function.php:989
+#: includes/theme/theme-function.php:896
 #, php-format
 msgid "All posts by \"%s\""
 msgstr "Все сообщения \"%s\""
 
-#: includes/theme/theme-function.php:1085
+#: includes/theme/theme-function.php:992
 #, php-format
 msgid ""
 "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
 msgstr ""
 "Готовы опубликовать свой первый пост? <a href=\"%1$s\">Начните здесь</a>."
 
-#: includes/theme/theme-function.php:1087
+#: includes/theme/theme-function.php:994
 msgid ""
 "Sorry, but nothing matched your search terms. Please try again with some "
 "different keywords."
@@ -1496,7 +1455,7 @@ msgstr ""
 "Извините, но ничего не найдено согласно условиям поиска. Пожалуйста, "
 "попробуйте еще раз."
 
-#: includes/theme/theme-function.php:1090
+#: includes/theme/theme-function.php:997
 msgid ""
 "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
 "searching can help."
@@ -1504,82 +1463,78 @@ msgstr ""
 "Похоже мы не можем найти то, что вы ищете. Возможно вам может помочь "
 "расширенный поиск."
 
-#: includes/theme/theme-function.php:1105
+#: includes/theme/theme-function.php:1012
 msgid "About the Author"
 msgstr "Об авторе"
 
-#: includes/theme/theme-profile.php:13 includes/theme/theme-profile.php:122
+#: includes/theme/theme-profile.php:6 includes/theme/theme-profile.php:106
 msgid "Profile"
 msgstr "Профиль"
 
-#: includes/theme/theme-profile.php:18
+#: includes/theme/theme-profile.php:11
 msgid "Account"
 msgstr "Учетная запись"
 
-#: includes/theme/theme-profile.php:137
+#: includes/theme/theme-profile.php:121
 msgid "image size has to be less than 1 MB"
 msgstr "Размер изображения должен быть не менее 1 Мб"
 
-#: includes/theme/theme-profile.php:138
+#: includes/theme/theme-profile.php:122
 msgid "Upload Avatar"
 msgstr "Загрузить аватар"
 
-#: includes/theme/theme-profile.php:144
+#: includes/theme/theme-profile.php:128
 msgid "Contact"
 msgstr "Контакты"
 
-#: includes/theme/theme-profile.php:146
+#: includes/theme/theme-profile.php:130
 msgid "First Name"
 msgstr "Имя"
 
-#: includes/theme/theme-profile.php:151
+#: includes/theme/theme-profile.php:135
 msgid "Last Name"
 msgstr "Фамилия"
 
-#: includes/theme/theme-profile.php:177
+#: includes/theme/theme-profile.php:147
 msgid "About Me"
 msgstr "Обо мне"
 
-#: includes/theme/theme-profile.php:183
-msgid "My Social Network"
-msgstr "Моя социальная сеть"
-
-#: includes/theme/theme-profile.php:199
+#: includes/theme/theme-profile.php:152
 msgid "Save Changes"
 msgstr "Сохранить изменения"
 
-#: includes/theme/theme-profile.php:208
+#: includes/theme/theme-profile.php:161
 msgid "Change Your Password"
 msgstr "Изменить пароль"
 
-#: includes/theme/theme-profile.php:214
+#: includes/theme/theme-profile.php:167
 msgid "Current Password"
 msgstr "Текущий пароль"
 
-#: includes/theme/theme-profile.php:218
+#: includes/theme/theme-profile.php:171
 msgid "New Password"
 msgstr "Новый пароль"
 
-#: includes/theme/theme-profile.php:222
+#: includes/theme/theme-profile.php:175
 msgid "Confirm New Password"
 msgstr "Подтвердить новый пароль"
 
-#: includes/theme/theme-profile.php:226
+#: includes/theme/theme-profile.php:179
 msgid "Change Password"
 msgstr "Изменить пароль"
 
-#: includes/theme/theme-profile.php:232
+#: includes/theme/theme-profile.php:185
 msgid "Hint"
 msgstr "Подсказка"
 
-#: includes/theme/theme-profile.php:233
+#: includes/theme/theme-profile.php:186
 msgid ""
 "Be careful. After you change the password, the password is automatically "
 "applied."
 msgstr ""
 "Будьте осторожны. После изменения пароля, пароль активируется автоматически."
 
-#: includes/theme/theme-profile.php:234
+#: includes/theme/theme-profile.php:187
 msgid ""
 "If you don't have a current password you can sign out and reset your "
 "password at sign in page."
@@ -1612,6 +1567,45 @@ msgstr "Нижний колонтитул %d"
 #, php-format
 msgid "Widgetized footer area %d."
 msgstr "Виджеты зоны колонтитула %d ."
+
+#~ msgid "User Profile"
+#~ msgstr "Профиль пользователя"
+
+#~ msgid "Extra User Info"
+#~ msgstr "Информация Extra User"
+
+#~ msgid "Avatar"
+#~ msgstr "Аватар"
+
+#~ msgid "Facebook URL"
+#~ msgstr "Facebook URL"
+
+#~ msgid "Twitter URL"
+#~ msgstr "Twitter URL"
+
+#~ msgid "Google+ URL"
+#~ msgstr "Google+ Ссылка"
+
+#~ msgid "Linkedin URL"
+#~ msgstr "Ссылка Linkedin"
+
+#~ msgid "Pinterest URL"
+#~ msgstr "Ссылка Pinterest"
+
+#~ msgid "Mobile"
+#~ msgstr "Мобильный"
+
+#~ msgid "JS Code"
+#~ msgstr "JS код"
+
+#~ msgid "Paste your JS code here."
+#~ msgstr "Вставить код JS здесь."
+
+#~ msgid "Page %s"
+#~ msgstr "Страница %s"
+
+#~ msgid "My Social Network"
+#~ msgstr "Моя социальная сеть"
 
 #~ msgid "Front page displays Error."
 #~ msgstr "Первая страница отображает Ошибку."

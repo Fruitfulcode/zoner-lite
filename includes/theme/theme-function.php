@@ -175,8 +175,6 @@ if ( ! function_exists( 'zoner_scripts' ) ) {
 		wp_enqueue_style( 'zoner-bootsrap-social', 	$zoner_inc_theme_url . 'assets/bootstrap/css/bootstrap-social-buttons.css');
 		wp_enqueue_style( 'zoner-bootsrap-select', 	$zoner_inc_theme_url . 'assets/css/bootstrap-select.min.css');
 		
-		wp_enqueue_style( 'zoner-magnific-css', 	$zoner_inc_theme_url . 'assets/css/magnific-popup.css');
-		
 		
 		wp_enqueue_style( 'zoner-style', get_stylesheet_uri() );
 		
@@ -197,9 +195,6 @@ if ( ! function_exists( 'zoner_scripts' ) ) {
 		
 		wp_enqueue_script( 'zoner-validate', 	$zoner_inc_theme_url . 'assets/js/jquery.validate.min.js',	 array( 'jquery' ), '20142807', true );
 		wp_enqueue_script( 'zoner-placeholder',	$zoner_inc_theme_url . 'assets/js/jquery.placeholder.js',	 array( 'jquery' ), '20142807', true );
-		
-		if (is_page() || is_single() || is_home() || is_author() || is_archive() || is_search())
-			wp_enqueue_script( 'zoner-popup',$zoner_inc_theme_url	. 'assets/js/jquery.magnific-popup.min.js',	 array( 'jquery' ), '20142807', true );
 		
 		
 		/*Custom scripts*/

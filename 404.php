@@ -25,7 +25,7 @@ get_header(); ?>
                     <img alt="" src="<?php echo $bg_404; ?>" class="bottom">
                  </div>
                  <h2 class="no-border"><?php _e('Page not found', 'zoner-lite'); ?></h2>
-                 <a href="<?php echo home_url(''); ?>" class="link-arrow back" onclick="history.back(-1)"><?php _e('Go Back', 'zoner-lite'); ?></a>
+                 <a href="<?php echo esc_url(home_url('')); ?>" class="link-arrow back" onclick="history.back(-1)"><?php _e('Go Back', 'zoner-lite'); ?></a>
 			</div>
 		</section>
 	</div><!-- /.container -->

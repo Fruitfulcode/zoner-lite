@@ -149,28 +149,6 @@ $(document).ready(function($) {
 		}	
     });
 
-
-//  Magnific Popup
-
-    if ($('.zoner-gallery-shortcode').length > 0) {
-	    
-		$('.zoner-gallery-shortcode').each(function() {
-		
-			$(this).magnificPopup({
-				delegate: 'a.thumbnail',
-				type:'image',
-				removalDelay: 300,
-				mainClass: 'mfp-fade',
-				overflowY: 'scroll', 
-				gallery: {
-					enabled: true
-				}
-			});
-		});
-		
-	
-	}
-
 //  iCheck
 
     if ($('.checkbox').length > 0) {

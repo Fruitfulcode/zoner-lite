@@ -49,5 +49,3 @@ locate_template('/includes/theme/theme-sidebars.php', true);
 locate_template('/includes/theme/extensions/template-tags.php', true);
 locate_template('/includes/theme/theme-hooks.php', true);
 
-locate_template('/includes/theme/theme-user-functions.php', true);
-
