@@ -48,12 +48,8 @@ Files: zoner.pot, ru_Ru.po, ru_Ru.mo, nl_BE.mo, nl_BE.po icluded. Default langua
 * Bootstrap Framework – http://getbootstrap.com Licensed under MIT
 * Redux Framework – http://reduxframework.com Licensed under MIT
 * Custom Metaboxes and Fields for WordPress – https://github.com/webdevstudios Licensed under GPL licenses
-* jQuery Waypoints https://github.com/imakewebthings/jquery-waypoints Licensed under GPL licenses
 * jQuery Placeholder – http://mths.be/placeholder Licensed under GPL licenses
-* scrollReveal.js – https://github.com/julianlloyd/scrollReveal.js Licensed under GPL licenses
 * html5.js – https://github.com/aFarkas/html5shiv Licensed under GPL licenses
-* Respond.js – https://github.com/scottjehl/Respond Licensed under GPL licenses
-* Modernizr – http://modernizr.com Licensed under GPL licenses
 * Google fonts - https://www.google.com/fonts Licensed under GPL licenses
 * Icons - http://fortawesome.github.io/Font-Awesome/ Licensed under GPL licenses
 
