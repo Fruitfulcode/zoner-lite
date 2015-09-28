@@ -46,4 +46,5 @@
 			</div><!-- /.container -->
 		</div><!-- /.navigation -->
 		<!-- end Navigation -->
+		<?php zoner_get_home_slider(); ?>
 		<div id="page-content" class="site-main">

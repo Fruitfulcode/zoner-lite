@@ -33,11 +33,12 @@ Use it to make something cool, have fun, and share what you've learned with othe
 	10.0 - Form elements	
 	11.0 - Error Pages & Info message
 	12.0 - Custom Paginations
-	13.0 - Custom Animation
-	14.0 - Footer
-	15.0 - Redux default styles
-	16.0 - Media Queries
-	17.0 - Print
+	13.0 - Homepage Slider
+	14.0 - Custom Animation
+	15.0 - Footer
+	16.0 - Redux default styles
+	17.0 - Media Queries
+	18.0 - Print
 	
 -------------------------------------------------------------------*/
 
@@ -2266,10 +2267,231 @@ form.post-password-form input[type="submit"] {
 
 
 
+/*------------------------------------------------------------------
+	[13.0 HomePage Slider]
+*/
+
+#loading-icon {
+  bottom: 0;
+  font-size: 28px;
+  height: 25px;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 25px;
+  z-index: 3;
+}
+
+.loading:before {
+  background-color: #fff;
+  content: "";
+  height: 100%;
+  left: 0;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 2;
+}
+
+#wrapper-rs {
+    overflow: hidden;
+    width: 100%;
+	position: relative;
+	height: 650px;
+}
+
+#slider {
+  height: 650px;
+  position: relative;
+  overflow: hidden;
+}
+
+#slider .homepage-slider .slide {
+  height: 750px;
+  position: relative;
+  overflow: hidden;
+}
+
+#slider .homepage-slider .slide {
+	background-position:50% 0%;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-repeat:no-repeat;
+}
+
+#slider .homepage-slider .slide:after {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+  opacity: 0.8;
+  background: -moz-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.75) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, transparent), color-stop(100%, rgba(0, 0, 0, 0.75)));
+  background: -webkit-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.75) 100%);
+  background: -o-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.75) 100%);
+  background: -ms-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.75) 100%);
+  background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.75) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#a6000000',GradientType=0 );
+  bottom: 0;
+  content: "";
+  height: 30%;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+}
+#slider .homepage-slider .slide .overlay {
+  filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+  opacity: 1;
+  -moz-transition: 0.2s;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  color: #fff;
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 20px;
+  width: 100%;
+  z-index: 2;
+}
+#slider .homepage-slider .slide .overlay .info {
+  filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+  opacity: 1;
+  -moz-transition: 0.2s;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+#slider .homepage-slider .slide .overlay .info .tag {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  -moz-transition: 0.4s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  font-size: 24px;
+  position: relative;
+  top: 20px;
+}
+#slider .homepage-slider .slide .overlay .info h3 {
+  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.6);
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  -moz-transition: 0.4s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  font-size: 30px;
+  font-weight: normal;
+  margin: 5px 0;
+  position: relative;
+  left: 20px;
+  color: #fff;
+}
+#slider .homepage-slider .slide .overlay .info figure {
+  text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.6);
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  -moz-transition: 0.4s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  font-size: 18px;
+  position: relative;
+  left: 20px;
+}
+#slider .homepage-slider .slide .overlay .info.animate-description-out {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+}
+#slider .homepage-slider .slide .overlay .info.animate-description-out .tag, #slider .homepage-slider .slide .overlay .info.animate-description-out h3, #slider .homepage-slider .slide .overlay .info.animate-description-out figure {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+}
+#slider .homepage-slider .slide .overlay .info.animate-description-in {
+  filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+  opacity: 1;
+}
+#slider .homepage-slider .slide .overlay .info.animate-description-in figure {
+  filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+  opacity: 1;
+  -moz-transition-delay: 0.3s;
+  -webkit-transition-delay: 0.3s;
+  transition-delay: 0.3s;
+  left: 0px;
+}
+#slider .homepage-slider .slide .overlay .info.animate-description-in h3 {
+  filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+  opacity: 1;
+  -moz-transition-delay: 0.2s;
+  -webkit-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+  left: 0px;
+}
+#slider .homepage-slider .slide .overlay .info.animate-description-in .tag {
+  filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+  opacity: 1;
+  top: 0px;
+}
+#slider .homepage-slider .slide .overlay hr {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=20);
+  opacity: 0.2;
+  border-color: #fff;
+}
+#slider .homepage-slider .slide .overlay .link-arrow {
+  color: #fff;
+}
+#slider .homepage-slider .slide img {
+  position: relative;
+}
+#slider .homepage-slider .owl-controls .owl-prev, 
+#slider .homepage-slider .owl-controls .owl-next {
+  -moz-transition: 0.4s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  background-color: transparent;
+  bottom: 0;
+  display: block;
+  height: 100%;
+  margin: auto;
+  padding: 0 30px;
+  position: absolute;
+  top: 0;
+}
+#slider .homepage-slider .owl-controls .owl-prev {
+  left:0;
+}
+#slider .homepage-slider .owl-controls .owl-prev:hover, #slider .homepage-slider .owl-controls .owl-next:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+#slider .homepage-slider .owl-controls .owl-prev:after, #slider .homepage-slider .owl-controls .owl-next:after {
+  text-shadow: none;
+  -webkit-font-smoothing: antialiased;
+  font-family: 'fontawesome';
+  speak: none;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-transform: none;
+  bottom: 0;
+  color: #fff;
+  font-size: 40px;
+  height: 40px;
+  margin: auto;
+  top: 0px;
+  position: absolute;
+}
+#slider .homepage-slider .owl-controls .owl-next {
+  right: 0;
+}
+#slider .homepage-slider .owl-controls .owl-next:after {
+  content: "\f105";
+  right: 20px;
+}
+#slider .homepage-slider .owl-controls .owl-prev:after {
+  content: "\f104";
+  left: 20px;
+}
 
 
 /*------------------------------------------------------------------
-	[13.0 Custom Animation]
+	[14.0 Custom Animation]
 */
 
 .animate-loading {
@@ -2472,7 +2694,7 @@ form.post-password-form input[type="submit"] {
 
 
 /*------------------------------------------------------------------
-	[14.0 Footer]
+	[15.0 Footer]
 */
 
 #page-footer .inner {
@@ -2535,7 +2757,7 @@ form.post-password-form input[type="submit"] {
 
 
 /*------------------------------------------------------------------
-	[15.0 Redux default styles]
+	[16.0 Redux default styles]
 */
 
 body {
@@ -2683,7 +2905,7 @@ a:active {
 /* End of redux default settings */
 
 /*------------------------------------------------------------------
-	[16.0 Media Queries]
+	[17.0 Media Queries]
 */
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -2958,7 +3180,7 @@ a:active {
 }
 
 /*------------------------------------------------------------------
-	[17.0 Print]
+	[18.0 Print]
 */
 
 @media print {

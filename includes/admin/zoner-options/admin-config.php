@@ -527,6 +527,51 @@ if (!class_exists('zoner_config')) {
 				
 			);
 			
+			$this->sections[] = array(
+                'title'     => __('Slider', 'zoner-lite'),
+                'icon'      => $sample_patterns_url . 'images/icons/slider.png',
+				'icon_type'	=> 'image',
+                'fields'    => array (
+				
+					array(
+                        'id'        => 'switch-slider',
+                        'type'      => 'switch',
+                        'title'     => __('Slider on "Home" page', 'zoner-lite'),
+                        'default'   =>  0,
+                        'on'        => 'On',
+                        'off'       => 'Off',
+                    ),
+					
+					array(
+                        'id'        => 'home-slides',
+                        'type'      => 'slides',
+						'required'  => array('switch-slider', '=', '1'),
+                        'title'     => __('Slides', 'zoner-lite'),
+                        'subtitle'  => __('Add slides to slider', 'zoner-lite'),
+                        'placeholder'   => array(
+                            'title'         => __('This is a title', 'zoner-lite'),
+                            'description'   => __('Description Here', 'zoner-lite'),
+                            'url'           => __('Url', 'zoner-lite'),
+                        ),
+                    ),
+					
+					array(
+                        'id'            => 'slider-showspeed',
+                        'type'          => 'slider',
+						'required'  => array('switch-slider', '=', '1'),
+                        'title'         => __('Slideshow Speed', 'zoner-lite'),
+                        'desc'          => __('Min: 1000, max: 28000, step: 500, default value: 8000', 'zoner-lite'),
+                        'default'       => 8000,
+                        'min'           => 1000,
+                        'step'          => 500,
+                        'max'           => 28000,
+                        'display_value' => 'text'
+                    )
+					
+				)
+				
+			);
+			
 			
 			/*Menu Section*/
 			$this->sections[] = array(

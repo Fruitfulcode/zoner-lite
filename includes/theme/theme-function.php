@@ -163,7 +163,9 @@ if ( ! function_exists( 'zoner_scripts' ) ) {
 		
 		
 		wp_register_script( 'zoner-mainJs',	 $zoner_inc_theme_url . 'assets/js/custom.js',	 array( 'jquery' ), '20142807', true );
-		wp_localize_script( 'zoner-mainJs', 'ZonerGlobal', 	array( 	'ajaxurl' 		=> admin_url( 'admin-ajax.php' ) ) );  
+		wp_localize_script( 'zoner-mainJs', 'ZonerGlobal', 	array( 	'ajaxurl' 		=> admin_url( 'admin-ajax.php' ),
+																	'is_rtl'		=> $is_rtl
+																	) );  
 		
 		/*Custom Css*/
 		wp_enqueue_style( 'zoner-fontAwesom', 		$zoner_inc_theme_url . 'assets/fonts/font-awesome.min.css');
@@ -174,6 +176,8 @@ if ( ! function_exists( 'zoner_scripts' ) ) {
 		wp_enqueue_style( 'zoner-bootsrap-rtl', 	$zoner_inc_theme_url . 'assets/bootstrap/css/bootstrap-rtl.min.css');
 		wp_enqueue_style( 'zoner-bootsrap-social', 	$zoner_inc_theme_url . 'assets/bootstrap/css/bootstrap-social-buttons.css');
 		wp_enqueue_style( 'zoner-bootsrap-select', 	$zoner_inc_theme_url . 'assets/css/bootstrap-select.min.css');
+		wp_enqueue_style( 'zoner-owl.carousel', 	$zoner_inc_theme_url . 'assets/css/owl.carousel.css');
+		wp_enqueue_style( 'zoner-owl.carousel-trans', $zoner_inc_theme_url . 'assets/css/owl.transitions.css');
 		
 		
 		wp_enqueue_style( 'zoner-style', get_stylesheet_uri() );
@@ -193,6 +197,7 @@ if ( ! function_exists( 'zoner_scripts' ) ) {
 		if (!empty($zoner_config['smoothscroll']))
 	    wp_enqueue_script( 'zoner-smoothscroll', 	$zoner_inc_theme_url . 'assets/js/smoothscroll.js', array( 'jquery' ), '20142807', true );
 		
+		wp_enqueue_script( 'zoner-owl', 		$zoner_inc_theme_url . 'assets/js/owl.carousel.min.js',	 array( 'jquery' ), '20142807', true );
 		wp_enqueue_script( 'zoner-validate', 	$zoner_inc_theme_url . 'assets/js/jquery.validate.min.js',	 array( 'jquery' ), '20142807', true );
 		wp_enqueue_script( 'zoner-placeholder',	$zoner_inc_theme_url . 'assets/js/jquery.placeholder.js',	 array( 'jquery' ), '20142807', true );
 		
@@ -1016,6 +1021,50 @@ if ( ! function_exists( 'zoner_get_post_about_author' ) ) {
 		
 	<?php 
 	}
+}	
+
+if ( ! function_exists( 'zoner_get_home_slider' ) ) {		
+	function zoner_get_home_slider() {
+		global $zoner_config, $zoner, $prefix;
+		$out_slider = '';
+		
+		if ((!is_front_page()) || (!$zoner_config['switch-slider'])) { return; }
+		
+		if (!empty($zoner_config['home-slides'])) {
+			$slides = $zoner_config['home-slides'];
+		
+			$out_slider .= '<div id="slider" class="loading has-parallax">';
+				$out_slider .= '<div id="loading-icon"><i class="fa fa-cog fa-spin"></i></div>';
+				$out_slider .= '<div class="owl-carousel homepage-slider carousel-full-width">';
+	
+					foreach ($slides as $slide) {
+						
+						$title = $description = $url = '';
+						$title = esc_attr($slide['title']);
+						$description = esc_attr($slide['description']);
+						$url = esc_url($slide['url']);
+								
+						$out_slider .= '<div class="slide" style="background-image:url('.esc_url($slide['image']).');">';
+							$out_slider .= '<div class="container">';
+								$out_slider .= '<div class="overlay">';
+									$out_slider .= '<div class="info">';
+										$out_slider .= '<h3>'.$title.'</h3>';
+										$out_slider .= '<figure>'.$description.'</figure>';
+									$out_slider .= '</div>';
+									if (!empty($url)) $out_slider .= '<hr />';
+									if (!empty($url)) $out_slider .= '<a href="'.$url.'" class="link-arrow">'. __('Read More', 'zoner').'</a>';
+								$out_slider .= '</div>';
+							$out_slider .= '</div>';
+						$out_slider .= '</div>';
+						
+					}	
+					
+				$out_slider .= '</div>';
+			$out_slider .= '</div>';	
+		}
+		
+		echo $out_slider;
+ 	}
 }	
 
 /*Read More*/

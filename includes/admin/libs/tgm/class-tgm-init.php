@@ -53,6 +53,12 @@ function zoner_register_required_plugins() {
             'name'      => 'Redux Framework',
             'slug'      => 'redux-framework',
             'required'  => false
+        ),
+		
+		array(
+            'name'      => 'Fruitful Shortcodes',
+            'slug'      => 'fruitful-shortcodes',
+            'required'  => false
         )
 		
     );

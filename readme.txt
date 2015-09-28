@@ -47,6 +47,7 @@ Files: zoner.pot, ru_Ru.po, ru_Ru.mo, nl_BE.mo, nl_BE.po icluded. Default langua
  
 * Bootstrap Framework – http://getbootstrap.com Licensed under MIT
 * Redux Framework – http://reduxframework.com Licensed under MIT
+* ElegantIcons - https://www.elegantthemes.com/blog/resources/elegant-icon-font Licensed under MIT and GPL licenses
 * Custom Metaboxes and Fields for WordPress – https://github.com/webdevstudios Licensed under GPL licenses
 * jQuery Placeholder – http://mths.be/placeholder Licensed under GPL licenses
 * html5.js – https://github.com/aFarkas/html5shiv Licensed under GPL licenses
