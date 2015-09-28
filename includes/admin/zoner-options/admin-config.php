@@ -555,19 +555,6 @@ if (!class_exists('zoner_config')) {
                         ),
                     ),
 					
-					array(
-                        'id'            => 'slider-showspeed',
-                        'type'          => 'slider',
-						'required'  => array('switch-slider', '=', '1'),
-                        'title'         => __('Slideshow Speed', 'zoner-lite'),
-                        'desc'          => __('Min: 1000, max: 28000, step: 500, default value: 8000', 'zoner-lite'),
-                        'default'       => 8000,
-                        'min'           => 1000,
-                        'step'          => 500,
-                        'max'           => 28000,
-                        'display_value' => 'text'
-                    )
-					
 				)
 				
 			);
