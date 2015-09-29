@@ -223,7 +223,8 @@ if ( ! function_exists( 'zoner_get_inline_styles' ) ) {
 					.background-color-default,	
 					.btn.btn-default, select.btn-default,
 					.checkbox.switch .icheckbox:before,
-					.jGrowl .jGrowl-notification {
+					.jGrowl .jGrowl-notification,
+					.site .info-box-row .ffs-info-box .ffs-icon-container					{
 						background-color:'.$primary_color.';
 					}
 				';
@@ -263,19 +264,23 @@ if ( ! function_exists( 'zoner_get_inline_styles' ) ) {
 						border-color:'.$primary_color.';
 					}
 				';
-					
 			
 			$style .= ' 
 					.navigation .navbar .navbar-nav > li > .child-navigation > li:first-child:hover a:hover:after, 
-					.navigation .navbar .navbar-nav > li.current-menu-ancestor > .child-navigation > li.current-menu-item a:aftere {
+					.navigation .navbar .navbar-nav > li.current-menu-ancestor > .child-navigation > li.current-menu-item a:after {
 						border-color: transparent transparent '.$primary_color.' transparent;
 					}
-				';		
-			
+				';
 			
 			$style .= ' 
 					#sidebar .sidebar-navigation li:hover:after {
 						border-color: transparent transparent transparent '.$primary_color.';
+					}
+				';		
+				
+			$style .= ' 
+					.site .info-box-row .ffs-info-box .ffs-icon-container::after {
+						border-color: transparent '.$primary_color.' transparent transparent;
 					}
 				';		
 				
