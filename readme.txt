@@ -1,4 +1,4 @@
--------------------------------------------------------
+﻿-------------------------------------------------------
     Thank you for downloading Zoner-lite theme!
 -------------------------------------------------------
 
@@ -47,6 +47,11 @@ Files: zoner.pot, ru_Ru.po, ru_Ru.mo, nl_BE.mo, nl_BE.po icluded. Default langua
  
 * Bootstrap Framework – http://getbootstrap.com Licensed under MIT
 * Redux Framework – http://reduxframework.com Licensed under MIT
+* holder.js - http://holderjs.com Licensed under MIT
+* iCheck - https://github.com/fronteed/iCheck/ Licensed under MIT
+* jQuery Validation Plugin - http://jqueryvalidation.org/ Licensed under MIT
+* OWL Carousel  - http://owlgraphic.com/owlcarousel/ Licensed under MIT
+* smoothscroll.js - https://github.com/galambalazs/smoothscroll Licensed under MIT
 * ElegantIcons - https://www.elegantthemes.com/blog/resources/elegant-icon-font Licensed under MIT and GPL licenses
 * Custom Metaboxes and Fields for WordPress – https://github.com/webdevstudios Licensed under GPL licenses
 * jQuery Placeholder – http://mths.be/placeholder Licensed under GPL licenses
