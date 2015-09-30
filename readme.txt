@@ -14,7 +14,7 @@ Thank you.
     Copyright
 -------------------------------------------------------
 
-Zoner-lite is a free WordPress responsive theme with theme options panel, designed and developed in Fruitful Code (www.fruitfulcode.com)
+Zoner-lite is a free WordPress responsive theme designed and developed in Fruitful Code (www.fruitfulcode.com)
 Feel free to use and modify this theme as you like.
 Zoner-lite is distributed under the GPLv2 license (http://www.gnu.org/licenses/gpl-2.0.html)
 Extended or full version of Zoner http://themeforest.net/item/zoner-real-estate-wordpress-theme/9099226?ref=fruitfulcode
@@ -39,7 +39,7 @@ or find in Appearance > Themes > Install theme, type “Zoner-lite” in search 
 
 The themes is ready for translation and already translated in Russian and Dutch.
 We are open for users translations, translation can be included in new theme versions.
-Files: zoner.pot, ru_Ru.po, ru_Ru.mo, nl_BE.mo, nl_BE.po icluded. Default language is english.
+Files: zoner.pot, en_US.po, en_US.mo ru_Ru.po, ru_Ru.mo, nl_BE.mo, nl_BE.po icluded. Default language is english.
 
 -------------------------------------------------------
     Credits
@@ -58,17 +58,14 @@ Files: zoner.pot, ru_Ru.po, ru_Ru.mo, nl_BE.mo, nl_BE.po icluded. Default langua
 * html5.js – https://github.com/aFarkas/html5shiv Licensed under GPL licenses
 * Google fonts - https://www.google.com/fonts Licensed under GPL licenses
 * Icons - http://fortawesome.github.io/Font-Awesome/ Licensed under GPL licenses
+* Images - http://unsplash.com/
 
 -------------------------------------------------------
     Changelog
 -------------------------------------------------------
 
-= 1.0.1 =
-11.08.2015
 
-- Redux framework is not required and now recommended.
-
-= 1.0 =
-07.07.2015
+= 1.0.4 =
+30.09.2015
 
 - Initial release
