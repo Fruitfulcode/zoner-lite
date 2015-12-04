@@ -1118,7 +1118,7 @@ if (!class_exists('zoner_config')) {
 					 array(
 						'id'       => 'opt-raw',
 						'type'     => 'raw',
-						'content'  => '<a href="http://themeforest.net/item/zoner-real-estate-wordpress-theme/9099226" target="_blank" style="text-decoration: none;" title=""><h4>'. __('Zoner - Real Estate WordPress theme', 'zoner-lite') . '</h4><img src="' . $sample_patterns_url . 'images/extended.png" alt="Extended version" /></a>'
+						'content'  => '<a href="http://themeforest.net/item/zoner-real-estate-wordpress-theme/9099226" target="_blank" style="text-decoration: none;" title=""><h4>'. __('Zoner - Real Estate WordPress theme', 'zoner-lite') . '</h4><img src="' . $sample_patterns_url . 'images/zoner-extended.png" alt="Extended version" /></a>'
 					),
                 ),
             );  
