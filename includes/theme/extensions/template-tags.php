@@ -44,7 +44,7 @@ function zoner_paging_nav() {
 		$links[] = $paged + 1;
 	}
 
-	$gen_nav_text = '<div class="center" role="navigation">';
+	$gen_nav_text = '<div class="center" role="navigation" aria-label="'.__( 'Paging Navigation', 'zoner-lite' ).'">';
 		$gen_nav_text .= '<ul class="pagination loop-pagination">';
 
 	if ( get_previous_posts_link() ) $gen_nav_text .=  sprintf( '<li>%s</li>' . "\n", get_previous_posts_link($previous_post_label) );
@@ -94,7 +94,7 @@ function zoner_post_nav() {
 	}
 
 	?>
-	<nav class="navigation post-navigation" role="navigation">
+	<nav class="navigation post-navigation" role="navigation" aria-label="<?php _e( 'Post Navigation', 'zoner-lite' ); ?>">
 		<h1 class="screen-reader-text"><?php _e( 'Post navigation', 'zoner-lite' ); ?></h1>
 		<div class="nav-links">
 			<?php

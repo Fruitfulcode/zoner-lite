@@ -27,11 +27,13 @@
 </head>
 <body <?php body_class(); ?> data-offset="90" data-target=".navigation" data-spy="scroll" id="page-top">
 	<div id="page" class="hfeed site wrapper">
-		 <!-- Navigation -->
-		<div class="navigation">
+		<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'zoner-lite' ); ?></a>
+		
+		<!-- Navigation -->
+		<div class="navigation" role="banner">
 			<?php zoner_seconadry_navigation(); ?>
 			<div class="container">
-				<header class="navbar" id="top" role="banner">
+				<header class="navbar" id="top">
 					<div class="navbar-header">
 						<button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
 							<span class="sr-only"><?php _e('Toggle navigation', 'zoner-lite'); ?></span>

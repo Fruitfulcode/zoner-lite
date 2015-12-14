@@ -76,7 +76,8 @@ if ( ! function_exists( 'zoner_get_inline_styles' ) ) {
 			
 			$style .= '
 					.navigation .navbar .navbar-nav > li a { color:'.$regular.'; }
-					.navigation .navbar .navbar-nav > li:hover > a { color:'.$hover.'; }
+					.navigation .navbar .navbar-nav > li > a:hover,
+					.navigation .navbar .navbar-nav > li > a:focus { color:'.$hover.'; }
 					
 					.navigation .navbar .navbar-nav > li.current_page_item > a, 
 					.navigation .navbar .navbar-nav > li.current-menu-item > a, 

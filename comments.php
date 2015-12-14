@@ -26,8 +26,8 @@ if ( post_password_required() ) {
 	</header>
 
 	<?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : ?>
-	<nav id="comment-nav-above" class="navigation comment-navigation" role="navigation">
-		<h1 class="screen-reader-text"><?php _e( 'Comment navigation', 'zoner-lite' ); ?></h1>
+	<nav id="comment-nav-above" class="navigation comment-navigation" role="navigation" aria-label="<?php _e( 'Comment Above Navigation', 'zoner-lite' ); ?>">
+		<h3 class="screen-reader-text"><?php _e( 'Comment navigation', 'zoner-lite' ); ?></h3>
 		<div class="nav-previous"><?php previous_comments_link( __( '&larr; Older Comments', 'zoner-lite' ) ); ?></div>
 		<div class="nav-next"><?php next_comments_link( __( 'Newer Comments &rarr;', 'zoner-lite' ) ); ?></div>
 	</nav><!-- #comment-nav-above -->
@@ -45,7 +45,7 @@ if ( post_password_required() ) {
 	</ul><!-- .comment-list -->
 
 	<?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : ?>
-		<nav id="comment-nav-below" class="navigation comment-navigation" role="navigation">
+		<nav id="comment-nav-below" class="navigation comment-navigation" role="navigation" aria-label="<?php _e( 'Comment Below Navigation', 'zoner-lite' ); ?>">
 			<div class="nav-previous"><?php previous_comments_link( __( 'Older Comments', 'zoner-lite' ) ); ?></div>
 			<div class="nav-next"><?php next_comments_link( __( 'Newer Comments', 'zoner-lite' ) ); ?></div>
 		</nav><!-- #comment-nav-below -->

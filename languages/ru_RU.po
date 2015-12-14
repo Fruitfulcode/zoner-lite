@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zoner\n"
-"POT-Creation-Date: 2015-09-25 11:15+0300\n"
-"PO-Revision-Date: 2015-09-25 11:15+0300\n"
+"POT-Creation-Date: 2015-12-14 18:02+0200\n"
+"PO-Revision-Date: 2015-12-14 18:02+0200\n"
 "Last-Translator: Vadim <vadimvas85@gmail.com>\n"
 "Language-Team: Fruitfulcode\n"
 "Language: ru_RU\n"
@@ -39,6 +39,10 @@ msgstr[0] "%1$s комментарий"
 msgstr[1] "%1$s комментария"
 msgstr[2] "%1$s комментариев"
 
+#: comments.php:29
+msgid "Comment Above Navigation"
+msgstr ""
+
 #: comments.php:30
 msgid "Comment navigation"
 msgstr "Навигация по комментариям"
@@ -50,6 +54,10 @@ msgstr "&larr; Предыдущие комментарии"
 #: comments.php:32
 msgid "Newer Comments &rarr;"
 msgstr "Новые Комментарии &rarr;"
+
+#: comments.php:48
+msgid "Comment Below Navigation"
+msgstr ""
 
 #: comments.php:49
 msgid "Older Comments"
@@ -85,11 +93,15 @@ msgstr "Сообщение"
 msgid "Pages:"
 msgstr "Страницы:"
 
-#: content-page.php:59 includes/theme/theme-function.php:980
+#: content-page.php:59 includes/theme/theme-function.php:987
 msgid "Edit"
 msgstr "Редактировать"
 
-#: header.php:37
+#: header.php:30
+msgid "Skip to content"
+msgstr ""
+
+#: header.php:39
 msgid "Toggle navigation"
 msgstr "Переключить навигацию"
 
@@ -899,7 +911,7 @@ msgid "Single post layout"
 msgstr "Одноместный пост макет"
 
 #: includes/admin/zoner-options/admin-config.php:235
-#: includes/admin/zoner-options/admin-config.php:958
+#: includes/admin/zoner-options/admin-config.php:990
 msgid "Select main content and sidebar alignment."
 msgstr "Выберите основное содержание и выравнивание боковой панели."
 
@@ -976,7 +988,7 @@ msgid "Header background color"
 msgstr "Цвет фона шапки"
 
 #: includes/admin/zoner-options/admin-config.php:491
-#: includes/theme/theme-function.php:607
+#: includes/theme/theme-function.php:612
 msgid "Phone"
 msgstr "Телефон"
 
@@ -985,7 +997,7 @@ msgid "Edit phone"
 msgstr "Редактировать телефон"
 
 #: includes/admin/zoner-options/admin-config.php:499
-#: includes/theme/theme-function.php:610 includes/theme/theme-profile.php:140
+#: includes/theme/theme-function.php:615 includes/theme/theme-profile.php:140
 msgid "Email"
 msgstr "email"
 
@@ -1005,123 +1017,151 @@ msgstr "Выберите для включения WPML окно."
 msgid "Header"
 msgstr "Шапка"
 
-#: includes/admin/zoner-options/admin-config.php:533
+#: includes/admin/zoner-options/admin-config.php:531
+msgid "Slider"
+msgstr ""
+
+#: includes/admin/zoner-options/admin-config.php:539
+msgid "Slider on \"Home\" page"
+msgstr ""
+
+#: includes/admin/zoner-options/admin-config.php:549
+msgid "Slides"
+msgstr ""
+
+#: includes/admin/zoner-options/admin-config.php:550
+msgid "Add slides to slider"
+msgstr ""
+
+#: includes/admin/zoner-options/admin-config.php:552
+msgid "This is a title"
+msgstr "Это заголовок"
+
+#: includes/admin/zoner-options/admin-config.php:553
+msgid "Description Here"
+msgstr "Описание сдесь"
+
+#: includes/admin/zoner-options/admin-config.php:554
+msgid "Url"
+msgstr ""
+
+#: includes/admin/zoner-options/admin-config.php:565
 msgid "Menu"
 msgstr "Меню"
 
-#: includes/admin/zoner-options/admin-config.php:541
+#: includes/admin/zoner-options/admin-config.php:573
 msgid "Menu item color"
 msgstr "Цвет меню"
 
-#: includes/admin/zoner-options/admin-config.php:551
+#: includes/admin/zoner-options/admin-config.php:583
 msgid "Submenu item color"
 msgstr "Цвет подменю"
 
-#: includes/admin/zoner-options/admin-config.php:562
+#: includes/admin/zoner-options/admin-config.php:594
 msgid "Submenu item background color"
 msgstr "Цвет фона подменю"
 
-#: includes/admin/zoner-options/admin-config.php:573
+#: includes/admin/zoner-options/admin-config.php:605
 msgid "Submenu background color"
 msgstr "Цвет фона подменю"
 
-#: includes/admin/zoner-options/admin-config.php:582
+#: includes/admin/zoner-options/admin-config.php:614
 msgid "Submenu item border color"
 msgstr "Цвет границы подменю"
 
-#: includes/admin/zoner-options/admin-config.php:592
+#: includes/admin/zoner-options/admin-config.php:624
 msgid "Menu underline item color."
 msgstr "Цвет подчеркивания меню."
 
-#: includes/admin/zoner-options/admin-config.php:602
+#: includes/admin/zoner-options/admin-config.php:634
 msgid "Font styles"
 msgstr "Стили шрифтов"
 
-#: includes/admin/zoner-options/admin-config.php:609
+#: includes/admin/zoner-options/admin-config.php:641
 msgid "General Text Font Style"
 msgstr "Генеральный Текст Стиль шрифта"
 
-#: includes/admin/zoner-options/admin-config.php:617
+#: includes/admin/zoner-options/admin-config.php:649
 msgid "Select typography for general text."
 msgstr "Выберите типографики для общего текста."
 
-#: includes/admin/zoner-options/admin-config.php:630
+#: includes/admin/zoner-options/admin-config.php:662
 msgid "H1 Font Style."
 msgstr "H1 стиль."
 
-#: includes/admin/zoner-options/admin-config.php:638
+#: includes/admin/zoner-options/admin-config.php:670
 msgid "Select the typography you want for header H1."
 msgstr "Выберите шрифт для заголовка H1."
 
-#: includes/admin/zoner-options/admin-config.php:651
+#: includes/admin/zoner-options/admin-config.php:683
 msgid "H2 Font Style."
 msgstr "H2 стиль."
 
-#: includes/admin/zoner-options/admin-config.php:659
+#: includes/admin/zoner-options/admin-config.php:691
 msgid "Select the typography you want for header H2."
 msgstr "Выберите шрифт для заголовка H2."
 
-#: includes/admin/zoner-options/admin-config.php:672
+#: includes/admin/zoner-options/admin-config.php:704
 msgid "H3 Font Style."
 msgstr "H3 стиль."
 
-#: includes/admin/zoner-options/admin-config.php:680
+#: includes/admin/zoner-options/admin-config.php:712
 msgid "Select the typography you want for header H3."
 msgstr "Выберите шрифт для заголовка H3."
 
-#: includes/admin/zoner-options/admin-config.php:694
+#: includes/admin/zoner-options/admin-config.php:726
 msgid "H4 Font Style."
 msgstr "H4 стиль."
 
-#: includes/admin/zoner-options/admin-config.php:702
+#: includes/admin/zoner-options/admin-config.php:734
 msgid "Select the typography you want for header H4."
 msgstr "Выберите шрифт для заголовка H4."
 
-#: includes/admin/zoner-options/admin-config.php:715
+#: includes/admin/zoner-options/admin-config.php:747
 msgid "H5 Font Style."
 msgstr "H5 стиль."
 
-#: includes/admin/zoner-options/admin-config.php:723
+#: includes/admin/zoner-options/admin-config.php:755
 msgid "Select the typography you want for header H5."
 msgstr "Выберите шрифт для заголовка H5."
 
-#: includes/admin/zoner-options/admin-config.php:737
+#: includes/admin/zoner-options/admin-config.php:769
 msgid "H6 Font Style."
 msgstr "H6 стиль."
 
-#: includes/admin/zoner-options/admin-config.php:745
+#: includes/admin/zoner-options/admin-config.php:777
 msgid "Select the typography you want for header H6."
 msgstr "Выберите шрифт для заголовка H6."
 
-#: includes/admin/zoner-options/admin-config.php:759
+#: includes/admin/zoner-options/admin-config.php:791
 msgid "\"p\" Font Style."
 msgstr "\"p\" Стиль шрифта."
 
-#: includes/admin/zoner-options/admin-config.php:767
+#: includes/admin/zoner-options/admin-config.php:799
 msgid "Select the typography you want for tag \"p\"."
 msgstr "Выберите тип для тега \"p\"."
 
-#: includes/admin/zoner-options/admin-config.php:784
+#: includes/admin/zoner-options/admin-config.php:816
 msgid "Transparency for content"
 msgstr "Прозрачность для содержания"
 
-#: includes/admin/zoner-options/admin-config.php:785
+#: includes/admin/zoner-options/admin-config.php:817
 msgid "Set the opacity for the content part"
 msgstr "Установите прозрачность для содержимого"
 
-#: includes/admin/zoner-options/admin-config.php:797
+#: includes/admin/zoner-options/admin-config.php:829
 msgid "Link style."
 msgstr "Стиль ссылки."
 
-#: includes/admin/zoner-options/admin-config.php:798
+#: includes/admin/zoner-options/admin-config.php:830
 msgid "Select the typography you want for tag \"a\"."
 msgstr "Выберите тип для тега \"a\"."
 
-#: includes/admin/zoner-options/admin-config.php:813
+#: includes/admin/zoner-options/admin-config.php:845
 msgid "Social Links"
 msgstr "Социальные ссылки"
 
-#: includes/admin/zoner-options/admin-config.php:814
+#: includes/admin/zoner-options/admin-config.php:846
 msgid ""
 "Add link to your social media profiles. Icons with link will be display in "
 "header or footer."
@@ -1129,185 +1169,184 @@ msgstr ""
 "Добавить социалную ссылку. Иконки с ссылкой будет отображаться в верхнем или "
 "нижнем колонтитуле."
 
-#: includes/admin/zoner-options/admin-config.php:821
+#: includes/admin/zoner-options/admin-config.php:853
 msgid "Facebook"
 msgstr "Фэйсбук"
 
-#: includes/admin/zoner-options/admin-config.php:828
+#: includes/admin/zoner-options/admin-config.php:860
 msgid "Twitter"
 msgstr "Twitter"
 
-#: includes/admin/zoner-options/admin-config.php:835
+#: includes/admin/zoner-options/admin-config.php:867
 msgid "LinkedIn"
 msgstr "LinkedIn"
 
-#: includes/admin/zoner-options/admin-config.php:842
+#: includes/admin/zoner-options/admin-config.php:874
 msgid "MySpace"
 msgstr "MySpace"
 
-#: includes/admin/zoner-options/admin-config.php:849
+#: includes/admin/zoner-options/admin-config.php:881
 msgid "Google Plus+"
 msgstr "Google Plus +"
 
-#: includes/admin/zoner-options/admin-config.php:856
+#: includes/admin/zoner-options/admin-config.php:888
 msgid "Dribbble"
 msgstr "Dribbble"
 
-#: includes/admin/zoner-options/admin-config.php:863
+#: includes/admin/zoner-options/admin-config.php:895
 msgid "Flickr"
 msgstr "Flickr"
 
-#: includes/admin/zoner-options/admin-config.php:870
+#: includes/admin/zoner-options/admin-config.php:902
 msgid "You Tube"
 msgstr "You Tube"
 
-#: includes/admin/zoner-options/admin-config.php:877
+#: includes/admin/zoner-options/admin-config.php:909
 msgid "Delicious"
 msgstr "Вкусные"
 
-#: includes/admin/zoner-options/admin-config.php:884
+#: includes/admin/zoner-options/admin-config.php:916
 msgid "Deviantart"
 msgstr "Deviantart"
 
-#: includes/admin/zoner-options/admin-config.php:891
+#: includes/admin/zoner-options/admin-config.php:923
 msgid "RSS"
 msgstr "RSS"
 
-#: includes/admin/zoner-options/admin-config.php:898
+#: includes/admin/zoner-options/admin-config.php:930
 msgid "Instagram"
 msgstr "Instagram"
 
-#: includes/admin/zoner-options/admin-config.php:905
+#: includes/admin/zoner-options/admin-config.php:937
 msgid "Pinterest"
 msgstr "Pinterest"
 
-#: includes/admin/zoner-options/admin-config.php:912
+#: includes/admin/zoner-options/admin-config.php:944
 msgid "Vimeo"
 msgstr "Vimeo"
 
-#: includes/admin/zoner-options/admin-config.php:919
+#: includes/admin/zoner-options/admin-config.php:951
 msgid "Picassa"
 msgstr "Picassa"
 
-#: includes/admin/zoner-options/admin-config.php:926
+#: includes/admin/zoner-options/admin-config.php:958
 msgid "Tumblr"
 msgstr "Tumblr"
 
-#: includes/admin/zoner-options/admin-config.php:933
+#: includes/admin/zoner-options/admin-config.php:965
 msgid "E-mail"
 msgstr "Электронная почта"
 
-#: includes/admin/zoner-options/admin-config.php:941
+#: includes/admin/zoner-options/admin-config.php:973
 msgid "Skype"
 msgstr "Skype"
 
-#: includes/admin/zoner-options/admin-config.php:950
+#: includes/admin/zoner-options/admin-config.php:982
 msgid "Default pages"
 msgstr "Страницы по умолчанию"
 
-#: includes/admin/zoner-options/admin-config.php:957
+#: includes/admin/zoner-options/admin-config.php:989
 msgid "Author layout"
 msgstr ""
 
-#: includes/admin/zoner-options/admin-config.php:971
+#: includes/admin/zoner-options/admin-config.php:1003
 msgid "404 background."
 msgstr "404 фон."
 
-#: includes/admin/zoner-options/admin-config.php:972
+#: includes/admin/zoner-options/admin-config.php:1004
 msgid "Upload a background for your 404 page."
 msgstr "Загрузить фон для страницы 404."
 
-#: includes/admin/zoner-options/admin-config.php:979
+#: includes/admin/zoner-options/admin-config.php:1011
 msgid "404 text"
 msgstr "404 текст."
 
-#: includes/admin/zoner-options/admin-config.php:989
+#: includes/admin/zoner-options/admin-config.php:1021
 msgid "Footer"
 msgstr "Нижний колонтитул"
 
-#: includes/admin/zoner-options/admin-config.php:997
+#: includes/admin/zoner-options/admin-config.php:1029
 msgid "Copyright section"
 msgstr "Раздел Copyright"
 
-#: includes/admin/zoner-options/admin-config.php:998
+#: includes/admin/zoner-options/admin-config.php:1030
 msgid "Replace default theme copyright information and links"
 msgstr "Заменить информацию и ссылки по умолчанию"
 
-#: includes/admin/zoner-options/admin-config.php:999
-#: includes/theme/theme-function.php:516
+#: includes/admin/zoner-options/admin-config.php:1031
 msgid ""
-"&#169; <a target=\"_blank\" title=\"WordPress Development\" href=\"http://"
-"fruitfulcode.com/\">Fruitful Code</a>, Powered by <a target=\"_blank\" href="
-"\"http://wordpress.org/\">WordPress</a>"
+"&#169; <a title=\"WordPress Development\" href=\"http://fruitfulcode.com/"
+"\">Fruitful Code</a>, Powered by <a href=http://wordpress.org/\">WordPress</"
+"a>"
 msgstr ""
 
-#: includes/admin/zoner-options/admin-config.php:1005
+#: includes/admin/zoner-options/admin-config.php:1037
 msgid "Social icons"
 msgstr "Социальные иконки"
 
-#: includes/admin/zoner-options/admin-config.php:1006
+#: includes/admin/zoner-options/admin-config.php:1038
 msgid "Enable social icons."
 msgstr "Включить отображение соц. иконок"
 
-#: includes/admin/zoner-options/admin-config.php:1014
+#: includes/admin/zoner-options/admin-config.php:1046
 msgid "Footer column areas"
 msgstr "Колонки для футера"
 
-#: includes/admin/zoner-options/admin-config.php:1028
+#: includes/admin/zoner-options/admin-config.php:1060
 msgid "Footer copyright part font color"
 msgstr "Цвет шрифта нижнего колонтитула"
 
-#: includes/admin/zoner-options/admin-config.php:1037
+#: includes/admin/zoner-options/admin-config.php:1069
 msgid "Footer copyright part background color"
 msgstr "Фоновый цвет нижнего колонтитула"
 
-#: includes/admin/zoner-options/admin-config.php:1048
+#: includes/admin/zoner-options/admin-config.php:1080
 msgid "Custom Code"
 msgstr "Код Клиента"
 
-#: includes/admin/zoner-options/admin-config.php:1055
+#: includes/admin/zoner-options/admin-config.php:1087
 msgid "CSS Code"
 msgstr "CSS код"
 
-#: includes/admin/zoner-options/admin-config.php:1056
+#: includes/admin/zoner-options/admin-config.php:1088
 msgid "Paste your CSS code here."
 msgstr "Вставить код CSS здесь."
 
-#: includes/admin/zoner-options/admin-config.php:1066
+#: includes/admin/zoner-options/admin-config.php:1098
 msgid "Import / Export"
 msgstr "Импорт / Экспорт"
 
-#: includes/admin/zoner-options/admin-config.php:1067
+#: includes/admin/zoner-options/admin-config.php:1099
 msgid "Import and Export your zoner Framework settings from file, text or URL."
 msgstr ""
 "Импорт и экспорт ваших Framework настроек Zoner из файла, текста или URL."
 
-#: includes/admin/zoner-options/admin-config.php:1082
+#: includes/admin/zoner-options/admin-config.php:1114
 msgid "Extended version"
 msgstr ""
 
-#: includes/admin/zoner-options/admin-config.php:1089
+#: includes/admin/zoner-options/admin-config.php:1121
 msgid "Zoner - Real Estate WordPress theme"
 msgstr ""
 
-#: includes/admin/zoner-options/admin-config.php:1111
-#: includes/admin/zoner-options/admin-config.php:1112
+#: includes/admin/zoner-options/admin-config.php:1143
+#: includes/admin/zoner-options/admin-config.php:1144
 msgid "Zoner options"
 msgstr "Опции Zoner"
 
-#: includes/admin/zoner-options/admin-config.php:1143
+#: includes/admin/zoner-options/admin-config.php:1175
 msgid "Zoner Options panel created using \"Reduxe Framework\"."
 msgstr "Zoner опции панели созданы при помощи  \"Reduxe Framework\"."
 
-#: includes/admin/zoner-options/admin-config.php:1151
+#: includes/admin/zoner-options/admin-config.php:1183
 msgid "Contact Support"
 msgstr "Контакты службы поддержки"
 
-#: includes/admin/zoner-options/admin-config.php:1152
+#: includes/admin/zoner-options/admin-config.php:1184
 msgid "Documentation"
 msgstr "Документация"
 
-#: includes/admin/zoner-options/admin-config.php:1153
+#: includes/admin/zoner-options/admin-config.php:1185
 msgid "Faq"
 msgstr "Faq"
 
@@ -1318,6 +1357,14 @@ msgstr "Предыдущие"
 #: includes/theme/extensions/template-tags.php:28
 msgid "Next"
 msgstr "Следующие"
+
+#: includes/theme/extensions/template-tags.php:47
+msgid "Paging Navigation"
+msgstr ""
+
+#: includes/theme/extensions/template-tags.php:97
+msgid "Post Navigation"
+msgstr ""
 
 #: includes/theme/extensions/template-tags.php:98
 msgid "Post navigation"
@@ -1367,87 +1414,102 @@ msgstr[0] "%d Статья"
 msgstr[1] "%d Статья"
 msgstr[2] "%d Статья"
 
-#: includes/theme/theme-function.php:419
+#: includes/theme/theme-function.php:393
+msgid "Primary Navigation"
+msgstr ""
+
+#: includes/theme/theme-function.php:422 includes/theme/theme-function.php:425
+msgid "Search"
+msgstr ""
+
+#: includes/theme/theme-function.php:423
 msgid "Enter Keyword"
 msgstr "Введите ключевое слово"
 
-#: includes/theme/theme-function.php:442 includes/theme/theme-function.php:1031
+#: includes/theme/theme-function.php:447 includes/theme/theme-function.php:1062
+#: includes/theme/theme-function.php:1082
 msgid "Read More"
 msgstr "Прочитайте больше"
 
-#: includes/theme/theme-function.php:565
+#: includes/theme/theme-function.php:521
+msgid ""
+"&#169; <a title=\"WordPress Development\" href=\"http://fruitfulcode.com/"
+"\">Fruitful Code</a>, Powered by href=\"http://wordpress.org/\">WordPress</a>"
+msgstr ""
+
+#: includes/theme/theme-function.php:570
 msgid "Go to top"
 msgstr "Вверх"
 
-#: includes/theme/theme-function.php:617
+#: includes/theme/theme-function.php:622
 msgid "Sign Out"
 msgstr "Выйти из системы"
 
-#: includes/theme/theme-function.php:703
+#: includes/theme/theme-function.php:709
 msgid "Latest posts"
 msgstr "Последняя добавленная новость"
 
-#: includes/theme/theme-function.php:708
+#: includes/theme/theme-function.php:714
 #, php-format
 msgid "Daily Archives: %s"
 msgstr "Ежедневные aрхивы: %s"
 
-#: includes/theme/theme-function.php:710
+#: includes/theme/theme-function.php:716
 #, php-format
 msgid "Monthly Archives: %s"
 msgstr "Архив за месяц: %s"
 
-#: includes/theme/theme-function.php:710
+#: includes/theme/theme-function.php:716
 msgctxt "monthly archives date format"
 msgid "F Y"
 msgstr "F Y"
 
-#: includes/theme/theme-function.php:712
+#: includes/theme/theme-function.php:718
 #, php-format
 msgid "Yearly Archives: %s"
 msgstr "Архив за год: %s"
 
-#: includes/theme/theme-function.php:712
+#: includes/theme/theme-function.php:718
 msgctxt "yearly archives date format"
 msgid "Y"
 msgstr "Г"
 
-#: includes/theme/theme-function.php:714
+#: includes/theme/theme-function.php:720
 msgid "Archives"
 msgstr "Архив"
 
-#: includes/theme/theme-function.php:720
+#: includes/theme/theme-function.php:726
 #, php-format
 msgid "Category: %s"
 msgstr "Категория: %s"
 
-#: includes/theme/theme-function.php:721
+#: includes/theme/theme-function.php:727
 #, php-format
 msgid "Search Results for: %s"
 msgstr "Результаты поиска: %s"
 
-#: includes/theme/theme-function.php:722
+#: includes/theme/theme-function.php:728
 #, php-format
 msgid "Tag Archives: %s"
 msgstr "Архивы тегов: %s"
 
-#: includes/theme/theme-function.php:738
+#: includes/theme/theme-function.php:744
 msgid "Nothing Found"
 msgstr "Ничего не найдено"
 
-#: includes/theme/theme-function.php:896
+#: includes/theme/theme-function.php:903
 #, php-format
 msgid "All posts by \"%s\""
 msgstr "Все сообщения \"%s\""
 
-#: includes/theme/theme-function.php:992
+#: includes/theme/theme-function.php:999
 #, php-format
 msgid ""
 "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
 msgstr ""
 "Готовы опубликовать свой первый пост? <a href=\"%1$s\">Начните здесь</a>."
 
-#: includes/theme/theme-function.php:994
+#: includes/theme/theme-function.php:1001
 msgid ""
 "Sorry, but nothing matched your search terms. Please try again with some "
 "different keywords."
@@ -1455,7 +1517,7 @@ msgstr ""
 "Извините, но ничего не найдено согласно условиям поиска. Пожалуйста, "
 "попробуйте еще раз."
 
-#: includes/theme/theme-function.php:997
+#: includes/theme/theme-function.php:1004
 msgid ""
 "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
 "searching can help."
@@ -1463,7 +1525,7 @@ msgstr ""
 "Похоже мы не можем найти то, что вы ищете. Возможно вам может помочь "
 "расширенный поиск."
 
-#: includes/theme/theme-function.php:1012
+#: includes/theme/theme-function.php:1019
 msgid "About the Author"
 msgstr "Об авторе"
 
@@ -1499,42 +1561,46 @@ msgstr "Фамилия"
 msgid "About Me"
 msgstr "Обо мне"
 
-#: includes/theme/theme-profile.php:152
+#: includes/theme/theme-profile.php:149
+msgid "About me"
+msgstr ""
+
+#: includes/theme/theme-profile.php:153
 msgid "Save Changes"
 msgstr "Сохранить изменения"
 
-#: includes/theme/theme-profile.php:161
+#: includes/theme/theme-profile.php:162
 msgid "Change Your Password"
 msgstr "Изменить пароль"
 
-#: includes/theme/theme-profile.php:167
+#: includes/theme/theme-profile.php:168
 msgid "Current Password"
 msgstr "Текущий пароль"
 
-#: includes/theme/theme-profile.php:171
+#: includes/theme/theme-profile.php:172
 msgid "New Password"
 msgstr "Новый пароль"
 
-#: includes/theme/theme-profile.php:175
+#: includes/theme/theme-profile.php:176
 msgid "Confirm New Password"
 msgstr "Подтвердить новый пароль"
 
-#: includes/theme/theme-profile.php:179
+#: includes/theme/theme-profile.php:180
 msgid "Change Password"
 msgstr "Изменить пароль"
 
-#: includes/theme/theme-profile.php:185
+#: includes/theme/theme-profile.php:186
 msgid "Hint"
 msgstr "Подсказка"
 
-#: includes/theme/theme-profile.php:186
+#: includes/theme/theme-profile.php:187
 msgid ""
 "Be careful. After you change the password, the password is automatically "
 "applied."
 msgstr ""
 "Будьте осторожны. После изменения пароля, пароль активируется автоматически."
 
-#: includes/theme/theme-profile.php:187
+#: includes/theme/theme-profile.php:188
 msgid ""
 "If you don't have a current password you can sign out and reset your "
 "password at sign in page."
@@ -8961,12 +9027,6 @@ msgstr "Виджеты зоны колонтитула %d ."
 
 #~ msgid "Display share for post"
 #~ msgstr "Отображать \"расшарить\" для записи"
-
-#~ msgid "This is a title"
-#~ msgstr "Это заголовок"
-
-#~ msgid "Description Here"
-#~ msgstr "Описание сдесь"
 
 #~ msgid "Contact section title"
 #~ msgstr "Заголовок секции контакты"

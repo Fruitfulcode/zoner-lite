@@ -1028,7 +1028,7 @@ if (!class_exists('zoner_config')) {
                         'type'      => 'editor',
                         'title'     => __('Copyright section', 'zoner-lite'),
                         'subtitle'  => __('Replace default theme copyright information and links', 'zoner-lite'),
-                        'default'   => __('&#169; <a target="_blank" title="WordPress Development" href="http://fruitfulcode.com/">Fruitful Code</a>, Powered by <a target="_blank" href="http://wordpress.org/">WordPress</a>', 'zoner-lite'),
+                        'default'   => __('&#169; <a title="WordPress Development" href="http://fruitfulcode.com/">Fruitful Code</a>, Powered by <a href=http://wordpress.org/">WordPress</a>', 'zoner-lite'),
                     ),
 					
 					array(
@@ -1118,7 +1118,7 @@ if (!class_exists('zoner_config')) {
 					 array(
 						'id'       => 'opt-raw',
 						'type'     => 'raw',
-						'content'  => '<a href="http://themeforest.net/item/zoner-real-estate-wordpress-theme/9099226" target="_blank" style="text-decoration: none;" title=""><h4>'. __('Zoner - Real Estate WordPress theme', 'zoner-lite') . '</h4><img src="' . $sample_patterns_url . 'images/zoner-extended.png" alt="Extended version" /></a>'
+						'content'  => '<a href="http://themeforest.net/item/zoner-real-estate-wordpress-theme/9099226" style="text-decoration: none;" title=""><h4>'. __('Zoner - Real Estate WordPress theme', 'zoner-lite') . '</h4><img src="' . $sample_patterns_url . 'images/zoner-extended.png" alt="Extended version" /></a>'
 					),
                 ),
             );  

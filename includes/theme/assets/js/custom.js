@@ -87,6 +87,11 @@ $(document).ready(function($) {
 	
 
     $('.nav > li > ul li > ul').css('left', $('.nav > li > ul').width());
+	
+	// Focus styles for menus.
+	$( '.primary-navigation' ).find( 'a' ).on( 'focus blur', function() {
+		$( this ).parents('li').toggleClass( 'focus' );
+	} );
 
     setNavigationPosition();
 

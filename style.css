@@ -667,6 +667,43 @@ ul.list-links li a:hover, .widget ul li a:hover {
   color: #073855;
 }
 
+.screen-reader-text, .screen-reader-text span {
+    height: 1px;
+    left: -1000em;
+    overflow: hidden;
+    position: absolute;
+    top: -1000em;
+    width: 1px;
+}
+.site .skip-link {
+    background-color: #f1f1f1;
+    box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.2);
+    color: #21759b;
+    display: block;
+    font: bold 14px "Noto Sans",sans-serif;
+    left: -9999em;
+    outline: medium none;
+    padding: 15px 23px 14px;
+    text-decoration: none;
+    text-transform: none;
+    top: -9999em;
+	transition: none;
+	-moz-transition: none;
+	-webkit-transition: none;
+}
+.logged-in .site .skip-link {
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+    font: bold 14px "Open Sans",sans-serif;
+}
+.site .skip-link:focus {
+    clip: auto;
+    height: auto;
+    left: 6px;
+    top: 7px;
+    width: auto;
+    z-index: 100000;
+}
+
 /*------------------------------------------------------------------
 	[4.0 Navigation]
 */
@@ -748,7 +785,9 @@ ul.list-links li a:hover, .widget ul li a:hover {
 	margin:0;
 }
 
-.navigation .navbar .navbar-nav > li:hover > .child-navigation {
+.navigation .navbar .navbar-nav > li:hover > .child-navigation,
+.navigation .navbar .navbar-nav > li:focus > .child-navigation,
+.navigation .navbar .navbar-nav > li.focus > .child-navigation {
   filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
   opacity: 1;
   visibility: visible;
@@ -831,6 +870,7 @@ ul.list-links li a:hover, .widget ul li a:hover {
   width: 10px;
 }
 .navigation .navbar .navbar-nav > li:hover  a,
+.navigation .navbar .navbar-nav > li a:focus,
 .navigation .navbar .navbar-nav > li.current-menu-item a,
 .navigation .navbar .navbar-nav > li.current-menu-ancestor  a {
   filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
@@ -901,7 +941,9 @@ ul.list-links li a:hover, .widget ul li a:hover {
   min-width: 240px;
   z-index: 100;
 }
-.navigation .navbar .navbar-nav > li .child-navigation li:hover .child-navigation {
+.navigation .navbar .navbar-nav > li .child-navigation li:hover .child-navigation,
+.navigation .navbar .navbar-nav > li .child-navigation li:focus .child-navigation,
+.navigation .navbar .navbar-nav > li .child-navigation li.focus .child-navigation {
   filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
   opacity: 1;
   -moz-transition-delay: 0.2s;
@@ -2239,7 +2281,7 @@ form.post-password-form input[type="submit"] {
  overflow:hidden;
 }
 
-.error-page h2, 
+.error-page h2, .error-page h1, 
 .infomessage h2 {
   position: relative;
   z-index: 4;
@@ -2914,7 +2956,8 @@ a:active {
 .navigation .navbar .navbar-nav > li a {
     color: #2a2a2a;
 }
-.navigation .navbar .navbar-nav > li:hover > a {
+	.navigation .navbar .navbar-nav > li > a:hover,
+	.navigation .navbar .navbar-nav > li > a:focus {
     color: #2a2a2a;
 }
 .navigation .navbar .navbar-nav > li.current_page_item > a, .navigation .navbar .navbar-nav > li.current-menu-item > a, .navigation .navbar .navbar-nav > li.current-menu-parent > a, .navigation .navbar .navbar-nav > li.current_page_parent > a, .navigation .navbar .navbar-nav > li.current-menu-ancestor > a, .navigation .navbar .navbar-nav > li.active a {
@@ -2923,11 +2966,12 @@ a:active {
 .navigation .navbar .navbar-nav > li .child-navigation a {
     color: #5a5a5a;
 }
-.navigation .navbar .navbar-nav > li .child-navigation li a:hover {
+.navigation .navbar .navbar-nav > li .child-navigation li a:hover,
+.navigation .navbar .navbar-nav > li .child-navigation li a:focus {
     background-color: #1396e2;
     color: #ffffff;
 }
-.navigation .navbar .navbar-nav > li .child-navigation > li:hover > a, .navigation .navbar .navbar-nav > li .child-navigation > li.current-menu-ancestor > a, .navigation .navbar .navbar-nav > li .child-navigation > li .child-navigation > li.current-menu-item > a, .navigation .navbar .navbar-nav > li.current-menu-ancestor > .child-navigation li.current-menu-item > a {
+.navigation .navbar .navbar-nav > li .child-navigation > li > a:hover, .navigation .navbar .navbar-nav > li .child-navigation > li > a:focus, .navigation .navbar .navbar-nav > li .child-navigation > li.current-menu-ancestor > a, .navigation .navbar .navbar-nav > li .child-navigation > li .child-navigation > li.current-menu-item > a, .navigation .navbar .navbar-nav > li.current-menu-ancestor > .child-navigation li.current-menu-item > a {
     background-color: #1396e2;
     color: #ffffff;
 }

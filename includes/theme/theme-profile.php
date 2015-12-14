@@ -146,6 +146,7 @@ if ( ! function_exists( 'zoner_generate_profile_info' ) ) {
 									<section id="about-me">
 										<h3><?php _e('About Me', 'zoner-lite'); ?></h3>
 										<div class="form-group">
+											<label class="screen-reader-text" for="form-contact-agent-message"><?php _e('About me', 'zoner-lite'); ?>:</label>
 											<textarea class="form-control" id="form-contact-agent-message" rows="5" name="form-contact-agent-message"><?php the_author_meta( 'description', $userID ); ?></textarea>
 										</div><!-- /.form-group -->
 										<div class="form-group clearfix">

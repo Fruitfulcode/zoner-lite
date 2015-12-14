@@ -12,7 +12,7 @@
 	</div><!-- #main -->
 	
 	<!-- Footer -->
-	<footer id="page-footer">
+	<footer id="page-footer" role="contentinfo">
 		<div class="inner">
 			<?php do_action('zoner_footer_elements'); ?>	
 		</div>

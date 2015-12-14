@@ -17,14 +17,14 @@ get_header(); ?>
 ?>
 
 	<div class="container">
-		<section id="404">
+		<section id="404" role="main">
 			<div class="error-page">
 				<div class="title">
 					<img alt="<?php echo $text_404; ?>" src="<?php echo $bg_404; ?>" class="top">
                     <header><?php echo $text_404; ?></header>
                     <img alt="" src="<?php echo $bg_404; ?>" class="bottom">
                  </div>
-                 <h2 class="no-border"><?php _e('Page not found', 'zoner-lite'); ?></h2>
+                 <h1 class="no-border"><?php _e('Page not found', 'zoner-lite'); ?></h1>
                  <a href="<?php echo esc_url(home_url('')); ?>" class="link-arrow back" onclick="history.back(-1)"><?php _e('Go Back', 'zoner-lite'); ?></a>
 			</div>
 		</section>

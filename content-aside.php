@@ -19,7 +19,7 @@
 		<?php zoner_get_post_thumbnail(); ?>	
 		<?php zoner_get_post_title(); ?>
 		<?php zoner_get_post_meta(); ?>
-		<?php the_content(); ?>
+		<?php the_content( '<span class="screen-reader-text"> '.get_the_title().'</span>' ); ?>
 		<?php wp_link_pages( array(
 				'before'      => '<div class="page-links"><span class="page-links-title">' . __( 'Pages:', 'zoner-lite' ) . '</span>',
 				'after'       => '</div>',

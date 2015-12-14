@@ -42,12 +42,6 @@ function zoner_register_required_plugins() {
             'slug'      => 'maintenance',
             'required'  => false
         ),
-
-		array(
-            'name'      => 'WP Retina 2x',
-            'slug'      => 'wp-retina-2x',
-            'required'  => false
-        ),
 		
 		array(
             'name'      => 'Redux Framework',
