@@ -3,7 +3,7 @@ Theme Name: Zoner Lite
 Theme URI: http://themes.fruitfulcode.com/zoner-lite/
 Author: fruitfulcode
 Author URI: http://fruitfulcode.com
-Description: Zoner Lite WordPress theme with limited functionality based on Zoner - Real estate WordPress theme. Flat and clean design, responsive and retina ready, bootstrap 3 grid 1170px, redux framework theme options, visual composer support. Powerful Theme options: adding your Logo, display options, styling options, header options, menu options, fonts options, social media links.
+Description: Zoner Lite WordPress theme with limited functionality based on Zoner - Real estate WordPress theme. Flat and clean design, responsive and retina ready, bootstrap 3 grid 1170px, redux framework theme options, visual composer support. Powerful Theme options: display options, styling options, header options, menu options, fonts options, social media links.
 Version: 1.0.4
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -762,10 +762,6 @@ ul.list-links li a:hover, .widget ul li a:hover {
   float: right;
 }
 
-.navbar .navbar-header .navbar-brand.nav.logo.retina {
- display:none;	
-}
-
 
 .navbar-brand.nav > h1.site-title {
  border: 0 none;
@@ -785,9 +781,6 @@ ul.list-links li a:hover, .widget ul li a:hover {
  padding: 0;
 }
 
-.navbar .navbar-header .navbar-brand.nav.logo.retina img {
- width: 100%;
-}
 
 .navigation .secondary-navigation .user-profile-link {
 	margin-left: 10px;
@@ -2951,15 +2944,6 @@ a:hover {
 a:active {
     color: #2a6496;
 }
-@media not all, not all, only screen and (min-resolution: 2dppx) {
-.navbar .navbar-header .navbar-brand.nav.logo {
-    display: none;
-}
-.navbar .navbar-header .navbar-brand.nav.logo.retina {
-    display: inline-block;
-    width: 50%;
-}
-}
 .page-sub-page #page-content::after {
     background: rgba(0, 0, 0, 0) linear-gradient(to bottom, #f1f1f1 0%, #ffffff 80%) repeat scroll 0 0;
 }
@@ -3281,10 +3265,6 @@ a:active {
   #page-footer {
     display: block;
 	width: 100%;
-  }
-  
-  .navbar .navbar-header .navbar-brand.nav.logo.retina {
-    width: 50%;  
   }
 }
 

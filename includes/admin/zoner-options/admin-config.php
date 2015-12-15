@@ -166,47 +166,6 @@ if (!class_exists('zoner_config')) {
 				)
 			);
 			
-			/*General Section*/
-			$this->sections[] = array(
-                'title'     => __('Logo', 'zoner-lite'),
-                'icon'      => $sample_patterns_url . 'images/icons/logo-options.png',
-				'icon_type'	=> 'image',
-                'fields'    => array (
-							array(
-								'id'        => 'logo',
-								'type'      => 'media',
-								'url'       => false,
-								'title'     => __('Logo', 'zoner-lite'),
-								'subtitle'  => __('Change your Logo here, upload or enter the URL to your logo image.', 'zoner-lite'),
-								'default'   => array('url' => $sample_patterns_url . 'images/logo.png'),
-								
-							),
-							
-							array(
-								'id'        => 'logo-retina',
-								'type'      => 'media',
-								'url'       => false,
-								'title'     => __('Logo Retina ', 'zoner-lite'),
-								'subtitle'  => __('Upload your Retina Logo. This should be your Logo in double size (If your logo is 100 x 20px, it should be 200 x 40px)', 'zoner-lite'),
-								'default'   => array ('url' => $sample_patterns_url . 'images/logo@2x.png'),
-							),
-
-							 array(
-								'id'                => 'logo-dimensions',
-								'type'              => 'dimensions',
-								'units'    => array('em','px','%'),
-								'units_extended'    => 'true',  
-								'title'             => __('Original Logo (Width/Height)', 'zoner-lite'),
-								'subtitle'          => __("If Retina Logo uploaded, please enter the (width/height) of the Standard Logo you've uploaded (not the Retina Logo)", 'zoner-lite'),
-								'default'           => array(
-									'width'     => 94, 
-									'height'    => 22,
-								)
-							),
-				)
-			);	
-			
-			
 			/*Display options Section*/
 			$this->sections[] = array(
                 'title'     => __('Blog options', 'zoner-lite'),
@@ -227,7 +186,28 @@ if (!class_exists('zoner_config')) {
 							'none'	=> __('Hide all', 'zoner-lite'), 
                         ),
                         'default'   => 'post'
-                    ),	
+                    ),
+					array(
+                        'id'        => 'excerpt',
+                        'type'      => 'select',
+                        'title'     => __('Select Post Preview', 'zoner-framework'),
+                        'subtitle'  => __('Select showing full post, excerpt or title only', 'zoner-framework'),
+                        'options'   =>  array(
+                            '1'     => __("Full post (before <-more->)", "zoner-framework"),
+                            '2'     => __("Excerpt", "zoner-framework"),
+                            '3'     => __("Only Title", "zoner-framework"),
+                        ),
+                        'default'   => '1'
+                    ),
+                    
+                    array(
+                        'id'        => 'excerpt-numwords',
+                        'type'      => 'text',
+                        'required'  => array('excerpt', '=', '2'),
+                        'title'     => __('Number of words', 'zoner-framework'),
+                        'subtitle'      => __('Type number of words for excerpt', 'zoner-framework'),
+                        'default'   => '20'
+                    ),
 					array(
                         'id'        => 'pp-post',
                         'type'      => 'image_select',

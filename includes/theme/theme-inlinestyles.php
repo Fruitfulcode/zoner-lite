@@ -18,17 +18,6 @@ if ( ! function_exists( 'zoner_get_inline_styles' ) ) {
 				';
 		}
 		
-		/*Logo*/
-		if(!empty($zoner_config['logo-retina']['url'])) {
-			$style .= '
-				@media only screen and (-webkit-min-device-pixel-ratio: 2), 
-					only screen and (min-device-pixel-ratio: 2),
-					only screen and (min-resolution: 2dppx) {
-						.navbar .navbar-header .navbar-brand.nav.logo { display: none; }
-						.navbar .navbar-header .navbar-brand.nav.logo.retina 	{ display: inline-block; width:50%;}
-					}'. "\n";
-		} 
-		
 		
 		/*Body*/
 		

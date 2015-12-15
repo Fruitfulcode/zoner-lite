@@ -360,33 +360,6 @@ function zoner_has_featured_posts() {
 endif; //zoner_has_featured_posts
 
 /*Custom functions*/
-if ( ! function_exists( 'zoner_get_logo' ) ) {
-	function zoner_get_logo() {
-		global $zoner_config;
-		
-		$original_logo = $retina_logo = '';
-		$width 	= $zoner_config['logo-dimensions']['width'];
-		$height = $zoner_config['logo-dimensions']['height'];
-		
-		if (!empty($zoner_config['logo']['url'])) { $original_logo = esc_url($zoner_config['logo']['url']); } else { $original_logo = ''; }
-		if (!empty($zoner_config['logo-retina']['url'])) { $retina_logo 	 = esc_url($zoner_config['logo-retina']['url']);  } else {  $retina_logo   = ''; }
-		
-		/*Full Backend Options*/
-		$description  = $name = '';
-		$description  = esc_attr(get_bloginfo('description'));
-		$name  		  = esc_attr(get_bloginfo('name'));
-								
-		if (!empty($original_logo) || !empty($retina_logo)) {
-			if ($original_logo) echo '<a class="navbar-brand nav logo" href="' 			. esc_url( home_url( '/' ) ) . '" title="' . $description .'" rel="home"><img style="width:'.$width.'; height:'.$height.';" width="'.$width.'" height="'.$height.'" src="'. $original_logo  .'" alt="' . $description . '"/></a>';
-			if ($retina_logo) 	echo '<a class="navbar-brand nav logo retina" href="' 	. esc_url( home_url( '/' ) ) . '" title="' . $description .'" rel="home"><img style="width:'.$width.'; height:'.$height.';" width="'.$width.'" height="'.$height.'" src="'. $retina_logo    .'" alt="' . $description . '"/></a>';
-			
-		} else {
-			echo  '<a class="navbar-brand nav" href="' . esc_url( home_url( '/' ) ) . '" title="' . $description .'" rel="home"><h1 class="site-title">'. $name .'</h1><h2 class="site-description">'. $description .'</h2></a>';
-		}	
-	}
-} //zoner_get_logo
-
-
 if ( ! function_exists( 'zoner_get_main_nav' ) ) {
 	function zoner_get_main_nav() {
 		?>
@@ -1090,3 +1063,39 @@ if ( ! function_exists( 'zoner_edit_post_link' ) ) {
 		return $output;
 	}
 }	
+
+if ( ! function_exists( 'zoner_words_limit' ) ) {			
+	function zoner_words_limit($string, $word_limit) {
+		$content = '';
+		if (empty($string)) return '';
+		$words = explode(' ', $string, ($word_limit + 1));
+		if(count($words) > $word_limit) array_pop($words);
+		$content = implode(' ', $words);
+		$content = strip_tags($content);
+		$content = strip_shortcodes($content) . '...';
+	
+		$content = preg_replace('/\[.+\]/','',  $content);
+		$content = apply_filters('the_content', $content); 
+		$content = str_replace(']]>', ']]&gt;', $content);
+		
+		return $content;
+	}
+}	
+
+if ( ! function_exists( 'zoner_blog_post_preview()' ) ) {
+	function zoner_blog_post_preview() {
+		global $zoner_config;
+
+		if (!empty($zoner_config['excerpt'])) {
+			$num = $zoner_config['excerpt-numwords'];
+			if ($zoner_config['excerpt'] == 1 ) {
+				echo zoner_words_limit(get_the_content(), 9999);
+			}
+			if ($zoner_config['excerpt'] == 2 ) {
+				echo zoner_words_limit(get_the_content(), $num);
+			}
+		} else {
+			the_content();
+		}
+	}
+}

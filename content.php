@@ -9,13 +9,12 @@
  * @since Zoner Theme 1.0
  */
 ?>
-
 <article id="post-<?php the_ID(); ?>" <?php post_class('blog-post standart'); ?>>
-	<?php if ( is_search()) : ?>
+	<?php if ( is_search() || !is_single()) : ?>
 		<?php zoner_get_post_thumbnail(); ?>	
 		<?php zoner_get_post_title(); ?>
 		<?php zoner_get_post_meta(); ?>
-		<?php the_excerpt(); ?>
+		<?php zoner_blog_post_preview(); ?>
 		<?php zoner_get_readmore_link(); ?>
 	<?php else : ?>
 		<?php zoner_get_post_thumbnail(); ?>	
