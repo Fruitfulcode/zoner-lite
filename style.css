@@ -430,6 +430,19 @@ img.aligncenter, .wp-caption.aligncenter {
  margin-top: 10px;
  margin-bottom:10px;
 }
+.alignleft {
+    display: inline;
+    float: left;
+}
+.alignright {
+    display: inline;
+    float: right;
+}
+.aligncenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
 .page-content img {
  max-width: 100%;
 }
