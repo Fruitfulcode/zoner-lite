@@ -1072,7 +1072,7 @@ if ( ! function_exists( 'zoner_words_limit' ) ) {
 		if(count($words) > $word_limit) array_pop($words);
 		$content = implode(' ', $words);
 		$content = strip_tags($content);
-		$content = strip_shortcodes($content) . '...';
+		$content = strip_shortcodes($content);
 	
 		$content = preg_replace('/\[.+\]/','',  $content);
 		$content = apply_filters('the_content', $content); 
@@ -1085,11 +1085,10 @@ if ( ! function_exists( 'zoner_words_limit' ) ) {
 if ( ! function_exists( 'zoner_blog_post_preview()' ) ) {
 	function zoner_blog_post_preview() {
 		global $zoner_config;
-
 		if (!empty($zoner_config['excerpt'])) {
 			$num = $zoner_config['excerpt-numwords'];
 			if ($zoner_config['excerpt'] == 1 ) {
-				echo zoner_words_limit(get_the_content(), 9999);
+				the_content();
 			}
 			if ($zoner_config['excerpt'] == 2 ) {
 				echo zoner_words_limit(get_the_content(), $num);

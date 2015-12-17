@@ -13,7 +13,7 @@
 		<?php zoner_get_post_thumbnail(); ?>	
 		<?php zoner_get_post_title(); ?>
 		<?php zoner_get_post_meta(); ?>
-		<?php the_content(); ?>
+		<?php zoner_blog_post_preview(); ?>
 		<?php zoner_get_readmore_link(); ?>
 	<?php else : ?>
 		<?php zoner_get_post_thumbnail(); ?>	
