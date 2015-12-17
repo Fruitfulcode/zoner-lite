@@ -1072,7 +1072,7 @@ if ( ! function_exists( 'zoner_words_limit' ) ) {
 		if(count($words) > $word_limit) array_pop($words);
 		$content = implode(' ', $words);
 		$content = strip_tags($content);
-		$content = strip_shortcodes($content);
+		$content = strip_shortcodes($content) . '...';
 	
 		$content = preg_replace('/\[.+\]/','',  $content);
 		$content = apply_filters('the_content', $content); 
