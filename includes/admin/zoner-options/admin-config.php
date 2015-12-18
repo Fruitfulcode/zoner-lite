@@ -1008,7 +1008,7 @@ if (!class_exists('zoner_config')) {
                         'type'      => 'editor',
                         'title'     => __('Copyright section', 'zoner-lite'),
                         'subtitle'  => __('Replace default theme copyright information and links', 'zoner-lite'),
-                        'default'   => __('&#169; <a title="WordPress Development" href="http://fruitfulcode.com/">Fruitful Code</a>, Powered by <a href=http://wordpress.org/">WordPress</a>', 'zoner-lite'),
+                        'default'   => __('&#169; <a title="WordPress Development" href="http://fruitfulcode.com/">Fruitful Code</a>, Powered by <a href="http://wordpress.org/">WordPress</a>', 'zoner-lite'),
                     ),
 					
 					array(
