@@ -170,12 +170,12 @@ if ( ! function_exists( 'zoner_scripts' ) ) {
 		/*Custom Css*/
 		wp_enqueue_style( 'zoner-fontAwesom', 		$zoner_inc_theme_url . 'assets/fonts/font-awesome.min.css');
 		wp_enqueue_style( 'zoner-fontElegantIcons', $zoner_inc_theme_url . 'assets/fonts/ElegantIcons.css');
-		wp_enqueue_style( 'zoner-bootsrap', 	 	$zoner_inc_theme_url . 'assets/bootstrap/css/bootstrap.min.css');
+		wp_enqueue_style( 'zoner-bootstrap', 	 	$zoner_inc_theme_url . 'assets/bootstrap/css/bootstrap.min.css');
 		
 		if (is_rtl())
-		wp_enqueue_style( 'zoner-bootsrap-rtl', 	$zoner_inc_theme_url . 'assets/bootstrap/css/bootstrap-rtl.min.css');
-		wp_enqueue_style( 'zoner-bootsrap-social', 	$zoner_inc_theme_url . 'assets/bootstrap/css/bootstrap-social-buttons.css');
-		wp_enqueue_style( 'zoner-bootsrap-select', 	$zoner_inc_theme_url . 'assets/css/bootstrap-select.min.css');
+		wp_enqueue_style( 'zoner-bootstrap-rtl', 	$zoner_inc_theme_url . 'assets/bootstrap/css/bootstrap-rtl.min.css');
+		wp_enqueue_style( 'zoner-bootstrap-social', 	$zoner_inc_theme_url . 'assets/bootstrap/css/bootstrap-social-buttons.css');
+		wp_enqueue_style( 'zoner-bootstrap-select', 	$zoner_inc_theme_url . 'assets/css/bootstrap-select.min.css');
 		wp_enqueue_style( 'zoner-owl.carousel', 	$zoner_inc_theme_url . 'assets/css/owl.carousel.css');
 		wp_enqueue_style( 'zoner-owl.carousel-trans', $zoner_inc_theme_url . 'assets/css/owl.transitions.css');
 		
@@ -183,17 +183,17 @@ if ( ! function_exists( 'zoner_scripts' ) ) {
 		wp_enqueue_style( 'zoner-style', get_stylesheet_uri() );
 		
 		/*Custom Js*/
-		wp_enqueue_script( 'zoner-bootsrap', 		 $zoner_inc_theme_url . 'assets/bootstrap/js/bootstrap.min.js', array( 'jquery' ), '20142807', true );
+		wp_enqueue_script( 'zoner-bootstrap', 		 $zoner_inc_theme_url . 'assets/bootstrap/js/bootstrap.min.js', array( 'jquery' ), '20142807', true );
 		wp_enqueue_script( 'zoner-bootstrap-select', $zoner_inc_theme_url . 'assets/js/bootstrap-select.min.js',	  array( 'jquery' ), '20142807', true );
-		wp_enqueue_script( 'zoner-bootsrap-holder',	 $zoner_inc_theme_url . 'assets/js/holder.js', array( 'jquery' ), '20142807', true ); 
+		wp_enqueue_script( 'zoner-bootstrap-holder',	 $zoner_inc_theme_url . 'assets/js/holder.js', array( 'jquery' ), '20142807', true ); 
 		
 		if (is_user_logged_in()) {
-			wp_enqueue_script( 'zoner-bootsrap-filei',	$zoner_inc_theme_url . 'assets/bootstrap/js/bootstrap.file-input.js', array( 'jquery' ), '20142807', true );
+			wp_enqueue_script( 'zoner-bootstrap-filei',	$zoner_inc_theme_url . 'assets/bootstrap/js/bootstrap.file-input.js', array( 'jquery' ), '20142807', true );
 		}
 		
 		wp_enqueue_script( 'zoner-ichek', $zoner_inc_theme_url . 'assets/js/icheck.min.js',	 array( 'jquery' ), '20142807', true );
 		if (is_user_logged_in())
-		wp_enqueue_script( 'zoner-bootsrap-filea',	$zoner_inc_theme_url . 'assets/js/fileinput.min.js', array( 'jquery' ), '20142807', true );
+		wp_enqueue_script( 'zoner-bootstrap-filea',	$zoner_inc_theme_url . 'assets/js/fileinput.min.js', array( 'jquery' ), '20142807', true );
 		if (!empty($zoner_config['smoothscroll']))
 	    wp_enqueue_script( 'zoner-smoothscroll', 	$zoner_inc_theme_url . 'assets/js/smoothscroll.js', array( 'jquery' ), '20142807', true );
 		
@@ -633,6 +633,8 @@ if ( ! function_exists( 'zoner_seconadry_navigation' ) ) {
 if ( ! function_exists( 'zoner_before_content' ) ) {
 	function zoner_before_content() {
 		$elem_class = array();
+		$elem_class[] = 'wpb_row';
+		$elem_class[] = 'vc_row-fluid';
 		$elem_class[] = 'block';
 	?>
 		<section class="<?php echo implode(' ', $elem_class); ?>">
