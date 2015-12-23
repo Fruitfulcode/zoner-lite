@@ -183,6 +183,8 @@ if ( ! function_exists( 'zoner_scripts' ) ) {
 		wp_enqueue_style( 'zoner-style', get_stylesheet_uri() );
 		
 		/*Custom Js*/
+		wp_enqueue_script( 'zoner-skip-link-focus-fix', $zoner_inc_theme_url . 'assets/bootstrap/js/skip-link-focus-fix.js', array(), '20142807', true );
+		
 		wp_enqueue_script( 'zoner-bootstrap', 		 $zoner_inc_theme_url . 'assets/bootstrap/js/bootstrap.min.js', array( 'jquery' ), '20142807', true );
 		wp_enqueue_script( 'zoner-bootstrap-select', $zoner_inc_theme_url . 'assets/js/bootstrap-select.min.js',	  array( 'jquery' ), '20142807', true );
 		wp_enqueue_script( 'zoner-bootstrap-holder',	 $zoner_inc_theme_url . 'assets/js/holder.js', array( 'jquery' ), '20142807', true ); 
