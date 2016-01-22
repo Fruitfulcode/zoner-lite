@@ -795,7 +795,7 @@ if (!class_exists('zoner_config')) {
 								'type'          => 'slider',
 								'title'         => __('Transparency for content', 'zoner-lite'),
 								'subtitle'      => __('Set the opacity for the content part', 'zoner-lite'),
-								'default'       => .7,
+								'default'       => .9,
 								'min'           => 0,
 								'step'          => .1,
 								'max'           => 1,

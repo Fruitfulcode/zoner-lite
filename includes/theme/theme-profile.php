@@ -12,7 +12,7 @@ if ( ! function_exists( 'zoner_generate_profile_tabs' ) ) {
 					<aside>
 						<ul class="sidebar-navigation">
 							<li class="active">
-								<i class="fa <?php echo $tab_val['icon']; ?>"></i>
+								<i class="fa <?php echo $tab_val['icon']; ?>" aria-hidden="true"></i>
 								<span><?php echo $tab_val['name']; ?></span>
 							</li>		
 						</ul>
@@ -114,7 +114,7 @@ if ( ! function_exists( 'zoner_generate_profile_info' ) ) {
 								<div class="col-md-3 col-sm-3">
 									<div class="avatar-wrapper">
 										<?php if ($avatar_id != -1) { ?>
-												<span class="remove-btn"><i class="fa fa-trash-o"></i></span>
+												<span class="remove-btn"><i class="fa fa-trash-o" aria-hidden="true"></i></span>
 										<?php } ?>
 										<?php echo zoner_get_profile_avartar($userID); ?>
 									</div>

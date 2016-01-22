@@ -42,11 +42,11 @@
 				</figure>
 				<div class="comment-wrapper">
 					<div class="name"><?php comment_author_link(); ?></div>
-					<span class="date"><span class="fa fa-calendar"></span><?php echo get_comment_date(get_option( 'date_format' )) ?> <?php _e('at', 'zoner-lite'); ?> <?php echo get_comment_time(get_option( 'time_format' )); ?></span>
+					<span class="date"><span class="fa fa-calendar" aria-hidden="true"></span><?php echo get_comment_date(get_option( 'date_format' )) ?> <?php _e('at', 'zoner-lite'); ?> <?php echo get_comment_time(get_option( 'time_format' )); ?></span>
 					
 					<?php comment_text() ?>
 					<?php $myclass = 'reply';
-						  echo preg_replace( '/comment-reply-link/', 'comment-reply-link ' . $myclass, get_comment_reply_link(array_merge( $args, array('depth' => $depth, 'max_depth' => $args['max_depth'], 'reply_text' => '<span class="fa fa-reply"></span>' . __('Reply', 'zoner-lite')))), 1 );
+						  echo preg_replace( '/comment-reply-link/', 'comment-reply-link ' . $myclass, get_comment_reply_link(array_merge( $args, array('depth' => $depth, 'max_depth' => $args['max_depth'], 'reply_text' => '<span class="fa fa-reply" aria-hidden="true"></span>' . __('Reply', 'zoner-lite')))), 1 );
 					?>	  
 					<?php edit_comment_link(__('Edit this comment', 'zoner-lite'), '', ''); ?>
 					<?php if ($comment->comment_approved == '0') { ?>

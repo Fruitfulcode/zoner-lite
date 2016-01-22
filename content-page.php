@@ -55,7 +55,7 @@
 	?>
 	
 	<?php 
-		edit_post_link( '<i title="' . __("Edit", 'zoner-lite') . '" class="fa fa-pencil-square-o"></i><span class="edit-link-text">'.__("Edit", 'zoner-lite') .'</span>', '<div class="'.implode(' ', $class_page).'">', '</div>' ); 
+		edit_post_link( '<i title="' . __("Edit", 'zoner-lite') . '" class="fa fa-pencil-square-o"  aria-hidden="true"></i><span class="edit-link-text">'.__("Edit", 'zoner-lite') .'</span>', '<div class="'.implode(' ', $class_page).'">', '</div>' ); 
 	?>
 	
 	</section><!-- .legal -->
