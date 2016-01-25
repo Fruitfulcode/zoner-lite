@@ -398,7 +398,7 @@ if ( ! function_exists( 'zoner_search_form' ) ) {
 				$form .= '<label for="s" class="screen-reader-text">'.__('Search', 'zoner-lite').'</label>';
 				$form .= '<input type="search" class="form-control" value="' . get_search_query() . '" name="s" id="s" placeholder="'.__('Enter Keyword', 'zoner-lite').'"/>';
 				$form .= '<span class="input-group-btn"><button class="btn btn-default search" type="button" aria-label="'.__('Search', 'zoner-lite').'"><i class="fa fa-search" aria-hidden="true"></i></button></span>';
-				$form .= '<input type="submit" class="screen-reader-text" value="'.__('Search', 'zoner-lite').'" />';
+				$form .= '<input type="submit" class="screen-reader-text" value="'.__('Search', 'zoner-lite').'" tabindex="-1"/>';
 			$form .= '</div><!-- /input-group -->';
 		$form .= '</form>';
 		return $form;
@@ -420,7 +420,7 @@ if ( ! function_exists( 'zoner_change_excerpt_more' ) ) {
 
 if ( ! function_exists( 'zoner_modify_read_more_link' ) ) {
 	function zoner_modify_read_more_link() {
-		return '<a class="link-arrow screen-reader-text" href="' . get_permalink() . '">'.__('Read More', 'zoner-lite').'<span class="screen-reader-text">  '.get_the_title().'</span></a>';
+		return '';
 	}
 }	
 

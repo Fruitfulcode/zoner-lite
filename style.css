@@ -1724,7 +1724,8 @@ input[type="text"]:active, input[type="text"]:focus, input[type="email"]:active,
   -webkit-box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.2);
   box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.2);
 }
-input[type="text"]:hover, input[type="email"]:hover, input[type="search"]:hover, input[type="password"]:hover, input[type="number"]:hover, input[type="tel"]:hover, textarea.form-control:hover {
+input[type="text"]:hover, input[type="email"]:hover, input[type="search"]:hover, input[type="password"]:hover, input[type="number"]:hover, input[type="tel"]:hover, textarea.form-control:hover,
+input[type="text"]:focus, input[type="email"]:focus, input[type="search"]:focus, input[type="password"]:focus, input[type="number"]:focus, input[type="tel"]:focus, textarea.form-control:focus {
   background-color: rgba(0, 0, 0, 0.02);
 }
 
@@ -1970,7 +1971,12 @@ input[type="text"]:hover, input[type="email"]:hover, input[type="search"]:hover,
   position: relative;
   width: 40px !important;
   z-index: 2;
+  padding: 10px 9px 11px;
 }
+.input-group .search:focus {
+	background-color: #073855;
+}
+
 
 .form-group {
   position: relative;
