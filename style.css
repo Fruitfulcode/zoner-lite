@@ -2165,6 +2165,7 @@ form label.error:before {
   transition: 0.2s;
   color: #5a5a5a;
   padding: 8px 15px;
+  width: 100%;
 }
 .bootstrap-select .dropdown-menu li a:hover {
   background-color: #f3f3f3;
