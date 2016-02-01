@@ -290,17 +290,17 @@ if (!class_exists('zoner_config')) {
 														'alt'   => __('Blue', 'zoner-lite'),
 														'img'   => $sample_patterns_url.'images/blue.png',
 														'presets' => array(
-															'zoner-searchbox-advancedcolor' 	=> '#1396e2',
-															'underline-item-color'				=> '#1396e2',
-															'footer-thumbnails-mask-color' 		=> '#1396e2',
+															'zoner-searchbox-advancedcolor' 	=> '#007cbe',
+															'underline-item-color'				=> '#007cbe',
+															'footer-thumbnails-mask-color' 		=> '#007cbe',
 															
 															'submenu-itembg-color' => array(    
 																						'regular'   => '#f3f3f3',
-																						'hover'     => '#1396e2',
-																						'active'    => '#1396e2',
+																						'hover'     => '#007cbe',
+																						'active'    => '#007cbe',
 																						),
 															'content-link-color' => array (	
-																						'regular'   => '#1396e2',
+																						'regular'   => '#007cbe',
 																						'hover'     => '#2a6496',
 																						'active'    => '#2a6496',
 																					),
@@ -574,8 +574,8 @@ if (!class_exists('zoner_config')) {
                         'title'     => __('Submenu item background color', 'zoner-lite'),
                         'default'   => array(
                             'regular'   => '#f3f3f3',
-                            'hover'     => '#1396e2',
-                            'active'    => '#1396e2',
+                            'hover'     => '#007cbe',
+                            'active'    => '#007cbe',
                         )
                     ),
 					
@@ -602,7 +602,7 @@ if (!class_exists('zoner_config')) {
                         'id'        => 'underline-item-color',
                         'type'      => 'color',
                         'title'     => __('Menu underline item color.', 'zoner-lite'),
-                        'default'   => '#1396e2',
+                        'default'   => '#007cbe',
                         'validate'  => 'color',
 						'transparent'	=> false
                     ),
@@ -810,7 +810,7 @@ if (!class_exists('zoner_config')) {
 									'subtitle'  => __('Select the typography you want for tag "a".', 'zoner-lite'),
 									'output'      => array('a'),
 									'default'   => array(
-										'regular'   => '#1396e2',
+										'regular'   => '#007cbe',
 										'hover'     => '#2a6496',
 										'active'    => '#2a6496',
 							)

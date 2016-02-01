@@ -182,7 +182,7 @@ if ( ! function_exists( 'zoner_get_inline_styles' ) ) {
 		if (!empty($zoner_config['global-color-scheme'])) {
 			$main_color = $zoner_config['global-color-scheme'];
 			
-			$primary_color 		= '#1396e2';
+			$primary_color 		= '#007cbe';
 			$secondary_color 	= '#128dd4';
 			
 			
