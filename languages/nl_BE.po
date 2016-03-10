@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zoner Real Estate WordPress Theme\n"
-"POT-Creation-Date: 2015-12-14 18:02+0200\n"
+"POT-Creation-Date: 2016-03-10 10:11+0200\n"
 "PO-Revision-Date: \n"
 "Last-Translator: fruitfulcode <mail@fruitfulcode.com>\n"
 "Language-Team: \n"
@@ -89,11 +89,11 @@ msgstr "Uw boodschap"
 
 #: content-aside.php:24 content-audio.php:24 content-chat.php:24
 #: content-gallery.php:24 content-image.php:24 content-link.php:24
-#: content-page.php:39 content-quote.php:24 content-video.php:24 content.php:26
+#: content-page.php:38 content-quote.php:24 content-video.php:24 content.php:25
 msgid "Pages:"
 msgstr "Pagina"
 
-#: content-page.php:59 includes/theme/theme-function.php:987
+#: content-page.php:58 includes/theme/theme-function.php:965
 msgid "Edit"
 msgstr "Aanpassen"
 
@@ -798,333 +798,327 @@ msgid "Select to enable scrolling library."
 msgstr "Selecteer om scrolling bibliotheek te activeren."
 
 #: includes/admin/zoner-options/admin-config.php:162
-#: includes/admin/zoner-options/admin-config.php:249
-#: includes/admin/zoner-options/admin-config.php:257
-#: includes/admin/zoner-options/admin-config.php:265
-#: includes/admin/zoner-options/admin-config.php:273
-#: includes/admin/zoner-options/admin-config.php:512
+#: includes/admin/zoner-options/admin-config.php:229
+#: includes/admin/zoner-options/admin-config.php:237
+#: includes/admin/zoner-options/admin-config.php:245
+#: includes/admin/zoner-options/admin-config.php:253
+#: includes/admin/zoner-options/admin-config.php:492
 msgid "Yes"
 msgstr "Ja"
 
 #: includes/admin/zoner-options/admin-config.php:171
-#: includes/admin/zoner-options/admin-config.php:179
-msgid "Logo"
-msgstr "Logo"
-
-#: includes/admin/zoner-options/admin-config.php:180
-msgid "Change your Logo here, upload or enter the URL to your logo image."
-msgstr ""
-"Verander uw logo hier, laadt het op of verander de url naar je logo afbeelding."
-
-#: includes/admin/zoner-options/admin-config.php:189
-msgid "Logo Retina "
-msgstr "Logo Retina "
-
-#: includes/admin/zoner-options/admin-config.php:190
-msgid ""
-"Upload your Retina Logo. This should be your Logo in double size (If your logo "
-"is 100 x 20px, it should be 200 x 40px)"
-msgstr ""
-"Laadt uw Retina Logo op. Dit zou uw logo moeten zijn in dubbele grootte. (If "
-"your logo is 100 x 20px, it should be 200 x 40px)"
-
-#: includes/admin/zoner-options/admin-config.php:199
-msgid "Original Logo (Width/Height)"
-msgstr "Origineel Logo (Breedte/Hoogte)"
-
-#: includes/admin/zoner-options/admin-config.php:200
-msgid ""
-"If Retina Logo uploaded, please enter the (width/height) of the Standard Logo "
-"you've uploaded (not the Retina Logo)"
-msgstr ""
-"Als Retina Logo is opgeladen, Gelieve (breedte/hoogte) in te geven van het "
-"standaard logo dat opgeladen is (niet het Retina Logo)"
-
-#: includes/admin/zoner-options/admin-config.php:212
 msgid "Blog options"
 msgstr "Blog opties"
 
-#: includes/admin/zoner-options/admin-config.php:219
+#: includes/admin/zoner-options/admin-config.php:178
 msgid "Display Comments"
 msgstr "Toon commentaren"
 
-#: includes/admin/zoner-options/admin-config.php:220
+#: includes/admin/zoner-options/admin-config.php:179
 msgid "Choose where users are allowed to post comment in your website."
 msgstr ""
 "Kies waar het gebruikers toegestaan is om te becommentarieren op uw website."
 
-#: includes/admin/zoner-options/admin-config.php:224
+#: includes/admin/zoner-options/admin-config.php:183
 msgid "Posts Only"
 msgstr "Enkels posts"
 
-#: includes/admin/zoner-options/admin-config.php:225
+#: includes/admin/zoner-options/admin-config.php:184
 msgid "Pages Only"
 msgstr "Enkel pagina's"
 
-#: includes/admin/zoner-options/admin-config.php:226
+#: includes/admin/zoner-options/admin-config.php:185
 msgid "Posts/Pages show"
 msgstr "Toon posts/pagina's"
 
-#: includes/admin/zoner-options/admin-config.php:227
+#: includes/admin/zoner-options/admin-config.php:186
 msgid "Hide all"
 msgstr "Verberg alles"
 
-#: includes/admin/zoner-options/admin-config.php:234
+#: includes/admin/zoner-options/admin-config.php:193
+msgid "Select Post Preview"
+msgstr ""
+
+#: includes/admin/zoner-options/admin-config.php:194
+msgid "Select showing full post, excerpt or title only"
+msgstr ""
+
+#: includes/admin/zoner-options/admin-config.php:196
+msgid "Full post (before <-more->)"
+msgstr ""
+
+#: includes/admin/zoner-options/admin-config.php:197
+msgid "Excerpt"
+msgstr ""
+
+#: includes/admin/zoner-options/admin-config.php:198
+msgid "Only Title"
+msgstr ""
+
+#: includes/admin/zoner-options/admin-config.php:207
+msgid "Number of words"
+msgstr ""
+
+#: includes/admin/zoner-options/admin-config.php:208
+msgid "Type number of words for excerpt"
+msgstr ""
+
+#: includes/admin/zoner-options/admin-config.php:214
 msgid "Single post layout"
 msgstr "Enkele post layout"
 
-#: includes/admin/zoner-options/admin-config.php:235
-#: includes/admin/zoner-options/admin-config.php:990
+#: includes/admin/zoner-options/admin-config.php:215
+#: includes/admin/zoner-options/admin-config.php:970
 msgid "Select main content and sidebar alignment."
 msgstr "Selecteer hoofdinhoud en zijbalk opstelling."
 
-#: includes/admin/zoner-options/admin-config.php:246
+#: includes/admin/zoner-options/admin-config.php:226
 msgid "Display date for posts"
 msgstr "Toon datums van de post items."
 
-#: includes/admin/zoner-options/admin-config.php:254
+#: includes/admin/zoner-options/admin-config.php:234
 msgid "Display thumbnails for posts"
 msgstr "Toon thumbnails voor post items"
 
-#: includes/admin/zoner-options/admin-config.php:262
+#: includes/admin/zoner-options/admin-config.php:242
 msgid "Display tags for posts"
 msgstr "Toon tags voor post items"
 
-#: includes/admin/zoner-options/admin-config.php:270
+#: includes/admin/zoner-options/admin-config.php:250
 msgid "Display authors for posts"
 msgstr "Toon auteurs voor post items"
 
-#: includes/admin/zoner-options/admin-config.php:280
+#: includes/admin/zoner-options/admin-config.php:260
 msgid "Styling"
 msgstr "Stilering"
 
-#: includes/admin/zoner-options/admin-config.php:288
+#: includes/admin/zoner-options/admin-config.php:268
 msgid "Body Background"
 msgstr "Kern achtergrond"
 
-#: includes/admin/zoner-options/admin-config.php:289
+#: includes/admin/zoner-options/admin-config.php:269
 msgid "Body background with image, color, etc."
 msgstr "Kern achtergrond met afbeelding, kleur, etc."
 
-#: includes/admin/zoner-options/admin-config.php:304
+#: includes/admin/zoner-options/admin-config.php:284
 msgid "Color Scheme"
 msgstr ""
 
-#: includes/admin/zoner-options/admin-config.php:305
+#: includes/admin/zoner-options/admin-config.php:285
 msgid "Choose main color scheme."
 msgstr ""
 
-#: includes/admin/zoner-options/admin-config.php:310
+#: includes/admin/zoner-options/admin-config.php:290
 msgid "Blue"
 msgstr ""
 
-#: includes/admin/zoner-options/admin-config.php:330
+#: includes/admin/zoner-options/admin-config.php:310
 msgid "Brown"
 msgstr ""
 
-#: includes/admin/zoner-options/admin-config.php:350
+#: includes/admin/zoner-options/admin-config.php:330
 msgid "Green"
 msgstr ""
 
-#: includes/admin/zoner-options/admin-config.php:369
+#: includes/admin/zoner-options/admin-config.php:349
 msgid "Grey"
 msgstr ""
 
-#: includes/admin/zoner-options/admin-config.php:389
+#: includes/admin/zoner-options/admin-config.php:369
 msgid "Magenta"
 msgstr ""
 
-#: includes/admin/zoner-options/admin-config.php:409
+#: includes/admin/zoner-options/admin-config.php:389
 msgid "Orange"
 msgstr ""
 
-#: includes/admin/zoner-options/admin-config.php:429
+#: includes/admin/zoner-options/admin-config.php:409
 msgid "Red"
 msgstr ""
 
-#: includes/admin/zoner-options/admin-config.php:449
+#: includes/admin/zoner-options/admin-config.php:429
 msgid "Violet"
 msgstr ""
 
-#: includes/admin/zoner-options/admin-config.php:482
+#: includes/admin/zoner-options/admin-config.php:462
 msgid "Header background color"
 msgstr "Header achtergrondskleur"
 
-#: includes/admin/zoner-options/admin-config.php:491
-#: includes/theme/theme-function.php:612
+#: includes/admin/zoner-options/admin-config.php:471
+#: includes/theme/theme-function.php:588
 msgid "Phone"
 msgstr "Telefoon"
 
-#: includes/admin/zoner-options/admin-config.php:492
+#: includes/admin/zoner-options/admin-config.php:472
 msgid "Edit phone"
 msgstr "Aanpassen telefoon"
 
-#: includes/admin/zoner-options/admin-config.php:499
-#: includes/theme/theme-function.php:615 includes/theme/theme-profile.php:140
+#: includes/admin/zoner-options/admin-config.php:479
+#: includes/theme/theme-function.php:591 includes/theme/theme-profile.php:140
 msgid "Email"
 msgstr "Email"
 
-#: includes/admin/zoner-options/admin-config.php:500
+#: includes/admin/zoner-options/admin-config.php:480
 msgid "Edit email"
 msgstr "Aanpassen email"
 
-#: includes/admin/zoner-options/admin-config.php:510
+#: includes/admin/zoner-options/admin-config.php:490
 msgid "WPML box"
 msgstr "WPML vak"
 
-#: includes/admin/zoner-options/admin-config.php:511
+#: includes/admin/zoner-options/admin-config.php:491
 msgid "Select to enable WPML box."
 msgstr "Selecteer om WPML vak te activeren"
 
-#: includes/admin/zoner-options/admin-config.php:523
+#: includes/admin/zoner-options/admin-config.php:503
 msgid "Header"
 msgstr "Header"
 
-#: includes/admin/zoner-options/admin-config.php:531
+#: includes/admin/zoner-options/admin-config.php:511
 msgid "Slider"
 msgstr ""
 
-#: includes/admin/zoner-options/admin-config.php:539
+#: includes/admin/zoner-options/admin-config.php:519
 msgid "Slider on \"Home\" page"
 msgstr ""
 
-#: includes/admin/zoner-options/admin-config.php:549
+#: includes/admin/zoner-options/admin-config.php:529
 msgid "Slides"
 msgstr ""
 
-#: includes/admin/zoner-options/admin-config.php:550
+#: includes/admin/zoner-options/admin-config.php:530
 msgid "Add slides to slider"
 msgstr ""
 
-#: includes/admin/zoner-options/admin-config.php:552
+#: includes/admin/zoner-options/admin-config.php:532
 msgid "This is a title"
 msgstr ""
 
-#: includes/admin/zoner-options/admin-config.php:553
+#: includes/admin/zoner-options/admin-config.php:533
 msgid "Description Here"
 msgstr ""
 
-#: includes/admin/zoner-options/admin-config.php:554
+#: includes/admin/zoner-options/admin-config.php:534
 msgid "Url"
 msgstr ""
 
-#: includes/admin/zoner-options/admin-config.php:565
+#: includes/admin/zoner-options/admin-config.php:545
 msgid "Menu"
 msgstr "Menu"
 
-#: includes/admin/zoner-options/admin-config.php:573
+#: includes/admin/zoner-options/admin-config.php:553
 msgid "Menu item color"
 msgstr "Menu item kleur"
 
-#: includes/admin/zoner-options/admin-config.php:583
+#: includes/admin/zoner-options/admin-config.php:563
 msgid "Submenu item color"
 msgstr "Submenu item kleur"
 
-#: includes/admin/zoner-options/admin-config.php:594
+#: includes/admin/zoner-options/admin-config.php:574
 msgid "Submenu item background color"
 msgstr "Submenu item achtergrondkleur"
 
-#: includes/admin/zoner-options/admin-config.php:605
+#: includes/admin/zoner-options/admin-config.php:585
 msgid "Submenu background color"
 msgstr "Submenu achtergrondkleur"
 
-#: includes/admin/zoner-options/admin-config.php:614
+#: includes/admin/zoner-options/admin-config.php:594
 msgid "Submenu item border color"
 msgstr "Submenu item randkleur"
 
-#: includes/admin/zoner-options/admin-config.php:624
+#: includes/admin/zoner-options/admin-config.php:604
 msgid "Menu underline item color."
 msgstr "Menu onderlijning item kleur."
 
-#: includes/admin/zoner-options/admin-config.php:634
+#: includes/admin/zoner-options/admin-config.php:614
 msgid "Font styles"
 msgstr "Fontstijlen"
 
-#: includes/admin/zoner-options/admin-config.php:641
+#: includes/admin/zoner-options/admin-config.php:621
 msgid "General Text Font Style"
 msgstr "Algemene textfontstijl"
 
-#: includes/admin/zoner-options/admin-config.php:649
+#: includes/admin/zoner-options/admin-config.php:629
 msgid "Select typography for general text."
 msgstr "Selecteer typografie for algemene tekst"
 
-#: includes/admin/zoner-options/admin-config.php:662
+#: includes/admin/zoner-options/admin-config.php:642
 msgid "H1 Font Style."
 msgstr "H1 Fontstijl"
 
-#: includes/admin/zoner-options/admin-config.php:670
+#: includes/admin/zoner-options/admin-config.php:650
 msgid "Select the typography you want for header H1."
 msgstr "Kies de typografie die u wenst voor hoofd H1."
 
-#: includes/admin/zoner-options/admin-config.php:683
+#: includes/admin/zoner-options/admin-config.php:663
 msgid "H2 Font Style."
 msgstr "H2 Fontstijl"
 
-#: includes/admin/zoner-options/admin-config.php:691
+#: includes/admin/zoner-options/admin-config.php:671
 msgid "Select the typography you want for header H2."
 msgstr "Kies de typografie die u wenst voor hoofd H2."
 
-#: includes/admin/zoner-options/admin-config.php:704
+#: includes/admin/zoner-options/admin-config.php:684
 msgid "H3 Font Style."
 msgstr "H3 Fontstijl"
 
-#: includes/admin/zoner-options/admin-config.php:712
+#: includes/admin/zoner-options/admin-config.php:692
 msgid "Select the typography you want for header H3."
 msgstr "Kies de typografie die u wenst voor hoofd H3."
 
-#: includes/admin/zoner-options/admin-config.php:726
+#: includes/admin/zoner-options/admin-config.php:706
 msgid "H4 Font Style."
 msgstr "H4 Fontstijl"
 
-#: includes/admin/zoner-options/admin-config.php:734
+#: includes/admin/zoner-options/admin-config.php:714
 msgid "Select the typography you want for header H4."
 msgstr "Kies de typografie die u wenst voor hoofd H4."
 
-#: includes/admin/zoner-options/admin-config.php:747
+#: includes/admin/zoner-options/admin-config.php:727
 msgid "H5 Font Style."
 msgstr "H5 Fontstijl"
 
-#: includes/admin/zoner-options/admin-config.php:755
+#: includes/admin/zoner-options/admin-config.php:735
 msgid "Select the typography you want for header H5."
 msgstr "Kies de typografie die u wenst voor hoofd H5."
 
-#: includes/admin/zoner-options/admin-config.php:769
+#: includes/admin/zoner-options/admin-config.php:749
 msgid "H6 Font Style."
 msgstr "H6 Fontstijl"
 
-#: includes/admin/zoner-options/admin-config.php:777
+#: includes/admin/zoner-options/admin-config.php:757
 msgid "Select the typography you want for header H6."
 msgstr "Kies de typografie die u wenst voor hoofd H6."
 
-#: includes/admin/zoner-options/admin-config.php:791
+#: includes/admin/zoner-options/admin-config.php:771
 msgid "\"p\" Font Style."
 msgstr "\"p\" Fontstijl."
 
-#: includes/admin/zoner-options/admin-config.php:799
+#: includes/admin/zoner-options/admin-config.php:779
 msgid "Select the typography you want for tag \"p\"."
 msgstr "Selecteer de typografie die u wenst voor tag  \"p\"."
 
-#: includes/admin/zoner-options/admin-config.php:816
+#: includes/admin/zoner-options/admin-config.php:796
 msgid "Transparency for content"
 msgstr "Transparant voor inhoud"
 
-#: includes/admin/zoner-options/admin-config.php:817
+#: includes/admin/zoner-options/admin-config.php:797
 msgid "Set the opacity for the content part"
 msgstr "Zet de opaciteit voor het inhoudstuk"
 
-#: includes/admin/zoner-options/admin-config.php:829
+#: includes/admin/zoner-options/admin-config.php:809
 msgid "Link style."
 msgstr "Link style."
 
-#: includes/admin/zoner-options/admin-config.php:830
+#: includes/admin/zoner-options/admin-config.php:810
 msgid "Select the typography you want for tag \"a\"."
 msgstr "Selecteer de typografie die u wenst voor tag \"a\"."
 
-#: includes/admin/zoner-options/admin-config.php:845
+#: includes/admin/zoner-options/admin-config.php:825
 msgid "Social Links"
 msgstr "Sociale Links"
 
-#: includes/admin/zoner-options/admin-config.php:846
+#: includes/admin/zoner-options/admin-config.php:826
 msgid ""
 "Add link to your social media profiles. Icons with link will be display in "
 "header or footer."
@@ -1132,183 +1126,176 @@ msgstr ""
 "Voeg link toe tot uw sociaal media profiel. Icons met de  link zullen in header "
 "or footer verschijnen."
 
-#: includes/admin/zoner-options/admin-config.php:853
+#: includes/admin/zoner-options/admin-config.php:833
 msgid "Facebook"
 msgstr "Facebook"
 
-#: includes/admin/zoner-options/admin-config.php:860
+#: includes/admin/zoner-options/admin-config.php:840
 msgid "Twitter"
 msgstr "Twitter"
 
-#: includes/admin/zoner-options/admin-config.php:867
+#: includes/admin/zoner-options/admin-config.php:847
 msgid "LinkedIn"
 msgstr "LinkedIn"
 
-#: includes/admin/zoner-options/admin-config.php:874
+#: includes/admin/zoner-options/admin-config.php:854
 msgid "MySpace"
 msgstr "MySpace"
 
-#: includes/admin/zoner-options/admin-config.php:881
+#: includes/admin/zoner-options/admin-config.php:861
 msgid "Google Plus+"
 msgstr "Google Plus+"
 
-#: includes/admin/zoner-options/admin-config.php:888
+#: includes/admin/zoner-options/admin-config.php:868
 msgid "Dribbble"
 msgstr "Dribbble"
 
-#: includes/admin/zoner-options/admin-config.php:895
+#: includes/admin/zoner-options/admin-config.php:875
 msgid "Flickr"
 msgstr "Flickr"
 
-#: includes/admin/zoner-options/admin-config.php:902
+#: includes/admin/zoner-options/admin-config.php:882
 msgid "You Tube"
 msgstr "You Tube"
 
-#: includes/admin/zoner-options/admin-config.php:909
+#: includes/admin/zoner-options/admin-config.php:889
 msgid "Delicious"
 msgstr "Delicious"
 
-#: includes/admin/zoner-options/admin-config.php:916
+#: includes/admin/zoner-options/admin-config.php:896
 msgid "Deviantart"
 msgstr "Deviantart"
 
-#: includes/admin/zoner-options/admin-config.php:923
+#: includes/admin/zoner-options/admin-config.php:903
 msgid "RSS"
 msgstr "RSS"
 
-#: includes/admin/zoner-options/admin-config.php:930
+#: includes/admin/zoner-options/admin-config.php:910
 msgid "Instagram"
 msgstr "Instagram"
 
-#: includes/admin/zoner-options/admin-config.php:937
+#: includes/admin/zoner-options/admin-config.php:917
 msgid "Pinterest"
 msgstr "Pinterest"
 
-#: includes/admin/zoner-options/admin-config.php:944
+#: includes/admin/zoner-options/admin-config.php:924
 msgid "Vimeo"
 msgstr "Vimeo"
 
-#: includes/admin/zoner-options/admin-config.php:951
+#: includes/admin/zoner-options/admin-config.php:931
 msgid "Picassa"
 msgstr "Picassa"
 
-#: includes/admin/zoner-options/admin-config.php:958
+#: includes/admin/zoner-options/admin-config.php:938
 msgid "Tumblr"
 msgstr "Tumblr"
 
-#: includes/admin/zoner-options/admin-config.php:965
+#: includes/admin/zoner-options/admin-config.php:945
 msgid "E-mail"
 msgstr "Email"
 
-#: includes/admin/zoner-options/admin-config.php:973
+#: includes/admin/zoner-options/admin-config.php:953
 msgid "Skype"
 msgstr "Skype"
 
-#: includes/admin/zoner-options/admin-config.php:982
+#: includes/admin/zoner-options/admin-config.php:962
 msgid "Default pages"
 msgstr "Default pagina's"
 
-#: includes/admin/zoner-options/admin-config.php:989
+#: includes/admin/zoner-options/admin-config.php:969
 msgid "Author layout"
 msgstr ""
 
-#: includes/admin/zoner-options/admin-config.php:1003
+#: includes/admin/zoner-options/admin-config.php:983
 msgid "404 background."
 msgstr "404 achtergrond."
 
-#: includes/admin/zoner-options/admin-config.php:1004
+#: includes/admin/zoner-options/admin-config.php:984
 msgid "Upload a background for your 404 page."
 msgstr "Laadt een achtergrond op voor 404 pagina."
 
-#: includes/admin/zoner-options/admin-config.php:1011
+#: includes/admin/zoner-options/admin-config.php:991
 msgid "404 text"
 msgstr "404 tekst"
 
-#: includes/admin/zoner-options/admin-config.php:1021
+#: includes/admin/zoner-options/admin-config.php:1001
 msgid "Footer"
 msgstr "Footer"
 
-#: includes/admin/zoner-options/admin-config.php:1029
+#: includes/admin/zoner-options/admin-config.php:1009
 msgid "Copyright section"
 msgstr "Copyright sectie"
 
-#: includes/admin/zoner-options/admin-config.php:1030
+#: includes/admin/zoner-options/admin-config.php:1010
 msgid "Replace default theme copyright information and links"
 msgstr "Vervang de default thema copyright info en links"
 
-#: includes/admin/zoner-options/admin-config.php:1031
+#: includes/admin/zoner-options/admin-config.php:1011
+#: includes/theme/theme-function.php:497
 msgid ""
 "&#169; <a title=\"WordPress Development\" href=\"http://fruitfulcode.com/"
-"\">Fruitful Code</a>, Powered by <a href=http://wordpress.org/\">WordPress</a>"
+"\">Fruitful Code</a>, Powered by <a href=\"http://wordpress.org/\">WordPress</a>"
 msgstr ""
 
-#: includes/admin/zoner-options/admin-config.php:1037
+#: includes/admin/zoner-options/admin-config.php:1017
 msgid "Social icons"
 msgstr "Sociale icons"
 
-#: includes/admin/zoner-options/admin-config.php:1038
+#: includes/admin/zoner-options/admin-config.php:1018
 msgid "Enable social icons."
 msgstr "Activeer social icons."
 
-#: includes/admin/zoner-options/admin-config.php:1046
+#: includes/admin/zoner-options/admin-config.php:1026
 msgid "Footer column areas"
 msgstr "Footer kolomruimte"
 
-#: includes/admin/zoner-options/admin-config.php:1060
+#: includes/admin/zoner-options/admin-config.php:1040
 msgid "Footer copyright part font color"
 msgstr "Footer copyright stuk fontkleur"
 
-#: includes/admin/zoner-options/admin-config.php:1069
+#: includes/admin/zoner-options/admin-config.php:1049
 msgid "Footer copyright part background color"
 msgstr "Footer copyright stuk achtergrondskleur"
 
-#: includes/admin/zoner-options/admin-config.php:1080
+#: includes/admin/zoner-options/admin-config.php:1060
 msgid "Custom Code"
 msgstr "Custom Code"
 
-#: includes/admin/zoner-options/admin-config.php:1087
+#: includes/admin/zoner-options/admin-config.php:1067
 msgid "CSS Code"
 msgstr "CSS Code"
 
-#: includes/admin/zoner-options/admin-config.php:1088
+#: includes/admin/zoner-options/admin-config.php:1068
 msgid "Paste your CSS code here."
 msgstr "Plak uw CSS code hier."
 
-#: includes/admin/zoner-options/admin-config.php:1098
+#: includes/admin/zoner-options/admin-config.php:1078
 msgid "Import / Export"
 msgstr "Import / Export"
 
-#: includes/admin/zoner-options/admin-config.php:1099
+#: includes/admin/zoner-options/admin-config.php:1079
 msgid "Import and Export your zoner Framework settings from file, text or URL."
 msgstr ""
 "Importeer en Exporteer uw zoner Framework instellingen van file, tekst of URL."
 
-#: includes/admin/zoner-options/admin-config.php:1114
-msgid "Extended version"
-msgstr ""
-
-#: includes/admin/zoner-options/admin-config.php:1121
-msgid "Zoner - Real Estate WordPress theme"
-msgstr ""
-
-#: includes/admin/zoner-options/admin-config.php:1143
-#: includes/admin/zoner-options/admin-config.php:1144
+#: includes/admin/zoner-options/admin-config.php:1110
+#: includes/admin/zoner-options/admin-config.php:1111
 msgid "Zoner options"
 msgstr "Zoner instellingen"
 
-#: includes/admin/zoner-options/admin-config.php:1175
+#: includes/admin/zoner-options/admin-config.php:1142
 msgid "Zoner Options panel created using \"Reduxe Framework\"."
 msgstr "Zoner instellingspaneel aangemaakt met \"Reduxe Framework\"."
 
-#: includes/admin/zoner-options/admin-config.php:1183
+#: includes/admin/zoner-options/admin-config.php:1150
 msgid "Contact Support"
 msgstr "Contact Ondersteuning"
 
-#: includes/admin/zoner-options/admin-config.php:1184
+#: includes/admin/zoner-options/admin-config.php:1151
 msgid "Documentation"
 msgstr "Documentatie"
 
-#: includes/admin/zoner-options/admin-config.php:1185
+#: includes/admin/zoner-options/admin-config.php:1152
 msgid "Faq"
 msgstr "Faq"
 
@@ -1368,107 +1355,97 @@ msgstr "Uw commentaar wacht op moderatie."
 msgid "Top primary menu"
 msgstr "Topprioriteiten menu"
 
-#: includes/theme/theme-function.php:323
+#: includes/theme/theme-function.php:326
 #, php-format
 msgid "%d Article"
 msgid_plural "%d Articles"
 msgstr[0] "%d Artikel"
 msgstr[1] "%d Artikelen"
 
-#: includes/theme/theme-function.php:393
+#: includes/theme/theme-function.php:369
 msgid "Primary Navigation"
 msgstr ""
 
-#: includes/theme/theme-function.php:422 includes/theme/theme-function.php:425
+#: includes/theme/theme-function.php:398 includes/theme/theme-function.php:400
+#: includes/theme/theme-function.php:401
 msgid "Search"
 msgstr ""
 
-#: includes/theme/theme-function.php:423
+#: includes/theme/theme-function.php:399
 msgid "Enter Keyword"
 msgstr "Geef keyword in"
 
-#: includes/theme/theme-function.php:447 includes/theme/theme-function.php:1062
-#: includes/theme/theme-function.php:1082
-msgid "Read More"
-msgstr "Lees meer"
-
-#: includes/theme/theme-function.php:521
-msgid ""
-"&#169; <a title=\"WordPress Development\" href=\"http://fruitfulcode.com/"
-"\">Fruitful Code</a>, Powered by href=\"http://wordpress.org/\">WordPress</a>"
-msgstr ""
-
-#: includes/theme/theme-function.php:570
+#: includes/theme/theme-function.php:546
 msgid "Go to top"
 msgstr "Ga naar top"
 
-#: includes/theme/theme-function.php:622
+#: includes/theme/theme-function.php:598
 msgid "Sign Out"
 msgstr "Uitloggen"
 
-#: includes/theme/theme-function.php:709
+#: includes/theme/theme-function.php:687
 msgid "Latest posts"
 msgstr "Laatste posts"
 
-#: includes/theme/theme-function.php:714
+#: includes/theme/theme-function.php:692
 #, php-format
 msgid "Daily Archives: %s"
 msgstr "Dagelijkse archieven: %s"
 
-#: includes/theme/theme-function.php:716
+#: includes/theme/theme-function.php:694
 #, php-format
 msgid "Monthly Archives: %s"
 msgstr "Maandelijkse archieven: %s"
 
-#: includes/theme/theme-function.php:716
+#: includes/theme/theme-function.php:694
 msgctxt "monthly archives date format"
 msgid "F Y"
 msgstr "M"
 
-#: includes/theme/theme-function.php:718
+#: includes/theme/theme-function.php:696
 #, php-format
 msgid "Yearly Archives: %s"
 msgstr "Jaarlijkse archieven: %s"
 
-#: includes/theme/theme-function.php:718
+#: includes/theme/theme-function.php:696
 msgctxt "yearly archives date format"
 msgid "Y"
 msgstr "J"
 
-#: includes/theme/theme-function.php:720
+#: includes/theme/theme-function.php:698
 msgid "Archives"
 msgstr "Archieven"
 
-#: includes/theme/theme-function.php:726
+#: includes/theme/theme-function.php:704
 #, php-format
 msgid "Category: %s"
 msgstr "Categorie: %s"
 
-#: includes/theme/theme-function.php:727
+#: includes/theme/theme-function.php:705
 #, php-format
 msgid "Search Results for: %s"
 msgstr "Zoekresultaten voor: %s"
 
-#: includes/theme/theme-function.php:728
+#: includes/theme/theme-function.php:706
 #, php-format
 msgid "Tag Archives: %s"
 msgstr "Tag Archieven: %s"
 
-#: includes/theme/theme-function.php:744
+#: includes/theme/theme-function.php:722
 msgid "Nothing Found"
 msgstr "Niets gevonden"
 
-#: includes/theme/theme-function.php:903
+#: includes/theme/theme-function.php:881
 #, php-format
 msgid "All posts by \"%s\""
 msgstr "Alle posts door \"%s\""
 
-#: includes/theme/theme-function.php:999
+#: includes/theme/theme-function.php:977
 #, php-format
 msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
 msgstr "Klaar om je eerste post te publiceren? <a href=\"%1$s\">Hier starten</a>."
 
-#: includes/theme/theme-function.php:1001
+#: includes/theme/theme-function.php:979
 msgid ""
 "Sorry, but nothing matched your search terms. Please try again with some "
 "different keywords."
@@ -1476,7 +1453,7 @@ msgstr ""
 "Sorry, maar niets gevonden met deze zoektermen. Geleive opnieuw te proberen met "
 "andere trefwoorden."
 
-#: includes/theme/theme-function.php:1004
+#: includes/theme/theme-function.php:982
 msgid ""
 "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching "
 "can help."
@@ -1484,9 +1461,13 @@ msgstr ""
 "Het lijkt erop dat we niet kunnen vinden wat u zoekt. Misschien kan zoeken "
 "helpen."
 
-#: includes/theme/theme-function.php:1019
+#: includes/theme/theme-function.php:997
 msgid "About the Author"
 msgstr "Over de auteur"
+
+#: includes/theme/theme-function.php:1040 includes/theme/theme-function.php:1060
+msgid "Read More"
+msgstr "Lees meer"
 
 #: includes/theme/theme-profile.php:6 includes/theme/theme-profile.php:106
 msgid "Profile"
@@ -1590,6 +1571,34 @@ msgstr "Footer ruimte %d"
 #, php-format
 msgid "Widgetized footer area %d."
 msgstr "Widget-gestuurde  footer ruimte %d."
+
+#~ msgid "Logo"
+#~ msgstr "Logo"
+
+#~ msgid "Change your Logo here, upload or enter the URL to your logo image."
+#~ msgstr ""
+#~ "Verander uw logo hier, laadt het op of verander de url naar je logo "
+#~ "afbeelding."
+
+#~ msgid "Logo Retina "
+#~ msgstr "Logo Retina "
+
+#~ msgid ""
+#~ "Upload your Retina Logo. This should be your Logo in double size (If your "
+#~ "logo is 100 x 20px, it should be 200 x 40px)"
+#~ msgstr ""
+#~ "Laadt uw Retina Logo op. Dit zou uw logo moeten zijn in dubbele grootte. (If "
+#~ "your logo is 100 x 20px, it should be 200 x 40px)"
+
+#~ msgid "Original Logo (Width/Height)"
+#~ msgstr "Origineel Logo (Breedte/Hoogte)"
+
+#~ msgid ""
+#~ "If Retina Logo uploaded, please enter the (width/height) of the Standard Logo "
+#~ "you've uploaded (not the Retina Logo)"
+#~ msgstr ""
+#~ "Als Retina Logo is opgeladen, Gelieve (breedte/hoogte) in te geven van het "
+#~ "standaard logo dat opgeladen is (niet het Retina Logo)"
 
 #~ msgid "User Profile"
 #~ msgstr "Gebruikersprofiel"

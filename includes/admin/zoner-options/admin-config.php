@@ -1089,19 +1089,6 @@ if (!class_exists('zoner_config')) {
                     ),
                 ),
             );    
-			
-			$this->sections[] = array(
-                'title'     => __('Extended version', 'zoner-lite'),
-                'icon'      => $sample_patterns_url . 'images/icons/zoner.png',
-				'icon_type' => 'image',
-                'fields'    => array(
-					 array(
-						'id'       => 'opt-raw',
-						'type'     => 'raw',
-						'content'  => '<a href="http://themeforest.net/item/zoner-real-estate-wordpress-theme/9099226?r=fruitfulcode" style="text-decoration: none;" title=""><h4>'. __('Zoner - Real Estate WordPress theme', 'zoner-lite') . '</h4><img src="' . $sample_patterns_url . 'images/zoner-extended.png" alt="Extended version" /></a>'
-					),
-                ),
-            );  
 
 			$this->sections = apply_filters('zoner_admin_fields', $this->sections);
             
