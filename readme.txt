@@ -65,7 +65,7 @@ Files: zoner.pot, en_US.po, en_US.mo ru_Ru.po, ru_Ru.mo, nl_BE.mo, nl_BE.po iclu
 -------------------------------------------------------
 
 
-= 1.4 =
-02.02.2016
+= 1.5 =
+10.03.2016
 
 - Initial release
