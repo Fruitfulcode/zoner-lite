@@ -18,7 +18,11 @@ if (!class_exists('zoner_config')) {
 
         }
 		
+         function disable_redux_notice() {
+		   echo '<style>.redux-notice{ display: none;}</style>';
+		}
         public function initSettings() {
+        	add_action('admin_head', array($this,'disable_redux_notice'));
             $this->theme = wp_get_theme();
             $this->setArguments();
             $this->setHelpTabs();
