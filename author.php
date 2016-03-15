@@ -20,27 +20,26 @@
 		$curr_user_id  = get_current_user_id();
 		
 		if (!empty($zoner_config['pp-author-agents-layout'])) $layout = (int)$zoner_config['pp-author-agents-layout'];
-		if (is_author() && is_user_logged_in() && ($curr_user_id == $query_user_id)) $layout = 1;	
 		
 		if ($layout == 1) {
-				zoner_get_author_content();
+				zoner_get_author_information();
 		} elseif ($layout == 2) {
 			echo '<div class="col-md-3 col-sm-3">';
 				zoner_get_sidebar_part('primary'); 
 			echo '</div>';
 			echo '<div class="col-md-9 col-sm-9">';
-				zoner_get_author_content(); 
+				zoner_get_author_information(); 
 			echo '</div>';
 		} elseif ($layout == 3) {
 			echo '<div class="col-md-9 col-sm-9">';
-				zoner_get_author_content(); 
+				zoner_get_author_information(); 
 			echo '</div>';
 			echo '<div class="col-md-3 col-sm-3">';
 				zoner_get_sidebar_part('primary'); 
 			echo '</div>';
 		} else {
 			echo '<div class="col-md-3 col-sm-3">';
-				zoner_get_author_content();
+				zoner_get_author_information();
 			echo '</div class="col-md-12">';	
 		}
 	?>	

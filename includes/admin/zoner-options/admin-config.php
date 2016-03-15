@@ -1001,7 +1001,7 @@ if (!class_exists('zoner_config')) {
                         'type'      => 'editor',
                         'title'     => __('Copyright section', 'zoner-lite'),
                         'subtitle'  => __('Replace default theme copyright information and links', 'zoner-lite'),
-                        'default'   => __('&#169; <a title="WordPress Development" href="http://fruitfulcode.com/">Fruitful Code</a>, Powered by <a href="http://wordpress.org/">WordPress</a>', 'zoner-lite'),
+                        'default'   => __('Zoner Lite theme by <a title="WordPress Development" href="http://fruitfulcode.com/">Fruitful Code</a>, Powered by <a href="http://wordpress.org/">WordPress</a>', 'zoner-lite'),
                     ),
 					
 					array(
@@ -1139,12 +1139,6 @@ if (!class_exists('zoner_config')) {
                 'system_info'           => false, // REMOVE
 				'page_type'				=> 'submenu',
 				
-				'header_list_links'		=> array(
-					array('link' => 'http://support.fruitfulcode.com/hc/en-us/requests/new', 'name' => __('Contact Support', 'zoner-lite')),
-					array('link' => 'http://themes.fruitfulcode.com/zoner/documentation/', 'name' => __('Documentation', 'zoner-lite')),
-					array('link' => 'http://support.fruitfulcode.com/hc/en-us/categories/200198223-Zoner', 'name' => __('Faq', 'zoner-lite')),
-				),
-
                 // HINTS
                 'hints' => array(
                     'icon'          => 'icon-question-sign',
@@ -1183,18 +1177,7 @@ if (!class_exists('zoner_config')) {
                 'title' => 'Visit us on GitHub',
                 'img'   => esc_url($source_path . 'images/icons/github.png'), 
             );
-            $this->args['share_icons'][] = array(
-                'url'   => 'https://www.facebook.com/fruitfulc0de',
-                'title' => 'Like us on Facebook',
-                'img'   => esc_url($source_path . 'images/icons/facebook.png'), 
-            );
-            $this->args['share_icons'][] = array(
-                'url'   => 'https://twitter.com/fruitfulcode',
-                'title' => 'Follow us on Twitter',
-                'img'   => esc_url($source_path . 'images/icons/twitter.png'), 
-            );
             
-
             // Panel Intro text -> before the form
             if (!isset($this->args['global_variable']) || $this->args['global_variable'] !== false) {
                 if (!empty($this->args['global_variable'])) {

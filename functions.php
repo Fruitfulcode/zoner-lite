@@ -32,8 +32,6 @@
  *
  * @since Zoner Theme 1.0
  */
-
-global $zoner;
 		
 locate_template('/includes/admin/zoner-options/admin-config.php', true);
 
@@ -42,7 +40,6 @@ locate_template('/includes/theme/theme-comments.php', true);
 locate_template('/includes/admin/libs/execute-libs.php', true);
 
 locate_template('/includes/theme/theme-function.php', true);
-locate_template('/includes/theme/theme-profile.php', true);
 locate_template('/includes/theme/theme-inlinestyles.php', true);
 locate_template('/includes/theme/theme-sidebars.php', true);
 

@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zoner Real Estate WordPress Theme\n"
-"POT-Creation-Date: 2016-03-10 10:11+0200\n"
+"POT-Creation-Date: 2016-03-15 17:34+0200\n"
 "PO-Revision-Date: \n"
 "Last-Translator: fruitfulcode <mail@fruitfulcode.com>\n"
 "Language-Team: \n"
@@ -9,7 +9,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.8.5\n"
+"X-Generator: Poedit 1.8.7\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
@@ -93,7 +93,7 @@ msgstr "Uw boodschap"
 msgid "Pages:"
 msgstr "Pagina"
 
-#: content-page.php:58 includes/theme/theme-function.php:965
+#: content-page.php:58 includes/theme/theme-function.php:952
 msgid "Edit"
 msgstr "Aanpassen"
 
@@ -250,18 +250,20 @@ msgstr[1] "Dit thema raad de volgende plugins aan: %1$s."
 #, php-format
 msgid ""
 "Sorry, but you do not have the correct permissions to install the %s plugin. "
-"Contact the administrator of this site for help on getting the plugin installed."
+"Contact the administrator of this site for help on getting the plugin "
+"installed."
 msgid_plural ""
-"Sorry, but you do not have the correct permissions to install the %s plugins. "
-"Contact the administrator of this site for help on getting the plugins installed."
+"Sorry, but you do not have the correct permissions to install the %s "
+"plugins. Contact the administrator of this site for help on getting the "
+"plugins installed."
 msgstr[0] ""
 "Sorry, maar u hebt niet voldoende rechten om de plugin %s te installeren. "
-"Contacteer de beheerder van deze site voor hulp om de plugin geinstalleerd te "
-"krijgen."
+"Contacteer de beheerder van deze site voor hulp om de plugin geinstalleerd "
+"te krijgen."
 msgstr[1] ""
 "Sorry, maar u hebt niet voldoende rechten om de plugins %s te installeren. "
-"Contacteer de beheerder van deze site voor hulp om de plugins geinstalleerd te "
-"krijgen."
+"Contacteer de beheerder van deze site voor hulp om de plugins geinstalleerd "
+"te krijgen."
 
 #: includes/admin/libs/tgm/class-tgm-init.php:77
 #: includes/admin/libs/tgm/class-tgm-plugin-activation.php:368
@@ -282,47 +284,52 @@ msgstr[1] "De volgende aanbevolen plugins zijn momenteel inactive: %1$s."
 #: includes/admin/libs/tgm/class-tgm-init.php:79
 #, php-format
 msgid ""
-"Sorry, but you do not have the correct permissions to activate the %s plugin. "
-"Contact the administrator of this site for help on getting the plugin activated."
+"Sorry, but you do not have the correct permissions to activate the %s "
+"plugin. Contact the administrator of this site for help on getting the "
+"plugin activated."
 msgid_plural ""
-"Sorry, but you do not have the correct permissions to activate the %s plugins. "
-"Contact the administrator of this site for help on getting the plugins activated."
+"Sorry, but you do not have the correct permissions to activate the %s "
+"plugins. Contact the administrator of this site for help on getting the "
+"plugins activated."
 msgstr[0] ""
 "Sorry, maar u hebt niet juiste rechten om de plugin %s te installeren. "
-"Contacteer de beheerder van deze site voor hulp om de plugin geinstalleerd te "
-"krijgen."
+"Contacteer de beheerder van deze site voor hulp om de plugin geinstalleerd "
+"te krijgen."
 msgstr[1] ""
 "Sorry, maar u hebt niet juiste rechten om de plugins %s te installeren. "
-"Contacteer de beheerder van deze site voor hulp om de plugins geinstalleerd te "
-"krijgen."
+"Contacteer de beheerder van deze site voor hulp om de plugins geinstalleerd "
+"te krijgen."
 
 #: includes/admin/libs/tgm/class-tgm-init.php:80
 #: includes/admin/libs/tgm/class-tgm-plugin-activation.php:353
 #, php-format
 msgid ""
-"The following plugin needs to be updated to its latest version to ensure maximum "
-"compatibility with this theme: %1$s."
+"The following plugin needs to be updated to its latest version to ensure "
+"maximum compatibility with this theme: %1$s."
 msgid_plural ""
 "The following plugins need to be updated to their latest version to ensure "
 "maximum compatibility with this theme: %1$s."
 msgstr[0] ""
-"De volgende plugin moeten geupdated worden naar zijn meest recente versie om de "
-"maximum compatibiliteit met dit thema te garanderen: %1$s."
+"De volgende plugin moeten geupdated worden naar zijn meest recente versie om "
+"de maximum compatibiliteit met dit thema te garanderen: %1$s."
 msgstr[1] ""
-"De volgende plugins moeten geupdated worden naar hun meest recente versie om de "
-"maximum compatibiliteit met dit thema te garanderen: %1$s."
+"De volgende plugins moeten geupdated worden naar hun meest recente versie om "
+"de maximum compatibiliteit met dit thema te garanderen: %1$s."
 
 #: includes/admin/libs/tgm/class-tgm-init.php:81
 #, php-format
 msgid ""
 "Sorry, but you do not have the correct permissions to update the %s plugin. "
-"Contact the administrator of this site for help on getting the plugin updated."
+"Contact the administrator of this site for help on getting the plugin "
+"updated."
 msgid_plural ""
 "Sorry, but you do not have the correct permissions to update the %s plugins. "
-"Contact the administrator of this site for help on getting the plugins updated."
+"Contact the administrator of this site for help on getting the plugins "
+"updated."
 msgstr[0] ""
-"Sorry, maar u hebt niet voldoende rechten om de plugin %s te updaten. Contacteer "
-"de beheerder van deze site voor hulp om de plugin geupdated te krijgen."
+"Sorry, maar u hebt niet voldoende rechten om de plugin %s te updaten. "
+"Contacteer de beheerder van deze site voor hulp om de plugin geupdated te "
+"krijgen."
 msgstr[1] ""
 "Sorry, maar u hebt niet voldoende rechten om de plugins %s te updaten. "
 "Contacteer de beheerder van deze site voor hulp om de plugins geupdated te "
@@ -361,9 +368,11 @@ msgstr "Alle plugin zijn met succes geinstalleerd en geactiveerd.  %s"
 #: includes/admin/libs/tgm/class-tgm-plugin-activation.php:348
 #, php-format
 msgid ""
-"Sorry, but you do not have the correct permissions to install the %1$s plugin."
+"Sorry, but you do not have the correct permissions to install the %1$s "
+"plugin."
 msgid_plural ""
-"Sorry, but you do not have the correct permissions to install the %1$s plugins."
+"Sorry, but you do not have the correct permissions to install the %1$s "
+"plugins."
 msgstr[0] ""
 msgstr[1] ""
 
@@ -379,16 +388,19 @@ msgstr[1] ""
 msgid ""
 "Sorry, but you do not have the correct permissions to update the %1$s plugin."
 msgid_plural ""
-"Sorry, but you do not have the correct permissions to update the %1$s plugins."
+"Sorry, but you do not have the correct permissions to update the %1$s "
+"plugins."
 msgstr[0] ""
 msgstr[1] ""
 
 #: includes/admin/libs/tgm/class-tgm-plugin-activation.php:378
 #, php-format
 msgid ""
-"Sorry, but you do not have the correct permissions to activate the %1$s plugin."
+"Sorry, but you do not have the correct permissions to activate the %1$s "
+"plugin."
 msgid_plural ""
-"Sorry, but you do not have the correct permissions to activate the %1$s plugins."
+"Sorry, but you do not have the correct permissions to activate the %1$s "
+"plugins."
 msgstr[0] ""
 msgstr[1] ""
 
@@ -417,8 +429,8 @@ msgstr ""
 #: includes/admin/libs/tgm/class-tgm-plugin-activation.php:402
 #, php-format
 msgid ""
-"Plugin not activated. A higher version of %s is needed for this theme. Please "
-"update the plugin."
+"Plugin not activated. A higher version of %s is needed for this theme. "
+"Please update the plugin."
 msgstr ""
 
 #: includes/admin/libs/tgm/class-tgm-plugin-activation.php:403
@@ -453,8 +465,8 @@ msgstr "Terug naar dashboard"
 
 #: includes/admin/libs/tgm/class-tgm-plugin-activation.php:935
 msgid ""
-"The remote plugin package does not contain a folder with the desired slug and "
-"renaming did not work."
+"The remote plugin package does not contain a folder with the desired slug "
+"and renaming did not work."
 msgstr ""
 
 #: includes/admin/libs/tgm/class-tgm-plugin-activation.php:935
@@ -466,8 +478,8 @@ msgstr ""
 
 #: includes/admin/libs/tgm/class-tgm-plugin-activation.php:938
 msgid ""
-"The remote plugin package consists of more than one file, but the files are not "
-"packaged in a folder."
+"The remote plugin package consists of more than one file, but the files are "
+"not packaged in a folder."
 msgstr ""
 
 #: includes/admin/libs/tgm/class-tgm-plugin-activation.php:1116
@@ -676,8 +688,8 @@ msgstr ""
 #, php-format
 msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
 msgstr ""
-"Een fout heeft zich voorgedaan tijdens de installatie van %1$s: <strong>%2$s</"
-"strong>."
+"Een fout heeft zich voorgedaan tijdens de installatie van %1$s: <strong>"
+"%2$s</strong>."
 
 #: includes/admin/libs/tgm/class-tgm-plugin-activation.php:3365
 #, php-format
@@ -738,566 +750,567 @@ msgstr "Alle installaties werden vervolledigd."
 msgid "Installing Plugin %1$s (%2$d/%3$d)"
 msgstr "Plugin %1$s aan het installeren (%2$d/%3$d)"
 
-#: includes/admin/zoner-options/admin-config.php:54
+#: includes/admin/zoner-options/admin-config.php:56
 msgid "Section via hook"
 msgstr "Sectie via hook"
 
-#: includes/admin/zoner-options/admin-config.php:55
+#: includes/admin/zoner-options/admin-config.php:57
 msgid ""
 "<p class=\"description\">This is a section created by adding a filter to the "
 "sections array. Can be used by child themes to add/remove sections from the "
 "options.</p>"
 msgstr ""
-"<p class=\"omschrijving\">Dit is een sectie aangemaakt door een filter toe te "
-"voegen aan de sectie ruimte. Kan gebruikt worden door kind thema's om secties "
-"van de opties toe te voegen/verwijderen.</p>"
+"<p class=\"omschrijving\">Dit is een sectie aangemaakt door een filter toe "
+"te voegen aan de sectie ruimte. Kan gebruikt worden door kind thema's om "
+"secties van de opties toe te voegen/verwijderen.</p>"
 
-#: includes/admin/zoner-options/admin-config.php:102
+#: includes/admin/zoner-options/admin-config.php:95
 #, php-format
 msgid "Customize &#8220;%s&#8221;"
 msgstr "Customiseer &#8220;%s&#8221;"
 
-#: includes/admin/zoner-options/admin-config.php:110
-#: includes/admin/zoner-options/admin-config.php:113
+#: includes/admin/zoner-options/admin-config.php:103
+#: includes/admin/zoner-options/admin-config.php:106
 msgid "Current theme preview"
 msgstr "Huidig thema preview"
 
-#: includes/admin/zoner-options/admin-config.php:120
+#: includes/admin/zoner-options/admin-config.php:113
 #, php-format
 msgid "By %s"
 msgstr "Door %s"
 
-#: includes/admin/zoner-options/admin-config.php:121
+#: includes/admin/zoner-options/admin-config.php:114
 #, php-format
 msgid "Version %s"
 msgstr "Versie %s"
 
-#: includes/admin/zoner-options/admin-config.php:122
+#: includes/admin/zoner-options/admin-config.php:115
 msgid "Tags"
 msgstr "Tags"
 
-#: includes/admin/zoner-options/admin-config.php:127
+#: includes/admin/zoner-options/admin-config.php:120
 #, php-format
 msgid "This <a href=\"%1$s\">child theme</a> requires its parent theme, %2$s."
-msgstr "Dit <a href=\"%1$s\">kind thema</a> heeft een ouderlijk thema nodig, %2$s."
+msgstr ""
+"Dit <a href=\"%1$s\">kind thema</a> heeft een ouderlijk thema nodig, %2$s."
 
-#: includes/admin/zoner-options/admin-config.php:127
+#: includes/admin/zoner-options/admin-config.php:120
 msgid "http://codex.wordpress.org/Child_Themes"
 msgstr "http://codex.wordpress.org/Child_Themes"
 
-#: includes/admin/zoner-options/admin-config.php:153
+#: includes/admin/zoner-options/admin-config.php:146
 msgid "General"
 msgstr "Algemeen"
 
-#: includes/admin/zoner-options/admin-config.php:160
+#: includes/admin/zoner-options/admin-config.php:153
 msgid "Enhanced scrolling"
 msgstr "Geadvanceerd scrolling"
 
-#: includes/admin/zoner-options/admin-config.php:161
+#: includes/admin/zoner-options/admin-config.php:154
 msgid "Select to enable scrolling library."
 msgstr "Selecteer om scrolling bibliotheek te activeren."
 
-#: includes/admin/zoner-options/admin-config.php:162
-#: includes/admin/zoner-options/admin-config.php:229
-#: includes/admin/zoner-options/admin-config.php:237
-#: includes/admin/zoner-options/admin-config.php:245
-#: includes/admin/zoner-options/admin-config.php:253
-#: includes/admin/zoner-options/admin-config.php:492
+#: includes/admin/zoner-options/admin-config.php:155
+#: includes/admin/zoner-options/admin-config.php:222
+#: includes/admin/zoner-options/admin-config.php:230
+#: includes/admin/zoner-options/admin-config.php:238
+#: includes/admin/zoner-options/admin-config.php:246
+#: includes/admin/zoner-options/admin-config.php:485
 msgid "Yes"
 msgstr "Ja"
 
-#: includes/admin/zoner-options/admin-config.php:171
+#: includes/admin/zoner-options/admin-config.php:164
 msgid "Blog options"
 msgstr "Blog opties"
 
-#: includes/admin/zoner-options/admin-config.php:178
+#: includes/admin/zoner-options/admin-config.php:171
 msgid "Display Comments"
 msgstr "Toon commentaren"
 
-#: includes/admin/zoner-options/admin-config.php:179
+#: includes/admin/zoner-options/admin-config.php:172
 msgid "Choose where users are allowed to post comment in your website."
 msgstr ""
 "Kies waar het gebruikers toegestaan is om te becommentarieren op uw website."
 
-#: includes/admin/zoner-options/admin-config.php:183
+#: includes/admin/zoner-options/admin-config.php:176
 msgid "Posts Only"
 msgstr "Enkels posts"
 
-#: includes/admin/zoner-options/admin-config.php:184
+#: includes/admin/zoner-options/admin-config.php:177
 msgid "Pages Only"
 msgstr "Enkel pagina's"
 
-#: includes/admin/zoner-options/admin-config.php:185
+#: includes/admin/zoner-options/admin-config.php:178
 msgid "Posts/Pages show"
 msgstr "Toon posts/pagina's"
 
-#: includes/admin/zoner-options/admin-config.php:186
+#: includes/admin/zoner-options/admin-config.php:179
 msgid "Hide all"
 msgstr "Verberg alles"
 
-#: includes/admin/zoner-options/admin-config.php:193
+#: includes/admin/zoner-options/admin-config.php:186
 msgid "Select Post Preview"
 msgstr ""
 
-#: includes/admin/zoner-options/admin-config.php:194
+#: includes/admin/zoner-options/admin-config.php:187
 msgid "Select showing full post, excerpt or title only"
 msgstr ""
 
-#: includes/admin/zoner-options/admin-config.php:196
+#: includes/admin/zoner-options/admin-config.php:189
 msgid "Full post (before <-more->)"
 msgstr ""
 
-#: includes/admin/zoner-options/admin-config.php:197
+#: includes/admin/zoner-options/admin-config.php:190
 msgid "Excerpt"
 msgstr ""
 
-#: includes/admin/zoner-options/admin-config.php:198
+#: includes/admin/zoner-options/admin-config.php:191
 msgid "Only Title"
 msgstr ""
 
-#: includes/admin/zoner-options/admin-config.php:207
+#: includes/admin/zoner-options/admin-config.php:200
 msgid "Number of words"
 msgstr ""
 
-#: includes/admin/zoner-options/admin-config.php:208
+#: includes/admin/zoner-options/admin-config.php:201
 msgid "Type number of words for excerpt"
 msgstr ""
 
-#: includes/admin/zoner-options/admin-config.php:214
+#: includes/admin/zoner-options/admin-config.php:207
 msgid "Single post layout"
 msgstr "Enkele post layout"
 
-#: includes/admin/zoner-options/admin-config.php:215
-#: includes/admin/zoner-options/admin-config.php:970
+#: includes/admin/zoner-options/admin-config.php:208
+#: includes/admin/zoner-options/admin-config.php:963
 msgid "Select main content and sidebar alignment."
 msgstr "Selecteer hoofdinhoud en zijbalk opstelling."
 
-#: includes/admin/zoner-options/admin-config.php:226
+#: includes/admin/zoner-options/admin-config.php:219
 msgid "Display date for posts"
 msgstr "Toon datums van de post items."
 
-#: includes/admin/zoner-options/admin-config.php:234
+#: includes/admin/zoner-options/admin-config.php:227
 msgid "Display thumbnails for posts"
 msgstr "Toon thumbnails voor post items"
 
-#: includes/admin/zoner-options/admin-config.php:242
+#: includes/admin/zoner-options/admin-config.php:235
 msgid "Display tags for posts"
 msgstr "Toon tags voor post items"
 
-#: includes/admin/zoner-options/admin-config.php:250
+#: includes/admin/zoner-options/admin-config.php:243
 msgid "Display authors for posts"
 msgstr "Toon auteurs voor post items"
 
-#: includes/admin/zoner-options/admin-config.php:260
+#: includes/admin/zoner-options/admin-config.php:253
 msgid "Styling"
 msgstr "Stilering"
 
-#: includes/admin/zoner-options/admin-config.php:268
+#: includes/admin/zoner-options/admin-config.php:261
 msgid "Body Background"
 msgstr "Kern achtergrond"
 
-#: includes/admin/zoner-options/admin-config.php:269
+#: includes/admin/zoner-options/admin-config.php:262
 msgid "Body background with image, color, etc."
 msgstr "Kern achtergrond met afbeelding, kleur, etc."
 
-#: includes/admin/zoner-options/admin-config.php:284
+#: includes/admin/zoner-options/admin-config.php:277
 msgid "Color Scheme"
 msgstr ""
 
-#: includes/admin/zoner-options/admin-config.php:285
+#: includes/admin/zoner-options/admin-config.php:278
 msgid "Choose main color scheme."
 msgstr ""
 
-#: includes/admin/zoner-options/admin-config.php:290
+#: includes/admin/zoner-options/admin-config.php:283
 msgid "Blue"
 msgstr ""
 
-#: includes/admin/zoner-options/admin-config.php:310
+#: includes/admin/zoner-options/admin-config.php:303
 msgid "Brown"
 msgstr ""
 
-#: includes/admin/zoner-options/admin-config.php:330
+#: includes/admin/zoner-options/admin-config.php:323
 msgid "Green"
 msgstr ""
 
-#: includes/admin/zoner-options/admin-config.php:349
+#: includes/admin/zoner-options/admin-config.php:342
 msgid "Grey"
 msgstr ""
 
-#: includes/admin/zoner-options/admin-config.php:369
+#: includes/admin/zoner-options/admin-config.php:362
 msgid "Magenta"
 msgstr ""
 
-#: includes/admin/zoner-options/admin-config.php:389
+#: includes/admin/zoner-options/admin-config.php:382
 msgid "Orange"
 msgstr ""
 
-#: includes/admin/zoner-options/admin-config.php:409
+#: includes/admin/zoner-options/admin-config.php:402
 msgid "Red"
 msgstr ""
 
-#: includes/admin/zoner-options/admin-config.php:429
+#: includes/admin/zoner-options/admin-config.php:422
 msgid "Violet"
 msgstr ""
 
-#: includes/admin/zoner-options/admin-config.php:462
+#: includes/admin/zoner-options/admin-config.php:455
 msgid "Header background color"
 msgstr "Header achtergrondskleur"
 
-#: includes/admin/zoner-options/admin-config.php:471
-#: includes/theme/theme-function.php:588
+#: includes/admin/zoner-options/admin-config.php:464
+#: includes/theme/theme-function.php:578
 msgid "Phone"
 msgstr "Telefoon"
 
-#: includes/admin/zoner-options/admin-config.php:472
+#: includes/admin/zoner-options/admin-config.php:465
 msgid "Edit phone"
 msgstr "Aanpassen telefoon"
 
-#: includes/admin/zoner-options/admin-config.php:479
-#: includes/theme/theme-function.php:591 includes/theme/theme-profile.php:140
+#: includes/admin/zoner-options/admin-config.php:472
+#: includes/theme/theme-function.php:519 includes/theme/theme-function.php:581
 msgid "Email"
 msgstr "Email"
 
-#: includes/admin/zoner-options/admin-config.php:480
+#: includes/admin/zoner-options/admin-config.php:473
 msgid "Edit email"
 msgstr "Aanpassen email"
 
-#: includes/admin/zoner-options/admin-config.php:490
+#: includes/admin/zoner-options/admin-config.php:483
 msgid "WPML box"
 msgstr "WPML vak"
 
-#: includes/admin/zoner-options/admin-config.php:491
+#: includes/admin/zoner-options/admin-config.php:484
 msgid "Select to enable WPML box."
 msgstr "Selecteer om WPML vak te activeren"
 
-#: includes/admin/zoner-options/admin-config.php:503
+#: includes/admin/zoner-options/admin-config.php:496
 msgid "Header"
 msgstr "Header"
 
-#: includes/admin/zoner-options/admin-config.php:511
+#: includes/admin/zoner-options/admin-config.php:504
 msgid "Slider"
 msgstr ""
 
-#: includes/admin/zoner-options/admin-config.php:519
+#: includes/admin/zoner-options/admin-config.php:512
 msgid "Slider on \"Home\" page"
 msgstr ""
 
-#: includes/admin/zoner-options/admin-config.php:529
+#: includes/admin/zoner-options/admin-config.php:522
 msgid "Slides"
 msgstr ""
 
-#: includes/admin/zoner-options/admin-config.php:530
+#: includes/admin/zoner-options/admin-config.php:523
 msgid "Add slides to slider"
 msgstr ""
 
-#: includes/admin/zoner-options/admin-config.php:532
+#: includes/admin/zoner-options/admin-config.php:525
 msgid "This is a title"
 msgstr ""
 
-#: includes/admin/zoner-options/admin-config.php:533
+#: includes/admin/zoner-options/admin-config.php:526
 msgid "Description Here"
 msgstr ""
 
-#: includes/admin/zoner-options/admin-config.php:534
+#: includes/admin/zoner-options/admin-config.php:527
 msgid "Url"
 msgstr ""
 
-#: includes/admin/zoner-options/admin-config.php:545
+#: includes/admin/zoner-options/admin-config.php:538
 msgid "Menu"
 msgstr "Menu"
 
-#: includes/admin/zoner-options/admin-config.php:553
+#: includes/admin/zoner-options/admin-config.php:546
 msgid "Menu item color"
 msgstr "Menu item kleur"
 
-#: includes/admin/zoner-options/admin-config.php:563
+#: includes/admin/zoner-options/admin-config.php:556
 msgid "Submenu item color"
 msgstr "Submenu item kleur"
 
-#: includes/admin/zoner-options/admin-config.php:574
+#: includes/admin/zoner-options/admin-config.php:567
 msgid "Submenu item background color"
 msgstr "Submenu item achtergrondkleur"
 
-#: includes/admin/zoner-options/admin-config.php:585
+#: includes/admin/zoner-options/admin-config.php:578
 msgid "Submenu background color"
 msgstr "Submenu achtergrondkleur"
 
-#: includes/admin/zoner-options/admin-config.php:594
+#: includes/admin/zoner-options/admin-config.php:587
 msgid "Submenu item border color"
 msgstr "Submenu item randkleur"
 
-#: includes/admin/zoner-options/admin-config.php:604
+#: includes/admin/zoner-options/admin-config.php:597
 msgid "Menu underline item color."
 msgstr "Menu onderlijning item kleur."
 
-#: includes/admin/zoner-options/admin-config.php:614
+#: includes/admin/zoner-options/admin-config.php:607
 msgid "Font styles"
 msgstr "Fontstijlen"
 
-#: includes/admin/zoner-options/admin-config.php:621
+#: includes/admin/zoner-options/admin-config.php:614
 msgid "General Text Font Style"
 msgstr "Algemene textfontstijl"
 
-#: includes/admin/zoner-options/admin-config.php:629
+#: includes/admin/zoner-options/admin-config.php:622
 msgid "Select typography for general text."
 msgstr "Selecteer typografie for algemene tekst"
 
-#: includes/admin/zoner-options/admin-config.php:642
+#: includes/admin/zoner-options/admin-config.php:635
 msgid "H1 Font Style."
 msgstr "H1 Fontstijl"
 
-#: includes/admin/zoner-options/admin-config.php:650
+#: includes/admin/zoner-options/admin-config.php:643
 msgid "Select the typography you want for header H1."
 msgstr "Kies de typografie die u wenst voor hoofd H1."
 
-#: includes/admin/zoner-options/admin-config.php:663
+#: includes/admin/zoner-options/admin-config.php:656
 msgid "H2 Font Style."
 msgstr "H2 Fontstijl"
 
-#: includes/admin/zoner-options/admin-config.php:671
+#: includes/admin/zoner-options/admin-config.php:664
 msgid "Select the typography you want for header H2."
 msgstr "Kies de typografie die u wenst voor hoofd H2."
 
-#: includes/admin/zoner-options/admin-config.php:684
+#: includes/admin/zoner-options/admin-config.php:677
 msgid "H3 Font Style."
 msgstr "H3 Fontstijl"
 
-#: includes/admin/zoner-options/admin-config.php:692
+#: includes/admin/zoner-options/admin-config.php:685
 msgid "Select the typography you want for header H3."
 msgstr "Kies de typografie die u wenst voor hoofd H3."
 
-#: includes/admin/zoner-options/admin-config.php:706
+#: includes/admin/zoner-options/admin-config.php:699
 msgid "H4 Font Style."
 msgstr "H4 Fontstijl"
 
-#: includes/admin/zoner-options/admin-config.php:714
+#: includes/admin/zoner-options/admin-config.php:707
 msgid "Select the typography you want for header H4."
 msgstr "Kies de typografie die u wenst voor hoofd H4."
 
-#: includes/admin/zoner-options/admin-config.php:727
+#: includes/admin/zoner-options/admin-config.php:720
 msgid "H5 Font Style."
 msgstr "H5 Fontstijl"
 
-#: includes/admin/zoner-options/admin-config.php:735
+#: includes/admin/zoner-options/admin-config.php:728
 msgid "Select the typography you want for header H5."
 msgstr "Kies de typografie die u wenst voor hoofd H5."
 
-#: includes/admin/zoner-options/admin-config.php:749
+#: includes/admin/zoner-options/admin-config.php:742
 msgid "H6 Font Style."
 msgstr "H6 Fontstijl"
 
-#: includes/admin/zoner-options/admin-config.php:757
+#: includes/admin/zoner-options/admin-config.php:750
 msgid "Select the typography you want for header H6."
 msgstr "Kies de typografie die u wenst voor hoofd H6."
 
-#: includes/admin/zoner-options/admin-config.php:771
+#: includes/admin/zoner-options/admin-config.php:764
 msgid "\"p\" Font Style."
 msgstr "\"p\" Fontstijl."
 
-#: includes/admin/zoner-options/admin-config.php:779
+#: includes/admin/zoner-options/admin-config.php:772
 msgid "Select the typography you want for tag \"p\"."
 msgstr "Selecteer de typografie die u wenst voor tag  \"p\"."
 
-#: includes/admin/zoner-options/admin-config.php:796
+#: includes/admin/zoner-options/admin-config.php:789
 msgid "Transparency for content"
 msgstr "Transparant voor inhoud"
 
-#: includes/admin/zoner-options/admin-config.php:797
+#: includes/admin/zoner-options/admin-config.php:790
 msgid "Set the opacity for the content part"
 msgstr "Zet de opaciteit voor het inhoudstuk"
 
-#: includes/admin/zoner-options/admin-config.php:809
+#: includes/admin/zoner-options/admin-config.php:802
 msgid "Link style."
 msgstr "Link style."
 
-#: includes/admin/zoner-options/admin-config.php:810
+#: includes/admin/zoner-options/admin-config.php:803
 msgid "Select the typography you want for tag \"a\"."
 msgstr "Selecteer de typografie die u wenst voor tag \"a\"."
 
-#: includes/admin/zoner-options/admin-config.php:825
+#: includes/admin/zoner-options/admin-config.php:818
 msgid "Social Links"
 msgstr "Sociale Links"
 
-#: includes/admin/zoner-options/admin-config.php:826
+#: includes/admin/zoner-options/admin-config.php:819
 msgid ""
 "Add link to your social media profiles. Icons with link will be display in "
 "header or footer."
 msgstr ""
-"Voeg link toe tot uw sociaal media profiel. Icons met de  link zullen in header "
-"or footer verschijnen."
+"Voeg link toe tot uw sociaal media profiel. Icons met de  link zullen in "
+"header or footer verschijnen."
 
-#: includes/admin/zoner-options/admin-config.php:833
+#: includes/admin/zoner-options/admin-config.php:826
+#: includes/theme/theme-function.php:503
 msgid "Facebook"
 msgstr "Facebook"
 
-#: includes/admin/zoner-options/admin-config.php:840
+#: includes/admin/zoner-options/admin-config.php:833
+#: includes/theme/theme-function.php:504
 msgid "Twitter"
 msgstr "Twitter"
 
-#: includes/admin/zoner-options/admin-config.php:847
+#: includes/admin/zoner-options/admin-config.php:840
 msgid "LinkedIn"
 msgstr "LinkedIn"
 
-#: includes/admin/zoner-options/admin-config.php:854
+#: includes/admin/zoner-options/admin-config.php:847
 msgid "MySpace"
 msgstr "MySpace"
 
-#: includes/admin/zoner-options/admin-config.php:861
+#: includes/admin/zoner-options/admin-config.php:854
 msgid "Google Plus+"
 msgstr "Google Plus+"
 
-#: includes/admin/zoner-options/admin-config.php:868
+#: includes/admin/zoner-options/admin-config.php:861
 msgid "Dribbble"
 msgstr "Dribbble"
 
-#: includes/admin/zoner-options/admin-config.php:875
+#: includes/admin/zoner-options/admin-config.php:868
+#: includes/theme/theme-function.php:509
 msgid "Flickr"
 msgstr "Flickr"
 
-#: includes/admin/zoner-options/admin-config.php:882
+#: includes/admin/zoner-options/admin-config.php:875
 msgid "You Tube"
 msgstr "You Tube"
 
-#: includes/admin/zoner-options/admin-config.php:889
+#: includes/admin/zoner-options/admin-config.php:882
+#: includes/theme/theme-function.php:511
 msgid "Delicious"
 msgstr "Delicious"
 
-#: includes/admin/zoner-options/admin-config.php:896
+#: includes/admin/zoner-options/admin-config.php:889
+#: includes/theme/theme-function.php:512
 msgid "Deviantart"
 msgstr "Deviantart"
 
-#: includes/admin/zoner-options/admin-config.php:903
+#: includes/admin/zoner-options/admin-config.php:896
+#: includes/theme/theme-function.php:513
 msgid "RSS"
 msgstr "RSS"
 
-#: includes/admin/zoner-options/admin-config.php:910
+#: includes/admin/zoner-options/admin-config.php:903
+#: includes/theme/theme-function.php:514
 msgid "Instagram"
 msgstr "Instagram"
 
-#: includes/admin/zoner-options/admin-config.php:917
+#: includes/admin/zoner-options/admin-config.php:910
 msgid "Pinterest"
 msgstr "Pinterest"
 
-#: includes/admin/zoner-options/admin-config.php:924
+#: includes/admin/zoner-options/admin-config.php:917
+#: includes/theme/theme-function.php:516
 msgid "Vimeo"
 msgstr "Vimeo"
 
-#: includes/admin/zoner-options/admin-config.php:931
+#: includes/admin/zoner-options/admin-config.php:924
+#: includes/theme/theme-function.php:517
 msgid "Picassa"
 msgstr "Picassa"
 
-#: includes/admin/zoner-options/admin-config.php:938
+#: includes/admin/zoner-options/admin-config.php:931
+#: includes/theme/theme-function.php:518
 msgid "Tumblr"
 msgstr "Tumblr"
 
-#: includes/admin/zoner-options/admin-config.php:945
+#: includes/admin/zoner-options/admin-config.php:938
 msgid "E-mail"
 msgstr "Email"
 
-#: includes/admin/zoner-options/admin-config.php:953
+#: includes/admin/zoner-options/admin-config.php:946
 msgid "Skype"
 msgstr "Skype"
 
-#: includes/admin/zoner-options/admin-config.php:962
+#: includes/admin/zoner-options/admin-config.php:955
 msgid "Default pages"
 msgstr "Default pagina's"
 
-#: includes/admin/zoner-options/admin-config.php:969
+#: includes/admin/zoner-options/admin-config.php:962
 msgid "Author layout"
 msgstr ""
 
-#: includes/admin/zoner-options/admin-config.php:983
+#: includes/admin/zoner-options/admin-config.php:976
 msgid "404 background."
 msgstr "404 achtergrond."
 
-#: includes/admin/zoner-options/admin-config.php:984
+#: includes/admin/zoner-options/admin-config.php:977
 msgid "Upload a background for your 404 page."
 msgstr "Laadt een achtergrond op voor 404 pagina."
 
-#: includes/admin/zoner-options/admin-config.php:991
+#: includes/admin/zoner-options/admin-config.php:984
 msgid "404 text"
 msgstr "404 tekst"
 
-#: includes/admin/zoner-options/admin-config.php:1001
+#: includes/admin/zoner-options/admin-config.php:994
 msgid "Footer"
 msgstr "Footer"
 
-#: includes/admin/zoner-options/admin-config.php:1009
+#: includes/admin/zoner-options/admin-config.php:1002
 msgid "Copyright section"
 msgstr "Copyright sectie"
 
-#: includes/admin/zoner-options/admin-config.php:1010
+#: includes/admin/zoner-options/admin-config.php:1003
 msgid "Replace default theme copyright information and links"
 msgstr "Vervang de default thema copyright info en links"
 
-#: includes/admin/zoner-options/admin-config.php:1011
-#: includes/theme/theme-function.php:497
+#: includes/admin/zoner-options/admin-config.php:1004
+#: includes/theme/theme-function.php:487
 msgid ""
-"&#169; <a title=\"WordPress Development\" href=\"http://fruitfulcode.com/"
-"\">Fruitful Code</a>, Powered by <a href=\"http://wordpress.org/\">WordPress</a>"
+"Zoner Lite theme by <a title=\"WordPress Development\" href=\"http://"
+"fruitfulcode.com/\">Fruitful Code</a>, Powered by <a href=\"http://wordpress."
+"org/\">WordPress</a>"
 msgstr ""
 
-#: includes/admin/zoner-options/admin-config.php:1017
+#: includes/admin/zoner-options/admin-config.php:1010
 msgid "Social icons"
 msgstr "Sociale icons"
 
-#: includes/admin/zoner-options/admin-config.php:1018
+#: includes/admin/zoner-options/admin-config.php:1011
 msgid "Enable social icons."
 msgstr "Activeer social icons."
 
-#: includes/admin/zoner-options/admin-config.php:1026
+#: includes/admin/zoner-options/admin-config.php:1019
 msgid "Footer column areas"
 msgstr "Footer kolomruimte"
 
-#: includes/admin/zoner-options/admin-config.php:1040
+#: includes/admin/zoner-options/admin-config.php:1033
 msgid "Footer copyright part font color"
 msgstr "Footer copyright stuk fontkleur"
 
-#: includes/admin/zoner-options/admin-config.php:1049
+#: includes/admin/zoner-options/admin-config.php:1042
 msgid "Footer copyright part background color"
 msgstr "Footer copyright stuk achtergrondskleur"
 
-#: includes/admin/zoner-options/admin-config.php:1060
+#: includes/admin/zoner-options/admin-config.php:1053
 msgid "Custom Code"
 msgstr "Custom Code"
 
-#: includes/admin/zoner-options/admin-config.php:1067
+#: includes/admin/zoner-options/admin-config.php:1060
 msgid "CSS Code"
 msgstr "CSS Code"
 
-#: includes/admin/zoner-options/admin-config.php:1068
+#: includes/admin/zoner-options/admin-config.php:1061
 msgid "Paste your CSS code here."
 msgstr "Plak uw CSS code hier."
 
-#: includes/admin/zoner-options/admin-config.php:1078
+#: includes/admin/zoner-options/admin-config.php:1071
 msgid "Import / Export"
 msgstr "Import / Export"
 
-#: includes/admin/zoner-options/admin-config.php:1079
+#: includes/admin/zoner-options/admin-config.php:1072
 msgid "Import and Export your zoner Framework settings from file, text or URL."
 msgstr ""
-"Importeer en Exporteer uw zoner Framework instellingen van file, tekst of URL."
+"Importeer en Exporteer uw zoner Framework instellingen van file, tekst of "
+"URL."
 
-#: includes/admin/zoner-options/admin-config.php:1110
-#: includes/admin/zoner-options/admin-config.php:1111
+#: includes/admin/zoner-options/admin-config.php:1103
+#: includes/admin/zoner-options/admin-config.php:1104
 msgid "Zoner options"
 msgstr "Zoner instellingen"
 
-#: includes/admin/zoner-options/admin-config.php:1142
+#: includes/admin/zoner-options/admin-config.php:1135
 msgid "Zoner Options panel created using \"Reduxe Framework\"."
 msgstr "Zoner instellingspaneel aangemaakt met \"Reduxe Framework\"."
-
-#: includes/admin/zoner-options/admin-config.php:1150
-msgid "Contact Support"
-msgstr "Contact Ondersteuning"
-
-#: includes/admin/zoner-options/admin-config.php:1151
-msgid "Documentation"
-msgstr "Documentatie"
-
-#: includes/admin/zoner-options/admin-config.php:1152
-msgid "Faq"
-msgstr "Faq"
 
 #: includes/theme/extensions/template-tags.php:27
 msgid "Previous"
@@ -1355,196 +1368,150 @@ msgstr "Uw commentaar wacht op moderatie."
 msgid "Top primary menu"
 msgstr "Topprioriteiten menu"
 
-#: includes/theme/theme-function.php:326
+#: includes/theme/theme-function.php:316
 #, php-format
 msgid "%d Article"
 msgid_plural "%d Articles"
 msgstr[0] "%d Artikel"
 msgstr[1] "%d Artikelen"
 
-#: includes/theme/theme-function.php:369
+#: includes/theme/theme-function.php:359
 msgid "Primary Navigation"
 msgstr ""
 
-#: includes/theme/theme-function.php:398 includes/theme/theme-function.php:400
-#: includes/theme/theme-function.php:401
+#: includes/theme/theme-function.php:388 includes/theme/theme-function.php:390
+#: includes/theme/theme-function.php:391
 msgid "Search"
 msgstr ""
 
-#: includes/theme/theme-function.php:399
+#: includes/theme/theme-function.php:389
 msgid "Enter Keyword"
 msgstr "Geef keyword in"
 
-#: includes/theme/theme-function.php:546
+#: includes/theme/theme-function.php:505
+msgid "Linked In"
+msgstr ""
+
+#: includes/theme/theme-function.php:506
+msgid "My space"
+msgstr ""
+
+#: includes/theme/theme-function.php:507
+msgid "Google+"
+msgstr "Google+"
+
+#: includes/theme/theme-function.php:508
+msgid "Dribble"
+msgstr ""
+
+#: includes/theme/theme-function.php:510
+msgid "YouTube"
+msgstr ""
+
+#: includes/theme/theme-function.php:515
+msgid "Pinterset"
+msgstr "Pinterset"
+
+#: includes/theme/theme-function.php:520
+msgid "Call to"
+msgstr ""
+
+#: includes/theme/theme-function.php:536
 msgid "Go to top"
 msgstr "Ga naar top"
 
-#: includes/theme/theme-function.php:598
+#: includes/theme/theme-function.php:588
 msgid "Sign Out"
 msgstr "Uitloggen"
 
-#: includes/theme/theme-function.php:687
+#: includes/theme/theme-function.php:677
 msgid "Latest posts"
 msgstr "Laatste posts"
 
-#: includes/theme/theme-function.php:692
+#: includes/theme/theme-function.php:682
 #, php-format
 msgid "Daily Archives: %s"
 msgstr "Dagelijkse archieven: %s"
 
-#: includes/theme/theme-function.php:694
+#: includes/theme/theme-function.php:684
 #, php-format
 msgid "Monthly Archives: %s"
 msgstr "Maandelijkse archieven: %s"
 
-#: includes/theme/theme-function.php:694
+#: includes/theme/theme-function.php:684
 msgctxt "monthly archives date format"
 msgid "F Y"
 msgstr "M"
 
-#: includes/theme/theme-function.php:696
+#: includes/theme/theme-function.php:686
 #, php-format
 msgid "Yearly Archives: %s"
 msgstr "Jaarlijkse archieven: %s"
 
-#: includes/theme/theme-function.php:696
+#: includes/theme/theme-function.php:686
 msgctxt "yearly archives date format"
 msgid "Y"
 msgstr "J"
 
-#: includes/theme/theme-function.php:698
+#: includes/theme/theme-function.php:688
 msgid "Archives"
 msgstr "Archieven"
 
-#: includes/theme/theme-function.php:704
+#: includes/theme/theme-function.php:694
 #, php-format
 msgid "Category: %s"
 msgstr "Categorie: %s"
 
-#: includes/theme/theme-function.php:705
+#: includes/theme/theme-function.php:695
 #, php-format
 msgid "Search Results for: %s"
 msgstr "Zoekresultaten voor: %s"
 
-#: includes/theme/theme-function.php:706
+#: includes/theme/theme-function.php:696
 #, php-format
 msgid "Tag Archives: %s"
 msgstr "Tag Archieven: %s"
 
-#: includes/theme/theme-function.php:722
+#: includes/theme/theme-function.php:712
 msgid "Nothing Found"
 msgstr "Niets gevonden"
 
-#: includes/theme/theme-function.php:881
+#: includes/theme/theme-function.php:869
 #, php-format
 msgid "All posts by \"%s\""
 msgstr "Alle posts door \"%s\""
 
-#: includes/theme/theme-function.php:977
+#: includes/theme/theme-function.php:964
 #, php-format
-msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
-msgstr "Klaar om je eerste post te publiceren? <a href=\"%1$s\">Hier starten</a>."
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+"Klaar om je eerste post te publiceren? <a href=\"%1$s\">Hier starten</a>."
 
-#: includes/theme/theme-function.php:979
+#: includes/theme/theme-function.php:966
 msgid ""
 "Sorry, but nothing matched your search terms. Please try again with some "
 "different keywords."
 msgstr ""
-"Sorry, maar niets gevonden met deze zoektermen. Geleive opnieuw te proberen met "
-"andere trefwoorden."
+"Sorry, maar niets gevonden met deze zoektermen. Geleive opnieuw te proberen "
+"met andere trefwoorden."
 
-#: includes/theme/theme-function.php:982
+#: includes/theme/theme-function.php:969
 msgid ""
-"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching "
-"can help."
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
 msgstr ""
 "Het lijkt erop dat we niet kunnen vinden wat u zoekt. Misschien kan zoeken "
 "helpen."
 
-#: includes/theme/theme-function.php:997
+#: includes/theme/theme-function.php:983
 msgid "About the Author"
 msgstr "Over de auteur"
 
-#: includes/theme/theme-function.php:1040 includes/theme/theme-function.php:1060
+#: includes/theme/theme-function.php:1026
+#: includes/theme/theme-function.php:1045
 msgid "Read More"
 msgstr "Lees meer"
-
-#: includes/theme/theme-profile.php:6 includes/theme/theme-profile.php:106
-msgid "Profile"
-msgstr "Profiel"
-
-#: includes/theme/theme-profile.php:11
-msgid "Account"
-msgstr "Account"
-
-#: includes/theme/theme-profile.php:121
-msgid "image size has to be less than 1 MB"
-msgstr "Afbeeldingsgroote moet kleiner zijn dan 1MB."
-
-#: includes/theme/theme-profile.php:122
-msgid "Upload Avatar"
-msgstr "Opladen Avatar"
-
-#: includes/theme/theme-profile.php:128
-msgid "Contact"
-msgstr "Contact"
-
-#: includes/theme/theme-profile.php:130
-msgid "First Name"
-msgstr "Voornaam"
-
-#: includes/theme/theme-profile.php:135
-msgid "Last Name"
-msgstr "Achternaam"
-
-#: includes/theme/theme-profile.php:147
-msgid "About Me"
-msgstr "Over mij"
-
-#: includes/theme/theme-profile.php:149
-msgid "About me"
-msgstr ""
-
-#: includes/theme/theme-profile.php:153
-msgid "Save Changes"
-msgstr "Opslaan aanpassingen"
-
-#: includes/theme/theme-profile.php:162
-msgid "Change Your Password"
-msgstr "Verander uw paswoord"
-
-#: includes/theme/theme-profile.php:168
-msgid "Current Password"
-msgstr "Huidig paswoord"
-
-#: includes/theme/theme-profile.php:172
-msgid "New Password"
-msgstr "Nieuw paswoord"
-
-#: includes/theme/theme-profile.php:176
-msgid "Confirm New Password"
-msgstr "Bevestig nieuw paswoord"
-
-#: includes/theme/theme-profile.php:180
-msgid "Change Password"
-msgstr "Verander paswoord"
-
-#: includes/theme/theme-profile.php:186
-msgid "Hint"
-msgstr "Hint"
-
-#: includes/theme/theme-profile.php:187
-msgid ""
-"Be careful. After you change the password, the password is automatically applied."
-msgstr ""
-"Voorzichtig. Nadat u uw paswoord hebt aangepast, is het passwoord automatisch "
-"van kracht."
-
-#: includes/theme/theme-profile.php:188
-msgid ""
-"If you don't have a current password you can sign out and reset your password at "
-"sign in page."
-msgstr ""
 
 #: includes/theme/theme-sidebars.php:12
 msgid "Blog sidebar"
@@ -1572,6 +1539,67 @@ msgstr "Footer ruimte %d"
 msgid "Widgetized footer area %d."
 msgstr "Widget-gestuurde  footer ruimte %d."
 
+#~ msgid "Contact Support"
+#~ msgstr "Contact Ondersteuning"
+
+#~ msgid "Documentation"
+#~ msgstr "Documentatie"
+
+#~ msgid "Faq"
+#~ msgstr "Faq"
+
+#~ msgid "Profile"
+#~ msgstr "Profiel"
+
+#~ msgid "Account"
+#~ msgstr "Account"
+
+#~ msgid "image size has to be less than 1 MB"
+#~ msgstr "Afbeeldingsgroote moet kleiner zijn dan 1MB."
+
+#~ msgid "Upload Avatar"
+#~ msgstr "Opladen Avatar"
+
+#~ msgid "Contact"
+#~ msgstr "Contact"
+
+#~ msgid "First Name"
+#~ msgstr "Voornaam"
+
+#~ msgid "Last Name"
+#~ msgstr "Achternaam"
+
+#~ msgid "About Me"
+#~ msgstr "Over mij"
+
+#~ msgid "Save Changes"
+#~ msgstr "Opslaan aanpassingen"
+
+#~ msgid "Change Your Password"
+#~ msgstr "Verander uw paswoord"
+
+#~ msgid "Current Password"
+#~ msgstr "Huidig paswoord"
+
+#~ msgid "New Password"
+#~ msgstr "Nieuw paswoord"
+
+#~ msgid "Confirm New Password"
+#~ msgstr "Bevestig nieuw paswoord"
+
+#~ msgid "Change Password"
+#~ msgstr "Verander paswoord"
+
+#~ msgid "Hint"
+#~ msgstr "Hint"
+
+#~ msgid ""
+#~ "Be careful. After you change the password, the password is automatically "
+#~ "applied."
+#~ msgstr ""
+#~ "Voorzichtig. Nadat u uw paswoord hebt aangepast, is het passwoord "
+#~ "automatisch van kracht."
+
 #~ msgid "Logo"
 #~ msgstr "Logo"
 
@@ -1587,18 +1615,18 @@ msgstr "Widget-gestuurde  footer ruimte %d."
 #~ "Upload your Retina Logo. This should be your Logo in double size (If your "
 #~ "logo is 100 x 20px, it should be 200 x 40px)"
 #~ msgstr ""
-#~ "Laadt uw Retina Logo op. Dit zou uw logo moeten zijn in dubbele grootte. (If "
-#~ "your logo is 100 x 20px, it should be 200 x 40px)"
+#~ "Laadt uw Retina Logo op. Dit zou uw logo moeten zijn in dubbele grootte. "
+#~ "(If your logo is 100 x 20px, it should be 200 x 40px)"
 
 #~ msgid "Original Logo (Width/Height)"
 #~ msgstr "Origineel Logo (Breedte/Hoogte)"
 
 #~ msgid ""
-#~ "If Retina Logo uploaded, please enter the (width/height) of the Standard Logo "
-#~ "you've uploaded (not the Retina Logo)"
+#~ "If Retina Logo uploaded, please enter the (width/height) of the Standard "
+#~ "Logo you've uploaded (not the Retina Logo)"
 #~ msgstr ""
-#~ "Als Retina Logo is opgeladen, Gelieve (breedte/hoogte) in te geven van het "
-#~ "standaard logo dat opgeladen is (niet het Retina Logo)"
+#~ "Als Retina Logo is opgeladen, Gelieve (breedte/hoogte) in te geven van "
+#~ "het standaard logo dat opgeladen is (niet het Retina Logo)"
 
 #~ msgid "User Profile"
 #~ msgstr "Gebruikersprofiel"
@@ -1655,15 +1683,17 @@ msgstr "Widget-gestuurde  footer ruimte %d."
 #~ "No plugins to install or activate. <a href=\"%1$s\" title=\"Return to the "
 #~ "Dashboard\">Return to the Dashboard</a>"
 #~ msgstr ""
-#~ "Geen plugins te installeren of activeren. <a href=\"%1$s\" title=\"Terug naar "
-#~ "Dashboard\">Terug naar Dashboard</a>"
+#~ "Geen plugins te installeren of activeren. <a href=\"%1$s\" title=\"Terug "
+#~ "naar Dashboard\">Terug naar Dashboard</a>"
 
 #~ msgid "Install package not available."
 #~ msgstr "Installatie van pakket niet beschikbaar."
 
-#~ msgid "Downloading install package from <span class=\"code\">%s</span>&#8230;"
+#~ msgid ""
+#~ "Downloading install package from <span class=\"code\">%s</span>&#8230;"
 #~ msgstr ""
-#~ "Installatiepakket aan het downloaden van <span class=\"code\">%s</span>&#8230;"
+#~ "Installatiepakket aan het downloaden van <span class=\"code\">%s</"
+#~ "span>&#8230;"
 
 #~ msgid "Unpacking the package&#8230;"
 #~ msgstr "Uitpakken pakket&#8230;"
@@ -1690,8 +1720,8 @@ msgstr "Widget-gestuurde  footer ruimte %d."
 #~ msgstr "Favicon"
 
 #~ msgid ""
-#~ "A favicon is a 16x16 pixel icon that represents your site; upload your custom "
-#~ "Favicon here."
+#~ "A favicon is a 16x16 pixel icon that represents your site; upload your "
+#~ "custom Favicon here."
 #~ msgstr ""
 #~ "Een favicon is een 16x16 pixel icon dat de site voorsteld; laadt uw "
 #~ "persoonlijk favicon hier."
@@ -1706,7 +1736,8 @@ msgstr "Widget-gestuurde  footer ruimte %d."
 #~ msgstr "Favicon iPhone Retina"
 
 #~ msgid "Upload a custom favicon for iPhone retina (114x114 pixel png)."
-#~ msgstr "Laadt uw persoonlijk favicon voor iPhone retina (114x114 pixel png)."
+#~ msgstr ""
+#~ "Laadt uw persoonlijk favicon voor iPhone retina (114x114 pixel png)."
 
 #~ msgid "Favicon iPad"
 #~ msgstr "Favicon iPad"
@@ -1718,7 +1749,8 @@ msgstr "Widget-gestuurde  footer ruimte %d."
 #~ msgstr "Favicon iPad Retina"
 
 #~ msgid "Upload a custom favicon for iPhone retina (144x144 pixel png)."
-#~ msgstr "Laadt uw persoonlijk favicon voor iPhone retina (144x144 pixel png)."
+#~ msgstr ""
+#~ "Laadt uw persoonlijk favicon voor iPhone retina (144x144 pixel png)."
 
 #~ msgid "Display Breadcrumbs"
 #~ msgstr "Toon broodkruimels"
@@ -1739,8 +1771,8 @@ msgstr "Widget-gestuurde  footer ruimte %d."
 #~ msgstr "U moet <a href=\"%s\">ingelogd zijn</a> om een opmerking te posten."
 
 #~ msgid ""
-#~ "Logged in as <a href=\"%1$s\">%2$s</a>. <a href=\"%3$s\" title=\"Log out of "
-#~ "this account\">Log out?</a>"
+#~ "Logged in as <a href=\"%1$s\">%2$s</a>. <a href=\"%3$s\" title=\"Log out "
+#~ "of this account\">Log out?</a>"
 #~ msgstr ""
 #~ "Ingelogd als  <a href=\"%1$s\">%2$s</a>. <a href=\"%3$s\" title=\"Deze "
 #~ "account uitloggen\">Uitloggen?</a>"
@@ -1749,8 +1781,8 @@ msgstr "Widget-gestuurde  footer ruimte %d."
 #~ msgstr "Uw emailadres wordt niet afgebeeld."
 
 #~ msgid ""
-#~ "You may use these <abbr title=\"HyperText Markup Language\">HTML</abbr> tags "
-#~ "and attributes: %s"
+#~ "You may use these <abbr title=\"HyperText Markup Language\">HTML</abbr> "
+#~ "tags and attributes: %s"
 #~ msgstr ""
 #~ "U kan deze <abbr title=\"HyperText Markup Language\">HTML</abbr> tags en "
 #~ "attributen gebruiken: %s"
@@ -1829,7 +1861,8 @@ msgstr "Widget-gestuurde  footer ruimte %d."
 #~ msgstr "Hallo, %1s!"
 
 #~ msgid "Thanks for signing up and hope for long-term cooperation."
-#~ msgstr "Bedankt voor het aanmelden en hopend op een langdurende samenwerking"
+#~ msgstr ""
+#~ "Bedankt voor het aanmelden en hopend op een langdurende samenwerking"
 
 #~ msgid "Your password: <strong>%1s</strong>"
 #~ msgstr "Uw paswoord: <strong>%1s</strong>"
@@ -1853,11 +1886,11 @@ msgstr "Widget-gestuurde  footer ruimte %d."
 #~ msgstr "Message"
 
 #~ msgid ""
-#~ "You have been invited to the real estate agency <strong>\"%1s\"</strong> <br /"
-#~ "> To confirm click on the link"
+#~ "You have been invited to the real estate agency <strong>\"%1s\"</strong> "
+#~ "<br /> To confirm click on the link"
 #~ msgstr ""
-#~ "U bent uitgenodigd tot de immo agent  <strong>\"%1s\"</strong> <br /> Om te "
-#~ "bevestigen, klik op de link"
+#~ "U bent uitgenodigd tot de immo agent  <strong>\"%1s\"</strong> <br /> Om "
+#~ "te bevestigen, klik op de link"
 
 #~ msgid "Click here"
 #~ msgstr "Klik hier"
@@ -3450,11 +3483,11 @@ msgstr "Widget-gestuurde  footer ruimte %d."
 #~ msgstr "Ucayali"
 
 #~ msgid ""
-#~ "Amnat Charoen (&#3629;&#3635;&#3609;&#3634;&#3592;&#3648;&#3592;&#3619;&#3636;"
-#~ "&#3597;)"
+#~ "Amnat Charoen (&#3629;&#3635;&#3609;&#3634;&#3592;&#3648;&#3592;&#3619;"
+#~ "&#3636;&#3597;)"
 #~ msgstr ""
-#~ "Amnat Charoen (&#3629;&#3635;&#3609;&#3634;&#3592;&#3648;&#3592;&#3619;&#3636;"
-#~ "&#3597;)"
+#~ "Amnat Charoen (&#3629;&#3635;&#3609;&#3634;&#3592;&#3648;&#3592;&#3619;"
+#~ "&#3636;&#3597;)"
 
 #~ msgid "Ang Thong (&#3629;&#3656;&#3634;&#3591;&#3607;&#3629;&#3591;)"
 #~ msgstr "Ang Thong (&#3629;&#3656;&#3634;&#3591;&#3607;&#3629;&#3591;)"
@@ -3482,11 +3515,11 @@ msgstr "Widget-gestuurde  footer ruimte %d."
 #~ "Buri Ram (&#3610;&#3640;&#3619;&#3637;&#3619;&#3633;&#3617;&#3618;&#3660;)"
 
 #~ msgid ""
-#~ "Chachoengsao (&#3593;&#3632;&#3648;&#3594;&#3636;&#3591;&#3648;&#3607;&#3619;"
-#~ "&#3634;)"
+#~ "Chachoengsao (&#3593;&#3632;&#3648;&#3594;&#3636;&#3591;&#3648;&#3607;"
+#~ "&#3619;&#3634;)"
 #~ msgstr ""
-#~ "Chachoengsao (&#3593;&#3632;&#3648;&#3594;&#3636;&#3591;&#3648;&#3607;&#3619;"
-#~ "&#3634;)"
+#~ "Chachoengsao (&#3593;&#3632;&#3648;&#3594;&#3636;&#3591;&#3648;&#3607;"
+#~ "&#3619;&#3634;)"
 
 #~ msgid "Chai Nat (&#3594;&#3633;&#3618;&#3609;&#3634;&#3607;)"
 #~ msgstr "Chai Nat (&#3594;&#3633;&#3618;&#3609;&#3634;&#3607;)"
@@ -3494,16 +3527,22 @@ msgstr "Widget-gestuurde  footer ruimte %d."
 #~ msgid "Chaiyaphum (&#3594;&#3633;&#3618;&#3616;&#3641;&#3617;&#3636;)"
 #~ msgstr "Chaiyaphum (&#3594;&#3633;&#3618;&#3616;&#3641;&#3617;&#3636;)"
 
-#~ msgid "Chanthaburi (&#3592;&#3633;&#3609;&#3607;&#3610;&#3640;&#3619;&#3637;)"
-#~ msgstr "Chanthaburi (&#3592;&#3633;&#3609;&#3607;&#3610;&#3640;&#3619;&#3637;)"
+#~ msgid ""
+#~ "Chanthaburi (&#3592;&#3633;&#3609;&#3607;&#3610;&#3640;&#3619;&#3637;)"
+#~ msgstr ""
+#~ "Chanthaburi (&#3592;&#3633;&#3609;&#3607;&#3610;&#3640;&#3619;&#3637;)"
 
 #~ msgid ""
-#~ "Chiang Mai (&#3648;&#3594;&#3637;&#3618;&#3591;&#3651;&#3627;&#3617;&#3656;)"
+#~ "Chiang Mai (&#3648;&#3594;&#3637;&#3618;&#3591;&#3651;&#3627;&#3617;"
+#~ "&#3656;)"
 #~ msgstr ""
-#~ "Chiang Mai (&#3648;&#3594;&#3637;&#3618;&#3591;&#3651;&#3627;&#3617;&#3656;)"
+#~ "Chiang Mai (&#3648;&#3594;&#3637;&#3618;&#3591;&#3651;&#3627;&#3617;"
+#~ "&#3656;)"
 
-#~ msgid "Chiang Rai (&#3648;&#3594;&#3637;&#3618;&#3591;&#3619;&#3634;&#3618;)"
-#~ msgstr "Chiang Rai (&#3648;&#3594;&#3637;&#3618;&#3591;&#3619;&#3634;&#3618;)"
+#~ msgid ""
+#~ "Chiang Rai (&#3648;&#3594;&#3637;&#3618;&#3591;&#3619;&#3634;&#3618;)"
+#~ msgstr ""
+#~ "Chiang Rai (&#3648;&#3594;&#3637;&#3618;&#3591;&#3619;&#3634;&#3618;)"
 
 #~ msgid "Chonburi (&#3594;&#3621;&#3610;&#3640;&#3619;&#3637;)"
 #~ msgstr "Chonburi (&#3594;&#3621;&#3610;&#3640;&#3619;&#3637;)"
@@ -3524,9 +3563,11 @@ msgstr "Widget-gestuurde  footer ruimte %d."
 #~ "&#3619;)"
 
 #~ msgid ""
-#~ "Kanchanaburi (&#3585;&#3634;&#3597;&#3592;&#3609;&#3610;&#3640;&#3619;&#3637;)"
+#~ "Kanchanaburi (&#3585;&#3634;&#3597;&#3592;&#3609;&#3610;&#3640;&#3619;"
+#~ "&#3637;)"
 #~ msgstr ""
-#~ "Kanchanaburi (&#3585;&#3634;&#3597;&#3592;&#3609;&#3610;&#3640;&#3619;&#3637;)"
+#~ "Kanchanaburi (&#3585;&#3634;&#3597;&#3592;&#3609;&#3610;&#3640;&#3619;"
+#~ "&#3637;)"
 
 #~ msgid "Khon Kaen (&#3586;&#3629;&#3609;&#3649;&#3585;&#3656;&#3609;)"
 #~ msgstr "Khon Kaen (&#3586;&#3629;&#3609;&#3649;&#3585;&#3656;&#3609;)"
@@ -3547,11 +3588,11 @@ msgstr "Widget-gestuurde  footer ruimte %d."
 #~ msgstr "Lopburi (&#3621;&#3614;&#3610;&#3640;&#3619;&#3637;)"
 
 #~ msgid ""
-#~ "Mae Hong Son (&#3649;&#3617;&#3656;&#3630;&#3656;&#3629;&#3591;&#3626;&#3629;"
-#~ "&#3609;)"
+#~ "Mae Hong Son (&#3649;&#3617;&#3656;&#3630;&#3656;&#3629;&#3591;&#3626;"
+#~ "&#3629;&#3609;)"
 #~ msgstr ""
-#~ "Mae Hong Son (&#3649;&#3617;&#3656;&#3630;&#3656;&#3629;&#3591;&#3626;&#3629;"
-#~ "&#3609;)"
+#~ "Mae Hong Son (&#3649;&#3617;&#3656;&#3630;&#3656;&#3629;&#3591;&#3626;"
+#~ "&#3629;&#3609;)"
 
 #~ msgid ""
 #~ "Maha Sarakham (&#3617;&#3627;&#3634;&#3626;&#3634;&#3619;&#3588;&#3634;"
@@ -3573,29 +3614,33 @@ msgstr "Widget-gestuurde  footer ruimte %d."
 #~ msgstr "Nakhon Phanom (&#3609;&#3588;&#3619;&#3614;&#3609;&#3617;)"
 
 #~ msgid ""
-#~ "Nakhon Ratchasima (&#3609;&#3588;&#3619;&#3619;&#3634;&#3594;&#3626;&#3637;"
-#~ "&#3617;&#3634;)"
+#~ "Nakhon Ratchasima (&#3609;&#3588;&#3619;&#3619;&#3634;&#3594;&#3626;"
+#~ "&#3637;&#3617;&#3634;)"
 #~ msgstr ""
-#~ "Nakhon Ratchasima (&#3609;&#3588;&#3619;&#3619;&#3634;&#3594;&#3626;&#3637;"
-#~ "&#3617;&#3634;)"
+#~ "Nakhon Ratchasima (&#3609;&#3588;&#3619;&#3619;&#3634;&#3594;&#3626;"
+#~ "&#3637;&#3617;&#3634;)"
 
 #~ msgid ""
-#~ "Nakhon Sawan (&#3609;&#3588;&#3619;&#3626;&#3623;&#3619;&#3619;&#3588;&#3660;)"
+#~ "Nakhon Sawan (&#3609;&#3588;&#3619;&#3626;&#3623;&#3619;&#3619;&#3588;"
+#~ "&#3660;)"
 #~ msgstr ""
-#~ "Nakhon Sawan (&#3609;&#3588;&#3619;&#3626;&#3623;&#3619;&#3619;&#3588;&#3660;)"
+#~ "Nakhon Sawan (&#3609;&#3588;&#3619;&#3626;&#3623;&#3619;&#3619;&#3588;"
+#~ "&#3660;)"
 
 #~ msgid ""
-#~ "Nakhon Si Thammarat (&#3609;&#3588;&#3619;&#3624;&#3619;&#3637;&#3608;&#3619;"
-#~ "&#3619;&#3617;&#3619;&#3634;&#3594;)"
+#~ "Nakhon Si Thammarat (&#3609;&#3588;&#3619;&#3624;&#3619;&#3637;&#3608;"
+#~ "&#3619;&#3619;&#3617;&#3619;&#3634;&#3594;)"
 #~ msgstr ""
-#~ "Nakhon Si Thammarat (&#3609;&#3588;&#3619;&#3624;&#3619;&#3637;&#3608;&#3619;"
-#~ "&#3619;&#3617;&#3619;&#3634;&#3594;)"
+#~ "Nakhon Si Thammarat (&#3609;&#3588;&#3619;&#3624;&#3619;&#3637;&#3608;"
+#~ "&#3619;&#3619;&#3617;&#3619;&#3634;&#3594;)"
 
 #~ msgid "Nan (&#3609;&#3656;&#3634;&#3609;)"
 #~ msgstr "Nan (&#3609;&#3656;&#3634;&#3609;)"
 
-#~ msgid "Narathiwat (&#3609;&#3619;&#3634;&#3608;&#3636;&#3623;&#3634;&#3626;)"
-#~ msgstr "Narathiwat (&#3609;&#3619;&#3634;&#3608;&#3636;&#3623;&#3634;&#3626;)"
+#~ msgid ""
+#~ "Narathiwat (&#3609;&#3619;&#3634;&#3608;&#3636;&#3623;&#3634;&#3626;)"
+#~ msgstr ""
+#~ "Narathiwat (&#3609;&#3619;&#3634;&#3608;&#3636;&#3623;&#3634;&#3626;)"
 
 #~ msgid ""
 #~ "Nong Bua Lam Phu (&#3627;&#3609;&#3629;&#3591;&#3610;&#3633;&#3623;&#3621;"
@@ -3610,8 +3655,10 @@ msgstr "Widget-gestuurde  footer ruimte %d."
 #~ msgid "Nonthaburi (&#3609;&#3609;&#3607;&#3610;&#3640;&#3619;&#3637;)"
 #~ msgstr "Nonthaburi (&#3609;&#3609;&#3607;&#3610;&#3640;&#3619;&#3637;)"
 
-#~ msgid "Pathum Thani (&#3611;&#3607;&#3640;&#3617;&#3608;&#3634;&#3609;&#3637;)"
-#~ msgstr "Pathum Thani (&#3611;&#3607;&#3640;&#3617;&#3608;&#3634;&#3609;&#3637;)"
+#~ msgid ""
+#~ "Pathum Thani (&#3611;&#3607;&#3640;&#3617;&#3608;&#3634;&#3609;&#3637;)"
+#~ msgstr ""
+#~ "Pathum Thani (&#3611;&#3607;&#3640;&#3617;&#3608;&#3634;&#3609;&#3637;)"
 
 #~ msgid "Pattani (&#3611;&#3633;&#3605;&#3605;&#3634;&#3609;&#3637;)"
 #~ msgstr "Pattani (&#3611;&#3633;&#3605;&#3605;&#3634;&#3609;&#3637;)"
@@ -3626,18 +3673,24 @@ msgstr "Widget-gestuurde  footer ruimte %d."
 #~ msgstr "Phayao (&#3614;&#3632;&#3648;&#3618;&#3634;)"
 
 #~ msgid ""
-#~ "Phetchabun (&#3648;&#3614;&#3594;&#3619;&#3610;&#3641;&#3619;&#3603;&#3660;)"
+#~ "Phetchabun (&#3648;&#3614;&#3594;&#3619;&#3610;&#3641;&#3619;&#3603;"
+#~ "&#3660;)"
 #~ msgstr ""
-#~ "Phetchabun (&#3648;&#3614;&#3594;&#3619;&#3610;&#3641;&#3619;&#3603;&#3660;)"
+#~ "Phetchabun (&#3648;&#3614;&#3594;&#3619;&#3610;&#3641;&#3619;&#3603;"
+#~ "&#3660;)"
 
-#~ msgid "Phetchaburi (&#3648;&#3614;&#3594;&#3619;&#3610;&#3640;&#3619;&#3637;)"
-#~ msgstr "Phetchaburi (&#3648;&#3614;&#3594;&#3619;&#3610;&#3640;&#3619;&#3637;)"
+#~ msgid ""
+#~ "Phetchaburi (&#3648;&#3614;&#3594;&#3619;&#3610;&#3640;&#3619;&#3637;)"
+#~ msgstr ""
+#~ "Phetchaburi (&#3648;&#3614;&#3594;&#3619;&#3610;&#3640;&#3619;&#3637;)"
 
 #~ msgid "Phichit (&#3614;&#3636;&#3592;&#3636;&#3605;&#3619;)"
 #~ msgstr "Phichit (&#3614;&#3636;&#3592;&#3636;&#3605;&#3619;)"
 
-#~ msgid "Phitsanulok (&#3614;&#3636;&#3625;&#3603;&#3640;&#3650;&#3621;&#3585;)"
-#~ msgstr "Phitsanulok (&#3614;&#3636;&#3625;&#3603;&#3640;&#3650;&#3621;&#3585;)"
+#~ msgid ""
+#~ "Phitsanulok (&#3614;&#3636;&#3625;&#3603;&#3640;&#3650;&#3621;&#3585;)"
+#~ msgstr ""
+#~ "Phitsanulok (&#3614;&#3636;&#3625;&#3603;&#3640;&#3650;&#3621;&#3585;)"
 
 #~ msgid "Phrae (&#3649;&#3614;&#3619;&#3656;)"
 #~ msgstr "Phrae (&#3649;&#3614;&#3619;&#3656;)"
@@ -3646,18 +3699,18 @@ msgstr "Widget-gestuurde  footer ruimte %d."
 #~ msgstr "Phuket (&#3616;&#3641;&#3648;&#3585;&#3655;&#3605;)"
 
 #~ msgid ""
-#~ "Prachin Buri (&#3611;&#3619;&#3634;&#3592;&#3637;&#3609;&#3610;&#3640;&#3619;"
-#~ "&#3637;)"
+#~ "Prachin Buri (&#3611;&#3619;&#3634;&#3592;&#3637;&#3609;&#3610;&#3640;"
+#~ "&#3619;&#3637;)"
 #~ msgstr ""
-#~ "Prachin Buri (&#3611;&#3619;&#3634;&#3592;&#3637;&#3609;&#3610;&#3640;&#3619;"
-#~ "&#3637;)"
+#~ "Prachin Buri (&#3611;&#3619;&#3634;&#3592;&#3637;&#3609;&#3610;&#3640;"
+#~ "&#3619;&#3637;)"
 
 #~ msgid ""
-#~ "Prachuap Khiri Khan (&#3611;&#3619;&#3632;&#3592;&#3623;&#3610;&#3588;&#3637;"
-#~ "&#3619;&#3637;&#3586;&#3633;&#3609;&#3608;&#3660;)"
+#~ "Prachuap Khiri Khan (&#3611;&#3619;&#3632;&#3592;&#3623;&#3610;&#3588;"
+#~ "&#3637;&#3619;&#3637;&#3586;&#3633;&#3609;&#3608;&#3660;)"
 #~ msgstr ""
-#~ "Prachuap Khiri Khan (&#3611;&#3619;&#3632;&#3592;&#3623;&#3610;&#3588;&#3637;"
-#~ "&#3619;&#3637;&#3586;&#3633;&#3609;&#3608;&#3660;)"
+#~ "Prachuap Khiri Khan (&#3611;&#3619;&#3632;&#3592;&#3623;&#3610;&#3588;"
+#~ "&#3637;&#3619;&#3637;&#3586;&#3633;&#3609;&#3608;&#3660;)"
 
 #~ msgid "Ranong (&#3619;&#3632;&#3609;&#3629;&#3591;)"
 #~ msgstr "Ranong (&#3619;&#3632;&#3609;&#3629;&#3591;)"
@@ -3678,16 +3731,18 @@ msgstr "Widget-gestuurde  footer ruimte %d."
 #~ msgstr "Sakon Nakhon (&#3626;&#3585;&#3621;&#3609;&#3588;&#3619;)"
 
 #~ msgid ""
-#~ "Samut Prakan (&#3626;&#3617;&#3640;&#3607;&#3619;&#3611;&#3619;&#3634;&#3585;"
-#~ "&#3634;&#3619;)"
+#~ "Samut Prakan (&#3626;&#3617;&#3640;&#3607;&#3619;&#3611;&#3619;&#3634;"
+#~ "&#3585;&#3634;&#3619;)"
 #~ msgstr ""
-#~ "Samut Prakan (&#3626;&#3617;&#3640;&#3607;&#3619;&#3611;&#3619;&#3634;&#3585;"
-#~ "&#3634;&#3619;)"
+#~ "Samut Prakan (&#3626;&#3617;&#3640;&#3607;&#3619;&#3611;&#3619;&#3634;"
+#~ "&#3585;&#3634;&#3619;)"
 
 #~ msgid ""
-#~ "Samut Sakhon (&#3626;&#3617;&#3640;&#3607;&#3619;&#3626;&#3634;&#3588;&#3619;)"
+#~ "Samut Sakhon (&#3626;&#3617;&#3640;&#3607;&#3619;&#3626;&#3634;&#3588;"
+#~ "&#3619;)"
 #~ msgstr ""
-#~ "Samut Sakhon (&#3626;&#3617;&#3640;&#3607;&#3619;&#3626;&#3634;&#3588;&#3619;)"
+#~ "Samut Sakhon (&#3626;&#3617;&#3640;&#3607;&#3619;&#3626;&#3634;&#3588;"
+#~ "&#3619;)"
 
 #~ msgid ""
 #~ "Samut Songkhram (&#3626;&#3617;&#3640;&#3607;&#3619;&#3626;&#3591;&#3588;"
@@ -3703,9 +3758,11 @@ msgstr "Widget-gestuurde  footer ruimte %d."
 #~ msgstr "Satun (&#3626;&#3605;&#3641;&#3621;)"
 
 #~ msgid ""
-#~ "Sing Buri (&#3626;&#3636;&#3591;&#3627;&#3660;&#3610;&#3640;&#3619;&#3637;)"
+#~ "Sing Buri (&#3626;&#3636;&#3591;&#3627;&#3660;&#3610;&#3640;&#3619;"
+#~ "&#3637;)"
 #~ msgstr ""
-#~ "Sing Buri (&#3626;&#3636;&#3591;&#3627;&#3660;&#3610;&#3640;&#3619;&#3637;)"
+#~ "Sing Buri (&#3626;&#3636;&#3591;&#3627;&#3660;&#3610;&#3640;&#3619;"
+#~ "&#3637;)"
 
 #~ msgid "Sisaket (&#3624;&#3619;&#3637;&#3626;&#3632;&#3648;&#3585;&#3625;)"
 #~ msgstr "Sisaket (&#3624;&#3619;&#3637;&#3626;&#3632;&#3648;&#3585;&#3625;)"
@@ -3717,18 +3774,18 @@ msgstr "Widget-gestuurde  footer ruimte %d."
 #~ msgstr "Sukhothai (&#3626;&#3640;&#3650;&#3586;&#3607;&#3633;&#3618;)"
 
 #~ msgid ""
-#~ "Suphan Buri (&#3626;&#3640;&#3614;&#3619;&#3619;&#3603;&#3610;&#3640;&#3619;"
-#~ "&#3637;)"
+#~ "Suphan Buri (&#3626;&#3640;&#3614;&#3619;&#3619;&#3603;&#3610;&#3640;"
+#~ "&#3619;&#3637;)"
 #~ msgstr ""
-#~ "Suphan Buri (&#3626;&#3640;&#3614;&#3619;&#3619;&#3603;&#3610;&#3640;&#3619;"
-#~ "&#3637;)"
+#~ "Suphan Buri (&#3626;&#3640;&#3614;&#3619;&#3619;&#3603;&#3610;&#3640;"
+#~ "&#3619;&#3637;)"
 
 #~ msgid ""
-#~ "Surat Thani (&#3626;&#3640;&#3619;&#3634;&#3625;&#3598;&#3619;&#3660;&#3608;"
-#~ "&#3634;&#3609;&#3637;)"
+#~ "Surat Thani (&#3626;&#3640;&#3619;&#3634;&#3625;&#3598;&#3619;&#3660;"
+#~ "&#3608;&#3634;&#3609;&#3637;)"
 #~ msgstr ""
-#~ "Surat Thani (&#3626;&#3640;&#3619;&#3634;&#3625;&#3598;&#3619;&#3660;&#3608;"
-#~ "&#3634;&#3609;&#3637;)"
+#~ "Surat Thani (&#3626;&#3640;&#3619;&#3634;&#3625;&#3598;&#3619;&#3660;"
+#~ "&#3608;&#3634;&#3609;&#3637;)"
 
 #~ msgid "Surin (&#3626;&#3640;&#3619;&#3636;&#3609;&#3607;&#3619;&#3660;)"
 #~ msgstr "Surin (&#3626;&#3640;&#3619;&#3636;&#3609;&#3607;&#3619;&#3660;)"
@@ -3749,18 +3806,24 @@ msgstr "Widget-gestuurde  footer ruimte %d."
 #~ "Ubon Ratchathani (&#3629;&#3640;&#3610;&#3621;&#3619;&#3634;&#3594;&#3608;"
 #~ "&#3634;&#3609;&#3637;)"
 
-#~ msgid "Udon Thani (&#3629;&#3640;&#3604;&#3619;&#3608;&#3634;&#3609;&#3637;)"
-#~ msgstr "Udon Thani (&#3629;&#3640;&#3604;&#3619;&#3608;&#3634;&#3609;&#3637;)"
+#~ msgid ""
+#~ "Udon Thani (&#3629;&#3640;&#3604;&#3619;&#3608;&#3634;&#3609;&#3637;)"
+#~ msgstr ""
+#~ "Udon Thani (&#3629;&#3640;&#3604;&#3619;&#3608;&#3634;&#3609;&#3637;)"
 
 #~ msgid ""
-#~ "Uthai Thani (&#3629;&#3640;&#3607;&#3633;&#3618;&#3608;&#3634;&#3609;&#3637;)"
+#~ "Uthai Thani (&#3629;&#3640;&#3607;&#3633;&#3618;&#3608;&#3634;&#3609;"
+#~ "&#3637;)"
 #~ msgstr ""
-#~ "Uthai Thani (&#3629;&#3640;&#3607;&#3633;&#3618;&#3608;&#3634;&#3609;&#3637;)"
+#~ "Uthai Thani (&#3629;&#3640;&#3607;&#3633;&#3618;&#3608;&#3634;&#3609;"
+#~ "&#3637;)"
 
 #~ msgid ""
-#~ "Uttaradit (&#3629;&#3640;&#3605;&#3619;&#3604;&#3636;&#3605;&#3606;&#3660;)"
+#~ "Uttaradit (&#3629;&#3640;&#3605;&#3619;&#3604;&#3636;&#3605;&#3606;"
+#~ "&#3660;)"
 #~ msgstr ""
-#~ "Uttaradit (&#3629;&#3640;&#3605;&#3619;&#3604;&#3636;&#3605;&#3606;&#3660;)"
+#~ "Uttaradit (&#3629;&#3640;&#3605;&#3619;&#3604;&#3636;&#3605;&#3606;"
+#~ "&#3660;)"
 
 #~ msgid "Yala (&#3618;&#3632;&#3621;&#3634;)"
 #~ msgstr "Yala (&#3618;&#3632;&#3621;&#3634;)"
@@ -5832,13 +5895,13 @@ msgstr "Widget-gestuurde  footer ruimte %d."
 #~ msgstr "Inhoud"
 
 #~ msgid ""
-#~ "<p>I am text block. Click edit button to change this text. Lorem ipsum dolor "
-#~ "sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper "
-#~ "mattis, pulvinar dapibus leo.</p>"
-#~ msgstr ""
-#~ "<p>Ik ben een tekstblok. Klik aanpassen knop om de tekst te veranderen. Lorem "
-#~ "ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec "
+#~ "<p>I am text block. Click edit button to change this text. Lorem ipsum "
+#~ "dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec "
 #~ "ullamcorper mattis, pulvinar dapibus leo.</p>"
+#~ msgstr ""
+#~ "<p>Ik ben een tekstblok. Klik aanpassen knop om de tekst te veranderen. "
+#~ "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, "
+#~ "luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>"
 
 #~ msgid "Title Color"
 #~ msgstr "Titelkleur"
@@ -5910,8 +5973,8 @@ msgstr "Widget-gestuurde  footer ruimte %d."
 #~ "<ul>\n"
 #~ "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<li><strong>1</strong>Eigendom</li>\n"
 #~ "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<li><strong>1</strong>Agentprofiel</li>\n"
-#~ "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<li class=\"not-available\">Agentschapprofiel</"
-#~ "li>\n"
+#~ "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<li class=\"not-available"
+#~ "\">Agentschapprofiel</li>\n"
 #~ "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<li class=\"not-available\">eigendommen in "
 #~ "aandacht</li>\n"
 #~ "\t\t\t\t\t\t\t\t\t\t\t\t\t\t</ul>"
@@ -5980,12 +6043,12 @@ msgstr "Widget-gestuurde  footer ruimte %d."
 #~ msgstr "Extra class naam"
 
 #~ msgid ""
-#~ "If you wish to style particular content element differently, then use this "
-#~ "field to add a class name and then refer to it in your css file."
+#~ "If you wish to style particular content element differently, then use "
+#~ "this field to add a class name and then refer to it in your css file."
 #~ msgstr ""
-#~ "Mocht je verkiezen om bepaalde inhoudselementen anders te stylen, gebruik dan "
-#~ "dit veld om een class-naam toe te voegen en refereer ernaar vanuit de css "
-#~ "file."
+#~ "Mocht je verkiezen om bepaalde inhoudselementen anders te stylen, gebruik "
+#~ "dan dit veld om een class-naam toe te voegen en refereer ernaar vanuit de "
+#~ "css file."
 
 #~ msgid "Timeline Section"
 #~ msgstr "Tijdslijn sectie"
@@ -6061,7 +6124,8 @@ msgstr "Widget-gestuurde  footer ruimte %d."
 
 #~ msgid "Specify coordinates separated by commas (11.xxxxxxx, 11.xxxxxxx)"
 #~ msgstr ""
-#~ "Specifieer de coordinaten afgescheiden door komma's (11.xxxxxxx, 11.xxxxxxx)"
+#~ "Specifieer de coordinaten afgescheiden door komma's (11.xxxxxxx, 11."
+#~ "xxxxxxx)"
 
 #~ msgid "Map height"
 #~ msgstr "Maphoogte"
@@ -6273,13 +6337,13 @@ msgstr "Widget-gestuurde  footer ruimte %d."
 #~ msgstr "Omschrijving"
 
 #~ msgid ""
-#~ "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla dolor purus, "
-#~ "porta eget justo et, pulvinar vehicula dolor. Sed at turpis at augue "
-#~ "convallis auctor ut in mi..."
+#~ "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla dolor "
+#~ "purus, porta eget justo et, pulvinar vehicula dolor. Sed at turpis at "
+#~ "augue convallis auctor ut in mi..."
 #~ msgstr ""
-#~ "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla dolor purus, "
-#~ "porta eget justo et, pulvinar vehicula dolor. Sed at turpis at augue "
-#~ "convallis auctor ut in mi..."
+#~ "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla dolor "
+#~ "purus, porta eget justo et, pulvinar vehicula dolor. Sed at turpis at "
+#~ "augue convallis auctor ut in mi..."
 
 #~ msgid "CEO avatar"
 #~ msgstr "CEO avatar"
@@ -6316,15 +6380,17 @@ msgstr "Widget-gestuurde  footer ruimte %d."
 
 #~ msgid "Enter the number of displayed agencies. (-1 for All agencies)"
 #~ msgstr ""
-#~ "Geef het aantal in van de getoonde agentschappen. (-1 voor alle agentschappen)"
+#~ "Geef het aantal in van de getoonde agentschappen. (-1 voor alle "
+#~ "agentschappen)"
 
 #~ msgid "Agencies per page"
 #~ msgstr "Agentschappen per pagina"
 
-#~ msgid "Enter the number of displayed agencies per page. (-1 for All agencies)"
+#~ msgid ""
+#~ "Enter the number of displayed agencies per page. (-1 for All agencies)"
 #~ msgstr ""
-#~ "Geef het aantal in van de getoonde agentschappen per pagina. (-1 voor alle "
-#~ "agentschappen)"
+#~ "Geef het aantal in van de getoonde agentschappen per pagina. (-1 voor "
+#~ "alle agentschappen)"
 
 #~ msgid "Choose order by parametr for display agency."
 #~ msgstr "Kies volgorde-parameter voor het tonen van agentschappen."
@@ -6633,7 +6699,8 @@ msgstr "Widget-gestuurde  footer ruimte %d."
 #~ msgid "Empty testimonials list. Edit page to add content here."
 #~ msgstr "Lege getuigenissenlijst. Klik hier om pagina aan te passen."
 
-#~ msgid "You have changes that are not saved. Would you like to save them now?"
+#~ msgid ""
+#~ "You have changes that are not saved. Would you like to save them now?"
 #~ msgstr ""
 #~ "Er zijn aanpassingen die niet bewaard zijn. Wenst u deze nu op te slaan?"
 
@@ -6641,13 +6708,14 @@ msgstr "Widget-gestuurde  footer ruimte %d."
 #~ msgstr "Bent u zeker? Herzetten zal alle aangepaste waarden doen verliezen."
 
 #~ msgid ""
-#~ "Your current options will be replaced with the values of this preset. Would "
-#~ "you like to proceed?"
+#~ "Your current options will be replaced with the values of this preset. "
+#~ "Would you like to proceed?"
 #~ msgstr ""
 #~ "Uw huidige opties zullen vervangen worden door de waarden van deze "
 #~ "instelling. Wenst u door te gaan?"
 
-#~ msgid "You have changes that are not saved.  Would you like to save them now?"
+#~ msgid ""
+#~ "You have changes that are not saved.  Would you like to save them now?"
 #~ msgstr ""
 #~ "Er zijn aanpassingen die niet bewaard zijn. Wenst u deze nu op te slaan?"
 
@@ -6655,8 +6723,8 @@ msgstr "Widget-gestuurde  footer ruimte %d."
 #~ msgstr "Bent u zeker? Herzetten zal alle aangepaste waarden doen verliezen."
 
 #~ msgid ""
-#~ "Your current options will be replaced with the values of this preset.  Would "
-#~ "you like to proceed?"
+#~ "Your current options will be replaced with the values of this preset.  "
+#~ "Would you like to proceed?"
 #~ msgstr ""
 #~ "Uw huidige opties zullen vervangen worden door de waarden van deze "
 #~ "instelling. Wenst u door te gaan?"
@@ -6861,33 +6929,33 @@ msgstr "Widget-gestuurde  footer ruimte %d."
 #~ "herzetten van de backup."
 
 #~ msgid ""
-#~ "Input the URL to another sites options set and hit Import to load the options "
-#~ "from that site."
+#~ "Input the URL to another sites options set and hit Import to load the "
+#~ "options from that site."
 #~ msgstr ""
-#~ "Geef de URL van de optie-set een andere site in and klik op Import om je site "
-#~ "opties te herzetten van de backup."
+#~ "Geef de URL van de optie-set een andere site in and klik op Import om je "
+#~ "site opties te herzetten van de backup."
 
 #~ msgid "Import"
 #~ msgstr "Import"
 
 #~ msgid ""
-#~ "WARNING! This will overwrite all existing option values, please proceed with "
-#~ "caution!"
+#~ "WARNING! This will overwrite all existing option values, please proceed "
+#~ "with caution!"
 #~ msgstr ""
-#~ "Waarschuwing! Deze zal alle bestaande optie-velden overschrijven. Ga verder "
-#~ "met voorzichtigheid!"
+#~ "Waarschuwing! Deze zal alle bestaande optie-velden overschrijven. Ga "
+#~ "verder met voorzichtigheid!"
 
 #~ msgid "Export Options"
 #~ msgstr "Export opties"
 
 #~ msgid ""
-#~ "Here you can copy/download your current option settings. Keep this safe as "
-#~ "you can use it as a backup should anything go wrong, or you can use it to "
-#~ "restore your settings on this site (or any other site)."
+#~ "Here you can copy/download your current option settings. Keep this safe "
+#~ "as you can use it as a backup should anything go wrong, or you can use it "
+#~ "to restore your settings on this site (or any other site)."
 #~ msgstr ""
 #~ "Hier kunt u uw eigen optie-settings copieren/downloaden. Bewaar die "
-#~ "zorgvuldig omdat u dit kan gebruiken als backup als alles fout gaat, of om de "
-#~ "default waarden ter herzetten van deze site (of elke andere site)."
+#~ "zorgvuldig omdat u dit kan gebruiken als backup als alles fout gaat, of "
+#~ "om de default waarden ter herzetten van deze site (of elke andere site)."
 
 #~ msgid "Copy"
 #~ msgstr "Kopieer"
@@ -6899,13 +6967,13 @@ msgstr "Widget-gestuurde  footer ruimte %d."
 #~ msgstr "Help om ons paneel te verbeteren"
 
 #~ msgid ""
-#~ "Please helps us improve our panel by allowing us to gather anonymous usage "
-#~ "stats so we know which configurations, plugins and themes to test to ensure "
-#~ "compatability."
+#~ "Please helps us improve our panel by allowing us to gather anonymous "
+#~ "usage stats so we know which configurations, plugins and themes to test "
+#~ "to ensure compatability."
 #~ msgstr ""
 #~ "Gelieve ons te helpen om ons panel te verbeteren door ons toe te laten "
-#~ "anoniem gebruiksstatistieken te verzamelen welke configuraties, plugins en "
-#~ "themas te testen om compatibiliteit te verzekeren."
+#~ "anoniem gebruiksstatistieken te verzamelen welke configuraties, plugins "
+#~ "en themas te testen om compatibiliteit te verzekeren."
 
 #~ msgid "Allow tracking"
 #~ msgstr "Tracking toestaan"
@@ -6920,12 +6988,12 @@ msgstr "Widget-gestuurde  footer ruimte %d."
 #~ msgstr "Om te starten"
 
 #~ msgid ""
-#~ "This panel demonstrates the many features of zoner.  Before digging in, we "
-#~ "suggest you get up to speed by reviewing %1$s."
+#~ "This panel demonstrates the many features of zoner.  Before digging in, "
+#~ "we suggest you get up to speed by reviewing %1$s."
 #~ msgstr ""
 #~ "Dit paneel demonstreert de vele mogelijkheden of zoner. Voor we in detail "
-#~ "gaan, we stellen voor dat zich eerst snel informeerd door volgende link te "
-#~ "klikken:%1$s."
+#~ "gaan, we stellen voor dat zich eerst snel informeerd door volgende link "
+#~ "te klikken:%1$s."
 
 #~ msgid "our documentation"
 #~ msgstr "onze documentatie"
@@ -6935,13 +7003,14 @@ msgstr "Widget-gestuurde  footer ruimte %d."
 
 #~ msgid ""
 #~ "Want to get a head start? Use the %1$s. It will create a customized "
-#~ "boilerplate theme or a standalone admin folder complete with all things zoner "
-#~ "(with the help of Underscores and TGM). Save yourself a headache and try it "
-#~ "today."
+#~ "boilerplate theme or a standalone admin folder complete with all things "
+#~ "zoner (with the help of Underscores and TGM). Save yourself a headache "
+#~ "and try it today."
 #~ msgstr ""
-#~ "Wens je een voorsprong? Gebruik dan  %1$s. Het zal een verpersoonlijkt all-in "
-#~ "thema en stand-alone map genereren met alle zaken die zoner (met de hulp van  "
-#~ "Underscores en TGM). Bespaar uwzelf hoodpijn en probeer het vandaag."
+#~ "Wens je een voorsprong? Gebruik dan  %1$s. Het zal een verpersoonlijkt "
+#~ "all-in thema en stand-alone map genereren met alle zaken die zoner (met "
+#~ "de hulp van  Underscores en TGM). Bespaar uwzelf hoodpijn en probeer het "
+#~ "vandaag."
 
 #~ msgid "zoner Extensions"
 #~ msgstr "zoner extenties"
@@ -6960,11 +7029,11 @@ msgstr "Widget-gestuurde  footer ruimte %d."
 #~ msgstr "Vind u Zoner leuk?"
 
 #~ msgid ""
-#~ "If so, please %1$s and consider making a %2$s to keep development of zoner "
-#~ "moving forward."
+#~ "If so, please %1$s and consider making a %2$s to keep development of "
+#~ "zoner moving forward."
 #~ msgstr ""
-#~ "Indien zo, gelieve %1$s en overweeg een %2$s te maken om de ontwikkeling van "
-#~ "zoner vooruitgang te laten vinden."
+#~ "Indien zo, gelieve %1$s en overweeg een %2$s te maken om de ontwikkeling "
+#~ "van zoner vooruitgang te laten vinden."
 
 #~ msgid "leave us a favorable review on WordPress.org"
 #~ msgstr "Bezorg ons een gunstige beoordeeling op WordPress.org"
@@ -6976,11 +7045,11 @@ msgstr "Widget-gestuurde  footer ruimte %d."
 #~ msgstr "Nieuwsbrief"
 
 #~ msgid ""
-#~ "If you'd like to keep up to with all things zoner, please subscribe to our "
-#~ "newsletter"
+#~ "If you'd like to keep up to with all things zoner, please subscribe to "
+#~ "our newsletter"
 #~ msgstr ""
-#~ "Als u op de hoogte wenst te blijven van alle nieuwtjes over zoner, gelieve te "
-#~ "abonneren op onze nieuwsbrief"
+#~ "Als u op de hoogte wenst te blijven van alle nieuwtjes over zoner, "
+#~ "gelieve te abonneren op onze nieuwsbrief"
 
 #~ msgid "Email address"
 #~ msgstr "emailadres"
@@ -6995,9 +7064,11 @@ msgstr "Widget-gestuurde  footer ruimte %d."
 #~ msgstr "Dit veld moet een gedige kleurwaarde bevatten."
 
 #~ msgid ""
-#~ "You must provide a comma separated list of numerical values for this option."
+#~ "You must provide a comma separated list of numerical values for this "
+#~ "option."
 #~ msgstr ""
-#~ "U moet een met komma gescheiden lijst van getallen ingeven voor deze optie."
+#~ "U moet een met komma gescheiden lijst van getallen ingeven voor deze "
+#~ "optie."
 
 #~ msgid "This field must be a valid date."
 #~ msgstr "Dit veld moet een geldige datum zijn"
@@ -7006,15 +7077,16 @@ msgstr "Widget-gestuurde  footer ruimte %d."
 #~ msgstr "U moet een geldig email adres ingeven voor deze optie."
 
 #~ msgid ""
-#~ "You must not enter any HTML in this field, all HTML tags have been removed."
+#~ "You must not enter any HTML in this field, all HTML tags have been "
+#~ "removed."
 #~ msgstr "U mag geen HTML invoeren in dat veld, alle HTML wordt verwijderd."
 
 #~ msgid ""
 #~ "You must not enter any special characters in this field, all special "
 #~ "characters have been removed."
 #~ msgstr ""
-#~ "U mag geen speciaal teken ingeven in dit veld. Alle speciale tekens worden "
-#~ "verwijderd."
+#~ "U mag geen speciaal teken ingeven in dit veld. Alle speciale tekens "
+#~ "worden verwijderd."
 
 #~ msgid "This field cannot be empty. Please provide a value."
 #~ msgstr "Dit veld mag niet leeg zijn. Gelieve een waarde in te geven."
@@ -7051,7 +7123,8 @@ msgstr "Widget-gestuurde  footer ruimte %d."
 #~ msgid "<p>"
 #~ msgstr "<p>"
 
-#~ msgid "Warning- This options panel will not work properly without javascript!"
+#~ msgid ""
+#~ "Warning- This options panel will not work properly without javascript!"
 #~ msgstr ""
 #~ "Waarschuwing - Dit optie-paneel gaan niet goed werken zonder javascript!"
 
@@ -7188,7 +7261,8 @@ msgstr "Widget-gestuurde  footer ruimte %d."
 #~ msgstr "Eigendom luspagina"
 
 #~ msgid ""
-#~ "The base page can also be used in your <a href=\"%s\">propety permalinks</a>."
+#~ "The base page can also be used in your <a href=\"%s\">propety permalinks</"
+#~ "a>."
 #~ msgstr ""
 #~ "De basispagina kan ook gebruikt worden in uw <a href=\"%s\">eigendom "
 #~ "permalinks</a>."
@@ -7303,7 +7377,8 @@ msgstr "Widget-gestuurde  footer ruimte %d."
 #~ msgstr "\"Bedankt\" Paginal na het toevoegen van een eigendom."
 
 #~ msgid "Select the page after the user has added his property."
-#~ msgstr "Selecteer een pagina nadat de gebruiker een eigendom heeft ingegeven."
+#~ msgstr ""
+#~ "Selecteer een pagina nadat de gebruiker een eigendom heeft ingegeven."
 
 #~ msgid "\"Thank You\" Page after adding agency"
 #~ msgstr "\"Bedankt\" Pagina na toevoegen agentschap"
@@ -7339,12 +7414,6 @@ msgstr "Widget-gestuurde  footer ruimte %d."
 #~ msgid "Linkedin"
 #~ msgstr "Linkedin"
 
-#~ msgid "Google+"
-#~ msgstr "Google+"
-
-#~ msgid "Pinterset"
-#~ msgstr "Pinterset"
-
 #~ msgid "Set featured image"
 #~ msgstr "Zet afbeelding in aandacht"
 
@@ -7359,7 +7428,8 @@ msgstr "Widget-gestuurde  footer ruimte %d."
 
 #~ msgid ""
 #~ "Carefully check entered information and than click button to submit them."
-#~ msgstr "Check zorgvuldig de ingevoerde info en klik vervolgens de Verzend knop."
+#~ msgstr ""
+#~ "Check zorgvuldig de ingevoerde info en klik vervolgens de Verzend knop."
 
 #~ msgid "Submit Agency"
 #~ msgstr "Verzenden agentschap"
@@ -7369,7 +7439,8 @@ msgstr "Widget-gestuurde  footer ruimte %d."
 
 #~ msgid ""
 #~ "Carefully check entered information and than click button to update them."
-#~ msgstr "Check zorgvuldig de ingevoerde info en klik vervolgens de Verzend knop."
+#~ msgstr ""
+#~ "Check zorgvuldig de ingevoerde info en klik vervolgens de Verzend knop."
 
 #~ msgid "Update Information"
 #~ msgstr "Updaten informatie"
@@ -7411,10 +7482,12 @@ msgstr "Widget-gestuurde  footer ruimte %d."
 #~ msgid "Continue reading <span class=\"meta-nav\">&rarr;</span>"
 #~ msgstr "Ga verder met lezen <span class=\"meta-nav\">&rarr;</span>"
 
-#~ msgid "This gallery contains <a href=\"%1$s\" rel=\"bookmark\">%2$s photo</a>."
+#~ msgid ""
+#~ "This gallery contains <a href=\"%1$s\" rel=\"bookmark\">%2$s photo</a>."
 #~ msgid_plural ""
 #~ "This gallery contains <a href=\"%1$s\" rel=\"bookmark\">%2$s photos</a>."
-#~ msgstr[0] "Deze gallerij bevat <a href=\"%1$s\" rel=\"bookmark\">%2$s foto</a>."
+#~ msgstr[0] ""
+#~ "Deze gallerij bevat <a href=\"%1$s\" rel=\"bookmark\">%2$s foto</a>."
 #~ msgstr[1] ""
 #~ "Deze gallerij bevat <a href=\"%1$s\" rel=\"bookmark\">%2$s foto's</a>."
 
@@ -7454,7 +7527,8 @@ msgstr "Widget-gestuurde  footer ruimte %d."
 #~ msgid "Interval payment for rent"
 #~ msgstr "Interval betalingen voor huur"
 
-#~ msgid "Users can give you a stars rating which is displayed in property detail"
+#~ msgid ""
+#~ "Users can give you a stars rating which is displayed in property detail"
 #~ msgstr ""
 #~ "Gebruikers kunnen u een sterren-waardering geven dat afgebeeld is in de "
 #~ "eigendommen-detail"
@@ -7530,7 +7604,8 @@ msgstr "Widget-gestuurde  footer ruimte %d."
 #~ msgstr "Meerdere eigendommen moeten ingegeven worden"
 
 #~ msgid "Please add more property to compare list!"
-#~ msgstr "Gelieve meer dan 1 eigendom in te geven om de lijst te vervolledigen!"
+#~ msgstr ""
+#~ "Gelieve meer dan 1 eigendom in te geven om de lijst te vervolledigen!"
 
 #~ msgid "Nothing was found on your request."
 #~ msgstr "Niets werd gevonden op uw vraag."
@@ -7805,7 +7880,8 @@ msgstr "Widget-gestuurde  footer ruimte %d."
 
 #~ msgid "Are you sure you want to delete agent from invite list?"
 #~ msgstr ""
-#~ "Bent u zeker dat u de agent wilt verwijderen van de lijst van uitgenodigden?"
+#~ "Bent u zeker dat u de agent wilt verwijderen van de lijst van "
+#~ "uitgenodigden?"
 
 #~ msgctxt "Property status"
 #~ msgid "Pending property"

@@ -16,7 +16,7 @@ get_header(); ?>
 			$page_layout = get_post_meta(get_the_ID(), $zoner_prefix.'pages_layout', true); 
 	?>
 	<?php if ($page_layout != -1) do_action('zoner_before_content') ?>
-		<?php do_action('the_main_content'); ?>
+		<?php do_action('zoner_the_main_content'); ?>
 	<?php if ($page_layout != -1) do_action('zoner_after_content') ?>
 <?php
    get_footer();

@@ -5,7 +5,7 @@
 	/*Main Content Part*/
 	add_action('zoner_before_content', 'zoner_before_content');
 	add_action('zoner_after_content',  'zoner_after_content');
-	add_action('the_main_content', 'zoner_the_main_content');
+	add_action('zoner_the_main_content', 'zoner_get_main_content');
 	
 	add_filter( 'page_css_class', 'zoner_add_page_parent_class', 10, 4 );
 	add_action( 'customize_register', 'zoner_customize_register' );
@@ -24,20 +24,7 @@
 	add_filter( 'the_content', 'zoner_post_chat', 99);
 	add_filter( 'img_caption_shortcode', 'zoner_img_caption', 10, 3 );
 	
-	
-	/*Profile*/
-	add_action('wp', 'zoner_process_save_profile', 300);
-	
-	
 	/*Footer*/
 	add_action('zoner_footer_elements', 'zoner_get_footer_area_sidebars', 1);
 	add_action('zoner_footer_elements', 'zoner_get_social', 3);
-	
-	
-	
-	/*User password*/
-	add_action( 'wp_ajax_zoner_check_user_password', 'zoner_check_user_password_act' );
-	add_action( 'wp_ajax_nopriv_zoner_check_user_password', 'zoner_check_user_password_act' );
-	
-	add_action( 'wp', 'zoner_change_user_pass_act', 300);
 	

@@ -123,10 +123,6 @@ if ( ! function_exists( 'zoner_customize_register' ) ) :
 		$wp_customize->get_setting( 'blogdescription' )->transport  = 'postMessage';
 		$wp_customize->get_setting( 'header_textcolor' )->transport = 'postMessage';
 		
-		
-		$wp_customize->remove_section( 'colors');
-		$wp_customize->remove_section( 'header_image');
-		$wp_customize->remove_section( 'background_image');
 	}
 endif; // zoner_customize_register
 
@@ -150,7 +146,7 @@ endif; //zoner_content_width
  */
 if ( ! function_exists( 'zoner_scripts' ) ) {
 	function zoner_scripts() {
-		global 	$zoner_inc_theme_url, $zoner_config, $post, $zoner_prefix, $zoner;
+		global 	$zoner_inc_theme_url, $zoner_config;
 		$is_rtl = 0;
 		
 		$is_mobile = 0;
@@ -163,46 +159,40 @@ if ( ! function_exists( 'zoner_scripts' ) ) {
 		
 		
 		wp_register_script( 'zoner-mainJs',	 $zoner_inc_theme_url . 'assets/js/custom.js',	 array( 'jquery' ), '20142807', true );
-		wp_localize_script( 'zoner-mainJs', 'ZonerGlobal', 	array( 	'ajaxurl' 		=> admin_url( 'admin-ajax.php' ),
-																	'is_rtl'		=> $is_rtl,
+		wp_localize_script( 'zoner-mainJs', 'ZonerGlobal', 	array( 	'is_rtl'		=> $is_rtl,
 																	'is_mobile' 	=> $is_mobile
 																	) );  
 		
 		/*Custom Css*/
-		wp_enqueue_style( 'zoner-fontAwesom', 		$zoner_inc_theme_url . 'assets/fonts/font-awesome.min.css');
-		wp_enqueue_style( 'zoner-fontElegantIcons', $zoner_inc_theme_url . 'assets/fonts/ElegantIcons.css');
-		wp_enqueue_style( 'zoner-bootstrap', 	 	$zoner_inc_theme_url . 'assets/bootstrap/css/bootstrap.min.css');
+		wp_enqueue_style( 'font-awesome', 				$zoner_inc_theme_url . 'assets/fonts/font-awesome.min.css');
+		wp_enqueue_style( 'font-elegant-icons', 		$zoner_inc_theme_url . 'assets/fonts/ElegantIcons.css');
+		wp_enqueue_style( 'bootstrap', 	 				$zoner_inc_theme_url . 'assets/bootstrap/css/bootstrap.min.css');
 		
 		if (is_rtl())
-		wp_enqueue_style( 'zoner-bootstrap-rtl', 	$zoner_inc_theme_url . 'assets/bootstrap/css/bootstrap-rtl.min.css');
-		wp_enqueue_style( 'zoner-bootstrap-social', 	$zoner_inc_theme_url . 'assets/bootstrap/css/bootstrap-social-buttons.css');
-		wp_enqueue_style( 'zoner-bootstrap-select', 	$zoner_inc_theme_url . 'assets/css/bootstrap-select.min.css');
-		wp_enqueue_style( 'zoner-owl.carousel', 	$zoner_inc_theme_url . 'assets/css/owl.carousel.css');
-		wp_enqueue_style( 'zoner-owl.carousel-trans', $zoner_inc_theme_url . 'assets/css/owl.transitions.css');
+		wp_enqueue_style( 'bootstrap-rtl', 				$zoner_inc_theme_url . 'assets/bootstrap/css/bootstrap-rtl.min.css');
+		wp_enqueue_style( 'bootstrap-social', 			$zoner_inc_theme_url . 'assets/bootstrap/css/bootstrap-social-buttons.css');
+		wp_enqueue_style( 'bootstrap-select', 			$zoner_inc_theme_url . 'assets/css/bootstrap-select.min.css');
+		wp_enqueue_style( 'owl-carousel', 				$zoner_inc_theme_url . 'assets/css/owl.carousel.css');
+		wp_enqueue_style( 'owl-carousel-trans', 		$zoner_inc_theme_url . 'assets/css/owl.transitions.css');
 		
 		
 		wp_enqueue_style( 'zoner-style', get_stylesheet_uri() );
 		
 		/*Custom Js*/
-		wp_enqueue_script( 'zoner-skip-link-focus-fix', $zoner_inc_theme_url . 'assets/js/skip-link-focus-fix.js', array(), '20142807', true );
+		wp_enqueue_script( 'zoner-skip-link-focus-fix',	$zoner_inc_theme_url . 'assets/js/skip-link-focus-fix.js', array(), '20142807', true );
 		
-		wp_enqueue_script( 'zoner-bootstrap', 		 $zoner_inc_theme_url . 'assets/bootstrap/js/bootstrap.min.js', array( 'jquery' ), '20142807', true );
-		wp_enqueue_script( 'zoner-bootstrap-select', $zoner_inc_theme_url . 'assets/js/bootstrap-select.min.js',	  array( 'jquery' ), '20142807', true );
-		wp_enqueue_script( 'zoner-bootstrap-holder',	 $zoner_inc_theme_url . 'assets/js/holder.js', array( 'jquery' ), '20142807', true ); 
+		wp_enqueue_script( 'bootstrap',					$zoner_inc_theme_url . 'assets/bootstrap/js/bootstrap.min.js', array( 'jquery' ), '20142807', true );
+		wp_enqueue_script( 'bootstrap-select', 			$zoner_inc_theme_url . 'assets/js/bootstrap-select.min.js',	  array( 'jquery' ), '20142807', true );
+		wp_enqueue_script( 'bootstrap-holder',	 		$zoner_inc_theme_url . 'assets/js/holder.js', array( 'jquery' ), '20142807', true ); 
 		
-		if (is_user_logged_in()) {
-			wp_enqueue_script( 'zoner-bootstrap-filei',	$zoner_inc_theme_url . 'assets/bootstrap/js/bootstrap.file-input.js', array( 'jquery' ), '20142807', true );
-		}
+		wp_enqueue_script( 'icheck', 					$zoner_inc_theme_url . 'assets/js/icheck.min.js',	 array( 'jquery' ), '20142807', true );
 		
-		wp_enqueue_script( 'zoner-ichek', $zoner_inc_theme_url . 'assets/js/icheck.min.js',	 array( 'jquery' ), '20142807', true );
-		if (is_user_logged_in())
-		wp_enqueue_script( 'zoner-bootstrap-filea',	$zoner_inc_theme_url . 'assets/js/fileinput.min.js', array( 'jquery' ), '20142807', true );
 		if (!empty($zoner_config['smoothscroll']))
-	    wp_enqueue_script( 'zoner-smoothscroll', 	$zoner_inc_theme_url . 'assets/js/smoothscroll.js', array( 'jquery' ), '20142807', true );
+	    wp_enqueue_script( 'smoothscroll', 				$zoner_inc_theme_url . 'assets/js/smoothscroll.js', array( 'jquery' ), '20142807', true );
 		
-		wp_enqueue_script( 'zoner-owl', 		$zoner_inc_theme_url . 'assets/js/owl.carousel.min.js',	 array( 'jquery' ), '20142807', true );
-		wp_enqueue_script( 'zoner-validate', 	$zoner_inc_theme_url . 'assets/js/jquery.validate.min.js',	 array( 'jquery' ), '20142807', true );
-		wp_enqueue_script( 'zoner-placeholder',	$zoner_inc_theme_url . 'assets/js/jquery.placeholder.js',	 array( 'jquery' ), '20142807', true );
+		wp_enqueue_script( 'owl-carousel', 				$zoner_inc_theme_url . 'assets/js/owl.carousel.min.js',	 array( 'jquery' ), '20142807', true );
+		wp_enqueue_script( 'jquery-validate', 			$zoner_inc_theme_url . 'assets/js/jquery.validate.min.js',	 array( 'jquery' ), '20142807', true );
+		wp_enqueue_script( 'jquery-placeholder',		$zoner_inc_theme_url . 'assets/js/jquery.placeholder.js',	 array( 'jquery' ), '20142807', true );
 		
 		
 		/*Custom scripts*/
@@ -234,7 +224,7 @@ if ( ! function_exists( 'zoner_scripts' ) ) {
  */
 if ( ! function_exists( 'zoner_body_classes' ) ) :
 function zoner_body_classes( $classes ) {
-	global $zoner_prefix, $zoner, $zoner_config;
+	global $zoner_prefix, $zoner_config;
 	$posts_page = get_option( 'page_for_posts' );	
 	
 	if ( is_multi_author() ) {
@@ -494,7 +484,7 @@ if ( ! function_exists( 'zoner_get_social' ) ) {
 		if (!empty($zoner_config['footer-text'])) {
 			$ftext = zoner_kses_data(stripslashes($zoner_config['footer-text']));
 		} elseif (!$zoner_is_redux_active) {
-			$ftext = __('&#169; <a title="WordPress Development" href="http://fruitfulcode.com/">Fruitful Code</a>, Powered by <a href="http://wordpress.org/">WordPress</a>', 'zoner-lite');
+			$ftext = __('Zoner Lite theme by <a title="WordPress Development" href="http://fruitfulcode.com/">Fruitful Code</a>, Powered by <a href="http://wordpress.org/">WordPress</a>', 'zoner-lite');
 		}
 			
 		if (is_home() || is_front_page()) {
@@ -510,24 +500,24 @@ if ( ! function_exists( 'zoner_get_social' ) ) {
 			if ($zoner_config['footer-issocial']) {
 				$fsocial .= '<div class="social pull-right">';
 					$fsocial .= '<div class="icons">';
-					if (!empty($zoner_config['facebook-url'])) 	{ $fsocial .= '<a title="Facebook" 	href="'.esc_url($zoner_config['facebook-url']).'"><i class="icon social_facebook"></i></a>'; }	
-					if (!empty($zoner_config['twitter-url'])) 	{ $fsocial .= '<a title="Twitter" 	href="'.esc_url($zoner_config['twitter-url']).'"><i class="icon social_twitter"></i></a>'; }	
-					if (!empty($zoner_config['linkedin-url'])) 	{ $fsocial .= '<a title="Linked In" href="'.esc_url($zoner_config['linkedin-url']).'"><i class="icon social_linkedin"></i></a>'; }	
-					if (!empty($zoner_config['myspace-url'])) 	{ $fsocial .= '<a title="My space" 	href="'.esc_url($zoner_config['myspace-url']).'"><i class="icon social_myspace"></i></a>'; }	
-					if (!empty($zoner_config['gplus-url'])) 	{ $fsocial .= '<a title="Google+"	href="'.esc_url($zoner_config['gplus-url']).'"><i class="icon social_googleplus"></i></a>'; }	
-					if (!empty($zoner_config['dribbble-url'])) 	{ $fsocial .= '<a title="Dribble" 	href="'.esc_url($zoner_config['dribbble-url']).'"><i class="icon social_dribbble"></i></a>';	}						
-					if (!empty($zoner_config['flickr-url'])) 	{ $fsocial .= '<a title="Flickr" 	href="'.esc_url($zoner_config['flickr-url']).'"><i class="icon social_flickr"></i></a>'; }						
-					if (!empty($zoner_config['youtube-url'])) 	{ $fsocial .= '<a title="YouTube" 	href="'.esc_url($zoner_config['youtube-url']).'"><i class="icon social_youtube"></i></a>'; }						
-					if (!empty($zoner_config['delicious-url'])) 	{ $fsocial .= '<a title="Delicious" href="'.esc_url($zoner_config['delicious-url']).'"><i class="icon social_delicious"></i></a>'; }						
-					if (!empty($zoner_config['deviantart-url']))	{ $fsocial .= '<a title="Deviantart" href="'.esc_url($zoner_config['deviantart-url']).'"><i class="icon social_deviantart"></i></a>'; }						
-					if (!empty($zoner_config['rss-url'])) 			{ $fsocial .= '<a title="RSS" 		href="'.esc_url($zoner_config['rss-url']).'"><i class="icon social_rss"></i></a>'; }						
-					if (!empty($zoner_config['instagram-url']))  { $fsocial .= '<a title="Instagram" href="'.esc_url($zoner_config['instagram-url']).'"><i class="icon social_instagram"></i></a>'; }						
-					if (!empty($zoner_config['pinterest-url']))  { $fsocial .= '<a title="Pinterset" href="'.esc_url($zoner_config['pinterest-url']).'"><i class="icon social_pinterest"></i></a>'; }						
-					if (!empty($zoner_config['vimeo-url'])) 		{ $fsocial .= '<a title="Vimeo" 	href="'.esc_url($zoner_config['vimeo-url']).'"><i class="icon social_vimeo"></i></a>'; }						
-					if (!empty($zoner_config['picassa-url'])) 		{ $fsocial .= '<a title="Picassa" 	href="'.esc_url($zoner_config['picassa-url']).'"><i class="icon social_picassa"></i></a>'; }						
-					if (!empty($zoner_config['social_tumblr']))		{ $fsocial .= '<a title="Tumblr" 	href="'.esc_url($zoner_config['social_tumblr']).'"><i class="icon social_tumblr"></i></a>'; }						
-					if (!empty($zoner_config['email-address']))  	{ $fsocial .= '<a title="Email" 	href="mailto:'.esc_attr($zoner_config['email-address']).'"><i class="icon icon_mail_alt"></i></a>'; }						
-					if (!empty($zoner_config['skype-username'])) 	{ $fsocial .= '<a title="Call to '.esc_attr($zoner_config['skype-username']).'" href="href="skype:'.esc_attr($zoner_config['skype-username']).'?call"><i class="icon social_skype"></i></a>'; }						
+					if (!empty($zoner_config['facebook-url'])) 	{ $fsocial .= '<a title="'.__('Facebook', 'zoner-lite').'" 	href="'.esc_url($zoner_config['facebook-url']).'"><i class="icon social_facebook"></i></a>'; }	
+					if (!empty($zoner_config['twitter-url'])) 	{ $fsocial .= '<a title="'.__('Twitter', 'zoner-lite').'" 	href="'.esc_url($zoner_config['twitter-url']).'"><i class="icon social_twitter"></i></a>'; }	
+					if (!empty($zoner_config['linkedin-url'])) 	{ $fsocial .= '<a title="'.__('Linked In', 'zoner-lite').'" href="'.esc_url($zoner_config['linkedin-url']).'"><i class="icon social_linkedin"></i></a>'; }	
+					if (!empty($zoner_config['myspace-url'])) 	{ $fsocial .= '<a title="'.__('My space', 'zoner-lite').'" 	href="'.esc_url($zoner_config['myspace-url']).'"><i class="icon social_myspace"></i></a>'; }	
+					if (!empty($zoner_config['gplus-url'])) 	{ $fsocial .= '<a title="'.__('Google+', 'zoner-lite').'"	href="'.esc_url($zoner_config['gplus-url']).'"><i class="icon social_googleplus"></i></a>'; }	
+					if (!empty($zoner_config['dribbble-url'])) 	{ $fsocial .= '<a title="'.__('Dribble', 'zoner-lite').'" 	href="'.esc_url($zoner_config['dribbble-url']).'"><i class="icon social_dribbble"></i></a>';	}						
+					if (!empty($zoner_config['flickr-url'])) 	{ $fsocial .= '<a title="'.__('Flickr', 'zoner-lite').'" 	href="'.esc_url($zoner_config['flickr-url']).'"><i class="icon social_flickr"></i></a>'; }						
+					if (!empty($zoner_config['youtube-url'])) 	{ $fsocial .= '<a title="'.__('YouTube', 'zoner-lite').'" 	href="'.esc_url($zoner_config['youtube-url']).'"><i class="icon social_youtube"></i></a>'; }						
+					if (!empty($zoner_config['delicious-url'])) 	{ $fsocial .= '<a title="'.__('Delicious', 'zoner-lite').'" href="'.esc_url($zoner_config['delicious-url']).'"><i class="icon social_delicious"></i></a>'; }						
+					if (!empty($zoner_config['deviantart-url']))	{ $fsocial .= '<a title="'.__('Deviantart', 'zoner-lite').'" href="'.esc_url($zoner_config['deviantart-url']).'"><i class="icon social_deviantart"></i></a>'; }						
+					if (!empty($zoner_config['rss-url'])) 			{ $fsocial .= '<a title="'.__('RSS', 'zoner-lite').'" 		href="'.esc_url($zoner_config['rss-url']).'"><i class="icon social_rss"></i></a>'; }						
+					if (!empty($zoner_config['instagram-url']))  { $fsocial .= '<a title="'.__('Instagram', 'zoner-lite').'" href="'.esc_url($zoner_config['instagram-url']).'"><i class="icon social_instagram"></i></a>'; }						
+					if (!empty($zoner_config['pinterest-url']))  { $fsocial .= '<a title="'.__('Pinterset', 'zoner-lite').'" href="'.esc_url($zoner_config['pinterest-url']).'"><i class="icon social_pinterest"></i></a>'; }						
+					if (!empty($zoner_config['vimeo-url'])) 		{ $fsocial .= '<a title="'.__('Vimeo', 'zoner-lite').'" 	href="'.esc_url($zoner_config['vimeo-url']).'"><i class="icon social_vimeo"></i></a>'; }						
+					if (!empty($zoner_config['picassa-url'])) 		{ $fsocial .= '<a title="'.__('Picassa', 'zoner-lite').'" 	href="'.esc_url($zoner_config['picassa-url']).'"><i class="icon social_picassa"></i></a>'; }						
+					if (!empty($zoner_config['social_tumblr']))		{ $fsocial .= '<a title="'.__('Tumblr', 'zoner-lite').'" 	href="'.esc_url($zoner_config['social_tumblr']).'"><i class="icon social_tumblr"></i></a>'; }						
+					if (!empty($zoner_config['email-address']))  	{ $fsocial .= '<a title="'.__('Email', 'zoner-lite').'" 	href="mailto:'.esc_attr($zoner_config['email-address']).'"><i class="icon icon_mail_alt"></i></a>'; }						
+					if (!empty($zoner_config['skype-username'])) 	{ $fsocial .= '<a title="'.__('Call to', 'zoner-lite').' '.esc_attr($zoner_config['skype-username']).'" href="href="skype:'.esc_attr($zoner_config['skype-username']).'?call"><i class="icon social_skype"></i></a>'; }						
 					$fsocial .= '</div><!-- /.icons -->';
 				$fsocial .= '</div><!-- /.social -->';
 			}
@@ -539,7 +529,7 @@ if ( ! function_exists( 'zoner_get_social' ) ) {
 				if (!empty($out_ftext)) {
 					$out_ .= '<div class="copyright pull-left">'.$out_ftext.'</div><!-- /.copyright -->';
 				} else {
-					$out_ .= '<div class="copyright pull-left"><a title="'.get_bloginfo('name').'" href="'.site_url().'">'.$out_ftext.'</a></div><!-- /.copyright -->';
+					$out_ .= '<div class="copyright pull-left"><a title="'.get_bloginfo('name').'" href="'.home_url( '/' ).'">'.$out_ftext.'</a></div><!-- /.copyright -->';
 				}
 				
 				if ($fsocial != '') $out_ .= $fsocial;
@@ -573,13 +563,13 @@ if ( ! function_exists( 'zoner_visibilty_comments' ) ) {
 
 if ( ! function_exists( 'zoner_seconadry_navigation' ) ) {
 	function zoner_seconadry_navigation() {
-		global $zoner_config, $current_user, $wp_users, $zoner;
+		global $zoner_config;
 		
-		get_currentuserinfo();
+		$current_user = wp_get_current_user();
 		
-		$site_url = site_url('');
+		$site_url = home_url( '/' );
 		if (function_exists('icl_get_home_url'))
-		$site_url = icl_get_home_url();
+			$site_url = icl_get_home_url();
 		?>
 		<div class="secondary-navigation">
 			<div class="container">
@@ -663,7 +653,7 @@ if ( ! function_exists( 'zoner_after_content' ) ) {
 
 if ( ! function_exists( 'zoner_zoner_get_sidebar_part' ) ) {
 	function zoner_get_sidebar_part($sidebar) {
-		global $zoner_config, $zoner, $zoner_prefix;
+		global $zoner_config, $zoner_prefix;
 	?>
 		<div id="sidebar" class="sidebar" role="complementary">
 			<?php if (zoner_active_sidebar($sidebar)) zoner_sidebar($sidebar); ?>	
@@ -726,8 +716,8 @@ if ( ! function_exists( 'zoner_get_content_part' ) ) {
 	}
 }	
 	
-if ( ! function_exists( 'zoner_the_main_content' ) ) {
-	function zoner_the_main_content () {
+if ( ! function_exists( 'zoner_get_main_content' ) ) {
+	function zoner_get_main_content () {
 		global $zoner_config, $zoner_prefix, $post;
 		$layout = 3;
 		$sidebar = 'secondary';
@@ -798,7 +788,6 @@ if ( ! function_exists( 'zoner_the_main_content' ) ) {
 
 if ( ! function_exists( 'zoner_nav_parent_class' ) ) {			
 	function zoner_nav_parent_class( $classes, $item ) {
-		global $wpdb, $zoner, $zoner_config, $zoner_prefix;
 		$cpt_name = array('');
 		if ( in_array(get_post_type(), $cpt_name) && ! is_admin() ) {
 
@@ -873,7 +862,6 @@ if ( ! function_exists( 'zoner_img_caption' ) ) {
 
 if ( ! function_exists( 'zoner_get_author_information' ) ) {				
 	function zoner_get_author_information() {	
-		global $zoner_config, $zoner_prefix, $zoner;
 		?>
 		<?php if ( have_posts() ) : ?>
 			<?php the_post(); ?>
@@ -904,7 +892,7 @@ if ( ! function_exists( 'zoner_get_author_information' ) ) {
 /*Get Post Thumbnail*/
 if ( ! function_exists( 'zoner_get_post_thumbnail' ) ) {				
 	function zoner_get_post_thumbnail() {
-		global $zoner_config, $zoner_prefix, $zoner, $post, $zoner_is_redux_active;
+		global $zoner_config, $post, $zoner_is_redux_active;
 		
 		if ( has_post_thumbnail() && ($zoner_config['pp-thumbnail'] || ! $zoner_is_redux_active)) {
 			$attachment_id = get_post_thumbnail_id( $post->ID );
@@ -925,7 +913,6 @@ if ( ! function_exists( 'zoner_get_post_thumbnail' ) ) {
 /*Get title*/
 if ( ! function_exists( 'zoner_get_post_title' ) ) {				
 	function zoner_get_post_title() {
-		global $zoner_config, $zoner_prefix, $zoner;
 		
 		$sticky_icon = '';
 		
@@ -942,7 +929,7 @@ if ( ! function_exists( 'zoner_get_post_title' ) ) {
 /*Meta*/
 if ( ! function_exists( 'zoner_get_post_meta' ) ) {				
 	function zoner_get_post_meta() {
-		global $zoner_config, $zoner_prefix, $zoner, $post, $zoner_is_redux_active;
+		global $zoner_config, $zoner_is_redux_active;
 		
 			$archive_year  = get_the_time('Y'); 
 			$archive_month = get_the_time('m'); 
@@ -989,7 +976,6 @@ if ( ! function_exists( 'zoner_get_post_none_content' ) ) {
 /*Single About The Author*/	
 if ( ! function_exists( 'zoner_get_post_about_author' ) ) {				
 	function zoner_get_post_about_author() {
-		global $zoner_config, $zoner_prefix, $zoner, $post;
 	
 	?>
 		
@@ -1010,7 +996,7 @@ if ( ! function_exists( 'zoner_get_post_about_author' ) ) {
 
 if ( ! function_exists( 'zoner_get_home_slider' ) ) {		
 	function zoner_get_home_slider() {
-		global $zoner_config, $zoner, $prefix;
+		global $zoner_config;
 		$out_slider = '';
 		
 		if ((!is_front_page()) || (!$zoner_config['switch-slider'])) { return; }
@@ -1037,7 +1023,7 @@ if ( ! function_exists( 'zoner_get_home_slider' ) ) {
 										$out_slider .= '<figure>'.$description.'</figure>';
 									$out_slider .= '</div>';
 									if (!empty($url)) $out_slider .= '<hr />';
-									if (!empty($url)) $out_slider .= '<a href="'.$url.'" class="link-arrow">'. __('Read More', 'zoner').'</a>';
+									if (!empty($url)) $out_slider .= '<a href="'.$url.'" class="link-arrow">'. __('Read More', 'zoner-lite').'</a>';
 								$out_slider .= '</div>';
 							$out_slider .= '</div>';
 						$out_slider .= '</div>';
@@ -1055,7 +1041,6 @@ if ( ! function_exists( 'zoner_get_home_slider' ) ) {
 /*Read More*/
 if ( ! function_exists( 'zoner_get_readmore_link' ) ) {				
 	function zoner_get_readmore_link() {
-		global $zoner_config, $zoner_prefix, $zoner, $post;
 		?> 
 			<a class="link-arrow" href="<?php the_permalink();?>"><?php _e('Read More', 'zoner-lite'); ?><span class="screen-reader-text"> <?php echo get_the_title(); ?></span></a>
 		<?php	
