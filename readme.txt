@@ -47,22 +47,22 @@ Files: zoner-lite.pot, en_US.po, en_US.mo ru_Ru.po, ru_Ru.mo, nl_BE.mo, nl_BE.po
     Credits
 -------------------------------------------------------
  
-* Bootstrap Framework – http://getbootstrap.com Licensed under MIT
-* Bootstrap-select - http://silviomoreto.github.io/bootstrap-select/ Licensed under MIT
-* Redux Framework – http://reduxframework.com Licensed under GNU
-* holder.js - http://holderjs.com Licensed under MIT
+* Bootstrap Framework – http://getbootstrap.com Code licensed MIT, docs CC BY 3.0.
+* Bootstrap-select - http://silviomoreto.github.io/bootstrap-select/ Licensed under MIT Bootstrap-select is maintained by caseyjhol, t0xicCode, and the community.
+* Redux Framework – http://reduxframework.com Licensed under the Version 2 of the GNU General Public License © COPYRIGHT REDUX FRAMEWORK
+* holder.js - http://holderjs.com Holder is provided under the MIT License. Made by Ivan Malopinsky.
 * iCheck - https://github.com/fronteed/iCheck/ Licensed under MIT
 * jQuery Validation Plugin - http://jqueryvalidation.org/ Licensed under MIT
 * OWL Carousel  - http://owlgraphic.com/owlcarousel/ Licensed under MIT
 * smoothscroll.js - https://github.com/galambalazs/smoothscroll Licensed under MIT
-* ElegantIcons - https://www.elegantthemes.com/blog/resources/elegant-icon-font Licensed under MIT and GPL licenses
+* ElegantIcons - https://www.elegantthemes.com/blog/resources/elegant-icon-font Licensed under MIT and GPL licenses Copyright © 2016 Elegant Themes ®
 * Custom Metaboxes and Fields for WordPress – https://github.com/webdevstudios Licensed under GPL licenses
 * jQuery Placeholder – http://mths.be/placeholder Licensed under MIT
 * html5.js – https://github.com/aFarkas/html5shiv Licensed under GPL licenses
-* Google fonts - https://www.google.com/fonts Licensed under GPL licenses
-* Font Awesome - http://fortawesome.github.io/Font-Awesome/ Licensed under MIT
+* Google fonts - https://www.google.com/fonts Licensed under the Creative Commons Attribution 3.0 License, and code samples are licensed under the Apache 2.0 License
+* Font Awesome - http://fortawesome.github.io/Font-Awesome/  Font Awesome 4.5.0 · Created by Dave Gandy Font Awesome licensed under SIL OFL 1.1 · Code licensed under MIT License · Documentation licensed under CC BY 3.0
 * Images - http://unsplash.com/
-
+* Fileinput.js - https://github.com/kartik-v/bootstrap-fileinput License BSD-3-Clause
 -------------------------------------------------------
     Changelog
 -------------------------------------------------------
