@@ -18,20 +18,10 @@
 						$has_valid_gravatar = true;
 					}
 					
-					if (!$has_valid_gravatar) {
-						$all_meta_for_user = get_user_meta( $comment->user_id );
-						if (!empty($all_meta_for_user)) {
-							if (!empty($all_meta_for_user[$zoner_prefix.'avatar'])) {
-								$avatar     = $all_meta_for_user[$zoner_prefix.'avatar'];
-							}
-						}
-						if (!empty($avatar)){
-							$avatar_img = '<img width="100%" class="avatar photo" src="'.current($avatar).'" alt="" />';
-						} else {
-							$avatar_img = '<img width="100%" class="img-responsive" data-src="holder.js/86x86?text='. __('Author', 'zoner-lite') .'" alt="" />';
-						}
-					} else {
+					if ($has_valid_gravatar) {
 						$avatar_img = get_avatar( $comment,  70 );
+					} else {
+						$avatar_img = '<img width="100%" class="img-responsive" data-src="holder.js/86x86?text='. __('Author', 'zoner-lite') .'" alt="" />';
 					}
 				?>
 				

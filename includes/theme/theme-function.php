@@ -994,6 +994,32 @@ if ( ! function_exists( 'zoner_get_post_about_author' ) ) {
 	}
 }	
 
+if ( ! function_exists( 'zoner_get_profile_avartar' ) ) {				
+	function zoner_get_profile_avartar($author_id) {
+		$avatar_img = $avatar = $author_email = '';
+		$has_valid_gravatar = false;
+		$author_email = get_the_author_meta('email', $author_id);
+		if (!empty($author_email)){
+			$hash = md5(strtolower(trim($author_email)));
+			$uri = 'http://www.gravatar.com/avatar/' . $hash . '?d=404';
+			$headers = @get_headers(esc_url($uri));
+			if (!preg_match("|200|", $headers[0])) {
+				$has_valid_gravatar = false;
+			} else {
+				$has_valid_gravatar = true;
+			}
+		}
+		
+		if ($has_valid_gravatar) {
+			$avatar_img = get_avatar( $author_id,  100 );
+		} else {
+			$avatar_img = '<img width="100%" class="img-responsive" src="' . get_template_directory_uri() . '/includes/theme/profile/res/avatar.jpg" alt="" />';
+		}
+		
+		return $avatar_img;
+	}
+}	
+
 if ( ! function_exists( 'zoner_get_home_slider' ) ) {		
 	function zoner_get_home_slider() {
 		global $zoner_config;
