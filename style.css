@@ -1631,6 +1631,7 @@ img.size-full, img.size-large, .wp-post-image, .post-thumbnail img {
 .comment-list .comment figure .image img {
   height: 100%;
   width: 70px;
+  margin-left: -5px;
 }
 .comment-list .comment .date {
   font-size: 12px;
@@ -2339,23 +2340,36 @@ form.post-password-form input[type="submit"] {
 /*------------------------------------------------------------------
 	[12.0 Custom Paginations]
 */
-
-.pagination li:first-child a, .pagination li:last-child a {
-  -moz-border-radius: 0px;
-  -webkit-border-radius: 0px;
-  border-radius: 0px;
+.navigation.pagination {
+	box-shadow: none;
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+	background-color: transparent;
+	position: static;
+	text-align: center;
+	margin: 0;
 }
-.pagination li.active a {
+.navigation.pagination .nav-links {
+	border-radius: 4px;
+    display: inline-block;
+    margin: 20px 0;
+    padding-left: 0;
+}
+.navigation.pagination a.current,
+.navigation.pagination span.current {
   background-color: transparent;
   border-color: #073855;
   color: #073855;
 }
-.pagination li.active a:hover, .pagination li.active a:active, .pagination li.active a:focus {
+.navigation.pagination a.current:hover, .navigation.pagination a.current:active, .navigation.pagination a.current:focus,
+.navigation.pagination span.current:hover, .navigation.pagination span.current:active, .navigation.pagination span.current:focus {
   background-color: transparent;
   border-color: #073855;
   color: #073855;
 }
-.pagination li a {
+.navigation.pagination a,
+.navigation.pagination span {
+  float: left;
   -moz-border-radius: 0px;
   -webkit-border-radius: 0px;
   border-radius: 0px;
@@ -2365,7 +2379,8 @@ form.post-password-form input[type="submit"] {
   color: #5a5a5a;
   padding: 10px 20px;
 }
-.pagination li a:hover, .pagination li a:active, .pagination li a:focus {
+.navigation.pagination a:hover, .navigation.pagination a:active, .navigation.pagination a:focus,
+.navigation.pagination span:hover, .navigation.pagination span:active, .navigation.pagination span:focus {
   background-color: transparent;
   border-color: #007cbe;
   color: #007cbe;

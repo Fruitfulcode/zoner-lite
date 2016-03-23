@@ -181,27 +181,6 @@ if (!class_exists('zoner_config')) {
                         'default'   => 'post'
                     ),
 					array(
-                        'id'        => 'excerpt',
-                        'type'      => 'select',
-                        'title'     => __('Select Post Preview', 'zoner-framework'),
-                        'subtitle'  => __('Select showing full post, excerpt or title only', 'zoner-framework'),
-                        'options'   =>  array(
-                            '1'     => __("Full post (before <-more->)", "zoner-framework"),
-                            '2'     => __("Excerpt", "zoner-framework"),
-                            '3'     => __("Only Title", "zoner-framework"),
-                        ),
-                        'default'   => '1'
-                    ),
-                    
-                    array(
-                        'id'        => 'excerpt-numwords',
-                        'type'      => 'text',
-                        'required'  => array('excerpt', '=', '2'),
-                        'title'     => __('Number of words', 'zoner-framework'),
-                        'subtitle'      => __('Type number of words for excerpt', 'zoner-framework'),
-                        'default'   => '20'
-                    ),
-					array(
                         'id'        => 'pp-post',
                         'type'      => 'image_select',
                         'title'     => __('Single post layout', 'zoner-lite'),
@@ -1001,7 +980,7 @@ if (!class_exists('zoner_config')) {
                         'type'      => 'editor',
                         'title'     => __('Copyright section', 'zoner-lite'),
                         'subtitle'  => __('Replace default theme copyright information and links', 'zoner-lite'),
-                        'default'   => __('Zoner Lite theme by <a title="WordPress Development" href="http://fruitfulcode.com/">Fruitful Code</a>, Powered by <a href="http://wordpress.org/">WordPress</a>', 'zoner-lite'),
+                        'default'   => __('Zoner Lite theme by <a title="WordPress Development" href="https://github.com/fruitfulcode/">Fruitful Code</a>, Powered by <a href="http://wordpress.org/">WordPress</a>', 'zoner-lite'),
                     ),
 					
 					array(

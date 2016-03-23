@@ -50,7 +50,6 @@ Files: zoner-lite.pot, en_US.po, en_US.mo ru_Ru.po, ru_Ru.mo, nl_BE.mo, nl_BE.po
 * Bootstrap Framework – http://getbootstrap.com Code licensed MIT, docs CC BY 3.0.
 * Bootstrap-select - http://silviomoreto.github.io/bootstrap-select/ Licensed under MIT Bootstrap-select is maintained by caseyjhol, t0xicCode, and the community.
 * Redux Framework – http://reduxframework.com Licensed under the Version 2 of the GNU General Public License © COPYRIGHT REDUX FRAMEWORK
-* holder.js - http://holderjs.com Holder is provided under the MIT License. Made by Ivan Malopinsky.
 * iCheck - https://github.com/fronteed/iCheck/ Licensed under MIT
 * jQuery Validation Plugin - http://jqueryvalidation.org/ Licensed under MIT
 * OWL Carousel  - http://owlgraphic.com/owlcarousel/ Licensed under MIT

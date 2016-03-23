@@ -5,29 +5,9 @@
 			$GLOBALS['comment'] = $comment; 
 			?>
 			<li id="comment-<?php echo $comment->comment_ID; ?>" <?php comment_class(); ?>>
-				<?php 
-					$avatar_img = $avatar = '';
-					$has_valid_gravatar = false;
-					
-					$hash = md5(strtolower(trim($comment->comment_author_email)));
-					$uri = 'http://www.gravatar.com/avatar/' . $hash . '?d=404';
-					$headers = @get_headers(esc_url($uri));
-					if (!preg_match("|200|", $headers[0])) {
-						$has_valid_gravatar = false;
-					} else {
-						$has_valid_gravatar = true;
-					}
-					
-					if ($has_valid_gravatar) {
-						$avatar_img = get_avatar( $comment,  70 );
-					} else {
-						$avatar_img = '<img width="100%" class="img-responsive" data-src="holder.js/86x86?text='. __('Author', 'zoner-lite') .'" alt="" />';
-					}
-				?>
-				
 				<figure>
 					<div class="image">
-						<?php echo $avatar_img;  ?>
+						<?php echo get_avatar( $comment,  70 );  ?>
 					</div>
 				</figure>
 				<div class="comment-wrapper">

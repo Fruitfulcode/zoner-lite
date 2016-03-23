@@ -14,7 +14,7 @@
 		<?php zoner_get_post_thumbnail(); ?>	
 		<?php zoner_get_post_title(); ?>
 		<?php zoner_get_post_meta(); ?>
-		<?php zoner_blog_post_preview(); ?>
+		<?php the_excerpt(); ?>
 		<?php zoner_get_readmore_link(); ?>
 	<?php else : ?>
 		<?php zoner_get_post_thumbnail(); ?>	

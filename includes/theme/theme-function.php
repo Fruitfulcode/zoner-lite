@@ -183,7 +183,6 @@ if ( ! function_exists( 'zoner_scripts' ) ) {
 		
 		wp_enqueue_script( 'bootstrap',					$zoner_inc_theme_url . 'assets/bootstrap/js/bootstrap.min.js', array( 'jquery' ), '20142807', true );
 		wp_enqueue_script( 'bootstrap-select', 			$zoner_inc_theme_url . 'assets/js/bootstrap-select.min.js',	  array( 'jquery' ), '20142807', true );
-		wp_enqueue_script( 'bootstrap-holder',	 		$zoner_inc_theme_url . 'assets/js/holder.js', array( 'jquery' ), '20142807', true ); 
 		
 		wp_enqueue_script( 'icheck', 					$zoner_inc_theme_url . 'assets/js/icheck.min.js',	 array( 'jquery' ), '20142807', true );
 		
@@ -484,7 +483,7 @@ if ( ! function_exists( 'zoner_get_social' ) ) {
 		if (!empty($zoner_config['footer-text'])) {
 			$ftext = zoner_kses_data(stripslashes($zoner_config['footer-text']));
 		} elseif (!$zoner_is_redux_active) {
-			$ftext = __('Zoner Lite theme by <a title="WordPress Development" href="http://fruitfulcode.com/">Fruitful Code</a>, Powered by <a href="http://wordpress.org/">WordPress</a>', 'zoner-lite');
+			$ftext = __('Zoner Lite theme by <a title="WordPress Development" href="https://github.com/fruitfulcode/">Fruitful Code</a>, Powered by <a href="http://wordpress.org/">WordPress</a>', 'zoner-lite');
 		}
 			
 		if (is_home() || is_front_page()) {
@@ -707,7 +706,9 @@ if ( ! function_exists( 'zoner_get_content_part' ) ) {
 						}						
 					endwhile;
 					
-				if ($type_in == 'post') zoner_paging_nav(); 
+				if ($type_in == 'post') {
+					the_posts_pagination();
+				}
 			} else {
 				echo '<header><h1>'. __('Nothing Found', 'zoner-lite').'</h1></header>';
 				get_template_part( 'content', 'none' );
@@ -879,7 +880,7 @@ if ( ! function_exists( 'zoner_get_author_information' ) ) {
 				while ( have_posts() ) : the_post();
 					get_template_part( 'content', get_post_format() );
 				endwhile;
-				zoner_paging_nav();
+				the_posts_pagination();
 				else :
 					get_template_part( 'content', 'none' );
 				endif;
@@ -982,7 +983,7 @@ if ( ! function_exists( 'zoner_get_post_about_author' ) ) {
 		<section id="about-author">
 			<header><h2><?php _e('About the Author', 'zoner-lite'); ?></h2></header>
 			<div class="post-author">
-				<?php echo zoner_get_profile_avartar(get_the_author_meta( 'ID')); ?>
+				<?php echo get_avatar( get_the_author_meta( 'ID'),  100 );  ?>
 				<div class="wrapper">
 					<header><?php the_author(); ?></header>
 					<?php the_author_meta( 'description'); ?>
@@ -992,33 +993,7 @@ if ( ! function_exists( 'zoner_get_post_about_author' ) ) {
 		
 	<?php 
 	}
-}	
-
-if ( ! function_exists( 'zoner_get_profile_avartar' ) ) {				
-	function zoner_get_profile_avartar($author_id) {
-		$avatar_img = $avatar = $author_email = '';
-		$has_valid_gravatar = false;
-		$author_email = get_the_author_meta('email', $author_id);
-		if (!empty($author_email)){
-			$hash = md5(strtolower(trim($author_email)));
-			$uri = 'http://www.gravatar.com/avatar/' . $hash . '?d=404';
-			$headers = @get_headers(esc_url($uri));
-			if (!preg_match("|200|", $headers[0])) {
-				$has_valid_gravatar = false;
-			} else {
-				$has_valid_gravatar = true;
-			}
-		}
-		
-		if ($has_valid_gravatar) {
-			$avatar_img = get_avatar( $author_id,  100 );
-		} else {
-			$avatar_img = '<img width="100%" class="img-responsive" src="' . get_template_directory_uri() . '/includes/theme/profile/res/avatar.jpg" alt="" />';
-		}
-		
-		return $avatar_img;
-	}
-}	
+}
 
 if ( ! function_exists( 'zoner_get_home_slider' ) ) {		
 	function zoner_get_home_slider() {
@@ -1079,38 +1054,3 @@ if ( ! function_exists( 'zoner_edit_post_link' ) ) {
 		return $output;
 	}
 }	
-
-if ( ! function_exists( 'zoner_words_limit' ) ) {			
-	function zoner_words_limit($string, $word_limit) {
-		$content = '';
-		if (empty($string)) return '';
-		$words = explode(' ', $string, ($word_limit + 1));
-		if(count($words) > $word_limit) array_pop($words);
-		$content = implode(' ', $words);
-		$content = strip_tags($content);
-		$content = strip_shortcodes($content) . '...';
-	
-		$content = preg_replace('/\[.+\]/','',  $content);
-		$content = apply_filters('the_content', $content); 
-		$content = str_replace(']]>', ']]&gt;', $content);
-		
-		return $content;
-	}
-}	
-
-if ( ! function_exists( 'zoner_blog_post_preview()' ) ) {
-	function zoner_blog_post_preview() {
-		global $zoner_config;
-		if (!empty($zoner_config['excerpt'])) {
-			$num = $zoner_config['excerpt-numwords'];
-			if ($zoner_config['excerpt'] == 1 ) {
-				the_content();
-			}
-			if ($zoner_config['excerpt'] == 2 ) {
-				echo zoner_words_limit(get_the_content(), $num);
-			}
-		} else {
-			the_content();
-		}
-	}
-}
