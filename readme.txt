@@ -6,15 +6,13 @@ We have created a theme based on our necessities and experience, we will be glad
 Our code is hand-made, so if you find a bug or have a wish to modify something, feel free to send us your feedback.
 We want to make our product even better and better and we need users support and feedbacks.
 
-Don't forget to visit our website http://fruitfulcode.com
-
 Thank you.
 
 -------------------------------------------------------
     Copyright
 -------------------------------------------------------
 
-Zoner lite is a free WordPress responsive theme designed and developed in Fruitful Code (www.fruitfulcode.com)
+Zoner lite is a free WordPress responsive theme designed and developed in Fruitful Code
 Feel free to use and modify this theme as you like.
 Zoner lite is distributed under the GPLv2 license (http://www.gnu.org/licenses/gpl-2.0.html)
 Demo http://themes.fruitfulcode.com/zoner-lite/
