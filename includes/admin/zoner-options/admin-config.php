@@ -479,6 +479,20 @@ if (!class_exists('zoner_config')) {
 				
 			);
 			
+			$pages_list = array();
+			
+			$args_query_pages = array(
+				'post_status' => 'publish',
+				'post_type' => array('post', 'page'),
+				'posts_per_page' => -1
+			);
+			$pages_array = get_posts( $args_query_pages );
+			if (!empty($pages_array)){
+				foreach ( $pages_array as $page_item ) {
+					$pages_list[$page_item->ID] = $page_item->post_title;
+				}
+			}
+			
 			$this->sections[] = array(
                 'title'     => __('Slider', 'zoner-lite'),
                 'icon'      => $sample_patterns_url . 'images/icons/slider.png',
@@ -495,17 +509,17 @@ if (!class_exists('zoner_config')) {
                     ),
 					
 					array(
-                        'id'        => 'home-slides',
-                        'type'      => 'slides',
-						'required'  => array('switch-slider', '=', '1'),
-                        'title'     => __('Slides', 'zoner-lite'),
-                        'subtitle'  => __('Add slides to slider', 'zoner-lite'),
-                        'placeholder'   => array(
-                            'title'         => __('This is a title', 'zoner-lite'),
-                            'description'   => __('Description Here', 'zoner-lite'),
-                            'url'           => __('Url', 'zoner-lite'),
-                        ),
-                    ),
+						'id'       		=> 'home-slides',
+						'type'     		=> 'select',
+						'required'  	=> array('switch-slider', '=', '1'),
+						'multi'    		=> true,
+						'title'   		=> __('Slides', 'redux-framework-demo'), 
+						'subtitle' 		=> __('Select pages or posts', 'redux-framework-demo'),
+						'desc'     		=> __('You can sort it.', 'redux-framework-demo'),
+						'placeholder'	=> __('Page or post name.', 'redux-framework-demo'),
+						'sortable' 		=> true,
+						'options'  		=> $pages_list
+					),
 					
 				)
 				

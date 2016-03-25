@@ -997,45 +997,48 @@ if ( ! function_exists( 'zoner_get_post_about_author' ) ) {
 
 if ( ! function_exists( 'zoner_get_home_slider' ) ) {		
 	function zoner_get_home_slider() {
-		global $zoner_config;
-		$out_slider = '';
+		global $zoner_config, $post;
 		
 		if ((!is_front_page()) || (!$zoner_config['switch-slider'])) { return; }
 		
 		if (!empty($zoner_config['home-slides'])) {
 			$slides = $zoner_config['home-slides'];
+			?>
 		
-			$out_slider .= '<div id="slider" class="loading has-parallax">';
-				$out_slider .= '<div id="loading-icon"><i class="fa fa-cog fa-spin" aria-hidden="true"></i></div>';
-				$out_slider .= '<div class="owl-carousel homepage-slider carousel-full-width">';
+			<div id="slider" class="loading has-parallax">
+				<div id="loading-icon"><i class="fa fa-cog fa-spin" aria-hidden="true"></i></div>
+				<div class="owl-carousel homepage-slider carousel-full-width">
 	
-					foreach ($slides as $slide) {
-						
-						$title = $description = $url = '';
-						$title = esc_attr($slide['title']);
-						$description = esc_attr($slide['description']);
-						$url = esc_url($slide['url']);
-								
-						$out_slider .= '<div class="slide" style="background-image:url('.esc_url($slide['image']).');">';
-							$out_slider .= '<div class="container">';
-								$out_slider .= '<div class="overlay">';
-									$out_slider .= '<div class="info">';
-										$out_slider .= '<h3>'.$title.'</h3>';
-										$out_slider .= '<figure>'.$description.'</figure>';
-									$out_slider .= '</div>';
-									if (!empty($url)) $out_slider .= '<hr />';
-									if (!empty($url)) $out_slider .= '<a href="'.$url.'" class="link-arrow">'. __('Read More', 'zoner-lite').'</a>';
-								$out_slider .= '</div>';
-							$out_slider .= '</div>';
-						$out_slider .= '</div>';
-						
-					}	
+					<?php
+						foreach ($slides as $item_id) {
+							$post = get_post($item_id);
+							$attachment_id = get_post_thumbnail_id( $item_id );
+							$slide_image = wp_get_attachment_image_src( $attachment_id, 'full');
+							setup_postdata($post); ?>	
+							
+								<div class="slide" style="background-image:url(<?php echo esc_url($slide_image[0]); ?>);">
+									<div class="container">
+										<div class="overlay">
+											<div class="info">
+												<h3><?php the_title(); ?></h3>
+												<figure><?php echo get_the_excerpt(); ?></figure>
+											</div>
+											<hr />
+											<a href="<?php the_permalink(); ?>" class="link-arrow"><?php _e('Read More', 'zoner-lite'); ?></a>
+										</div>
+									</div>
+								</div>
 					
-				$out_slider .= '</div>';
-			$out_slider .= '</div>';	
+							<?php
+							wp_reset_postdata();
+						}
+					?>						
+					
+				</div>
+			</div>
+			<?php
 		}
 		
-		echo $out_slider;
  	}
 }	
 
