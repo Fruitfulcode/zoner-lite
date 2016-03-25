@@ -1023,8 +1023,10 @@ if ( ! function_exists( 'zoner_get_home_slider' ) ) {
 												<h3><?php the_title(); ?></h3>
 												<figure><?php echo get_the_excerpt(); ?></figure>
 											</div>
-											<hr />
-											<a href="<?php the_permalink(); ?>" class="link-arrow"><?php _e('Read More', 'zoner-lite'); ?></a>
+											<?php if (empty($zoner_config['slider-hide-read-more'])): ?>
+												<hr />
+												<a href="<?php the_permalink(); ?>" class="link-arrow"><?php _e('Read More', 'zoner-lite'); ?></a>
+											<?php endif; ?>
 										</div>
 									</div>
 								</div>

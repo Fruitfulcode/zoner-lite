@@ -521,6 +521,16 @@ if (!class_exists('zoner_config')) {
 						'options'  		=> $pages_list
 					),
 					
+					array(
+						'id'        => 'slider-hide-read-more',
+						'type'      => 'checkbox',
+						'required'  => array('switch-slider', '=', '1'),
+						'title'     => __('Hide "Read More" button', 'zoner-lite'),
+						'subtitle'  => __('Select to hide "Read More" button.', 'zoner-lite'),
+						'desc'      => __('Yes', 'zoner-lite'),
+						'default'   => '0'
+					),
+					
 				)
 				
 			);
