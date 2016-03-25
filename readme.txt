@@ -17,6 +17,7 @@ Feel free to use and modify this theme as you like.
 Zoner lite is distributed under the GPLv2 license (http://www.gnu.org/licenses/gpl-2.0.html)
 Demo http://themes.fruitfulcode.com/zoner-lite/
 Documentation http://themes.fruitfulcode.com/zoner-lite/documentation/
+Support http://fruitfulcode.zendesk.com/hc/en-us/requests/new
 
 
 
