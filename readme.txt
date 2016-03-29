@@ -14,11 +14,11 @@ Thank you.
 
 Zoner lite is a free WordPress responsive theme designed and developed in Fruitful Code
 Feel free to use and modify this theme as you like.
+
 Zoner lite is distributed under the GPLv2 license (http://www.gnu.org/licenses/gpl-2.0.html)
 
 Theme url https://github.com/fruitfulcode/zoner-lite
 Documentation https://github.com/fruitfulcode/zoner-lite/wiki
-Support http://fruitfulcode.zendesk.com/hc/en-us/requests/new
 
 
 
@@ -69,7 +69,7 @@ Files: zoner-lite.pot, en_US.po, en_US.mo ru_Ru.po, ru_Ru.mo, nl_BE.mo, nl_BE.po
 -------------------------------------------------------
 
 
-= 1.7 =
-25.03.2016
+= 1.8 =
+29.03.2016
 
 - Initial release
