@@ -1017,8 +1017,8 @@ if ( ! function_exists( 'zoner_get_home_slider' ) ) {
 							setup_postdata($post); ?>	
 							
 								<div class="slide" style="background-image:url(<?php echo esc_url($slide_image[0]); ?>);">
-									<div class="container">
-										<div class="overlay">
+									<div class="overlay">
+										<div class="container">
 											<div class="info">
 												<h3><?php the_title(); ?></h3>
 												<figure><?php echo get_the_excerpt(); ?></figure>
