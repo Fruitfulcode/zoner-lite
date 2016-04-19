@@ -159,6 +159,39 @@ if (!class_exists('zoner_config')) {
 				)
 			);
 			
+			$this->sections[] = array(
+                'title'     => __('Logo', 'zoner-lite'),
+                'icon'      => $sample_patterns_url . 'images/icons/logo-options.png',
+				'icon_type'	=> 'image',
+                'fields'    => array (
+							array(
+								'id'        => 'logo',
+								'type'      => 'media',
+								'url'       => false,
+								'title'     => __('Logo', 'zoner-lite'),
+								'subtitle'  => __('Change your Logo here, upload or enter the URL to your logo image.', 'zoner-lite'),
+								
+							),
+							
+							array(
+								'id'        => 'logo-retina',
+								'type'      => 'media',
+								'url'       => false,
+								'title'     => __('Logo Retina ', 'zoner-lite'),
+								'subtitle'  => __('Upload your Retina Logo. This should be your Logo in double size (If your logo is 100 x 20px, it should be 200 x 40px)', 'zoner-lite'),
+							),
+
+							 array(
+								'id'                => 'logo-dimensions',
+								'type'              => 'dimensions',
+								'units'    			=> array('em','px','%'),
+								'units_extended'    => 'true',  
+								'title'             => __('Original Logo (Width/Height)', 'zoner-lite'),
+								'subtitle'          => __("If Retina Logo uploaded, please enter the (width/height) of the Standard Logo you've uploaded (not the Retina Logo)", 'zoner-lite'),
+							),
+				)
+			);	
+			
 			/*Display options Section*/
 			$this->sections[] = array(
                 'title'     => __('Blog options', 'zoner-lite'),

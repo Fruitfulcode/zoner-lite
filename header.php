@@ -41,7 +41,7 @@
 							<span class="icon-bar"></span>
 							<span class="icon-bar"></span>
 						</button>
-						<a class="navbar-brand nav" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php bloginfo('description'); ?>" rel="home"><h1 class="site-title"><?php bloginfo('name'); ?></h1><h2 class="site-description"><?php bloginfo('description'); ?></h2></a>
+						<?php zoner_get_logo(); ?>
 					</div>
 					<?php zoner_get_main_nav(); ?>
 				</header><!-- /.navbar -->

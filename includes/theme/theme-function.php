@@ -352,6 +352,34 @@ function zoner_has_featured_posts() {
 endif; //zoner_has_featured_posts
 
 /*Custom functions*/
+if ( ! function_exists( 'zoner_get_logo' ) ) {
+	function zoner_get_logo() {
+		global $zoner_config;
+
+		$original_logo = $retina_logo = $width = $height = null;
+		if (!empty($zoner_config['logo-dimensions']['width']))
+			$width 	= $zoner_config['logo-dimensions']['width'];
+		if (!empty($zoner_config['logo-dimensions']['height']))
+			$height = $zoner_config['logo-dimensions']['height'];
+
+		if (!empty($zoner_config['logo']['url'])) { $original_logo = esc_url($zoner_config['logo']['url']); } else { $original_logo = ''; }
+		if (!empty($zoner_config['logo-retina']['url'])) { $retina_logo 	 = esc_url($zoner_config['logo-retina']['url']);  } else {  $retina_logo   = ''; }
+
+		/*Full Backend Options*/
+		$description  = $name = '';
+		$description  = esc_attr(get_bloginfo('description'));
+		$name  		  = esc_attr(get_bloginfo('name'));
+
+		if (!empty($original_logo) || !empty($retina_logo)) {
+			if ($original_logo) echo '<a class="navbar-brand nav logo" href="' 			. esc_url( home_url( '/' ) ) . '" title="' . $description .'" rel="home"><img style="width:'.$width.'; height:'.$height.';" width="'.$width.'" height="'.$height.'" src="'. $original_logo  .'" alt="' . $description . '"/></a>';
+			if ($retina_logo) 	echo '<a class="navbar-brand nav logo retina" href="' 	. esc_url( home_url( '/' ) ) . '" title="' . $description .'" rel="home"><img style="width:'.$width.'; height:'.$height.';" width="'.$width.'" height="'.$height.'" src="'. $retina_logo    .'" alt="' . $description . '"/></a>';
+
+		} else {
+			echo '<a class="navbar-brand nav" href="' . esc_url( home_url( '/' ) ) . '" title="'. $description .'" rel="home"><h1 class="site-title">'. $name .'</h1><h2 class="site-description">'. $description .'</h2></a>';
+		}
+	}
+}
+
 if ( ! function_exists( 'zoner_get_main_nav' ) ) {
 	function zoner_get_main_nav() {
 		?>

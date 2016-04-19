@@ -773,6 +773,9 @@ ul.list-links li a:hover, .widget ul li a:hover {
   float: right;
 }
 
+.navbar .navbar-header .navbar-brand.nav.logo.retina {
+ display:none;	
+}
 
 .navbar-brand.nav > h1.site-title {
  border: 0 none;
@@ -792,6 +795,9 @@ ul.list-links li a:hover, .widget ul li a:hover {
  padding: 0;
 }
 
+.navbar .navbar-header .navbar-brand.nav.logo.retina img {
+ width: 100%;
+}
 
 .navigation .secondary-navigation .user-profile-link {
 	margin-left: 10px;
@@ -3267,7 +3273,9 @@ a:active {
     display: inline-block;
     float: none;
   }
-
+  .navbar .navbar-header .navbar-brand.nav.logo.retina {
+    width: 50%;  
+  }
   .wrapper {
     display: block;
   }
