@@ -68,6 +68,13 @@ Files: zoner-lite.pot, en_US.po, en_US.mo ru_Ru.po, ru_Ru.mo, nl_BE.mo, nl_BE.po
     Changelog
 -------------------------------------------------------
 
+= 1.9 =
+26.04.2016
+
+- New: Logo option
+- New: Retina logo
+- Bug fix: Slider description 
+
 
 = 1.8 =
 29.03.2016
