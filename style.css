@@ -1242,9 +1242,21 @@ img.size-full, img.size-large, .wp-post-image, .post-thumbnail img {
 }
 #sidebar ul {
   padding-left: 15px;
+  list-style-type: none;
 }
 #sidebar ul li {
   color: #007cbe;
+}
+#sidebar ul li::before {
+    content: "•";
+    display: block;
+    font-size: 27px;
+    height: 0;
+    left: -15px;
+    line-height: inherit;
+    position: relative;
+    top: -5px;
+    width: 0;
 }
 #sidebar .sidebar-navigation {
   list-style: none;
