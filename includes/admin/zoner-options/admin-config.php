@@ -471,11 +471,21 @@ if (!class_exists('zoner_config')) {
                     );
 					
 			$header_sections_fileds[] =	array(
+						'id'        => 'show-secondary-nav',
+						'type'      => 'checkbox',
+						'title'     => __('Show secondary navigation', 'zoner-lite'),
+						'subtitle'  => __('Select to show secondary navigation.', 'zoner-lite'),
+						'desc'      => __('Yes', 'zoner-lite'),
+						'default'   => '1'
+					);
+					
+			$header_sections_fileds[] =	array(
 						'id'       => 'header-phone',
 						'type'     => 'text',
 						'title'    => __('Phone', 'zoner-lite'), 
 						'subtitle'      => __('Edit phone', 'zoner-lite'),
 						'validate'  => 'no_html',
+						'required'  => array('show-secondary-nav', '=', '1'),
 					);	
 			
 			$header_sections_fileds[] =	array(
@@ -484,8 +494,8 @@ if (!class_exists('zoner_config')) {
 						'title'    => __('Email', 'zoner-lite'), 
 						'subtitle'      => __('Edit email', 'zoner-lite'),
 						'validate'  => 'email',
-						'default'	=> get_bloginfo( 'admin_email' )
-						
+						'default'	=> get_bloginfo( 'admin_email' ),
+						'required'  => array('show-secondary-nav', '=', '1'),
 					);	
 			
 			if ( function_exists('icl_object_id') ) {
@@ -496,7 +506,8 @@ if (!class_exists('zoner_config')) {
                         'subtitle'  => __('Select to enable WPML box.', 'zoner-lite'),
                         'desc'      => __('Yes', 'zoner-lite'),
 						'class'		=> 'icheck',
-                        'default'   => '1'
+                        'default'   => '1',
+						'required'  => array('show-secondary-nav', '=', '1'),
                     );
 			}
 
