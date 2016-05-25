@@ -88,14 +88,6 @@ $(document).ready(function($) {
 		});
 	}
 	
-	
-
-//  Fit videos width and height
-
-    if($(".video").length > 0) {
-       $(".video").fitVids();
-    }
-
 
 //  Smooth Navigation Scrolling
 
