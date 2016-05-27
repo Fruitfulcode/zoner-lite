@@ -592,7 +592,7 @@ if ( ! function_exists( 'zoner_seconadry_navigation' ) ) {
 	function zoner_seconadry_navigation() {
 		global $zoner_config;
 		
-		if (empty($zoner_config['show-secondary-nav'])) return;
+		if (isset($zoner_config['show-secondary-nav']) && empty($zoner_config['show-secondary-nav'])) return;
 		
 		$current_user = wp_get_current_user();
 		
