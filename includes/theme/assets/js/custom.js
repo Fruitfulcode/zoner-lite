@@ -157,16 +157,18 @@ $(window).load(function(){
 		
 		if ($(".homepage-slider").length > 0) {
 			var is_loop = true;
+			var is_nav = true;
 			
 			if ($(".homepage-slider").find('.slide').length == 1) {
 				is_loop = false;
+				is_nav = false;
 			}
 		
 			$(".homepage-slider").owlCarousel({
 				mouseDrag:false,
 				autoplayTimeout: 10000,
 				autoplay:true,
-				nav:true,
+				nav:is_nav,
 				rtl:is_rtl,
 				loop:is_loop,
 				mouseDrag: false,
