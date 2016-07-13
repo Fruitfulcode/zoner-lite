@@ -9,9 +9,9 @@ if ( ! function_exists( 'zoner_widgets_init' ) ) {
 		global $zoner_config;
 	
 		register_sidebar( array(
-			'name'          => __( 'Blog sidebar', 'zoner-lite' ),
+			'name'          => __( 'Primary sidebar', 'zoner-lite' ),
 			'id'            => 'primary',
-			'description'   => __( 'Blog sidebar area.', 'zoner-lite' ),
+			'description'   => __( 'Primary sidebar area.', 'zoner-lite' ),
 			'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 			'after_widget'  => '</aside>',
 			'before_title'  => '<h3 class="widget-title">',
