@@ -48,7 +48,7 @@ $(document).ready(function($) {
 
     $('.tool-tip').tooltip();
 
-    var select = $('select');
+    var select = $('.form-submit select, .form-sort select, .form-search select');
     if (select.length > 0 ) {
         select.selectpicker({size: 10, style:''});
     }
