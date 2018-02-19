@@ -81,7 +81,7 @@ if ( post_password_required() ) {
 												<div class="col-md-6">
 													<div class="form-group">
 														<label for="email">' . __('Your Email', 'zoner-lite') .'<em>*</em></label>
-														<input type="email" class="form-control" id="email" name="email" ' . esc_attr(  $commenter['comment_author_email'] ) . '" size="30" '. $aria_req .' />
+														<input type="email" class="form-control" id="email" name="email" value="' . esc_attr(  $commenter['comment_author_email'] ) . '" size="30" '. $aria_req .' />
 													</div><!-- /.form-group -->
 												</div><!-- /.col-md-6 -->
 											</div><!-- /.row -->
