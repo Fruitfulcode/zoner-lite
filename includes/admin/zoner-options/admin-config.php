@@ -1124,7 +1124,7 @@ if (!class_exists('zoner_config')) {
                         'id'            => 'opt-import-export',
                         'type'          => 'import_export',
                         'title'         => 'Import Export',
-                        'subtitle'      => 'Save and restore your zoner options',
+                        'subtitle'      => __('Save and restore your zoner options', 'zoner-lite'),
                         'full_width'    => false,
                     ),
                 ),
@@ -1221,7 +1221,7 @@ if (!class_exists('zoner_config')) {
             // SOCIAL ICONS -> Setup custom links in the footer for quick links in your panel footer icons.
             $this->args['share_icons'][] = array(
                 'url'   => 'https://github.com/Fruitfulcode',
-                'title' => 'Visit us on GitHub',
+                'title' => __('Zoner options', 'zoner-lite'),
                 'img'   => esc_url($source_path . 'images/icons/github.png'), 
             );
             
