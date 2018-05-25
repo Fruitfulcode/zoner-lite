@@ -50,9 +50,3 @@ locate_template('/includes/theme/theme-hooks.php', true);
  * activation hook
  */
 require get_template_directory(). '/includes/admin/zoner-options/send-statistics.php';
-
-add_action('wp_head', function (){
-	global $zoner_config;
-	var_dump($zoner_config['ffc_subscribe']);
-	var_dump($zoner_config['ffc_statistic']);
-});
