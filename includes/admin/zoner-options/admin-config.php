@@ -156,6 +156,24 @@ if (!class_exists('zoner_config')) {
 						'class'		=> 'icheck',
 						'default'   => '1'
 					),
+	                array(
+		                'id'          => 'ffc_statistic',
+		                'type'        => 'checkbox',
+		                'title'       => __( 'Fruitfulcode statistic', 'fruitful' ),
+		                'subtitle'        => __( 'Send configuration information to Fruitfulcode to help to improve this theme', 'fruitful' ),
+		                'desc' => __( 'Send configuration information', 'fruitful' ),
+		                'class'		=> 'icheck',
+		                'default'     => '1',
+	                ),
+	                array(
+		                'id'          => 'ffc_subscribe',
+		                'type'        => 'checkbox',
+		                'title'       => __( 'Subscribe to Newsletters', 'fruitful' ),
+		                'subtitle'        => __( 'Subscribe to Newsletters', 'fruitful' ),
+		                'desc' => __( 'Subscribe to Newsletters', 'fruitful' ),
+		                'class'		=> 'icheck',
+		                'default'     => '0',
+	                ),
 				)
 			);
 			
