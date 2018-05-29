@@ -166,18 +166,18 @@ if ( ! class_exists( 'zoner_config' ) ) {
 					array(
 						'id'       => 'ffc_statistic',
 						'type'     => 'checkbox',
-						'title'    => __( 'Fruitfulcode statistic', 'fruitful' ),
-						'subtitle' => __( 'Send configuration information to Fruitfulcode to help to improve this theme', 'fruitful' ),
-						'desc'     => __( 'Send configuration information', 'fruitful' ),
+						'title'    => __( 'Fruitfulcode statistic', 'zoner-lite' ),
+						'subtitle' => __( 'Send configuration information to Fruitfulcode to help to improve this theme', 'zoner-lite' ),
+						'desc'     => __( 'Send configuration information', 'zoner-lite' ),
 						'class'    => 'icheck',
 						'default'  => '1',
 					),
 					array(
 						'id'       => 'ffc_subscribe',
 						'type'     => 'checkbox',
-						'title'    => __( 'Subscribe to Newsletters', 'fruitful' ),
-						'subtitle' => __( 'Subscribe to Newsletters', 'fruitful' ),
-						'desc'     => __( 'Subscribe to Newsletters', 'fruitful' ),
+						'title'    => __( 'Subscribe to Newsletters', 'zoner-lite' ),
+						'subtitle' => __( 'Subscribe to Newsletters', 'zoner-lite' ),
+						'desc'     => __( 'Subscribe to Newsletters', 'zoner-lite' ),
 						'class'    => 'icheck',
 						'default'  => '0',
 					),
@@ -1343,8 +1343,8 @@ if ( ! class_exists( 'ffs' ) ) {
 
 		if ( $options['ffc_subscribe'] === '0' && empty( $options['ffc_is_hide_subscribe_notification'] ) ) {
 			echo '<div class="notice-info notice is-dismissible" id="subscribe-notification-container"><p>';
-			echo __( 'Subscribe to Fruitful newsletters? ', 'zoner' );
-			echo '<a id="subscribe-to-newsletters-btn" href="#" >' . __( 'Allow', 'zoner' ) . '</a>';
+			echo __( 'Subscribe to Fruitful newsletters? ', 'zoner-lite' );
+			echo '<a id="subscribe-to-newsletters-btn" href="#" >' . __( 'Allow', 'zoner-lite' ) . '</a>';
 			echo '</p></div>';
 		}
 	}
@@ -1360,13 +1360,13 @@ function zoner_allow_subscribe() {
 
 	$response = array(
 		'status'  => 'failed',
-		'message' => __( 'Something went wrong. You can subscribe manually on Theme Options page.', 'zoner' )
+		'message' => __( 'Something went wrong. You can subscribe manually on Theme Options page.', 'zoner-lite' )
 	);
 	if ( isset( $zoner_config['ffc_subscribe'] ) ) {
 		Redux::setOption( 'zoner_config', 'ffc_subscribe', '1' );
 
 		$response['status']  = 'success';
-		$response['message'] = __( 'Thank You for Subscription', 'zoner' );
+		$response['message'] = __( 'Thank You for Subscription', 'zoner-lite' );
 	}
 
 	wp_send_json( $response );
