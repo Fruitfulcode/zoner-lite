@@ -1337,43 +1337,43 @@ function zoner_add_admin_scripts() {
 }
 
 if ( ! class_exists( 'ffs' ) ) {
-	function fruitful_shortcodes_admin_notice() {
+	function zoner_shortcodes_admin_notice() {
 		global $zoner_config;
 		$options = $zoner_config;
 
 		if ( $options['ffc_subscribe'] === '0' && empty( $options['ffc_is_hide_subscribe_notification'] ) ) {
 			echo '<div class="notice-info notice is-dismissible" id="subscribe-notification-container"><p>';
-			echo __( 'Subscribe to Fruitful newsletters? ', 'fruitful' );
-			echo '<a id="subscribe-to-newsletters-btn" href="#" >' . __( 'Allow', 'fruitful' ) . '</a>';
+			echo __( 'Subscribe to Fruitful newsletters? ', 'zoner' );
+			echo '<a id="subscribe-to-newsletters-btn" href="#" >' . __( 'Allow', 'zoner' ) . '</a>';
 			echo '</p></div>';
 		}
 	}
 
-	add_action( 'admin_notices', 'fruitful_shortcodes_admin_notice' );
+	add_action( 'admin_notices', 'zoner_shortcodes_admin_notice' );
 }
 
 
-add_action( 'wp_ajax_fruitful_allow_subscribe', 'fruitful_allow_subscribe' );
-function fruitful_allow_subscribe() {
+add_action( 'wp_ajax_zoner_allow_subscribe', 'zoner_allow_subscribe' );
+function zoner_allow_subscribe() {
 
 	global $zoner_config;
 
 	$response = array(
 		'status'  => 'failed',
-		'message' => __( 'Something went wrong. You can subscribe manually on Theme Options page.', 'fruitful' )
+		'message' => __( 'Something went wrong. You can subscribe manually on Theme Options page.', 'zoner' )
 	);
 	if ( isset( $zoner_config['ffc_subscribe'] ) ) {
 		Redux::setOption( 'zoner_config', 'ffc_subscribe', '1' );
 
 		$response['status']  = 'success';
-		$response['message'] = __( 'Thank You for Subscription', 'fruitful' );
+		$response['message'] = __( 'Thank You for Subscription', 'zoner' );
 	}
 
 	wp_send_json( $response );
 }
 
-add_action( 'wp_ajax_fruitful_dismiss_subscribe_notification', 'fruitful_dismiss_subscribe_notification' );
-function fruitful_dismiss_subscribe_notification() {
+add_action( 'wp_ajax_zoner_dismiss_subscribe_notification', 'zoner_dismiss_subscribe_notification' );
+function zoner_dismiss_subscribe_notification() {
 	Redux::setOption( 'zoner_config', 'ffc_is_hide_subscribe_notification', '1' );
 
 	wp_send_json( 'success' );
