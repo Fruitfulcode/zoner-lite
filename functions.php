@@ -46,3 +46,7 @@ locate_template('/includes/theme/theme-sidebars.php', true);
 locate_template('/includes/theme/extensions/template-tags.php', true);
 locate_template('/includes/theme/theme-hooks.php', true);
 
+/**
+ * activation hook
+ */
+require get_template_directory(). '/includes/admin/zoner-options/send-statistics.php';
