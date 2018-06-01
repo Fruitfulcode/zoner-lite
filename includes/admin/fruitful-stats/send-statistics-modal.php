@@ -21,7 +21,7 @@ if ( class_exists( 'ReduxFramework' ) ) {
 		global $zoner_config;
 		$options = $zoner_config;
 
-		if ( $options['ffc_subscribe'] === '0' && empty( $options['ffc_is_hide_subscribe_notification'] ) ) {
+		if ( $options['ffc_is_hide_subscribe_notification'] === '0' ) {
 			require get_template_directory(). '/includes/admin/fruitful-stats/view/send-statistics-modal-view.php';
 		}
 	}
@@ -74,6 +74,7 @@ if ( class_exists( 'ReduxFramework' ) ) {
 			}
 		}
 
+		fruitful_send_stats();
 		wp_send_json( $response );
 	}
 
