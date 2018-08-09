@@ -36,6 +36,8 @@ if ( ! class_exists( 'zoner_config' ) ) {
 			add_action( 'zoner/loaded', array( $this, 'remove_demo' ) );
 
 			$this->ReduxFramework = new ReduxFramework( $this->sections, $this->args );
+			
+			add_action( 'admin_enqueue_scripts', array( $this, 'admin_options_scripts') );
 		}
 
 		/**
@@ -186,8 +188,9 @@ if ( ! class_exists( 'zoner_config' ) ) {
 						'type'        => 'text',
 						'required'    => array( 'ffc_subscribe', '=', '1' ),
 						'title'       => __( 'Name', 'zoner-lite' ),
-						'validate'    => 'text',
-						'msg'         => 'custom error message',
+						'class'       => 'ffc_stat_need_required',
+						//'validate'    => 'not_empty',
+						//'msg'         => 'Type your name',
 						'default'     => '',
 						'placeholder' => 'Your Name'
 					),
@@ -196,8 +199,9 @@ if ( ! class_exists( 'zoner_config' ) ) {
 						'type'        => 'text',
 						'required'    => array( 'ffc_subscribe', '=', '1' ),
 						'title'       => __( 'E-mail', 'zoner-lite' ),
-						'validate'    => 'email',
-						'msg'         => 'custom error message',
+						'class'       => 'ffc_stat_need_type_email',
+						//'validate'    => 'email_not_empty',
+						//'msg'         => 'Type your email',
 						'default'     => '',
 						'placeholder' => 'E-mail'
 					),
@@ -1342,6 +1346,32 @@ if ( ! class_exists( 'zoner_config' ) ) {
 
 			// Add content after the form.
 			$this->args['footer_text'] = '';
+		}
+		
+		
+		public function admin_options_scripts() {
+			global $current_screen;
+			
+			$inc_url = get_template_directory_uri() . '/includes/admin/zoner-options/patterns/';
+			
+			if ( ! empty( $current_screen->base ) && $current_screen->base === 'appearance_page_zoner_options' ) {
+				
+				wp_enqueue_script(
+					'ffc_admin_options_scripts',
+					$inc_url . 'admin_options_scripts.js',
+					[ 'jquery' ],
+					'20180807',
+					true
+				);
+				
+				wp_enqueue_style(
+					'ffc_admin_options_styles',
+					$inc_url . 'admin_options_styles.css',
+					[],
+					'20180807'
+				);
+				
+			}
 		}
 
 	}
