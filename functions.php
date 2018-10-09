@@ -48,12 +48,8 @@ locate_template('/includes/theme/theme-hooks.php', true);
 
 
 if (is_admin()) {
-	/**
-	 * activation hook
-	 */
-	require get_template_directory() . '/includes/admin/fruitful-stats/send-statistics.php';
-	/**
-	 * modal form for request to sending statistics
-	 */
-	require get_template_directory() . '/includes/admin/fruitful-stats/send-statistics-modal.php';
+	// Sending statistic to fruitfulcode
+	require get_template_directory() . '/vendor/fruitful-stats/send-statistics.php';
+	$FF_Zoner_Lite_Stats = new FF_Zoner_Lite_Stats(__FILE__);
+	$FF_Zoner_Lite_Stats->dispatch();
 }
