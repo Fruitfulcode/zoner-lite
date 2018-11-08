@@ -46,10 +46,10 @@ locate_template('/includes/theme/theme-sidebars.php', true);
 locate_template('/includes/theme/extensions/template-tags.php', true);
 locate_template('/includes/theme/theme-hooks.php', true);
 
-
 if (is_admin()) {
-	// Sending statistic to fruitfulcode
-	require get_template_directory() . '/vendor/fruitful-stats/send-statistics.php';
-	$FF_Zoner_Lite_Stats = new FF_Zoner_Lite_Stats(__FILE__);
-	$FF_Zoner_Lite_Stats->dispatch();
+	// Fruitful apps
+	require get_template_directory() . '/vendor/fruitful-app/fruitful-app-core.php';
+
+	$FF_Zoner_Lite_App = new FruitfulZonerLiteApp( __FILE__ );
+	$FF_Zoner_Lite_App->dispatch();
 }
